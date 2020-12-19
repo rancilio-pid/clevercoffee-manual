@@ -7,7 +7,7 @@ Inhaltsverzeichnis
 1. [Kontakt](#kontakt)
 
 # Lizenz
-Dieses Handbuch ist unter der MIT License veröffentlicht. Siehe [LICENSE] für mehr.
+Dieses Handbuch ist unter der MIT License veröffentlicht. Siehe [LICENSE](./LICENSE) für mehr.
 
 # Kontakt
 Schaut am besten beim [Chat-Server](https://chat.rancilio-pid.de/) vorbei.
