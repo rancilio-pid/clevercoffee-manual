@@ -1,7 +1,7 @@
 Inhaltsverzeichnis
 
 1. [Über das Projekt](#über-das-projekt)
-1. [Arduino einrichten](einrichten.md)
+1. [Arduino einrichten](einrichtung.md)
 1. [Einrichten von Blynk](blynk.md)
 1. [Lizenz](#lizenz)
 1. [Kontakt](#kontakt)
