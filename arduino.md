@@ -2,6 +2,22 @@
 
 Inhaltsverzeichnis
 
+<!-- TOC depthFrom:1 depthTo:3 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Arduino IDE einrichten](#arduino-ide-einrichten)
+	- [Installationsvideo](#installationsvideo)
+	- [Download](#download)
+	- [Der Programmcode](#der-programmcode)
+	- [Installation der Arduino IDE](#installation-der-arduino-ide)
+	- [Arduino Voreinstellungen](#arduino-voreinstellungen)
+		- [Boardverwaltungs-URL anlegen](#boardverwaltungs-url-anlegen)
+		- [Boardtreiber installieren](#boardtreiber-installieren)
+	- [Bibliotheken installieren](#bibliotheken-installieren)
+		- [Bibliotheken manuell installieren](#bibliotheken-manuell-installieren)
+	- [Board einstellen](#board-einstellen)
+
+<!-- /TOC -->
+
 ## Installationsvideo
 
 In diesem kurzen Video erklären wir die Installation der Arduino IDE und zeigen wie unsere OpenSource Software Rancilio-PID auf dem NodeMCU installiert wird. Viel Spaß!
@@ -172,7 +188,7 @@ Die Installation der einzelnen Bibliotheken erfolgt wieder über die Verwaltung 
 ![](http://rancilio-pid.de/wp-content/uploads/2018/10/29.png)
 ![](http://rancilio-pid.de/wp-content/uploads/2019/07/Bildschirmfoto-2019-07-03-um-00.01.26.png)
 
-Wenn alle Bibliotheken installiert sind müsste es wie folgt aussehen:
+Wenn alle Bibliotheken installiert sind, müsste es wie folgt aussehen:
 
 ![](http://rancilio-pid.de/wp-content/uploads/2018/10/31.png)
 
