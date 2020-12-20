@@ -8,7 +8,7 @@ Wird benötigt, um den Code auf den Controller zu spielen.
 
 https://www.arduino.cc/en/Main/Software
 
-![Screenshot der Ardiuno Homepage](http://rancilio-pid.de/wp-content/uploads/2018/10/1.png)
+![Screenshot der Arduino Homepage](http://rancilio-pid.de/wp-content/uploads/2018/10/1.png)
 
 ## Der Programmcode
 
