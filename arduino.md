@@ -1,7 +1,7 @@
 ---
 title: Arduino IDE einrichten
 has_children: false
-nav_order: 2
+nav_order: 1
 ---
 
 # Arduino IDE einrichten

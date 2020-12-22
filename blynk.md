@@ -1,7 +1,8 @@
 ---
 title: Einrichtung von Blynk
+parent: Der erste Test
 has_children: false
-nav_order: 3
+nav_order: 1
 ---
 
 # Einrichtung von Blynk
@@ -47,4 +48,102 @@ Als Server tragt Ihr: blynk.remoteapp.de
 Port: 9443
 Bestätigt die Eingabe mit „OK“
 
-...
+![](http://rancilio-pid.de/wp-content/uploads/2018/10/IMG_0117-576x1024.png)
+
+Ergänzt jetzt eure E-Mail-Adresse:
+Und klickt im Fenster auf „Next“
+
+![](http://rancilio-pid.de/wp-content/uploads/2018/10/IMG_0119-576x1024.png)
+
+Der Account ist nun angelegt.
+Erstellt euer erstes Projekt mit dem Klick auf „New Project“
+
+Hier könnt ihr auch direkt auf das Scan-Symbol oben rechts klicken und folgenden Code einscannen:
+
+QR-Code für Android:
+
+![](http://rancilio-pid.de/wp-content/uploads/2020/05/qr-android.png)
+
+QR-Code für IOS:
+
+![](http://rancilio-pid.de/wp-content/uploads/2020/05/qr-ios.jpg)
+
+(Dargestellte PID Werte entsprechen nicht mehr den neusten Stand)
+
+![](./img/pid-werte.gif)
+
+oder die App selbst erstellen.
+
+![](http://rancilio-pid.de/wp-content/uploads/2018/10/IMG_0120-576x1024.png)
+
+Gebt dem Projekt einen sinnvollen Namen.
+Als Device wählt bitte "NodeMCU".
+
+![](http://rancilio-pid.de/wp-content/uploads/2018/10/IMG_0121-576x1024.png)
+
+AuthKey auslesen (wird im Arduino benötigt).
+Klickt hierzu auf das Viereck oben Rechts.
+
+![](http://rancilio-pid.de/wp-content/uploads/2018/10/IMG_0124-576x1024.png)
+
+Klick jetzt auf das „Muttern“-Symbol
+
+![](http://rancilio-pid.de/wp-content/uploads/2018/10/IMG_0123-576x1024.png)
+
+Im unteren Bereich – steht der Auth-Code.
+Dieser kann auch via E-Mail angefragt werden.
+Der Auth-Code ist sozusagen der Schlüssel, zwischen NodeMCU und deinem Handy/Server.
+Dieser Code sollte „Geheim“ bleiben.
+
+![](http://rancilio-pid.de/wp-content/uploads/2018/10/IMG_0122-576x1024.png)
+
+## Schritt 3: Auth Token hinterlegen
+
+Authkey wird im 2. Schritt in der userConfig.h hinterlegt. Bei Auth kommt der Code aus Blynk hinein. Bei SSID und PASS euer Wlan Name und Passwort. Dazu gleich mehr.
+
+![](http://rancilio-pid.de/wp-content/uploads/2019/07/image-1.png)
+
+## Schritt 4: Aufbau der App
+
+Klickt oben Rechts wieder auf das Viereck um in den Bearbeitungsmodus zu gelangen. Ihr müsst leider alle virtuelle PINS manuell in der App hinterlegen.
+
+![](http://rancilio-pid.de/wp-content/uploads/2019/09/IMG_8837.png)
+
+![](http://rancilio-pid.de/wp-content/uploads/2019/09/IMG_8832-1.png)
+
+Pin | Wert
+-|-
+V2 | Input (aktuelle Temp)
+V3 | Soll-Temp
+V4 | P-Wert (Übergabe von Blynk an NodeMCU)
+V5 | I-Wert (Übergabe von Blynk an NodeMCU)
+V6 | D-Wert (Übergabe von Blynk an NodeMCU)
+V7 | Einstellbare Soll-Temp
+V8 | Preinfussion Brewtime
+V9 | Preinfussion Start
+V10 | Preinfussion Pause
+V11 | P-Wert für den Startvorgang
+V12 | Zielwert für den Startvorgang in °C
+V13 | On/Off Schaltet die PID aus (Heizung auch)
+V14 | Start I für Startvorgang
+|
+V20 | PID P Wert von interne PID an Blynk
+V21 | PID I Wert von interne PID an Blynk
+V22 | PID D Wert von interne PID an Blynk
+V23 | Output Wert der internen PID
+|
+V30 | Brüherkennung: P Wert
+V31 | Brüherkennung: I Wert
+V32 | Brüherkennung: D Wert
+V33 | Zeit in der die Brüherkennungs PID Werte aktiv sind
+V34 | Wert bei dem die Brüherkennung aktiviert wird
+V35 | Brüherkennungs Durchschnittswert
+V36 | Brüherkennungs minimalWert
+
+Die App ist in Widgets aufgebaut – die Widgets können via Drag-and-Drop einfach von rechts aus der Widget-Box in die App gezogen werden.
+
+![](http://rancilio-pid.de/wp-content/uploads/2018/10/IMG_0127-576x1024.png)
+
+Einem Widget kann jetzt der INPUT Pin mitgeteilt werden (Siehe Liste oben)
+
+![](http://rancilio-pid.de/wp-content/uploads/2018/10/IMG_0128-576x1024.png)
