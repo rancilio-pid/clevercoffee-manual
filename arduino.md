@@ -24,7 +24,7 @@ Wird benötigt, um den Code auf den Controller zu spielen. Ich wollte mal was te
 
 [Link](https://www.arduino.cc/en/Main/Softwar)
 
-![Screenshot der Arduino Homepage](http://rancilio-pid.de/wp-content/uploads/2018/10/1.png)
+![Screenshot der Arduino Homepage](http://rancilio-pid.de/wp-content/uploads/2018/10/.png)
 
 ## Der Programmcode
 
