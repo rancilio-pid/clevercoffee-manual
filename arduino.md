@@ -8,21 +8,8 @@ nav_order: 2
 
 Inhaltsverzeichnis
 
-<!-- TOC depthFrom:2 depthTo:3 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [Arduino IDE einrichten](#arduino-ide-einrichten)
-	- [Installationsvideo](#installationsvideo)
-	- [Download](#download)
-	- [Der Programmcode](#der-programmcode)
-	- [Installation der Arduino IDE](#installation-der-arduino-ide)
-	- [Arduino Voreinstellungen](#arduino-voreinstellungen)
-		- [Boardverwaltungs-URL anlegen](#boardverwaltungs-url-anlegen)
-		- [Boardtreiber installieren](#boardtreiber-installieren)
-	- [Bibliotheken installieren](#bibliotheken-installieren)
-		- [Bibliotheken manuell installieren](#bibliotheken-manuell-installieren)
-	- [Board einstellen](#board-einstellen)
-
-<!-- /TOC -->
+* TOC
+{:toc}
 
 ## Installationsvideo
 
@@ -66,14 +53,14 @@ Diese erreicht ihr unter: Datei > Voreinstellungen
 |-|-|
 | Boardverwaltungs-URL | `http://arduino.esp8266.com/stable/package_esp8266com_index.json`|
 
-<details>
+<details markdown="block">
   <summary> Windows </summary>
 
   ![Windows Arduino Voreinstellungen](http://rancilio-pid.de/wp-content/uploads/2018/10/8.png)
 
 </details>
 
-<details>
+<details markdown="block">
   <summary> Linux (Ubuntu) </summary>
 
   ![Linux (Ubuntu)](img/arduino-voreinstellungen-ubu.png)
@@ -86,14 +73,14 @@ Als nächstes müssen die ESP8266 Boardtreiber installiert werden.
 
 Dies erreicht ihr unter: Werkzeuge > Board: "[\<Version\>]" > Boardverwalter...
 
-<details>
+<details markdown="block">
   <summary> Windows </summary>
 
   ![Windows Arduino Boardverwalter](http://rancilio-pid.de/wp-content/uploads/2018/10/9.png)
 
 </details>
 
-<details>
+<details markdown="block">
   <summary> Linux (Ubuntu) </summary>
 
   ![Linux (Ubuntu) Boardverwalter](img/arduino-boardverwalter-ubu.png)
@@ -136,13 +123,13 @@ Die Installation der einzelnen Bibliotheken erfolgt wieder über die Verwaltung 
 
 ![Bibliotheken verwalten](http://rancilio-pid.de/wp-content/uploads/2018/10/12.png)
 
-<details>
+<details markdown="block">
   <summary> OneWire </summary>
 
   ![](http://rancilio-pid.de/wp-content/uploads/2018/10/13.png)
 </details>
 
-<details>
+<details markdown="block">
   <summary>
     DallasTemperature
   </summary>
@@ -150,7 +137,7 @@ Die Installation der einzelnen Bibliotheken erfolgt wieder über die Verwaltung 
 ![](http://rancilio-pid.de/wp-content/uploads/2018/10/14.png)
 </details>
 
-<details>
+<details markdown="block">
   <summary> U8x8lib </summary>
 
   1. Geht auf https://github.com/olikraus/u8g2
@@ -163,7 +150,7 @@ Die Installation der einzelnen Bibliotheken erfolgt wieder über die Verwaltung 
   ![](http://rancilio-pid.de/wp-content/uploads/2018/10/17.png)  
 </details>
 
-<details>
+<details markdown="block">
   <summary> PID_v1.h </summary>
 
   1. Geht auf https://github.com/br3ttb/Arduino-PID-Library
@@ -176,7 +163,7 @@ Die Installation der einzelnen Bibliotheken erfolgt wieder über die Verwaltung 
   ![](http://rancilio-pid.de/wp-content/uploads/2018/10/20.png)  
 </details>
 
-<details>
+<details markdown="block">
   <summary> Blynk </summary>
 
   1. Geht auf https://www.blynk.cc/getting-started/
