@@ -142,9 +142,9 @@ Die Installation der einzelnen Bibliotheken erfolgt wieder über die Verwaltung 
   ![](http://rancilio-pid.de/wp-content/uploads/2018/10/13.png)
 </details>
 
-<details markdown="block">
+<details>
   <summary>
-    DallasTemperature3
+    DallasTemperature
   </summary>
 
 ![](http://rancilio-pid.de/wp-content/uploads/2018/10/14.png)
