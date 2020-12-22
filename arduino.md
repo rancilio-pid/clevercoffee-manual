@@ -20,7 +20,7 @@ In diesem kurzen Video erklären wir die Installation der Arduino IDE und zeigen
 
 ## Download
 
-Wird benötigt, um den Code auf den Controller zu spielen.
+Wird benötigt, um den Code auf den Controller zu spielen. Ich wollte mal was testen!
 
 https://www.arduino.cc/en/Main/Software
 
