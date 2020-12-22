@@ -8,7 +8,7 @@ nav_order: 2
 
 Inhaltsverzeichnis
 
-<!-- TOC depthFrom:1 depthTo:3 withLinks:1 updateOnSave:1 orderedList:0 -->
+<!-- TOC depthFrom:2 depthTo:3 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Arduino IDE einrichten](#arduino-ide-einrichten)
 	- [Installationsvideo](#installationsvideo)
@@ -143,9 +143,10 @@ Die Installation der einzelnen Bibliotheken erfolgt wieder über die Verwaltung 
 </details>
 
 <details>
-  <summary> DallasTemperature </summary>
-
-  ![](http://rancilio-pid.de/wp-content/uploads/2018/10/14.png)
+  <summary>
+    DallasTemperature
+  </summary>
+![](http://rancilio-pid.de/wp-content/uploads/2018/10/14.png)
 </details>
 
 <details>
