@@ -1,3 +1,9 @@
+---
+title: Einrichtung von Blynk
+has_children: false
+nav_order: 2
+---
+
 # Arduino IDE einrichten
 
 Inhaltsverzeichnis

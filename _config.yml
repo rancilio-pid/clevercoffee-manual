@@ -1,2 +1,5 @@
-theme: jekyll-theme-cayman
+title: "Remote theme example"
+remote_theme: pmarsceill/just-the-docs
+color_scheme: "light"
+search_enabled: false
 logo: http://rancilio-pid.de/wp-content/uploads/2018/08/SmallLogo-e1535533340407.png
