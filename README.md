@@ -1,4 +1,5 @@
 # Rancilio PID Handbook
+{: .no_toc }
 
 Inhaltsverzeichnis
 
