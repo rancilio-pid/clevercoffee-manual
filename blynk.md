@@ -29,7 +29,7 @@ Auch hierzu hat Markus ein Video auf Youtube, in dem die Installation gut erläu
 
 ## Schritt 1: App herunterladen
 
-https://www.blynk.cc/ gibt es für alle gängigen Betriebssysteme
+Siehe unter [https://www.blynk.cc/](https://www.blynk.cc/) gibt es für alle gängigen Betriebssysteme
 
 ## Schritt 2: Account anlegen
 

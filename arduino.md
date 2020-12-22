@@ -20,29 +20,23 @@ In diesem kurzen Video erklären wir die Installation der Arduino IDE und zeigen
 
 ## Download
 
-Wird benötigt, um den Code auf den Controller zu spielen. Ich wollte mal was testen!
+Wird benötigt, um den Code auf den Controller zu spielen.
 
-[Link](https://www.arduino.cc/en/Main/Software)
+[Link zu Arduino](https://www.arduino.cc/en/Main/Software)
 
-![Screenshot der Arduino Homepage](http://rancilio-pid.de/wp-content/uploads/2018/10/.png)
+![Screenshot der Arduino Homepage](http://rancilio-pid.de/wp-content/uploads/2018/10/1.png)
 
 ## Der Programmcode
 
 Download des aktuellen Programmcode findest du im aktuellen Release.
 
-https://github.com/rancilio-pid/ranciliopid/releases
+[Link zum Github Repository](https://github.com/rancilio-pid/ranciliopid/releases)
 
 ![Screenshot der Github Homepage](http://rancilio-pid.de/wp-content/uploads/2018/10/2.png)
 
 ## Installation der Arduino IDE
 
-[![Arduino Installation](./img/installatio.gif)](./img/installatio.gif)
-
-![Arduino Installation](./img/installatio.gif)
-
-![Arduino Installation](https://raw.githubusercontent.com/rasimriver/ranciliopid-handbook/main/img/installatio.gif)
-
-[![Arduino Installation](https://raw.githubusercontent.com/rasimriver/ranciliopid-handbook/main/img/installatio.gif)](https://raw.githubusercontent.com/rasimriver/ranciliopid-handbook/main/img/installatio.gif)
+![Arduino Installation](./img/installation.gif)
 
 Hinweise zur Installation befinden sich auf der [Arduino Homepage](https://www.arduino.cc/en/Guide).
 
@@ -147,7 +141,7 @@ Die Installation der einzelnen Bibliotheken erfolgt wieder über die Verwaltung 
 <details markdown="block">
   <summary> U8x8lib </summary>
 
-  1. Geht auf https://github.com/olikraus/u8g2
+  1. Geht auf [https://github.com/olikraus/u8g2](https://github.com/olikraus/u8g2)
   1. Code > Download Zip
   ![](http://rancilio-pid.de/wp-content/uploads/2018/10/15.png)
   1. Legt die Dateien im [Arduino Libraries Ordner](#bibliotheken-installieren) ab
@@ -160,7 +154,7 @@ Die Installation der einzelnen Bibliotheken erfolgt wieder über die Verwaltung 
 <details markdown="block">
   <summary> PID_v1.h </summary>
 
-  1. Geht auf https://github.com/br3ttb/Arduino-PID-Library
+  1. Geht auf [https://github.com/br3ttb/Arduino-PID-Library](https://github.com/br3ttb/Arduino-PID-Library)
   1. Code > Download Zip  
   ![](./img/arduino-pid-lib.png)
   1. Legt die Dateien im [Arduino Libraries Ordner](#bibliotheken-installieren) ab
@@ -173,9 +167,9 @@ Die Installation der einzelnen Bibliotheken erfolgt wieder über die Verwaltung 
 <details markdown="block">
   <summary> Blynk </summary>
 
-  1. Geht auf https://www.blynk.cc/getting-started/
+  1. Geht auf [https://www.blynk.cc/getting-started/](https://www.blynk.cc/getting-started/)
   ![](http://rancilio-pid.de/wp-content/uploads/2018/10/21.png)
-  1. Geht auf https://github.com/blynkkk/blynk-library/releases/tag/v0.5.4
+  1. Geht auf [https://github.com/blynkkk/blynk-library/releases/tag/v0.5.4](https://github.com/blynkkk/blynk-library/releases/tag/v0.5.4)
   ![](http://rancilio-pid.de/wp-content/uploads/2018/10/22.png)
   ![](http://rancilio-pid.de/wp-content/uploads/2018/10/23.png)
   ![](http://rancilio-pid.de/wp-content/uploads/2018/10/25.png)
