@@ -22,7 +22,7 @@ In diesem kurzen Video erklären wir die Installation der Arduino IDE und zeigen
 
 Wird benötigt, um den Code auf den Controller zu spielen. Ich wollte mal was testen!
 
-https://www.arduino.cc/en/Main/Software
+[Link](https://www.arduino.cc/en/Main/Softwar)
 
 ![Screenshot der Arduino Homepage](http://rancilio-pid.de/wp-content/uploads/2018/10/1.png)
 
@@ -36,7 +36,8 @@ https://github.com/rancilio-pid/ranciliopid/releases
 
 ## Installation der Arduino IDE
 
-![Arduino Installation](./img/installation.gif)
+[![Arduino Installation](./img/installatio.gif)](./img/installatio.gif)
+![Arduino Installation](./img/installatio.gif)
 
 Hinweise zur Installation befinden sich auf der [Arduino Homepage](https://www.arduino.cc/en/Guide).
 
