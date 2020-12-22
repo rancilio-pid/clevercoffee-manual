@@ -1,9 +1,3 @@
----
-title: Rancilio PID Handbook
-has_children: false
-nav_order: 1
----
-
 # Rancilio PID Handbook
 
 Inhaltsverzeichnis
