@@ -6,6 +6,7 @@ nav_order: 1
 ---
 
 # Einrichtung von Blynk
+{: .no_toc }
 
 Inhaltsverzeichnis
 

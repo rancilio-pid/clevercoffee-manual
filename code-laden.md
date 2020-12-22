@@ -6,6 +6,7 @@ nav_order: 2
 ---
 
 # Code Laden
+{: .no_toc }
 
 Inhaltsverzeichnis
 
