@@ -15,7 +15,7 @@ Inhaltsverzeichnis
 
 ## Warnhinweis
 
-> Das Arbeiten mit 230 V kann tödlich sein! Die Anleitungen auf der Webseite soll euch einen Eindruck geben, wie ihr selbst einen PID Regler in eine Rancilio Silvia oder ähnliche Espressomaschinen einbauen könnt. Bei Arbeiten mit 230 V immer den Netzstecker ziehen. Ihr handelt dabei auf eigene Gefahr.
+> {{ site.warnhinweis }}
 
 ## Einleitung
 
