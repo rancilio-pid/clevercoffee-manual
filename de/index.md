@@ -10,11 +10,5 @@ Dies ist das deutsche Handbuch für die Umsetzung des Rancilio PID Projektes. Di
 
 Mehr zum Projekt findet ihr auf der [Rancilio PID Website](http://rancilio-pid.de/).
 
-## Arduino IDE einrichten
-Siehe [Hauptartikel](arduino.md).
-
-## Der erste Test
-Siehe [Hauptartikel](der-erste-test.md).
-
 ## Kontakt
 Schaut am besten beim [Chat-Server](https://chat.rancilio-pid.de/) vorbei.
