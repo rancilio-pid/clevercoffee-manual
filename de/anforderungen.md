@@ -1,5 +1,5 @@
 ---
-title: Anforderungen an dich – Warnhinweis
+title: Anforderungen an dich
 parent: DE - Handbuch
 has_children: false
 nav_order: 1
