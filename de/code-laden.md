@@ -1,8 +1,8 @@
 ---
 title: Code Laden
-parent: Der erste Test
+parent: DE - Handbuch
 has_children: false
-nav_order: 2
+nav_order: 3
 ---
 
 # Code Laden

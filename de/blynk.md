@@ -1,8 +1,8 @@
 ---
 title: Einrichtung von Blynk
-parent: Der erste Test
+parent: DE - Handbuch
 has_children: false
-nav_order: 1
+nav_order: 2
 ---
 
 # Einrichtung von Blynk
@@ -71,7 +71,7 @@ QR-Code für IOS:
 
 (Dargestellte PID Werte entsprechen nicht mehr den neusten Stand)
 
-![](./img/pid-werte.gif)
+![](../img/pid-werte.gif)
 
 oder die App selbst erstellen.
 
