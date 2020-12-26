@@ -2,7 +2,7 @@
 title: Arduino IDE einrichten
 parent: DE - Handbuch
 has_children: false
-nav_order: 1
+nav_order: 6
 ---
 
 # Arduino IDE einrichten

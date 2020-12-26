@@ -2,7 +2,7 @@
 title: Brüherkennung
 parent: DE - Handbuch
 has_children: false
-nav_order: 6
+nav_order: 11
 ---
 
 # Der Einbau
@@ -41,4 +41,4 @@ Ausgangssituation sind folgende PID Parameter:
 
 Bei dem Vergleich von einem Bezug mit und ohne Brüherkennung ist zu sehen, dass die Solltemperatur zu einem ähnlichen Zeitpunkt wieder „durchschritten“ wird, aber ohne Erkennung die Temperatur nach oben ausschlägt (96 °C). Die Erkennung kann hier ein deutlich besseres Ergebnis liefern (ca. 93,5 °C). Auch fällt die Temperatur nicht so rapide nach unten ab bei dem Bezug, da die Heizung schneller reagieren kann bei der Erkennung.
 
-In der Praxis zeigt sich bei mir zu hause, dass bei Gästen zügig und reproduzierbar Espresso hintereinander gezogen werden können, da meistens die 3 Minuten ausreichen den Kaffee zu verteilen und neue Bohnen zu mahlen. 
+In der Praxis zeigt sich bei mir zu hause, dass bei Gästen zügig und reproduzierbar Espresso hintereinander gezogen werden können, da meistens die 3 Minuten ausreichen den Kaffee zu verteilen und neue Bohnen zu mahlen.
