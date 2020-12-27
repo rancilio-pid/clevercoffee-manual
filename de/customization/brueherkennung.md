@@ -6,7 +6,7 @@ has_children: false
 nav_order: 2
 ---
 
-# Der Einbau
+# Brüherkennung
 {: .no_toc }
 
 Inhaltsverzeichnis

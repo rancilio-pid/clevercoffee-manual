@@ -2,7 +2,7 @@
 title: FAQ
 parent: DE - Handbuch
 has_children: false
-nav_order: 12
+nav_order: 7
 ---
 
 # FAQ
@@ -13,4 +13,4 @@ Frage: Auf dem Display erscheint eine „emergency stop“ Warnung ab 120°C, wa
 
 Frage: Warum schaltet der Heizungs-SSR nicht?
 
-> Häufig passiert es, dass der Signal des Pins nicht am + Pol sondern – Pol des SSRs angeschlossen ist. Bitte prüft, ob ihr richtig den SSR angeschlossen habt. Durchgang kann man nicht bei einem SSR prüfen mit einem Messgerät. Höchstens, ob die gewünschten 3,3 Volt am SSR anliegen.
+> Häufig passiert es, dass der Signal des Pins nicht am + Pol sondern – Pol des SSRs angeschlossen ist. Bitte prüft, ob ihr richtig den SSR angeschlossen habt. Mit einem Messgerät kann man den Durchgang bei einem SSR nicht prüfen. Höchstens, ob die gewünschten 3,3 Volt am SSR anliegen.

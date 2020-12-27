@@ -6,7 +6,7 @@ has_children: false
 nav_order: 1
 ---
 
-# Der Einbau
+# PID-Werte
 {: .no_toc }
 
 Inhaltsverzeichnis
