@@ -1,11 +1,12 @@
 ---
-title: Der Einbau
+title: Schaltpläne
 parent: DE - Handbuch
+grand_parent: DE - Handbuch
 has_children: false
-nav_order: 9
+nav_order: 2
 ---
 
-# Der Einbau
+# Schaltpläne
 {: .no_toc }
 
 Inhaltsverzeichnis
