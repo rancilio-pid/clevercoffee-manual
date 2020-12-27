@@ -1,6 +1,7 @@
 ---
 title: Anforderungen an dich
 parent: Einführung
+grand_parent: DE - Handbuch
 has_children: false
 nav_order: 1
 ---
