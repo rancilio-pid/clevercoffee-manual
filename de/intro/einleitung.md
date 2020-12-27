@@ -1,8 +1,8 @@
 ---
 title: Einleitung PID System
-parent: DE - Handbuch
+parent: Einführung
 has_children: false
-nav_order: 3
+nav_order: 2
 ---
 
 # Einleitung PID System
