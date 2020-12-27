@@ -1,8 +1,8 @@
 ---
 title: Einrichtung von Blynk
-parent: DE - Handbuch
+parent: Software Teil I
 has_children: false
-nav_order: 7
+nav_order: 2
 ---
 
 # Einrichtung von Blynk
