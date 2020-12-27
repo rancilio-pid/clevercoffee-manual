@@ -71,7 +71,7 @@ QR-Code für IOS:
 
 (Dargestellte PID Werte entsprechen nicht mehr den neusten Stand)
 
-![](../img/pid-werte.gif)
+![](../../img/pid-werte.gif)
 
 oder die App selbst erstellen.
 

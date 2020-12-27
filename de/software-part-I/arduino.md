@@ -37,7 +37,7 @@ Download des aktuellen Programmcode findest du im aktuellen Release.
 
 ## Installation der Arduino IDE
 
-![Arduino Installation](../img/installation.gif)
+![Arduino Installation](../../img/installation.gif)
 
 Hinweise zur Installation befinden sich auf der [Arduino Homepage](https://www.arduino.cc/en/Guide).
 
@@ -65,7 +65,7 @@ Diese erreicht ihr unter: Datei > Voreinstellungen
 <details markdown="block">
   <summary> Linux (Ubuntu) </summary>
 
-  ![Linux (Ubuntu)](../img/arduino-voreinstellungen-ubu.png)
+  ![Linux (Ubuntu)](../../img/arduino-voreinstellungen-ubu.png)
 
 </details>
 
@@ -85,7 +85,7 @@ Dies erreicht ihr unter: Werkzeuge > Board: "[\<Version\>]" > Boardverwalter...
 <details markdown="block">
   <summary> Linux (Ubuntu) </summary>
 
-  ![Linux (Ubuntu) Boardverwalter](../img/arduino-boardverwalter-ubu.png)
+  ![Linux (Ubuntu) Boardverwalter](../../img/arduino-boardverwalter-ubu.png)
 
 </details>
 
@@ -93,7 +93,7 @@ Bitte die aktuelle Version installieren.
 
 Typ \<Alle\> > "esp": "**esp8266** by **ESP8266 Community**"
 
-![ESP8266 installieren](../img/boardtreiber.gif)
+![ESP8266 installieren](../../img/boardtreiber.gif)
 
 Nun ist die Arduino IDE vorbereitet. Weiter geht es mit den Bibliotheken.
 
@@ -157,7 +157,7 @@ Die Installation der einzelnen Bibliotheken erfolgt wieder über die Verwaltung 
 
   1. Geht auf [https://github.com/br3ttb/Arduino-PID-Library](https://github.com/br3ttb/Arduino-PID-Library)
   1. Code > Download Zip  
-  ![](../img/arduino-pid-lib.png)
+  ![](../../img/arduino-pid-lib.png)
   1. Legt die Dateien im [Arduino Libraries Ordner](#bibliotheken-installieren) ab
   1. Erstellen einen Ordner: `PID_v1`
   1. Die vier Dateien aus dem ZIP File kopieren und in den neuen Ordner einfügen:
