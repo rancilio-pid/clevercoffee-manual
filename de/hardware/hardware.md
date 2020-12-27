@@ -1,6 +1,6 @@
 ---
 title: Aufbau und Einbau
-parent: DE - Handbuch
+parent: Hardware
 grand_parent: DE - Handbuch
 has_children: false
 nav_order: 1

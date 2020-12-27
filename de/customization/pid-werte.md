@@ -1,8 +1,9 @@
 ---
 title: PID-Werte
-parent: DE - Handbuch
+parent: Konfiguration & Anpassung
+grand_parent: DE - Handbuch
 has_children: false
-nav_order: 10
+nav_order: 1
 ---
 
 # Der Einbau

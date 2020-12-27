@@ -1,8 +1,9 @@
 ---
 title: Brüherkennung
-parent: DE - Handbuch
+parent: Konfiguration & Anpassung
+grand_parent: DE - Handbuch
 has_children: false
-nav_order: 11
+nav_order: 2
 ---
 
 # Der Einbau
@@ -15,7 +16,7 @@ Inhaltsverzeichnis
 
 ## Einleitung
 
-Wie in dem vorherigen Kapitel erwähnt, soll der brew heater detection limit Wert auf „0“ gestellt werden, um diesen bei dem ersten Test zu deaktivieren. Wenn der normale PID gut läuft, ein für dich angenehmes Heizverhalten sich beim Starten zeigt und stabil am Soll-Wert läuft, dann kannst du die Brüherkennung dir genauer anschauen.
+Wie in dem vorherigen Kapitel erwähnt, soll der **brew heater detection limit** Wert auf „0“ gestellt werden, um diesen bei dem ersten Test zu deaktivieren. Wenn der normale PID gut läuft, ein für dich angenehmes Heizverhalten sich beim Starten zeigt und stabil am Soll-Wert läuft, dann kannst du die Brüherkennung dir genauer anschauen.
 
 ## Funktionsweise
 
