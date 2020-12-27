@@ -1,7 +1,7 @@
 # Rancilio PID Handbook
 
 ## Über
-Dies ist das Handbuch für die Umsetzung des Rancilio PID Projektes. Dieses Handbuch deckt aktuell sämtliche Schritte ab, die die Software betreffen. Dazu gehören die Installation von Arduino und Blynk und das Hochladen auf den Microcontroller.
+Dies ist das Handbuch für die Umsetzung des Rancilio PID Projektes. Dieses Handbuch deckt aktuell sämtliche Schritte ab, die die Software betreffen. Dazu gehören die Installation von Arduino und Blynk und das Hochladen auf den Mikrocontroller.
 
 Hier geht es zum deutschen Handbuch: [Link](./en/index.md)
 

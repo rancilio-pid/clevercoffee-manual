@@ -1,0 +1,10 @@
+---
+title: Software Teil I
+parent: DE - Handbuch
+has_children: true
+nav_order: 3
+---
+
+# Software Teil 1
+
+In diesem Abschnitt werden alle Schritte beschrieben, die "ohne Hardware" umgesetzt werden. Am besten behandelt ihr diese Schritte, wenn ihr auf eure Bestellung(en) wartet :)

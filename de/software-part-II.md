@@ -1,11 +1,11 @@
 ---
-title: Code Laden
+title: Software Teil II
 parent: DE - Handbuch
 has_children: false
-nav_order: 8
+nav_order: 4
 ---
 
-# Code Laden
+# Software Teil II
 {: .no_toc }
 
 Inhaltsverzeichnis
@@ -14,6 +14,8 @@ Inhaltsverzeichnis
 {:toc}
 
 ## Code auf den Controller laden
+
+In diesem Kapitel wird beschrieben, wie der Code auf den Mikrocontroller geladen wird.
 
 Im aktuellen Release befinden sich zwei Datein:
 * rancilio-pid.ino
