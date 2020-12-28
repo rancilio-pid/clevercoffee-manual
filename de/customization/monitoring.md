@@ -20,6 +20,10 @@ Die Blynk-App kann so eingerichtet werden, dass via eines sog. Webhooks ein Moni
 
 ![PID-Einführung](http://rancilio-pid.de/wp-content/uploads/2020/11/Bildschirmfoto-2020-11-04-um-20.51.31-1536x733.png)
 
+## Übersicht
+
+Eine Übersicht über alle vorhandenen Sensoren findet er ihr hier: [Rancilio-PID Monitoring](https://monitoring.rancilio-pid.de/d/oJOWQzKZk/ranciliopid-ubersicht).
+
 ## Installations-Video
 
 Folgendes Video erklärt die einzelnen Schritte:
@@ -28,15 +32,24 @@ Folgendes Video erklärt die einzelnen Schritte:
 
 ## Umsetzung
 
+### Voraussetzung
+
+In eurer `userConfig.h` muss Grafana aktiviert sein (sprich auf `1` gesetzt):
+
+![Grafana](../../img/grafana-on.png)
+
+<!-- markdown-link-check-disable -->
+### Schritt für Schritt
+
 1. Geht auf die konfigurierte Blynk App
 1. Aktiviert den Änderungsmodus (über das Rechteck rechts-oben)
 1. Öffnet die Widget Box (vom rechten Rand ziehen)
-1. Wählt unter "Other" den "Webhook" aus
-1. Öffnet das neu erschienene Widget "Webhook"
-1. Wählt den virtuellen Pin "V60" aus
-1. Fügt die URL "http://blynk.remoteapp.de:8086/write?db=ranciliopid"
-1. Methode = POST
-1. Type = Text/Plain
+1. Wählt unter `Other` den `Webhook` aus
+1. Öffnet das neu erschienene Widget `Webhook`
+1. Wählt den virtuellen Pin `V60` aus
+1. Fügt die URL `http://blynk.remoteapp.de:8086/write?db=ranciliopid`
+1. Methode = `POST`
+1. Type = `Text/Plain`
 1. Body:
 
 ```
@@ -55,6 +68,7 @@ temp,user=florian73,maschine=silvia-e-buero value=/pin[0]/
 
 ```
 
-> Hinweis: Das der Test nicht erfolgreich durchläuft soll euch nicht weiter stören.
+> Hinweis: Dass der Test nicht erfolgreich durchläuft, soll euch nicht weiter stören.
 
 Als letztes müsst ihr im Rancilio-Chat den verwendeten `user-name` bekannt geben. Geht am besten direkt auf **@markus** zu.
+<!-- markdown-link-check-enable-->
