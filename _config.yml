@@ -1,11 +1,11 @@
-title: "Rancilio-PID Handbook"
+title: "Rancilio-PID Manual"
 remote_theme: pmarsceill/just-the-docs
 color_scheme: "light"
 search_enabled: true
 logo: http://rancilio-pid.de/wp-content/uploads/2018/08/SmallLogo-e1535533340407.png
 # Aux links for the upper right navigation
 aux_links:
-  "Rancilio-PID Handbook on GitHub":
+  "Rancilio-PID Manual on GitHub":
     - "//github.com/rasimriver/ranciliopid-handbook"
   "Rancilio-PID Website":
     - "http://rancilio-pid.de/"
