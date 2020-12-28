@@ -26,7 +26,7 @@ Folgendes Video erklärt die einzelnen Schritte:
 
 [![Grafana Monitoring](https://img.youtube.com/vi/WHN45x1gY10/hqdefault.jpg)](https://www.youtube.com/watch?v=WHN45x1gY10)
 
-## Schritte
+## Umsetzung
 
 1. Geht auf die konfigurierte Blynk App
 1. Aktiviert den Änderungsmodus (über das Rechteck rechts-oben)
@@ -37,12 +37,24 @@ Folgendes Video erklärt die einzelnen Schritte:
 1. Fügt die URL "http://blynk.remoteapp.de:8086/write?db=ranciliopid"
 1. Methode = POST
 1. Type = Text/Plain
+1. Body:
 
 ```
-temp,user=markus,maschine=gaggia-tutorial value=/pin[0]/
-output,user=markus,maschine=gaggia-tutorial value=/pin[1]/
-kp,user=markus,maschine=gaggia-tutorial value=/pin[2]/
-ki,user=markus,maschine=gaggia-tutorial value=/pin[3]/
-kd,user=markus,maschine=gaggia-tutorial value=/pin[4]/
-solltemp,user=markus,maschine=gaggia-tutorial value=/pin[5]/
+temp,user=<user-name>,maschine=<machine-type> value=/pin[0]/
+output,user=<user-name>,maschine=<machine-type> value=/pin[1]/
+kp,user=<user-name>,maschine=<machine-type> value=/pin[2]/
+ki,user=<user-name>,maschine=<machine-type> value=/pin[3]/
+kd,user=<user-name>,maschine=<machine-type> value=/pin[4]/
+solltemp,user=<user-name>,maschine=<machine-type> value=/pin[5]/
 ```
+
+Ein Beispiel-Body sieht wie folgt aus:
+
+```
+temp,user=florian73,maschine=silvia-e-buero value=/pin[0]/
+
+```
+
+> Hinweis: Das der Test nicht erfolgreich durchläuft soll euch nicht weiter stören.
+
+Als letztes müsst ihr im Rancilio-Chat den verwendeten `user-name` bekannt geben. Geht am besten direkt auf **@markus** zu.
