@@ -35,3 +35,14 @@ Folgendes Video erklärt die einzelnen Schritte:
 1. Öffnet das neu erschienene Widget "Webhook"
 1. Wählt den virtuellen Pin "V60" aus
 1. Fügt die URL "http://blynk.remoteapp.de:8086/write?db=ranciliopid"
+1. Methode = POST
+1. Type = Text/Plain
+
+```
+temp,user=markus,maschine=gaggia-tutorial value=/pin[0]/
+output,user=markus,maschine=gaggia-tutorial value=/pin[1]/
+kp,user=markus,maschine=gaggia-tutorial value=/pin[2]/
+ki,user=markus,maschine=gaggia-tutorial value=/pin[3]/
+kd,user=markus,maschine=gaggia-tutorial value=/pin[4]/
+solltemp,user=markus,maschine=gaggia-tutorial value=/pin[5]/
+```
