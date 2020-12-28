@@ -25,3 +25,13 @@ Die Blynk-App kann so eingerichtet werden, dass via eines sog. Webhooks ein Moni
 Folgendes Video erklärt die einzelnen Schritte:
 
 [![Grafana Monitoring](https://img.youtube.com/vi/WHN45x1gY10/hqdefault.jpg)](https://www.youtube.com/watch?v=WHN45x1gY10)
+
+## Schritte
+
+1. Geht auf die konfigurierte Blynk App
+1. Aktiviert den Änderungsmodus (über das Rechteck rechts-oben)
+1. Öffnet die Widget Box (vom rechten Rand ziehen)
+1. Wählt unter "Other" den "Webhook" aus
+1. Öffnet das neu erschienene Widget "Webhook"
+1. Wählt den virtuellen Pin "V60" aus
+1. Fügt die URL "http://blynk.remoteapp.de:8086/write?db=ranciliopid"
