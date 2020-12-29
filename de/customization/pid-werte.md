@@ -20,7 +20,7 @@ Hier möchten wir dir die wesentlichen Bedienelemente der PID in Blynk erläuter
 
 ## Einführung
 
-Wir haben festgestellt, dass ein Regler benötigt wird um perfekt auf Solltemperatur zu regeln und dieser übergibt dann an den zweiten Regler für den regulären Betrieb. Dieser muss sich dann um das perfekte Regeln am Sollpunkt kümmern. Der Brühvorgang stellt eine besondere Abweichung da, die wir versuchen mit der Brüherkennung zu optimieren.Auch dies ist ein separater Regler.
+Wir haben festgestellt, dass ein Regler benötigt wird um perfekt auf Solltemperatur zu regeln und dieser übergibt dann an den zweiten Regler für den regulären Betrieb. Dieser muss sich dann um das perfekte Regeln am Sollpunkt kümmern. Der Brühvorgang stellt eine besondere Abweichung da, die wir versuchen mit der Brüherkennung zu optimieren. Auch dies ist ein separater Regler.
 
 ![PID-Einführung](../../img/Bildschirmfoto-2020-11-04-um-20.51.31-1536x733.png)
 

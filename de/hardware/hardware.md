@@ -20,7 +20,7 @@ Wenn ihr die einzelnen Komponenten beisammenhabt, startet ihr am besten mit eine
 
 Die Heizung eurer Maschine könnt ihr z. B. mit einer Glühbirne simulieren, jeder andere 230V Verbraucher tut es aber genauso gut.
 
-![Trockenaufbau](../../img/image-2.png)
+![Trockenaufbau](../../img/trockenaufbau.png)
 
 Das PCB für den Controller sieht wie folgt aus:
 
@@ -50,19 +50,17 @@ PIN 13 | Relais Ansteuerung Pumpe
 
 ## Einbau
 
+### Temperatursensor anschließen
+
 Besondere Sorgfalt müsst ihr bitte beim Anschließen des Temperatursensors TSIC306 walten lassen: sobald dieser einmal falsch angeschlossen Spannung bekommen hat, ist er entweder sofort zerstört oder zumindest vorgeschädigt und liefert dadurch fehlerhafte Messwerte. Daher ist es immer ratsam einen Ersatz-Sensor parat zu haben.
 
 * Sensor V+ : Board PIN 2 5V
 * Sensor Signal: Board PIN 2 Signal
 * Sensor GND:  Board PIN 2 GND
 
-![TSIC Sensor](../../img/z4fdgmmn8jyz8rrqojj157yxjh-20200503_223844-1152x1536.jpg)
-
-### Temperatursensor anschließen
-
 Wie ihr zu der Beschreibung zum Board sehen könnt, muss an Pin 2 der Temperatursensor angeschlossen werden. Die oberen Ports (14, 2, 12, 13, 15) sind einheitlich jeweils von links nach rechts mit Minus(-), Signal, 5V(+) belegt.
 
-![](../../img/20200503_223844-scaled.jpg)
+![TSIC Sensor](../../img/20200503_223844-scaled.jpg)
 
 Da wir öfters hören, dass die Bildbeschreibung zum TSIC nicht gut ist, haben wir hier nochmals die Pins vom Sensor dargestellt. Die flache Seite liegt unten. Ein falsch gepolter TSIC sollte entsorgt werden! Er misst vermeintlich richtig, aber definitiv nicht mehr genau.
 

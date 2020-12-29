@@ -71,7 +71,7 @@ ID | Erklärung
 4 | Netzteil zur Stromversorgung               
 5 | Display (empfohlen, aber optional)      
 
-![Trockenaufbau](../../img/image-1.png)
+![Trockenaufbau](../../img/trockenaufbau.png)
 
 Es gibt zwei verschiedene Ausbaustufen unseres Systems: PID Only und den erweiterten Vollausbau.
 
