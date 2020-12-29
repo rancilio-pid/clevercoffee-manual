@@ -22,3 +22,4 @@ Bug reports and pull requests are welcome on GitHub at [https://github.com/rasim
 
 ## License
 This manual is available as open source under the terms of the [MIT License](./LICENSE).
+
