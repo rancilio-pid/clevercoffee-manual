@@ -13,7 +13,9 @@ This way in order to get to the english manual: [Link](./en/index.md) (Important
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at [https://github.com/rasimriver/ranciliopid-handbook](https://github.com/rasimriver/ranciliopid-handbook). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
+Bug reports and pull requests are welcome on GitHub at [https://github.com/rancilio-pid/ranciliopid-handbook](https://github.com/rancilio-pid/ranciliopid-handbook).
+
+This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
 
 ### Design and development principles of this manual:
 
@@ -22,4 +24,3 @@ Bug reports and pull requests are welcome on GitHub at [https://github.com/rasim
 
 ## License
 This manual is available as open source under the terms of the [MIT License](./LICENSE).
-
