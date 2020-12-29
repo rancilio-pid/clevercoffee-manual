@@ -74,16 +74,16 @@ Hier definiert ihr eure initialen PID Werte.
 
 Wenn ihr die .ino Datei öffnet, öffnet sich automatisch im zweiten Tab die userConfig.h mit den wichtigen Einstellungen. Danach auf den Pfeil klicken Achtet drauf, dass Ihr schon einen Auth-Code der Blynk-App und die WLAN-Zugangsdaten im Code der userConfig.h hinterlegt habt.
 
-![](http://rancilio-pid.de/wp-content/uploads/2019/07/image-2.png)
+![](../img/image-2.png)
 
 Bitte achtet vorher drauf, dass Ihr in den Board Einstellungen den richtigen COM Port ausgewählt habt.
 
 Diesen könnt ihr auch auch im Gerätemanager prüfen (falls ihr ihn nicht wisst)
 
-![](http://rancilio-pid.de/wp-content/uploads/2018/10/34.png)
+![](../img/34.png)
 
-![](http://rancilio-pid.de/wp-content/uploads/2018/10/35.png)
+![](../img/35.png)
 
 Den erfolgreichen Test könnt ihr einmal am Handy die Raumtemperatur sehen, wenn ihr korrekt den Temperatursensor angeschlossen habt, und auf dem Serial Monitor erkennen, wie sich der NodeMCU mit Blynk verbindet.
 
-![](http://rancilio-pid.de/wp-content/uploads/2018/10/36.png)
+![](../img/36.png)

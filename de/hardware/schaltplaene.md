@@ -26,7 +26,7 @@ Wenn der Test erfolgreich war, kannst du beginnen deinen Einbau zu planen. Je na
 
 Der erste Schaltplan zeigt den original Zustand der Silvia vor dem Umbau.
 
-![Org Schaltplan](http://rancilio-pid.de/wp-content/uploads/2018/10/Rancilio-Cable-Original-1.jpg)
+![Org Schaltplan](../../img/Rancilio-Cable-Original-1.jpg)
 
 ## "Only PID"
 
@@ -47,4 +47,4 @@ Dabei werden Pumpe und das 3-Wege-Ventil vom Controller gesteuert.
 
 ## Schematische Darstellung der Ausgänge der Platine ESPresso Rev 1
 
-![Platine Schaltplan](http://rancilio-pid.de/wp-content/uploads/2018/10/Rancilio-Cable-Page-4.jpg)
+![Platine Schaltplan](../../img/Rancilio-Cable-Page-4.jpg)

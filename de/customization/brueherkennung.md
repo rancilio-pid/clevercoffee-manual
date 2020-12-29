@@ -22,7 +22,7 @@ Wie in dem vorherigen Kapitel erwähnt, soll der **brew heater detection limit**
 
 Ohne zu tief in die technischen Details der Erkennung einzusteigen, soll dir dennoch kurz die grundlegende Funktionsweise erläutert werden. Der Mikrocontroller überwacht kontinuierlich die Temperatur. Dabei wird die zeitliche Veränderung der Heizrate/Kühlrate für fortlaufend Zeitfenster analysiert. Das Ergebnis ist dann die „heat average“. Wenn diese negativ wird, kühlt die Maschine ab, bei einem Hochheizen wird diese positiv.
 
-![Brüherkennung](http://rancilio-pid.de/wp-content/uploads/2020/03/fullsizeoutput_1c57.jpeg)
+![Brüherkennung](../../img/fullsizeoutput_1c57.jpeg)
 
 Die Brüherkennung „horcht“ nun auf dieser „heat average“, in dem der negative Grenzwert definiert wird, ab dem die Maschine von einem Bezug ausgehen soll. Dieser wird bei „brew heater detection limit“ definiert. Hierbei ist zu beachten, dass hier der absolute Werte eingetragen wird: 70 entspricht -70. Die Übersetzung in den negativen Wert erfolgt im Quellcode!
 
@@ -38,7 +38,7 @@ Für den kurzen Zeitraum muss der PID schnell wieder auf Temperatur kommen, ohne
 
 Ausgangssituation sind folgende PID Parameter:
 
-![PID Parameter](http://rancilio-pid.de/wp-content/uploads/2020/03/Screenshot-at-M%C3%A4rz-15-07-47-28.png)
+![PID Parameter](../../img/Screenshot-at-M%C3%A4rz-15-07-47-28.png)
 
 Bei dem Vergleich von einem Bezug mit und ohne Brüherkennung ist zu sehen, dass die Solltemperatur zu einem ähnlichen Zeitpunkt wieder „durchschritten“ wird, aber ohne Erkennung die Temperatur nach oben ausschlägt (96 °C). Die Erkennung kann hier ein deutlich besseres Ergebnis liefern (ca. 93,5 °C). Auch fällt die Temperatur nicht so rapide nach unten ab bei dem Bezug, da die Heizung schneller reagieren kann bei der Erkennung.
 

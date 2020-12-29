@@ -26,7 +26,7 @@ Wird benötigt, um den Code auf den Controller zu spielen.
 
 [Link zu Arduino](https://www.arduino.cc/en/Main/Software)
 
-![Screenshot der Arduino Homepage](http://rancilio-pid.de/wp-content/uploads/2018/10/1.png)
+![Screenshot der Arduino Homepage](../../img/1.png)
 
 ## Der Programmcode
 
@@ -34,7 +34,7 @@ Download des aktuellen Programmcode findest du im aktuellen Release.
 
 [Link zum Github Repository](https://github.com/rancilio-pid/ranciliopid/releases)
 
-![Screenshot der Github Homepage](http://rancilio-pid.de/wp-content/uploads/2018/10/2.png)
+![Screenshot der Github Homepage](../../img/2.png)
 
 ## Installation der Arduino IDE
 
@@ -59,7 +59,7 @@ Diese erreicht ihr unter: Datei > Voreinstellungen
 <details markdown="block">
   <summary> Windows </summary>
 
-  ![Windows Arduino Voreinstellungen](http://rancilio-pid.de/wp-content/uploads/2018/10/8.png)
+  ![Windows Arduino Voreinstellungen](../../img/8.png)
 
 </details>
 
@@ -79,7 +79,7 @@ Dies erreicht ihr unter: Werkzeuge > Board: "[\<Version\>]" > Boardverwalter...
 <details markdown="block">
   <summary> Windows </summary>
 
-  ![Windows Arduino Boardverwalter](http://rancilio-pid.de/wp-content/uploads/2018/10/9.png)
+  ![Windows Arduino Boardverwalter](../../img/9.png)
 
 </details>
 
@@ -124,12 +124,12 @@ Alternativ müssen folgende Libraries per Hand installiert werden:
 
 Die Installation der einzelnen Bibliotheken erfolgt wieder über die Verwaltung in Arduino IDE:
 
-![Bibliotheken verwalten](http://rancilio-pid.de/wp-content/uploads/2018/10/12.png)
+![Bibliotheken verwalten](../../img/12.png)
 
 <details markdown="block">
   <summary> OneWire </summary>
 
-  ![](http://rancilio-pid.de/wp-content/uploads/2018/10/13.png)
+  ![](../../img/13.png)
 </details>
 
 <details markdown="block">
@@ -137,7 +137,7 @@ Die Installation der einzelnen Bibliotheken erfolgt wieder über die Verwaltung 
     DallasTemperature
   </summary>
 
-![](http://rancilio-pid.de/wp-content/uploads/2018/10/14.png)
+![](../../img/14.png)
 </details>
 
 <details markdown="block">
@@ -145,12 +145,12 @@ Die Installation der einzelnen Bibliotheken erfolgt wieder über die Verwaltung 
 
   1. Geht auf [https://github.com/olikraus/u8g2](https://github.com/olikraus/u8g2)
   1. Code > Download Zip
-  ![](http://rancilio-pid.de/wp-content/uploads/2018/10/15.png)
+  ![](../../img/15.png)
   1. Legt die Dateien im [Arduino Libraries Ordner](#bibliotheken-installieren) ab
   1. Erstellen einen Ordner: `U8x8lib`
   1. Den Inhalt aus dem ZIP File Ordner: u8g2-master.zip\u8g2-master\cppsrc  UND csrc in den neu erstellten Ordner kopieren (ja, es sind eine ganze Menge Dateien :))
-  ![](http://rancilio-pid.de/wp-content/uploads/2018/10/16.png)
-  ![](http://rancilio-pid.de/wp-content/uploads/2018/10/17.png)  
+  ![](../../img/16.png)
+  ![](../../img/17.png)  
 </details>
 
 <details markdown="block">
@@ -162,32 +162,32 @@ Die Installation der einzelnen Bibliotheken erfolgt wieder über die Verwaltung 
   1. Legt die Dateien im [Arduino Libraries Ordner](#bibliotheken-installieren) ab
   1. Erstellen einen Ordner: `PID_v1`
   1. Die vier Dateien aus dem ZIP File kopieren und in den neuen Ordner einfügen:
-  ![](http://rancilio-pid.de/wp-content/uploads/2018/10/19.png)
-  ![](http://rancilio-pid.de/wp-content/uploads/2018/10/20.png)  
+  ![](../../img/19.png)
+  ![](../../img/20.png)  
 </details>
 
 <details markdown="block">
   <summary> Blynk </summary>
 
   1. Geht auf [https://www.blynk.cc/getting-started/](https://www.blynk.cc/getting-started/)
-  ![](http://rancilio-pid.de/wp-content/uploads/2018/10/21.png)
+  ![](../../img/21.png)
   1. Geht auf [https://github.com/blynkkk/blynk-library/releases/tag/v0.5.4](https://github.com/blynkkk/blynk-library/releases/tag/v0.5.4)
-  ![](http://rancilio-pid.de/wp-content/uploads/2018/10/22.png)
-  ![](http://rancilio-pid.de/wp-content/uploads/2018/10/23.png)
-  ![](http://rancilio-pid.de/wp-content/uploads/2018/10/25.png)
-  ![](http://rancilio-pid.de/wp-content/uploads/2018/10/26.png)
+  ![](../../img/22.png)
+  ![](../../img/23.png)
+  ![](../../img/25.png)
+  ![](../../img/26.png)
   1. Wechseln in den [Arduino Libraries Ordner](#bibliotheken-installieren)
-  ![](http://rancilio-pid.de/wp-content/uploads/2018/10/27.png)
-  ![](http://rancilio-pid.de/wp-content/uploads/2018/10/28.png)  
+  ![](../../img/27.png)
+  ![](../../img/28.png)  
 </details>
 
 ## Board einstellen
 
-![](http://rancilio-pid.de/wp-content/uploads/2018/10/29.png)
+![](../../img/29.png)
 ![](http://rancilio-pid.de/wp-content/uploads/2019/07/Bildschirmfoto-2019-07-03-um-00.01.26.png)
 
 Wenn alle Bibliotheken installiert sind, müsste es wie folgt aussehen:
 
-![](http://rancilio-pid.de/wp-content/uploads/2018/10/31.png)
+![](../../img/31.png)
 
 Somit ist alles nun für das Einrichten von Blynk und das Flashen von dem Code vorbereitet. Dann kann der erste Test beginnen.
