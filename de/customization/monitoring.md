@@ -18,7 +18,7 @@ Inhaltsverzeichnis
 
 Die Blynk-App kann so eingerichtet werden, dass via eines sog. Webhooks ein Monitoring genutzt werden kann. Dafür wird [Grafana](https://grafana.com/) genutzt. Damit sind auch die vorhandenen PID-Charts erstellt entstanden:
 
-![PID-Einführung](http://rancilio-pid.de/wp-content/uploads/2020/11/Bildschirmfoto-2020-11-04-um-20.51.31-1536x733.png)
+![PID-Einführung](../../img/Bildschirmfoto-2020-11-04-um-20.51.31-1536x733.png)
 
 ## Übersicht
 

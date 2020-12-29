@@ -184,7 +184,7 @@ Die Installation der einzelnen Bibliotheken erfolgt wieder über die Verwaltung 
 ## Board einstellen
 
 ![](../../img/29.png)
-![](http://rancilio-pid.de/wp-content/uploads/2019/07/Bildschirmfoto-2019-07-03-um-00.01.26.png)
+![](../../img/Bildschirmfoto-2019-07-03-um-00.01.26.png)
 
 Wenn alle Bibliotheken installiert sind, müsste es wie folgt aussehen:
 
