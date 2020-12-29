@@ -34,7 +34,7 @@ Der zweite Schaltplan zeigt die PID Anpassung.
 Diese Version ist nur für die Temperatursteuerung verantwortlich.
 Die Pumpe und das 3-Wege-Ventil werden nicht durch den Controller gesteuert.
 
-![PID Schaltplan](http://rancilio-pid.de/wp-content/uploads/2019/12/Screenshot-at-Dez.-11-11-16-33-1536x1168.png)
+![PID Schaltplan](../../img/Screenshot-at-Dez.-11-11-16-33-1536x1168.png)
 
 ## "Vollausbau"
 
@@ -43,7 +43,7 @@ Enthalten ist die PID für die Kesseltemperatursteuerung
 Zusätzlich kann auch die Brühzeit oder eine „Preinfussion“ gesteuert werden. (Vorlauf-Brühzeit, Pause, Brühzeit).
 Dabei werden Pumpe und das 3-Wege-Ventil vom Controller gesteuert.
 
-![Vollausbau Schaltplan](http://rancilio-pid.de/wp-content/uploads/2019/12/Screenshot-at-Dez.-11-11-12-33-1536x1147.png)
+![Vollausbau Schaltplan](../../img/Screenshot-at-Dez.-11-11-12-33-1536x1147.png)
 
 ## Schematische Darstellung der Ausgänge der Platine ESPresso Rev 1
 
