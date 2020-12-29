@@ -83,6 +83,14 @@ Folgendes Video erklärt den Kaltstart sehr anschaulich:
 
 Wir haben die User Config (userConfig.h) so vorkonfiguriert, dass diese ohne euer Zutun mit Standardwerten funktioniert. **Diesen könnt ihr aber auch selber Konfigurieren, wenn in der Userconfig Coldstart = 2 gesetzt ist.**
 
+Beispiele für mögliche Parametersätze findet ihr in der nachfolgenden Tabelle:
+
+Kaltstart PI Werte Maschine |	P |	I
+-|-|-
+Rancilio Silvia (nicht isoliert) | 45 |	130
+Gaggia (Modell 9403, Baujahr 2015) |	23 | 175
+E 61 |	70 |	96
+
 Folgende Grafik soll euch bei der Einstellungen vom Kaltstart helfen, wenn Ihr diesen selber einstellen wollt. Das Grundprinzip des Reglern beim Kaltstart ist hier beschrieben (auf Englisch): [Link](http://brettbeauregard.com/blog/2017/06/introducing-proportional-on-measurement/).
 
 ![PID-Kurven](../../img/image.png)
