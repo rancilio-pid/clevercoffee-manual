@@ -30,9 +30,9 @@ NodeMCU esp8266 V2 | Mikrocontroller | [Link](https://www.amazon.de/AZDelivery-N
 128 x 64 Pixel OLED | Display (optional) | [Link](https://www.amazon.de/AZDelivery-Display-Arduino-Raspberry-gratis/dp/B01L9GC470/ref=sr_1_3?ie=UTF8&qid=1544291613&sr=8-3&keywords=oled+128x64)
 PCB | unsere erstellte Platine | [Bitte über unseren Chat anfragen!](https://chat.rancilio-pid.de/) **Bitte direkt an @toppo78 wenden**
 
-Wir geben hier den Tipp gleich mindestens 2 TSIC Sensoren zu kaufen. Wir haben es nun häufiger erleben müssen, dass die Sensoren falsch verdrahtet werden. Daher denkt einfach gleich an eine Reserve bei der Bestellung bei Reichelt. Bitte einen falsch verpolten Sensor nicht mehr verwenden, dieser geht kurzfristig kaputt oder zeigt unrealistische Werte an. Das untere Bild hilft euch hoffentlich beim Anschluss.
+Wir geben hier den Tipp gleich mindestens 2 TSIC Sensoren zu kaufen. Wir haben es nun häufiger erleben müssen, dass die Sensoren falsch verdrahtet werden. Daher denkt einfach gleich an eine Reserve bei der Bestellung bei Reichelt. Bitte einen falsch verpolten Sensor nicht mehr verwenden, dieser geht kurzfristig kaputt oder zeigt unrealistische Werte an (für Details siehe [Temperatursensor anschließen](./hardware/hardware.md#temperatursensor-anschließen))
 
-Man kann beim NodeMCU nicht die V1 oder V3 nehmen.
+> Hinweis: Man kann beim NodeMCU nicht die V1 oder V3 nehmen.
 
 Zusätzlich helfen folgende Dinge beim Umbau, die teilweise auch schon zu Hause in der Bastelkiste vorhanden sind:
 
@@ -47,6 +47,8 @@ Kupferlitze isoliert, 10M, 1×0,14mm², orange|LITZE OR|1
 Crimpzange, 240 mm, isolierte Kabelschuhe + Kabelverbinder |KN 97 22 240|1
 Schaltlitze H07V-K, 1,5 mm, 10 m, schwarz|H07VK 1,5-10SW|1
 Flachstecker mit Schrumpfschlauch – 1,5 … 2,5 mm², blau|WE F616638HS|10
+|
+Relais nur für **Vollausbau** (siehe Hinweise unten)| DEBO RELAY 4WAY | 1
 
 Ferner wird benötigt:
 
@@ -65,6 +67,9 @@ Manche gehen ins Spielcasino, wir bestellen bei Amazon – Manchmal hat man Pech
 
 ### Beste Lösung: High Trigger SSR
 User im Chat haben zuverlässige Bezugsquellen für High Trigger gefunden: [Link](https://www.roboter-bausatz.de/1450/2-kanal-solid-state-relais-modul-5v/230vac-high-level-trigger). Daher ist dies momentan unsere Favorit.
+
+Alternativ kann bei Reichelt auch folgender High Trigger mitbestellt werden: [Link](https://www.reichelt.de/entwicklerboards-4-wege-solid-relais-5v-240v-2a-debo-relay-4way-p280064.html?&trstct=pos_0&nbc=1).
+
 
 ### Alternative: 2x Heizungs SSR
 Wenn der Platz vorhanden ist, könnte man auch 2x den Heizung SSR nutzen.
