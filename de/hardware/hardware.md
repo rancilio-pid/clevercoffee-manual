@@ -20,11 +20,11 @@ Wenn ihr die einzelnen Komponenten beisammenhabt, startet ihr am besten mit eine
 
 Die Heizung eurer Maschine könnt ihr z. B. mit einer Glühbirne simulieren, jeder andere 230V Verbraucher tut es aber genauso gut.
 
-![Trockenaufbau](http://rancilio-pid.de/wp-content/uploads/2020/10/image-2.png)
+![Trockenaufbau](../../img/image-2.png)
 
 Das PCB für den Controller sieht wie folgt aus:
 
-![PCB](http://rancilio-pid.de/wp-content/uploads/2020/10/image-3.png)
+![PCB](../../img/image-3.png)
 
 
 ###  Grundversion PID-Only
@@ -56,13 +56,13 @@ Besondere Sorgfalt müsst ihr bitte beim Anschließen des Temperatursensors TSIC
 * Sensor Signal: Board PIN 2 Signal
 * Sensor GND:  Board PIN 2 GND
 
-![TSIC Sensor](http://rancilio-pid.de/wp-content/uploads/2020/11/z4fdgmmn8jyz8rrqojj157yxjh-20200503_223844-1152x1536.jpg)
+![TSIC Sensor](../../img/z4fdgmmn8jyz8rrqojj157yxjh-20200503_223844-1152x1536.jpg)
 
 ### Temperatursensor anschließen
 
 Wie ihr zu der Beschreibung zum Board sehen könnt, muss an Pin 2 der Temperatursensor angeschlossen werden. Die oberen Ports (14, 2, 12, 13, 15) sind einheitlich jeweils von links nach rechts mit Minus(-), Signal, 5V(+) belegt.
 
-![](http://rancilio-pid.de/wp-content/uploads/2020/05/20200503_223844-scaled.jpg)
+![](../../img/20200503_223844-scaled.jpg)
 
 Da wir öfters hören, dass die Bildbeschreibung zum TSIC nicht gut ist, haben wir hier nochmals die Pins vom Sensor dargestellt. Die flache Seite liegt unten. Ein falsch gepolter TSIC sollte entsorgt werden! Er misst vermeintlich richtig, aber definitiv nicht mehr genau.
 
@@ -88,7 +88,7 @@ Pin 4| SDA
 Pin 5| SCL
 Pin 16| frei
 
-![](http://rancilio-pid.de/wp-content/uploads/2019/03/Screenshot-at-M%C3%A4rz-10-20-53-04.png)
+![](../../img/Screenshot-at-M%C3%A4rz-10-20-53-04.png)
 
 ## Tipps & Tricks
 

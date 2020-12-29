@@ -85,7 +85,7 @@ Wir haben die User Config (userConfig.h) so vorkonfiguriert, dass diese ohne eue
 
 Folgende Grafik soll euch bei der Einstellungen vom Kaltstart helfen, wenn Ihr diesen selber einstellen wollt. Das Grundprinzip des Reglern beim Kaltstart ist hier beschrieben (auf Englisch): [Link](http://brettbeauregard.com/blog/2017/06/introducing-proportional-on-measurement/).
 
-![PID-Kurven](http://rancilio-pid.de/wp-content/uploads/2020/11/image.png)
+![PID-Kurven](../../img/image.png)
 
 Diese Grafik zeigt euch qualitativ, wie sich die Kaltstartkurve verschiebt, wenn P oder I verändert werden. Das Ziel von dem Kaltstart sollte sein, dass die Maschine ohne ein nennenswerte Überschwingen perfekt auf die Solltemperatur landet. (vgl. Kurve P 45, I 130).
 
