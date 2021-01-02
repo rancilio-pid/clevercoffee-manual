@@ -48,11 +48,9 @@ Beilagscheibe M4||2|2|
 Wärmeleitkleber (nichtleitend) für den Sensor|Silverbead Wärmeleitkleber|||[Link](https://www.amazon.de/Silverbead-W%C3%A4rmeleitkleber-10-Gramm-SG100X/dp/B019MNSABG/ref=sr_1_1?ie=UTF8&qid=1538938085&sr=8-1&keywords=w%C3%A4rmeleitkleber)
 alternativ||||
 Wärmeleitpaste für den Sensor|ARCTIC MX-4-2|||[Link](https://www.reichelt.de/arctic-mx-4-waermeleitpaste-2g-arctic-mx-4-2-p261247.html?&trstct=pos_14&nbc=1)
-
-|
-**Optional** Crimpzange, 240 mm, isolierte Kabelschuhe + Kabelverbinder|KN 97 22 240|||[Link](https://www.reichelt.de/crimpzange-240-mm-isolierte-kabelschuhe-kabelverbinder-kn-97-22-240-p122639.html?&trstct=pos_0&nbc=1)
+**Optional** Crimpzange|KN 97 22 240|||[Link](https://www.reichelt.de/crimpzange-240-mm-isolierte-kabelschuhe-kabelverbinder-kn-97-22-240-p122639.html?&trstct=pos_0&nbc=1)
 **Optional** Lötkolben||||
-|
+
 
 
 ## Anmerkungen zur Bestelliste
