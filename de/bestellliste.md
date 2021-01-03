@@ -23,8 +23,8 @@ Du benötigst folgende Dinge:
 (Einige davon sind sicher auch schon zu Hause in der Bastelkiste vorhanden)
 
 PID Only
-| Bauteil                         | Link 1                                                                                                                                                       | Link 2                                                                                                                                            | Preis | Stück | Summe |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ----- | ----- |
+| Bauteil | Link 1 | Link  2 | Preis | Stück | Summe |
+|-|-|-|-|-|-|
 | Flachstecker                    | [WE F605638.1N (Reichelt)](https://www.reichelt.de/flachsteckhuelsen-mit-abzweig-0-5-1-5-mm-transp-vollisoli-we-f605638-1n-p189371.html?&trstct=pol_2&nbc=1) |                                                                                                                                                   | 0,23  | 10    | 2,3   |
 | Flachstecker                    | [WE F615638HS (Reichelt)](https://www.reichelt.de/flachstecker-mit-schrumpfschlauch-0-5-1-5-mm-rot-we-f615638hs-p189407.html?&trstct=pos_0&nbc=1)            |                                                                                                                                                   | 0,52  | 10    | 5,2   |
 | Flachstecker                    | [WE F610638HS (Reichelt)](https://www.reichelt.de/flachsteckhuelsen-mit-schrumpfschlauch-0-5-1-5-mm-rot-we-f610638hs-p189404.html?&trstct=pos_1&nbc=1)       |                                                                                                                                                   | 0,53  | 10    | 5,3   |
@@ -84,56 +84,56 @@ Teile für Drucksensor
 | Legris Anschluss AG 1/8 AEG CaFamosa                    | [Juraprofi](https://www.juraprofi.de/AEG-Ersatzteile/CaFamosa-Ersatzteile/Schlaeuche-und-Verbinder/Legris-Anschluss-AG-1-8-AEG-CaFamosa::716.html) |        | 4,65  | 1     | 4,65  |
 | Multisilikonfett                                        | [Juraprofi](https://www.juraprofi.de/Werkstatt/Werkzeug-und-Silikonfett/OKS-1110-Multisilikonfett-10g-Tube::1893.html)                             |        | 4,39  | 1     | 4,39  |
 
-
-
-
-
-
 ## Anmerkungen zur Bestelliste
 
-**Infos zum PCB**
-> [Bitte direkt über unseren Chat anfragen!](https://chat.rancilio-pid.de/) **Bitte direkt per PN an @toppo78 wenden** (Aktueller Preis 8,50€ inkl. Versand)
->
->![PCB Lieferumfang](../img/PCB_Lieferumfang.jpeg)
->
-> Inklusive sind:
-> * Das PCB
-> * Die Schraubterminals
-> * Die Stiftleisten
-> * Klebepads
+### Infos zum PCB
 
-**Infos zum Wärmeleitkleber**
-> Generell raten wir von der Verwendung von Wärmeleitkleber ab, daher ist er auch nur als Option geführt. Nur der oben verlinkte von Arctic hat einen akzeptablen Wärmeleitfähigkeit von 4 W/mK (vernetzt). Die Billigen die ihr sonst so findet (Amazon) haben irgendwas um die 1 W/mK(wenn man den Angaben glauben möchte).
+[Bitte direkt über unseren Chat anfragen!](https://chat.rancilio-pid.de/) **Bitte direkt per PN an @toppo78 wenden** (Aktueller Preis 8,50€ inkl. Versand)
+
+![PCB Lieferumfang](../img/PCB_Lieferumfang.jpeg)
+
+Inklusive sind:
+ * Das PCB
+ * Die Schraubterminals
+ * Die Stiftleisten
+ * Klebepads
+
+### Infos zum Wärmeleitkleber
+Generell raten wir von der Verwendung von Wärmeleitkleber ab, daher ist er auch nur als Option geführt. Nur der oben verlinkte von Arctic hat einen akzeptablen Wärmeleitfähigkeit von 4 W/mK (vernetzt). Die Billigen die ihr sonst so findet (Amazon) haben irgendwas um die 1 W/mK(wenn man den Angaben glauben möchte).
+
 Außerdem ist es sehr wichtig, das die Paste oder zur Not der Kleber so DÜNN WIE MÖGLICH aufgetragen wird! Wir reden hier im Optimalfall von 0,04 mm.
+
 Als Bsp. für die Paste würde eine Schichtdicke von 0,05 mm einen Wärmeleitwiderstand von 0,29 K/W ergeben. Bei 0,5 mm sind wir schon bei 2,9 K/W.
+
 Das bedeutet das bei einer Verlustleistung von 1 W die Temperaturdifferenz zwischen Quelle (Boiler) und Senke (Sensor) 0,29 bzw. bei 2,9 K liegt.
 
-**Infos zum Temperatursensor**
-> Wir geben hier den Tipp gleich mindestens 2 TSIC Sensoren zu kaufen. Wir haben es nun häufiger erleben müssen, dass die Sensoren falsch verdrahtet werden. Daher denkt einfach gleich an eine Reserve bei der Bestellung bei Reichelt. Bitte einen falsch verpolten Sensor nicht mehr verwenden, dieser geht kurzfristig kaputt oder zeigt unrealistische Werte an (für Details siehe [Temperatursensor anschließen](./hardware/hardware.md#temperatursensor-anschließen))
+### Infos zum Temperatursensor
+Wir geben hier den Tipp gleich mindestens 2 TSIC Sensoren zu kaufen. Wir haben es nun häufiger erleben müssen, dass die Sensoren falsch verdrahtet werden. Daher denkt einfach gleich an eine Reserve bei der Bestellung bei Reichelt. Bitte einen falsch verpolten Sensor nicht mehr verwenden, dieser geht kurzfristig kaputt oder zeigt unrealistische Werte an (für Details siehe [Temperatursensor anschließen](./hardware/hardware.md#temperatursensor-anschließen))
 
-**Infos zum Microcontroller**
-> Man kann beim NodeMCU **nicht** die V1 oder V3 nehmen. Nur die V2 passt auf das PCB.
+### Infos zum Microcontroller
+Man kann beim NodeMCU **nicht** die V1 oder V3 nehmen. Nur die V2 passt auf das PCB.
 
-**Infos zum den Steckern**
-> Hinweis: Es sind jewils mehr Stecker wie benötigt angegeben. Es ist empfehlenswert hier reichlich zu Bestellen, da gerne mal etwas schief läuft und man sonst ohne Kaffee auf die neue Bestellung warten muss.
+### Infos zum den Steckern
+Es sind jeweils mehr Stecker wie benötigt angegeben. Es ist empfehlenswert hier reichlich zu Bestellen, da gerne mal etwas schief läuft und man sonst ohne Kaffee auf die neue Bestellung warten muss.
 
-**Infos zum Netzteil**
-> Das Netzteil ist sehr Temperatur und Lastabhängig was teilweise zu reboots führen kann. Eine alternative kann ein einfaches USB Netzteil sein, welches in der Regel eine stabilere Spannung liefert.
-> Insbesondere bei den neueren Rancilio Silvia E Varianten ist Platz ein Thema. Hier ist ggf. auch ein USB Netzteil zu bevorzugen.
+### Infos zum Netzteil
+Das Netzteil ist sehr Temperatur und Lastabhängig, was teilweise zu reboots führen kann. Eine alternative kann ein einfaches USB Netzteil sein, welches in der Regel eine stabilere Spannung liefert.
 
-**Infos zum Vollausbau SSR**
-> Wir haben im Projekt viele diverse Relais für die Pumpe und das Ventil testen „dürfen“ – diese sind leider nicht so stabil wie die der SSR für die Heizung. Folgende Erkenntnisse haben wir dabei gesammelt:
+Insbesondere bei den neueren Rancilio Silvia E Varianten ist Platz ein Thema. Hier ist ggf. auch ein USB Netzteil zu bevorzugen.
 
-> **Beste Lösung: High Trigger SSR**
-> User im Chat haben zuverlässige Bezugsquellen für High Trigger gefunden: [Link](https://www.roboter-bausatz.de/1450/2-kanal-solid-state-relais-modul-5v/230vac-high-level-trigger). Daher ist dies momentan unsere Favorit. **Aktuell nicht lieferbar**
+### Infos zum Vollausbau SSR
+Wir haben im Projekt viele diverse Relais für die Pumpe und das Ventil testen „dürfen“ – diese sind leider nicht so stabil wie die der SSR für die Heizung. Folgende Erkenntnisse haben wir dabei gesammelt:
 
-> Alternativ kann bei Reichelt auch folgender High Trigger mitbestellt werden: [Link](https://www.reichelt.de/entwicklerboards-4-wege-solid-relais-5v-240v-2a-debo-relay-4way-p280064.html?&trstct=pos_0&nbc=1).
+#### Beste Lösung: High Trigger SSR
+User im Chat haben zuverlässige Bezugsquellen für High Trigger gefunden: [Link](https://www.roboter-bausatz.de/1450/2-kanal-solid-state-relais-modul-5v/230vac-high-level-trigger). Daher ist dies momentan unsere Favorit. **Aktuell nicht lieferbar**
 
-> **Schlechteste Lösung: Spulen Relais**
-> Ja, Spulen Relais kann man verwenden, dabei können durch die Bauweise der Relais Probleme entstehen, die sich nicht immer lösen oder reproduzieren lassen: [Link](https://www.amazon.de/AZDelivery-2-Relais-Optokoppler-Low-Level-Trigger-Arduino/dp/B078Q326KT/ref=sr_1_7_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=azdelivery%2Bspulen%2Brelais&qid=1603614378&sr=8-7-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExNDdFUE9JRkxXSkNEJmVuY3J5cHRlZElkPUEwNDU5MDU1OVlVSENDWEZNQTQzJmVuY3J5cHRlZEFkSWQ9QTAwNDA1MTEzUlBCUzUwVFdZSTI3JndpZGdldE5hbWU9c3BfbXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ&th=1). Lösungen mit einer galvanischen Trennung können manchmal helfen [Link](https://www.kollino.de/arduino/4-8-kanal-relais-anleitung/). Daher ist es die schlechteste Lösung bei den Relais.
+Alternativ kann bei Reichelt auch folgender High Trigger mitbestellt werden: [Link](https://www.reichelt.de/entwicklerboards-4-wege-solid-relais-5v-240v-2a-debo-relay-4way-p280064.html?&trstct=pos_0&nbc=1).
 
-> **SSR Board von Amazon**
-> Manche gehen ins Spielcasino, wir bestellen bei Amazon – Manchmal hat man Pech und wo „High Trigger“ drauf steht, ist manchmal „Low Trigger“ drin. Einen Low Trigger erkennt ihr an einem „2TY“ auf dem einen Baustein des SSR Boards. „J3Y“ Steht hierbei für den besseren HIGH Trigger. SSR Boards sind besser als die Spulen Relais, aber Low Trigger können auch Probleme verursachen.
+#### Schlechteste Lösung: Spulen Relais
+Ja, Spulen Relais kann man verwenden, dabei können durch die Bauweise der Relais Probleme entstehen, die sich nicht immer lösen oder reproduzieren lassen: [Link](https://www.amazon.de/AZDelivery-2-Relais-Optokoppler-Low-Level-Trigger-Arduino/dp/B078Q326KT/ref=sr_1_7_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=azdelivery%2Bspulen%2Brelais&qid=1603614378&sr=8-7-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExNDdFUE9JRkxXSkNEJmVuY3J5cHRlZElkPUEwNDU5MDU1OVlVSENDWEZNQTQzJmVuY3J5cHRlZEFkSWQ9QTAwNDA1MTEzUlBCUzUwVFdZSTI3JndpZGdldE5hbWU9c3BfbXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ&th=1). Lösungen mit einer galvanischen Trennung können manchmal helfen [Link](https://www.kollino.de/arduino/4-8-kanal-relais-anleitung/). Daher ist es die schlechteste Lösung bei den Relais.
 
-> **Alternative: 2x Heizungs SSR**
-> Wenn der Platz vorhanden ist, könnte man auch 2x den Heizung SSR nutzen.
+#### SSR Board von Amazon
+Manche gehen ins Spielcasino, wir bestellen bei Amazon – Manchmal hat man Pech und wo „High Trigger“ drauf steht, ist manchmal „Low Trigger“ drin. Einen Low Trigger erkennt ihr an einem „2TY“ auf dem einen Baustein des SSR Boards. „J3Y“ Steht hierbei für den besseren HIGH Trigger. SSR Boards sind besser als die Spulen Relais, aber Low Trigger können auch Probleme verursachen.
+
+#### Alternative: 2x Heizungs SSR
+Wenn der Platz vorhanden ist, könnte man auch 2x den Heizung SSR nutzen.
