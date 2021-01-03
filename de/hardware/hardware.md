@@ -1,5 +1,5 @@
 ---
-title: Aufbau und Einbau
+title: Aufbau
 parent: Hardware
 grand_parent: DE - Handbuch
 has_children: false
