@@ -55,7 +55,7 @@ Wärmeleitpaste für den Sensor|ARCTIC MX-4-2|||[Link](https://www.reichelt.de/a
 
 ### Infos zum PCB
 
-[Bitte direkt über unseren Chat anfragen!](https://chat.rancilio-pid.de/) **Bitte direkt per PN an @toppo78 wenden** (Aktueller Preis 8,50€ inkl. Versand)
+[Bitte direkt über unseren Chat anfragen!](https://chat.rancilio-pid.de/) **Bitte direkt per PN an @toppo78 wenden**
 
 ![PCB Lieferumfang](../img/PCB_Lieferumfang.jpeg)
 
