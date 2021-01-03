@@ -57,24 +57,27 @@ Wärmeleitpaste für den Sensor|ARCTIC MX-4-2|||[Link](https://www.reichelt.de/a
 
 **Infos zum PCB**
 > [Bitte direkt über unseren Chat anfragen!](https://chat.rancilio-pid.de/) **Bitte direkt per PN an @toppo78 wenden** (Aktueller Preis 8,50€ inkl. Versand)
-> Inklusive sind: 
+>
+>![PRB Lieferumfang](../img/PRB_Lieferumfang.jpg)
+>
+> Inklusive sind:
 > * Das PCB
 > * Die Schraubterminals
 > * Die Stiftleisten
-> * Klebepads 
+> * Klebepads
 
 **Infos zum Temperatursensor**
 > Wir geben hier den Tipp gleich mindestens 2 TSIC Sensoren zu kaufen. Wir haben es nun häufiger erleben müssen, dass die Sensoren falsch verdrahtet werden. Daher denkt einfach gleich an eine Reserve bei der Bestellung bei Reichelt. Bitte einen falsch verpolten Sensor nicht mehr verwenden, dieser geht kurzfristig kaputt oder zeigt unrealistische Werte an (für Details siehe [Temperatursensor anschließen](./hardware/hardware.md#temperatursensor-anschließen))
 
 **Infos zum Microcontroller**
-> Man kann beim NodeMCU **nicht** die V1 oder V3 nehmen.
+> Man kann beim NodeMCU **nicht** die V1 oder V3 nehmen. Nur die V2 passt auf das PCB.
 
 **Infos zum den Steckern**
-> Hinweis: Es sind jewils mehr Stecker wie benötigt angegeben. Es ist empfehlenswert hier reichlich zu Bestellen, da gerne mal etwas schief läuft und man sonst ohne Kaffee auf die neue Bestellung warten muss.  
+> Hinweis: Es sind jewils mehr Stecker wie benötigt angegeben. Es ist empfehlenswert hier reichlich zu Bestellen, da gerne mal etwas schief läuft und man sonst ohne Kaffee auf die neue Bestellung warten muss.
 
 **Infos zum Netzteil**
-> Das Netzteil ist sehr Temperatur und Lastabhängig was teilweise zu reboots führen kann. Eine alternative kann ein einfaches USB Netzteil sein, welches in der Regel eine stabilere Spannung liefert. 
-> Insbesondere bei den neueren E Varianten ist Platz ein Thema. Hier ist ggf. auch ein USB Netzteil zu bevorzugen. 
+> Das Netzteil ist sehr Temperatur und Lastabhängig was teilweise zu reboots führen kann. Eine alternative kann ein einfaches USB Netzteil sein, welches in der Regel eine stabilere Spannung liefert.
+> Insbesondere bei den neueren Rancilio Silvia E Varianten ist Platz ein Thema. Hier ist ggf. auch ein USB Netzteil zu bevorzugen.
 
 **Infos zum Vollausbau SSR**
 > Wir haben im Projekt viele diverse Relais für die Pumpe und das Ventil testen „dürfen“ – diese sind leider nicht so stabil wie die der SSR für die Heizung. Folgende Erkenntnisse haben wir dabei gesammelt:
