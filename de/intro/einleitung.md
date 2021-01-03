@@ -52,12 +52,13 @@ Folgende Eckdaten zeichnen unseren DIY PID aus:
 
 Entwickelt wurde unser System ursprünglich an einer Rancilio Silvia, es ist aber universell einsatzbar. Bislang haben unsere User die folgenden Maschinen erfolgreich umgebaut:
 
-  Rancilio Silvia V1 – V5
-  Gaggia Classic (9303) / Classic Pro (9480)
-  Lelit PL41 / PL42
-  La Pavoni EPL / Saeco Aroma / Gaggia New Classic (9403)
-  E61 Einkreiser (Bazzar A1 Livello, Fiorenzato Colombina)
-  E61 Zweikreiser (Profitec Pro500)
+ * Rancilio Silvia V1 – V4
+ * Rancilio Silvia E(co) V5 & V6
+ * Gaggia Classic (9303) / Classic Pro (9480)
+ * Lelit PL41 / PL42
+ * La Pavoni EPL / Saeco Aroma / Gaggia New Classic (9403)
+ * E61 Einkreiser (Bazzar A1 Livello, Fiorenzato Colombina)
+ * E61 Zweikreiser (Profitec Pro500)
 
 ## Aufbau / Unterschiede PID Only vs. Vollausbau
 
