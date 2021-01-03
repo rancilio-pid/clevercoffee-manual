@@ -21,8 +21,9 @@ Wenn ihr die einzelnen Komponenten beisammenhabt, startet ihr am besten mit eine
 Die Heizung eurer Maschine könnt ihr z. B. mit einer Glühbirne simulieren, jeder andere 230V Verbraucher tut es aber genauso gut.
 
 ![Trockenaufbau](../../img/trockenaufbau.png)
+*(1=Mikrocontroller, 2=Temperatursensor, 3=SSR Relais für Heizung, 4=Schaltnetzteil, 5=Display)*
 
-Das PCB für den Controller sieht wie folgt aus:
+Das PCB für den Mikrocontroller sieht wie folgt aus:
 
 ![PCB](../../img/image-3.png)
 
