@@ -33,6 +33,10 @@ Wenn die Erkennung ausgelöst werden, dann gelten für den definierten Zeitraum 
 ## PID Werte
 
 Für den kurzen Zeitraum muss der PID schnell wieder auf Temperatur kommen, ohne überzuschwingen. Hierzu muss vor allem der I-Anteil erhöht werden, damit sich der Regler nicht die erfolgte Abweichung vom Soll-Wert für die Zukunft „merkt“. Der D-Anteil kann auch erhöht werden, um den Regler beim Abfallen der Temperatur zu „beschleunigen“ und „abzubremsen“, wenn die Temperatur wieder Richtung Soll-Wert geht. Als Größenordnung können die Werte aus dem oberen Screenshot genommen werden.
+In der nachfolgenden Tabelle sind bewährte PID für die Brüherkennung zu finden
+Maschine |	P |	I |	D | Timer |  Limit |
+:-|-|-|- | - |- |
+Rancilio Silvia (nicht isoliert) | 50 | 5000 | 20 | 120 | 45 |
 
 ## Vergleich bei einem Bezug
 
