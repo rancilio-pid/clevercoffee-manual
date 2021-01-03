@@ -15,7 +15,7 @@ Inhaltsverzeichnis
 
 ## Einleitung
 
-In diesem Kapitel wird beschrieben, wie der Code auf den Mikrocontroller geladen wird. Damit kann dieses Kapitel bearbeitet werden, wenn ihr den NodeMCU zur Hand habt (weitere Teile werden nicht hierfür nicht benötigt)
+In diesem Kapitel wird beschrieben wie der Code auf den Mikrocontroller (NodeMCU) geladen wird. Damit könnt ihr loslegen, sobald ihr den Mikrocontroller zur Hand habt (weitere Teile werden nicht hierfür nicht benötigt). Für das Testing sollte dann zumindest der Temperatursensor angeschlossen werden.
 
 ## Code auf den Controller laden
 
@@ -70,20 +70,25 @@ Hier wird der Update **O**ver **T**he **A**ir eingestellt.
 Hier definiert ihr eure initialen PID Werte.
 
 
-## Code hochladen und testen
+## Code hochladen
 
-Wenn ihr die .ino Datei öffnet, öffnet sich automatisch im zweiten Tab die userConfig.h mit den wichtigen Einstellungen. Danach auf den Pfeil klicken Achtet drauf, dass Ihr schon einen Auth-Code der Blynk-App und die WLAN-Zugangsdaten im Code der userConfig.h hinterlegt habt.
+Wenn ihr die .ino Datei öffnet, öffnet sich automatisch im zweiten Tab die userConfig.h mit den wichtigen Einstellungen. Danach auf den Pfeil klicken für den Upload auf den Microkontroller. Achtet darauf, dass Ihr den Auth-Code der Blynk-App und die WLAN-Zugangsdaten im Code der userConfig.h hinterlegt habt.
 
 ![](../img/image-2.png)
 
 Bitte achtet vorher drauf, dass Ihr in den Board Einstellungen den richtigen COM Port ausgewählt habt.
 
-Diesen könnt ihr auch auch im Gerätemanager prüfen (falls ihr ihn nicht wisst)
+Diesen könnt ihr auch auch im Gerätemanager prüfen (falls ihr ihn nicht wisst):
 
 ![](../img/34.png)
 
 ![](../img/35.png)
 
-Den erfolgreichen Test könnt ihr einmal am Handy die Raumtemperatur sehen, wenn ihr korrekt den Temperatursensor angeschlossen habt, und auf dem Serial Monitor erkennen, wie sich der NodeMCU mit Blynk verbindet.
+## Testen
+
+Wenn alles geklappt habt könnt ihr auf dem Serial Monitor erkennen, wie sich der Microkontroller mit Blynk verbindet.
 
 ![](../img/36.png)
+
+Klappt das und ist der Temperatursensor korrekt angeschlossen seht ihr am Handy in der Blynk App die Raumtemperatur.
+Jetzt könnt iht nach und nach die anderen Bauteile verbinden (Relais) und weiter testen.
