@@ -28,7 +28,8 @@ Temperatur Sensor|TSIC 306 TO92|2 (1)|2 (1)|[Link](https://www.reichelt.de/tsic-
 Schaltnetzteil|SNT RS 15 5|1|1|[Link](https://www.reichelt.de/schaltnetzteil-geschlossen-15-w-5-v-3-a-snt-rs-15-5-p137080.html?&trstct=pos_0)
 SSR Relais – Heizung|RA 2425-D06|1|1|[Link](https://www.reichelt.de/solid-state-relais-ust-2-32vdc-ulast-24-280v-ra-2425-d06-p22691.html?&trstct=pos_0)
 Mikrocontroller|NodeMCU esp8266 V2|1|1|[Link](https://www.amazon.de/AZDelivery-NodeMCU-ESP8266-ESP-12E-Development/dp/B06Y1LZLLY/ref=sr_1_1_sspa?ie=UTF8&qid=1538918768&sr=8-1-spons&keywords=nodemcu+esp8266&psc=1)
-Display (optional)|128 x 64 Pixel OLED|1|1|[Link](https://www.amazon.de/AZDelivery-Display-Arduino-Raspberry-gratis/dp/B01L9GC470/ref=sr_1_3?ie=UTF8&qid=1544291613&sr=8-3&keywords=oled+128x64)
+Display (optional aber empfehlenswert)|128 x 64 Pixel OLED|1|1|[Link](https://www.amazon.de/AZDelivery-Display-Arduino-Raspberry-gratis/dp/B01L9GC470/ref=sr_1_3?ie=UTF8&qid=1544291613&sr=8-3&keywords=oled+128x64)
+Jumper Kabel (optional)| AZDelivery Jumper Wire Kabel 3 x 40 STK | 1 | 1 | [Link](https://www.amazon.de/Jumper-Wire-Set-M2M-Parent/dp/B07ZP4JLMM)
 unsere erstellte Platine|PCB|1|1|siehe unten
 Schaltlitze H07V-K, 1,5 mm, 10 m, blau|H07VK 1,5-10BL|1|1|[Link](https://www.reichelt.de/schaltlitze-h07v-k-1-5-mm-10-m-blau-h07vk-1-5-10bl-p69504.html?)
 Schaltlitze H07V-K, 1,5 mm, 10 m, schwarz|H07VK 1,5-10SW|1|1|[Link](https://www.reichelt.de/schaltlitze-h07v-k-1-5-mm-10-m-schwarz-h07vk-1-5-10sw-p69503.html?)
@@ -80,13 +81,20 @@ Wir geben hier den Tipp gleich mindestens 2 TSIC Sensoren zu kaufen. Wir haben e
 ### Infos zum Microcontroller
 Man kann beim NodeMCU **nicht** die V1 oder V3 nehmen. Nur die V2 passt auf das PCB.
 
-### Infos zum den Steckern
+### Infos zu den Steckern
 Es sind jeweils mehr Stecker wie benötigt angegeben. Es ist empfehlenswert hier reichlich zu Bestellen, da gerne mal etwas schief läuft und man sonst ohne Kaffee auf die neue Bestellung warten muss.
 
 ### Infos zum Netzteil
 Das Netzteil ist sehr Temperatur und Lastabhängig, was teilweise zu reboots führen kann. Eine alternative kann ein einfaches USB Netzteil sein, welches in der Regel eine stabilere Spannung liefert.
 
 Insbesondere bei den neueren Rancilio Silvia E Varianten ist Platz ein Thema. Hier ist ggf. auch ein USB Netzteil zu bevorzugen.
+
+### Infos zum Display
+Das Display wird für keine Ausbaustufe zwangsläufig benötigt. Ohne Display lässt es sich jedoch kaum vermeiden, dass man bei jedem Bezug am Smartphone die Temperatur prüfen muss.
+
+Wer es einfach mag, kann das Display entweder neben die Maschine legen, oder an einem der Bleche fixieren. Wie ihr den Projekten entnehmen könnt [[Link]](http://rancilio-pid.de/bauberichte/silvia-e-v5-gastbeitrag-von-konstantin/), kann das Display natürlich aus sauber integriert werden.
+
+Für einen einfachen Betrieb des Displays empfehlen sich zudem die gelisteten Jumperkabel - so muss nicht zwangsläufig gelötet werden. Beachtet jedoch den entsprechenden Hinweis zum Temperatursensor [[Link]](./hardware/hardware.md/#tipps-und-tricks)
 
 ### Infos zum Vollausbau SSR
 Wir haben im Projekt viele diverse Relais für die Pumpe und das Ventil testen „dürfen“ – diese sind leider nicht so stabil wie die der SSR für die Heizung. Folgende Erkenntnisse haben wir dabei gesammelt:

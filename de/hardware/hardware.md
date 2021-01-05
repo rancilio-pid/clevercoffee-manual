@@ -89,7 +89,7 @@ Pin 16| frei
 
 ![](../../img/Screenshot-at-M%C3%A4rz-10-20-53-04.png)
 
-## Tipps & Tricks
+## Tipps und Tricks
 
 Hier einige gesammelte Hinweise zum Einbau in die Maschine:
 
@@ -99,4 +99,4 @@ Hier einige gesammelte Hinweise zum Einbau in die Maschine:
 
 *  Den Temperatursensor solltet ihr wenn möglich nicht nur an den Kessel ankleben, sondern fest verschrauben. Bei der Rancilio Silvia kann man dazu die Halteklammer des nun überflüssigen Brühthermostaten nutzen, bei der Gaggia Classic kann der Sensor am vorhandenen M4-Gewinde der Thermostataufnahme verschraubt werden.
 
-* Zum Anschluss des Temperatursensors TSIC keine Steckverbinder nehmen, sondern Litze an die Beine des TSIC löten. Das ist etwas fummelig, aber dafür habt ihr weniger Neigung zu Wackelkontakten im verbauten Zustand.
+* Zum Anschluss des Temperatursensors TSIC keine Steckverbinder (Jumperkabel) nehmen, sondern Litze an die Beine des TSIC löten. Das ist etwas fummelig, aber dafür habt ihr weniger Neigung zu Wackelkontakten im verbauten Zustand.
