@@ -30,6 +30,8 @@ SSR Relais – Heizung|RA 2425-D06|1|1|[Link](https://www.reichelt.de/solid-stat
 Mikrocontroller|NodeMCU esp8266 V2|1|1|[Link](https://www.amazon.de/AZDelivery-NodeMCU-ESP8266-ESP-12E-Development/dp/B06Y1LZLLY/ref=sr_1_1_sspa?ie=UTF8&qid=1538918768&sr=8-1-spons&keywords=nodemcu+esp8266&psc=1)
 Display (optional aber empfehlenswert)|128 x 64 Pixel OLED|1|1|[Link](https://www.amazon.de/AZDelivery-Display-Arduino-Raspberry-gratis/dp/B01L9GC470/ref=sr_1_3?ie=UTF8&qid=1544291613&sr=8-3&keywords=oled+128x64)
 Jumper Kabel (optional)| AZDelivery Jumper Wire Kabel 3 x 40 STK | 1 | 1 | [Link](https://www.amazon.de/Jumper-Wire-Set-M2M-Parent/dp/B07ZP4JLMM)
+alternativ | siehe unten
+Dupont Stecker (optional) | BESTOMZ 620 Stück Dupont Stecker | 1 | 1 | [Link](https://www.amazon.de/BESTOMZ-Stecker-m%C3%A4nnlich-weiblich-Anschluss/dp/B073SSV9TL/)
 unsere erstellte Platine|PCB|1|1|siehe unten
 Schaltlitze H07V-K, 1,5 mm, 10 m, blau|H07VK 1,5-10BL|1|1|[Link](https://www.reichelt.de/schaltlitze-h07v-k-1-5-mm-10-m-blau-h07vk-1-5-10bl-p69504.html?)
 Schaltlitze H07V-K, 1,5 mm, 10 m, schwarz|H07VK 1,5-10SW|1|1|[Link](https://www.reichelt.de/schaltlitze-h07v-k-1-5-mm-10-m-schwarz-h07vk-1-5-10sw-p69503.html?)
@@ -49,8 +51,8 @@ Beilagscheibe M4||2|2|
 Wärmeleitkleber (nichtleitend) für den Sensor|Silverbead Wärmeleitkleber|||[Link](https://www.amazon.de/Silverbead-W%C3%A4rmeleitkleber-10-Gramm-SG100X/dp/B019MNSABG/ref=sr_1_1?ie=UTF8&qid=1538938085&sr=8-1&keywords=w%C3%A4rmeleitkleber)
 alternativ||||
 Wärmeleitpaste für den Sensor|ARCTIC MX-4-2|||[Link](https://www.reichelt.de/arctic-mx-4-waermeleitpaste-2g-arctic-mx-4-2-p261247.html?&trstct=pos_14&nbc=1)
-**Optional** Crimpzange|KN 97 22 240|||[Link](https://www.reichelt.de/crimpzange-240-mm-isolierte-kabelschuhe-kabelverbinder-kn-97-22-240-p122639.html?&trstct=pos_0&nbc=1)
-**Optional** Lötkolben||||                         |        | 4,39  | 1     | 4,39  |
+**Nicht vergessen** Crimpzange|KN 97 22 240|||[Link](https://www.reichelt.de/crimpzange-240-mm-isolierte-kabelschuhe-kabelverbinder-kn-97-22-240-p122639.html?&trstct=pos_0&nbc=1)
+**Nicht vergessen** Lötkolben||||
 
 ## Anmerkungen zur Bestelliste
 
@@ -89,12 +91,18 @@ Das Netzteil ist sehr Temperatur- und Lastabhängig, was teilweise zu Reboots f�
 
 Insbesondere bei den neueren Rancilio Silvia E Varianten ist Platz ein Thema. Hier ist ggf. auch ein USB Netzteil zu bevorzugen.
 
-### Infos zum Display
-Das Display wird für keine Ausbaustufe zwangsläufig benötigt. Ohne Display lässt es sich jedoch kaum vermeiden, dass man bei jedem Bezug am Smartphone die Temperatur prüfen muss.
+### Infos zum Display und Jumper (bzw. Dupont)
+Das Display wird für keine Ausbaustufe zwangsläufig benötigt. Ohne Display lässt es sich jedoch kaum vermeiden, dass man bei jedem Bezug am Smartphone die Temperatur prüfen muss. Im regulären Lauf sieht die Anzeige nämlich wie folgt aus:
 
-Wer es einfach mag, kann das Display entweder neben die Maschine legen, oder an einem der Bleche fixieren. Wie ihr den Projekten entnehmen könnt ([Link](http://rancilio-pid.de/bauberichte/silvia-e-v5-gastbeitrag-von-konstantin/)), kann das Display natürlich aus sauber integriert werden.
+Regulärer Lauf | Auszug Monitoring
+:---:|:---:
+![Blinken](../img/blink.gif)|![Blink Monitoring](../img/blink_monitoring3.png)
 
-Für einen einfachen Betrieb des Displays empfehlen sich zudem die gelisteten Jumperkabel - so muss nicht zwangsläufig gelötet werden. Beachtet jedoch den entsprechenden Hinweis zum Temperatursensor: [Link](./hardware/hardware.md/#tipps-und-tricks).
+Wer es einfach mag, kann das Display entweder neben die Maschine legen, oder an einem der Bleche fixieren. Wie ihr den Projekten entnehmen könnt ([Link](http://rancilio-pid.de/bauberichte/silvia-e-v5-gastbeitrag-von-konstantin/)), kann das Display natürlich auch sauber integriert werden.
+
+Für einen einfachen Betrieb des Displays empfehlen sich zudem die gelisteten Jumperkabel - so muss nicht zwangsläufig gelötet werden. Jumper sind somit gut für den Trockenaufbau geeignet.
+Alternativ könnt ihr euch ein Dupont Stecker Kit zulegen. Dieses hat den Vorteil, dass ihr die Länge der Verbindung frei zuschneiden könnt. Hat aber den Nachteil, dass es nur mit Crimpzange genutzt werden kann. Dupont Stecker sind somit gut für den finalen Einbau geeignet.
+Beachtet jedoch den entsprechenden Hinweis zum Temperatursensor: [Link](./hardware/hardware.md/#tipps-und-tricks).
 
 ### Infos zum Vollausbau SSR
 Wir haben im Projekt viele diverse Relais für die Pumpe und das Ventil testen „dürfen“ – diese sind leider nicht so stabil wie die der SSR für die Heizung. Folgende Erkenntnisse haben wir dabei gesammelt:
