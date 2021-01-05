@@ -85,7 +85,8 @@ Man kann beim NodeMCU **nicht** die V1 oder V3 nehmen. Nur die V2 passt auf das 
 Es sind jeweils mehr Stecker wie benötigt angegeben. Es ist empfehlenswert hier reichlich zu Bestellen, da gerne mal etwas schief läuft und man sonst ohne Kaffee auf die neue Bestellung warten muss.
 
 ### Infos zum Netzteil
-Das Netzteil ist sehr Temperatur und Lastabhängig, was teilweise zu reboots führen kann. Eine alternative kann ein einfaches USB Netzteil sein, welches in der Regel eine stabilere Spannung liefert.
+Eine Alternative kann ein einfaches USB Netzteil sein, welches in der Regel auch genau
+5 Volt Spannung liefert,nicht nachjustiert werden muss und per Voltmeter kontrolliert werden muss.
 
 Insbesondere bei den neueren Rancilio Silvia E Varianten ist Platz ein Thema. Hier ist ggf. auch ein USB Netzteil zu bevorzugen.
 
