@@ -85,17 +85,16 @@ Man kann beim NodeMCU **nicht** die V1 oder V3 nehmen. Nur die V2 passt auf das 
 Es sind jeweils mehr Stecker wie benötigt angegeben. Es ist empfehlenswert hier reichlich zu Bestellen, da gerne mal etwas schief läuft und man sonst ohne Kaffee auf die neue Bestellung warten muss.
 
 ### Infos zum Netzteil
-Eine Alternative kann ein einfaches USB Netzteil sein, welches in der Regel auch genau
-5 Volt Spannung liefert,nicht nachjustiert werden muss und per Voltmeter kontrolliert werden muss.
+Das Netzteil ist sehr Temperatur- und Lastabhängig, was teilweise zu Reboots führen kann. Eine Alternative kann ein einfaches USB Netzteil sein, welches in der Regel eine stabilere Spannung liefert.
 
 Insbesondere bei den neueren Rancilio Silvia E Varianten ist Platz ein Thema. Hier ist ggf. auch ein USB Netzteil zu bevorzugen.
 
 ### Infos zum Display
 Das Display wird für keine Ausbaustufe zwangsläufig benötigt. Ohne Display lässt es sich jedoch kaum vermeiden, dass man bei jedem Bezug am Smartphone die Temperatur prüfen muss.
 
-Wer es einfach mag, kann das Display entweder neben die Maschine legen, oder an einem der Bleche fixieren. Wie ihr den Projekten entnehmen könnt [[Link]](http://rancilio-pid.de/bauberichte/silvia-e-v5-gastbeitrag-von-konstantin/), kann das Display natürlich aus sauber integriert werden.
+Wer es einfach mag, kann das Display entweder neben die Maschine legen, oder an einem der Bleche fixieren. Wie ihr den Projekten entnehmen könnt ([Link](http://rancilio-pid.de/bauberichte/silvia-e-v5-gastbeitrag-von-konstantin/)), kann das Display natürlich aus sauber integriert werden.
 
-Für einen einfachen Betrieb des Displays empfehlen sich zudem die gelisteten Jumperkabel - so muss nicht zwangsläufig gelötet werden. Beachtet jedoch den entsprechenden Hinweis zum Temperatursensor [[Link]](./hardware/hardware.md/#tipps-und-tricks)
+Für einen einfachen Betrieb des Displays empfehlen sich zudem die gelisteten Jumperkabel - so muss nicht zwangsläufig gelötet werden. Beachtet jedoch den entsprechenden Hinweis zum Temperatursensor: [Link](./hardware/hardware.md/#tipps-und-tricks).
 
 ### Infos zum Vollausbau SSR
 Wir haben im Projekt viele diverse Relais für die Pumpe und das Ventil testen „dürfen“ – diese sind leider nicht so stabil wie die der SSR für die Heizung. Folgende Erkenntnisse haben wir dabei gesammelt:
