@@ -70,5 +70,5 @@ temp,user=florian73,maschine=silvia-e-buero value=/pin[0]/
 
 > Hinweis: Dass der Test nicht erfolgreich durchläuft, soll euch nicht weiter stören.
 
-Als letztes müsst ihr im Rancilio-Chat den verwendeten `user-name` bekannt geben. Geht am besten direkt auf **@markus** zu.
+Als letztes müsst ihr im Rancilio-Chat den verwendeten `user-name` bekannt geben. Geht am besten direkt auf **@markus** oder **andreas** zu.
 <!-- markdown-link-check-enable-->
