@@ -69,16 +69,23 @@ Inklusive sind:
  * Klebepads
 
 ### Infos zum Wärmeleitkleber
-Generell raten wir von der Verwendung von Wärmeleitkleber ab, daher ist er auch nur als Option geführt. Nur der oben verlinkte von Arctic hat einen akzeptablen Wärmeleitfähigkeit von 4 W/mK (vernetzt). Die Billigen die ihr sonst so findet (Amazon) haben irgendwas um die 1 W/mK(wenn man den Angaben glauben möchte).
+Wärmeleitkleber ist umstritten (siehe [Link](https://www.igorslab.de/mythos-waermeleitpaste-edelpaste-zum-apothekenpreis-gegen-guenstiges-massenprodukt-wir-rechnen-gnadenlos-nach/) und Block unten zur Herleitung). Nichtsdestotrotz befestigen die meisten Anwender den TSIC damit direkt am Kessel. Zusammenfassend kann man sagen: Trägt möglichst wenig davon auf und versucht den Sensor möglichst mit der vorhandenen Halterung (und zusätzlicher Schraube und Mutter) zu befestigen. Damit sollte sich ein akzeptables Maß aus Temperaturdifferenz und sicherer Befestigung erreichen lassen.
 
-Außerdem ist es sehr wichtig, das die Paste oder zur Not der Kleber so DÜNN WIE MÖGLICH aufgetragen wird! Wir reden hier im Optimalfall von 0,04 mm.
+<details markdown="block">
+  <summary> Diskussion zum Wärmeleitkleber </summary>
 
-Als Bsp. für die Paste würde eine Schichtdicke von 0,05 mm einen Wärmeleitwiderstand von 0,29 K/W ergeben. Bei 0,5 mm sind wir schon bei 2,9 K/W.
+  Generell raten wir von der Verwendung von Wärmeleitkleber ab, daher ist er auch nur als Option geführt. Nur der oben verlinkte von Arctic hat einen akzeptablen Wärmeleitfähigkeit von 4 W/mK (vernetzt). Die Billigen die ihr sonst so findet (Amazon) haben irgendwas um die 1 W/mK(wenn man den Angaben glauben möchte).
 
-Das bedeutet das bei einer Verlustleistung von 1 W die Temperaturdifferenz zwischen Quelle (Boiler) und Senke (Sensor) 0,29 bzw. bei 2,9 K liegt.
+  Außerdem ist es sehr wichtig, das die Paste oder zur Not der Kleber so DÜNN WIE MÖGLICH aufgetragen wird! Wir reden hier im Optimalfall von 0,04 mm.
+
+  Als Bsp. für die Paste würde eine Schichtdicke von 0,05 mm einen Wärmeleitwiderstand von 0,29 K/W ergeben. Bei 0,5 mm sind wir schon bei 2,9 K/W.
+
+  Das bedeutet das bei einer Verlustleistung von 1 W die Temperaturdifferenz zwischen Quelle (Boiler) und Senke (Sensor) 0,29 bzw. bei 2,9 K liegt.
+
+</details>
 
 ### Infos zum Temperatursensor
-Wir geben hier den Tipp gleich mindestens 2 TSIC Sensoren zu kaufen. Wir haben es nun häufiger erleben müssen, dass die Sensoren falsch verdrahtet werden. Daher denkt einfach gleich an eine Reserve bei der Bestellung bei Reichelt. Bitte einen falsch verpolten Sensor nicht mehr verwenden, dieser geht kurzfristig kaputt oder zeigt unrealistische Werte an (für Details siehe [Temperatursensor anschließen](./hardware/hardware.md#temperatursensor-anschließen))
+Wir geben hier den Tipp gleich mindestens 2 TSIC Sensoren zu kaufen. Wir haben es nun häufiger erleben müssen, dass die Sensoren falsch verdrahtet werden. Daher denkt einfach gleich an eine Reserve bei der Bestellung bei Reichelt. Bitte einen falsch verpolten Sensor nicht mehr verwenden, dieser geht kurzfristig kaputt oder zeigt unrealistische Werte an (für Details siehe [Temperatursensor anschließen](./hardware/hardware.md#temperatursensor-anschließen)).
 
 ### Infos zum Microcontroller
 Man kann beim NodeMCU **nicht** die V1 oder V3 nehmen. Nur die V2 passt auf das PCB.
@@ -87,7 +94,7 @@ Man kann beim NodeMCU **nicht** die V1 oder V3 nehmen. Nur die V2 passt auf das 
 Es sind jeweils mehr Stecker wie benötigt angegeben. Es ist empfehlenswert hier reichlich zu Bestellen, da gerne mal etwas schief läuft und man sonst ohne Kaffee auf die neue Bestellung warten muss.
 
 ### Infos zum Netzteil
-Das Netzteil hat bei wenigen Personen zu Problemen geführt (Reboots). Eine Alternative kann ein einfaches USB Netzteil sein, welches eine stabilere Spannung liefern könnte. 
+Das Netzteil hat bei wenigen Personen zu Problemen geführt (Reboots). Eine Alternative kann ein einfaches USB Netzteil sein, welches eine stabilere Spannung liefern könnte.
 
 Insbesondere bei den neueren Rancilio Silvia E Varianten ist Platz ein Thema. Hier ist ggf. auch ein USB Netzteil zu bevorzugen.
 
