@@ -7,8 +7,8 @@ nav_order: 1
 ---
 
 # Arduino IDE einrichten
-{: .no_toc }
 
+{: .no_toc }
 Inhaltsverzeichnis
 
 * TOC
