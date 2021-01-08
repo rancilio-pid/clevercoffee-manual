@@ -74,7 +74,7 @@ Wärmeleitkleber ist umstritten (siehe [Link](https://www.igorslab.de/mythos-wae
 <details markdown="block">
   <summary> Diskussion zum Wärmeleitkleber </summary>
 
-  Wie oben bereits erwähnt ist Wärmeleitkleber wegen seiner schwachen Wärmeleitfähigkeit umstritten. Einer der wenigen _empfehlenswerten_ Wärmeleitkleber ist von Arctic Silver mit einer Wärmeleitfähigkeit von 4 W/mK [Link](https://www.leds.de/arctic-silver-waermeleitkleber-2x-3-5g-60006.html) (aktuell leider nicht verfügbar). Der oben verlinkte Kleber verfügt hingegen nur über eine Wärmeleitfähigkeit von etwa 1 W/mK (unter der Annahme, dass die Angaben korrekt sind). 
+  Wie oben bereits erwähnt ist Wärmeleitkleber wegen seiner schwachen Wärmeleitfähigkeit umstritten. Einer der wenigen _empfehlenswerten_ Wärmeleitkleber ist von Arctic Silver mit einer Wärmeleitfähigkeit von 4 W/mK im vernetzten Zustand: [Link](https://www.webshop-innovatek.de/waermeleitmittel/waermeleitkleber/368/arctic-silver-waermeleitkleber-2x-4-g-neue-version) (leider nur schwer bzw. zu Apothekenpreisen erhältlich). Der oben verlinkte Kleber verfügt hingegen nur über eine Wärmeleitfähigkeit von etwa 1 W/mK (unter der Annahme, dass die Angaben korrekt sind). 
 
   Als Bsp. für die Paste würde eine Schichtdicke von 0,05 mm einen Wärmeleitwiderstand von 0,29 K/W ergeben. Bei 0,5 mm sind wir schon bei 2,9 K/W.
 
