@@ -74,13 +74,13 @@ Wärmeleitkleber ist umstritten (siehe [Link](https://www.igorslab.de/mythos-wae
 <details markdown="block">
   <summary> Diskussion zum Wärmeleitkleber </summary>
 
-  Generell raten wir von der Verwendung von Wärmeleitkleber ab, daher ist er auch nur als Option geführt. Nur der oben verlinkte von Arctic hat einen akzeptablen Wärmeleitfähigkeit von 4 W/mK (vernetzt). Die Billigen die ihr sonst so findet (Amazon) haben irgendwas um die 1 W/mK(wenn man den Angaben glauben möchte).
-
-  Außerdem ist es sehr wichtig, das die Paste oder zur Not der Kleber so DÜNN WIE MÖGLICH aufgetragen wird! Wir reden hier im Optimalfall von 0,04 mm.
+  Wie oben bereits erwähnt ist Wärmeleitkleber wegen seiner schwachen Wärmeleitfähigkeit umstritten. Einer der wenigen _empfehlenswerten_ Wärmeleitkleber ist von Arctic Silver mit einer Wärmeleitfähigkeit von 4 W/mK [Link](https://www.leds.de/arctic-silver-waermeleitkleber-2x-3-5g-60006.html) (aktuell leider nicht verfügbar). Der oben verlinkte Kleber verfügt hingegen nur über eine Wärmeleitfähigkeit von etwa 1 W/mK (unter der Annahme, dass die Angaben korrekt sind). 
 
   Als Bsp. für die Paste würde eine Schichtdicke von 0,05 mm einen Wärmeleitwiderstand von 0,29 K/W ergeben. Bei 0,5 mm sind wir schon bei 2,9 K/W.
 
-  Das bedeutet das bei einer Verlustleistung von 1 W die Temperaturdifferenz zwischen Quelle (Boiler) und Senke (Sensor) 0,29 bzw. bei 2,9 K liegt.
+  Das bedeutet das bei einer Verlustleistung von 1 W die Temperaturdifferenz zwischen Quelle (Boiler) und Senke (Sensor) bei 0,29 bzw. 2,9 K liegt.
+
+  Aus diesem Grund ist es sehr wichtig, das die Paste oder zur Not der Kleber so **DÜNN WIE MÖGLICH** aufgetragen wird! Wir reden hier im Optimalfall von 0,04 mm.
 
 </details>
 
