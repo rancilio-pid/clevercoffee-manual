@@ -27,5 +27,6 @@ Für MQTT können nach der Konfiguration von folgenden Punkten in der userconfig
 
 Werte können mit 
 custom/{MQTT_TOPIC_PREFIX}/{var}/set gesetzt werden. 
+
 z.B:
 custom/Küche.Rancilio/setPoint/set 96
