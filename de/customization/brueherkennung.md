@@ -38,6 +38,7 @@ In der nachfolgenden Tabelle sind bewährte PID für die Brüherkennung zu finde
 Maschine |	P |	I |	D | Timer |  Limit 
 :-|-|-|-|-|-
 Rancilio Silvia (nicht isoliert) | 50 | 5000 | 20 | 120 | 45 
+Gaggia | 75 | 0 | 15 | 180 | 90 
 
 ## Vergleich bei einem Bezug
 
