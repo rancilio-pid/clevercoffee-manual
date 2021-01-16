@@ -29,7 +29,12 @@ Oben sind von (links) folgende Symbole zu sehen:
 * MQTT (Wenn MQTT aktiviert ist)
 * Offline (wenn kein Wlan vorhanden ist)
 
-Links zeigt dir das Thermometer mit einem Blinken, wenn die Solltemperatur erreicht ist
+Links zeigt dir das Thermometer mit einem Blinken, wenn die Solltemperatur erreicht ist.
+Die mittige Anzeige (von oben)
+* IST: Ist-Temperatur
+* Soll: Soll-Temperatur
+* Brew: Bei einem Bezug wird softwareseitig oder hardwareseitig angzeigt, welche Zeit beim Bezug verstrichen ist
+* P | I | D : Anzeige der aktuellen PID Werte, die aktuell gültig sind. Kann sich je nach Phase ( Kaltstart, Brühvorgang oder Normalbetrieb) ändern
 
 
 ## Minimal Design - DISPLAYTEMPLATE 2
