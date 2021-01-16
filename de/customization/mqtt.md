@@ -6,7 +6,7 @@ has_children: false
 nav_order: 4
 ---
 
-# Monitoring
+# MQTT
 {: .no_toc }
 
 Inhaltsverzeichnis
