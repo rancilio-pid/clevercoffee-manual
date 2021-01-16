@@ -20,7 +20,7 @@ Diese können in der Userconfig mit ausgewählt werden
 #define DISPLAYTEMPLATE 1    // 1: Standard Display Template, 2: Minimal Template, 
 
 ## Standard Design - DISPLAYTEMPLATE 1 
-![Display Template 1]((../../img/Displaytemplate1.png)
+![Display Template 1](../../img/Displaytemplate1.png)
 
 
 ## Minimal Design - DISPLAYTEMPLATE 2
