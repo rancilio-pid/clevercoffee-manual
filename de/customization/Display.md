@@ -22,6 +22,15 @@ Diese können in der Userconfig mit ausgewählt werden
 ## Standard Design - DISPLAYTEMPLATE 1 
 ![Display Template 1](../../img/Displaytemplate1.png)
 
+Erläuterung zur Anzeige: 
+Oben sind von (links) folgende Symbole zu sehen:
+* Wlan (Durchgestrichen wenn kein Empfang)
+* Blynk (Durchgestrichen wenn kein Blynk vorhanden)
+* MQTT (Wenn MQTT aktiviert ist)
+* Offline (wenn kein Wlan vorhanden ist)
+
+Links zeigt dir das Thermometer mit einem Blinken, wenn die Solltemperatur erreicht ist
+
 
 ## Minimal Design - DISPLAYTEMPLATE 2
 
