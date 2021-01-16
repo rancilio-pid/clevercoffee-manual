@@ -24,7 +24,7 @@ Du benötigst folgende Dinge:
 
 Beschreibung | ID | Anzahl PID Only | Anzahl Vollausbau | Link
 -|-|-|-|-
-Temperatur Sensor|TSIC 306 TO92|2 (1)|2 (1)|[Link](https://www.reichelt.de/tsic-digitale-halbleiter-temperatursensoren-tsic-306-to92-p82327.html?r=1)
+Temperatur Sensor|TSIC 306 TO92|2 (1)|2 (1)|[Link](https://www.reichelt.de/tsic-digitale-halbleiter-temperatursensoren-tsic-306-to92-p82327.html?r=1), [Alternativer Shop](https://shop.bb-sensors.com/Messtechnik-je-Branche/Gebaeudetechnik/Digitaler-TSic-306-Temperatursensor-TO92.html), [Alternativer Sensor](https://www.reichelt.de/de/de/tsic-digitale-halbleiter-temperatursensoren-tsic-206-to92-p82326.html?trstct=pos_1&nbc=1&&r=1)
 Schaltnetzteil|SNT RS 15 5|1|1|[Link](https://www.reichelt.de/schaltnetzteil-geschlossen-15-w-5-v-3-a-snt-rs-15-5-p137080.html?&trstct=pos_0)
 SSR Relais – Heizung|RA 2425-D06|1|1|[Link](https://www.reichelt.de/solid-state-relais-ust-2-32vdc-ulast-24-280v-ra-2425-d06-p22691.html?&trstct=pos_0)
 Mikrocontroller|NodeMCU esp8266 V2|1|1|[Link](https://www.amazon.de/AZDelivery-NodeMCU-ESP8266-ESP-12E-Development/dp/B06Y1LZLLY/ref=sr_1_1_sspa?ie=UTF8&qid=1538918768&sr=8-1-spons&keywords=nodemcu+esp8266&psc=1)
@@ -74,7 +74,7 @@ Wärmeleitkleber ist umstritten (siehe [Link](https://www.igorslab.de/mythos-wae
 <details markdown="block">
   <summary> Diskussion zum Wärmeleitkleber </summary>
 
-  Wie oben bereits erwähnt ist Wärmeleitkleber wegen seiner schwachen Wärmeleitfähigkeit umstritten. Einer der wenigen _empfehlenswerten_ Wärmeleitkleber ist von Arctic Silver mit einer Wärmeleitfähigkeit von 4 W/mK im vernetzten Zustand: [Link](https://www.webshop-innovatek.de/waermeleitmittel/waermeleitkleber/368/arctic-silver-waermeleitkleber-2x-4-g-neue-version) (leider nur schwer bzw. zu Apothekenpreisen erhältlich). Der oben verlinkte Kleber verfügt hingegen nur über eine Wärmeleitfähigkeit von etwa 1 W/mK (unter der Annahme, dass die Angaben korrekt sind). 
+  Wie oben bereits erwähnt ist Wärmeleitkleber wegen seiner schwachen Wärmeleitfähigkeit umstritten. Einer der wenigen _empfehlenswerten_ Wärmeleitkleber ist von Arctic Silver mit einer Wärmeleitfähigkeit von 4 W/mK im vernetzten Zustand: [Link](https://www.webshop-innovatek.de/waermeleitmittel/waermeleitkleber/368/arctic-silver-waermeleitkleber-2x-4-g-neue-version) (leider nur schwer bzw. zu Apothekenpreisen erhältlich). Der oben verlinkte Kleber verfügt hingegen nur über eine Wärmeleitfähigkeit von etwa 1 W/mK (unter der Annahme, dass die Angaben korrekt sind).
 
   Als Bsp. für die Paste würde eine Schichtdicke von 0,05 mm einen Wärmeleitwiderstand von 0,29 K/W ergeben. Bei 0,5 mm sind wir schon bei 2,9 K/W.
 
