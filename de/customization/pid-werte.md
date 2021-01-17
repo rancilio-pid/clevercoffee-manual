@@ -71,6 +71,7 @@ Es gibt für Blynk Standardwerte für den regulären PID Betrieb, den wir unten 
 Maschine |	P |	I |	D
 :-|-|-|-
 Rancilio Silvia (nicht isoliert) | 33 | 255 | 0 |
+Rancilio Silvia E ( isoliert) | 25 | 250 | 0 |
 Gaggia (Modell 9303) | 67 | 670 | 0
 Gaggia (Modell 9303) | 55 | 800 | 0
 E 61 | 70 | 150 | 0
