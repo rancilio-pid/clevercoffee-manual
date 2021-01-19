@@ -47,7 +47,7 @@ In eurer `userConfig.h` muss Grafana aktiviert sein (sprich auf `1` gesetzt):
 1. Wählt unter `Other` den `Webhook` aus
 1. Öffnet das neu erschienene Widget `Webhook`
 1. Wählt den virtuellen Pin `V60` aus
-1. Fügt die URL `http://blynk.remoteapp.de:8086/write?db=ranciliopid`
+1. Fügt die URL `http://monitoring.rancilio-pid.de:8086/write?db=ranciliopid`
 1. Methode = `POST`
 1. Type = `Text/Plain`
 1. Body:
