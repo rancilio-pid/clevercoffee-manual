@@ -30,23 +30,94 @@ Die rancilio-pid.ino ist das eigentliche Programmcode und die userConfig.h eine 
 Die wichtigsten Funktionen müssen hier parametriert werden. Denkt daran, den richtigen PID Mode, Temperatursensor und das ggf. passende Display auszuwählen.
 
 ```
-define DISPLAY 2 // 1=U8x8libm, 0=Deaktiviert, 2=Externes 128x64 Display
+// Display -> siehe ./customization/Displey.md
+#define DISPLAY 2            // 2 = Defaulf AZDelivery Display
+#define DISPLAYTEMPLATE 1    // 1: Standard Display Template, 2: Minimal Template
+#define MACHINELOGO 1        // 1 = Rancilio, 2 = Gaggia
+#define DISPALYROTATE U8G2_R0   // rotate display clockwise: U8G2_R0 = no rotation; U8G2_R1 = 90°; U8G2_R2 = 180°; U8G2_R3 = 270°
+#define SHOTTIMER  1 // 0: no SHOTTIMER, 1: SHOTTIMER
 
-define OFFLINEMODUS 0 // 0=Blynk und WLAN wird benötigt 1=OfflineModus (ACHTUNG EINSTELLUNGEN NUR DIREKT IM CODE MÖGLICH)
+// Wlan and Connection
+#define OFFLINEMODUS 0       // 0 = Blynk and WIFI are used; 1 = offline mode (only preconfigured values in code are used!)
+#define FALLBACK 1           // 1 = fallback to values stored in eeprom, if blynk is not working; 0 = deactivated
+#define OTA true             // true = activate update via OTA
+#define MQTT 0               // 1 = MQTT enabled, 0 = MQTT disabled
+#define GRAFANA 1            // 1 = grafana visualisation. Access required, 0 = off (default)
+#define MAXWIFIRECONNECTS 5  // maximum number of reconnects; use -1 to set to maximum ("deactivated")
+#define WIFICINNECTIONDELAY 10000 // delay between reconnects in ms
 
-define ONLYPID 0 // 1=Nur PID ohne Preinfussion, 0=PID + Preinfussion
+// PID & Hardware
+#define ONLYPID 1            // 1 = Only PID, no preinfusion; 0 = PID and preinfusion
+#define BREWDETECTION 1      // 0 = off; 1 = Software; 2 = Hardware
+#define COLDSTART_PID 1     // 1 = default COLDStart Values , 2 = eigene Werte via Blynk, Expertenmodusaktiv
+#define TRIGGERTYPE HIGH     // LOW = low trigger, HIGH = high trigger relay
 
-define TEMPSENSOR 2 // 1=DS19B20; 2=TSIC306
+//E-Trigger
+#define ETRIGGER 0  // 0: no Trigger (for Raniclio without E) 1: Trigger for CPU of Rancilio E
+#define ETRIGGERTIME 60 // Seconds, time between for Trigger Signal
+#define PINETRIGGER 16 // Pin for Etrigger Relay
+#define TRIGGERRELAYTYPE HIGH  // LOW = low trigger, HIGH = high trigger relay for ETrigger
 
-define BREWDETECTION 1 // 0 = off ,1 = Software, 2 = Hardware
+// Wifi -> Infos siehe unten
+#define HOSTNAME "Rancilio"
+#define D_SSID "myssid"
+#define PASS "mypass"
 
-define FALLBACK 1 // 1: fallback auf eeprom Werte, wenn blynk nicht geht 0: deaktiviert
+// OTA -> siehe unten
+#define OTAHOST "Rancilio"   // Name to be shown in ARUDINO IDE Port
+#define OTAPASS "otapass"    // Password for OTA updtates
 
-define TRIGGERTYPE HIGH // LOW = low trigger, HIGH = high trigger relay
+//MQTT
+#define MQTT_USERNAME "myuser"
+#define MQTT_PASSWORD "mypass"
+#define MQTT_TOPIC_PREFIX "custom/Küche."  // topic will be "<MQTT_TOPIC_PREFIX><HOSTNAME>/<READING>"
+#define MQTT_SERVER_IP "XXX.XXX.XXX.XXX"       // IP-Address of locally installed mqtt server
+#define MQTT_SERVER_PORT 1883    
 
-define OTA true // true=activate update via OTA
+// BLynk
+#define AUTH "myauth"
+#define BLYNKADDRESS "blynk.clevercoffee.de"         // IP-Address of used blynk server
+#define BLYNKPORT 8080  //Port for blynk server
 
-define PONE 1 // 1 = P_ON_E (normal), 0 = P_ON_M (spezieller PID Modus, ACHTUNG andere Formel zur Berechnung)
+
+//PID - offline values
+#define SETPOINT 95  // Temperatur setpoint
+#define AGGKP 69     // Kp Normal
+#define AGGTN 399    // Tn
+#define AGGTV 0      // Tv
+
+// PID Coldtart
+#define STARTKP 50   // Start Kp during coldstart
+#define STARTTN 150  // Start Tn during cold start
+
+
+//PID - values for offline brewdetection
+#define AGGBKP 50    // Kp
+#define AGGBTN 0   // Tn
+#define AGGBTV 20    // Tv
+
+//backflush values
+#define FILLTIME 3000       // time in ms the pump is running
+#define FLUSHTIME 6000      // time in ms the 3-way valve is open -> backflush
+#define MAXFLUSHCYCLES 5      // number of cycles the backflush should run; 0 = disabled
+
+//PIN BELEGUNG
+#define ONE_WIRE_BUS 2  // TEMP SENSOR PIN
+
+#define pinRelayVentil    12    //Output pin for 3-way-valve
+#define pinRelayPumpe     13    //Output pin for pump
+#define pinRelayHeater    14    //Output pin for heater
+
+//#define OLED_RESET 16     //Output pin for dispaly reset pin
+#define OLED_SCL 5        //Output pin for dispaly clock pin
+#define OLED_SDA 4        //Output pin for dispaly data pin
+#define SCREEN_WIDTH 128 // OLED display width, in pixels
+#define SCREEN_HEIGHT 64 // OLED display height, in pixels  
+
+// Historic, no settings
+#define PONE 1               // 1 = P_ON_E (default), 0 = P_ON_M (special PID mode, other PID-parameter are needed)
+#define TEMPSENSOR 2         // 2 = TSIC306
+
 ```
 
 ### Wifi
@@ -60,10 +131,6 @@ Unter Wifi müsst ihr euren Auth Token aus Blynk eintragen und eure Wlan SSID un
 
 #define PASS "wlanpass"
 ```
-
-### OTA
-
-Hier wird der Update **O**ver **T**he **A**ir eingestellt.
 
 ### PID
 
@@ -92,3 +159,9 @@ Wenn alles geklappt habt könnt ihr auf dem Serial Monitor erkennen, wie sich de
 
 Klappt das und ist der Temperatursensor korrekt angeschlossen seht ihr am Handy in der Blynk App die Raumtemperatur.
 Jetzt könnt iht nach und nach die anderen Bauteile verbinden (Relais) und weiter testen.
+
+### OTA
+
+Hier wird der Update **O**ver **T**he **A**ir eingestellt.
+
+Dafür muss die Maschine eingeschalten sein und sich euer Rechner (mit Arduino) im selben WLAN Netz befinden. Dann erscheint unter Werkzeuge > Port <aktuelle Auswahl> > Netzwerkschnittstellen "Rancilio <IP-Addresse>". Wählt diesen Port aus und lädt den Code entsprechend hoch.
