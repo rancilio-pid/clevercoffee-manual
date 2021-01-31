@@ -33,16 +33,27 @@ Jumper Kabel (optional)| AZDelivery Jumper Wire Kabel 3 x 40 STK | 1 | 1 | [Link
 alternativ | siehe unten
 Dupont Stecker (optional) | BESTOMZ 620 Stück Dupont Stecker | 1 | 1 | [Link](https://www.amazon.de/BESTOMZ-Stecker-m%C3%A4nnlich-weiblich-Anschluss/dp/B073SSV9TL/)
 unsere erstellte Platine|PCB|1|1|siehe unten
+**normale Kabel** (hitzebeständige option: siehe unten)
 Schaltlitze H07V-K, 1,5 mm, 10 m, blau|H07VK 1,5-10BL|1|1|[Link](https://www.reichelt.de/schaltlitze-h07v-k-1-5-mm-10-m-blau-h07vk-1-5-10bl-p69504.html?)
 Schaltlitze H07V-K, 1,5 mm, 10 m, schwarz|H07VK 1,5-10SW|1|1|[Link](https://www.reichelt.de/schaltlitze-h07v-k-1-5-mm-10-m-schwarz-h07vk-1-5-10sw-p69503.html?)
 Kupferlitze isoliert, 10M, 1×0,14mm², schwarz|LITZE SW|1|1|[Link](https://www.reichelt.de/kupferlitze-isoliert-10-m-1-x-0-14-mm-schwarz-litze-sw-p10298.html?)
 Kupferlitze isoliert, 10M, 1×0,14mm², blau|LITZE BL|1|1|[Link](https://www.reichelt.de/kupferlitze-isoliert-10-m-1-x-0-14-mm-blau-litze-bl-p10292.html?)
 Kupferlitze isoliert, 10M, 1×0,14mm², rot|LITZE RT|1|1|[Link](https://www.reichelt.de/kupferlitze-isoliert-10-m-1-x-0-14-mm-rot-litze-rt-p10297.html?)
 Kupferlitze isoliert, 10M, 1×0,14mm², grün|LITZE GN|1|1|[Link](https://www.reichelt.de/kupferlitze-isoliert-10-m-1-x-0-14-mm-gruen-litze-gn-p10296.html?)
+**--**
+**Hitzebeständige Kabel (empfohlen)**
+Hochtemperaturader ÖLFLEX® HEAT 180 SIF 1 x 1.50 mm², schwarz|601382|2|2|[Link](https://www.conrad.de/de/p/lapp-0051001-hochtemperaturader-oelflex-heat-180-sif-1-x-1-50-mm-schwarz-meterware-601382.html)
+Hochtemperaturader ÖLFLEX® HEAT 180 SIF 1 x 1.50 mm², blau|600368|2|2|[Link](https://www.conrad.de/de/p/lapp-0051002-hochtemperaturader-oelflex-heat-180-sif-1-x-1-50-mm-blau-meterware-600368.html)
+Hochtemperaturader ÖLFLEX® HEAT 180 SIF 1 x 0.25 mm², schwarz|604025|2|2|[Link](https://www.conrad.de/de/p/lapp-0047001-hochtemperaturader-oelflex-heat-180-sif-1-x-0-25-mm-schwarz-meterware-604025.html)
+Hochtemperaturader ÖLFLEX® HEAT 180 SIF 1 x 0.25 mm², rot|603963|2|2|[Link](https://www.conrad.de/de/p/lapp-0047104-hochtemperaturader-oelflex-heat-180-sif-1-x-0-25-mm-rot-meterware-603963.html)
+Hochtemperaturader ÖLFLEX® HEAT 180 SIF 1 x 0.25 mm², grün|609459|2|2|[Link](https://www.conrad.de/de/p/lapp-0047006-hochtemperaturader-oelflex-heat-180-sif-1-x-0-25-mm-gruen-meterware-609459.html)
+Hochtemperaturader ÖLFLEX® HEAT 180 SIF 1 x 0.25 mm², gelb|602330|2|2|[Link](https://www.conrad.de/de/p/lapp-0047005-hochtemperaturader-oelflex-heat-180-sif-1-x-0-25-mm-gelb-meterware-602330.html)
+**--**
 Flachsteckhülsen mit Schrumpfschlauch – 1,5 … 2,5 mm², blau|WE F602638HS|10|20|[Link](https://www.reichelt.de/flachsteckhuelsen-mit-schrumpfschlauch-1-5-2-5-mm-blau-we-f602638hs-p189402.html?&trstct=pos_0&nbc=1)
 Flachsteckhülsen mit Abzweig – 1,5 … 2,5 mm², transp., vollisoli|WE F606638.1N|5|5|[Link](https://www.reichelt.de/flachsteckhuelsen-mit-abzweig-1-5-2-5-mm-transp-vollisoli-we-f606638-1n-p189372.html?search=WE+F606638.1N)
 Flachstecker mit Schrumpfschlauch – 1,5 … 2,5 mm², blau|WE F616638HS|10|20|[Link](https://www.reichelt.de/flachstecker-mit-schrumpfschlauch-1-5-2-5-mm-blau-we-f616638hs-p189408.html?&trstct=pos_0&nbc=1)
-Ring-Kerbschuhe, für M4, rot|RK-R-4|10|10|[Link](https://www.reichelt.de/ring-kerbschuhe-fuer-m4-rot-rk-r-4-p15260.html?&nbc=1)
+Ring-Kerbschuhe, für M3, rot|RK-R-3|10|10|[Link](https://www.reichelt.de/ring-kerbschuhe-fuer-m3-rot-rk-r-3-p15259.html?&nbc=1)
+Ring-Kerbschuhe, für M5, rot|RK-R-5|10|10|[Link](https://www.reichelt.de/ring-kerbschuhe-fuer-m5-rot-rk-r-5-p142770.html?&nbc=1)
 Relais für **Vollausbau** (siehe unten)|DEBO RELAY 4WAY||1|[Link](https://www.reichelt.de/entwicklerboards-4-wege-solid-relais-5v-240v-2a-debo-relay-4way-p280064.html?)
 Schrumpfschlauch|DELOCK 86271|1|1|[Link](https://www.reichelt.de/schrumpfschlauch-sortiment-schwarz-100-teilig-delock-86271-p152924.html?&trstct=pol_0&nbc=1)
 Schraube M4x16||1|1|
@@ -127,3 +138,4 @@ Manche gehen ins Spielcasino, wir bestellen bei Amazon – Manchmal hat man Pech
 
 #### Alternative: 2x Heizungs SSR
 Wenn der Platz vorhanden ist, könnte man auch 2x den Heizung SSR nutzen.
+
