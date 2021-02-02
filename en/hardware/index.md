@@ -1,10 +1,10 @@
 ---
 title: Hardware
-parent: DE - Handbuch
+parent: EN - Manual
 has_children: true
 nav_order: 5
 ---
 
 # Hardware
 
-In diesem Abschnitt werden alle Hardware-Aspekte behandelt. Dies umfasst den Trockenaufbau, die verschiedenen Schaltpläne und den konkreten Einbau.
+This part contains the hardware related aspects of the PID, including the test assebly and installation.
