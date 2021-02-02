@@ -6,7 +6,7 @@ has_children: false
 nav_order: 1
 ---
 
-# Anforderungen an dich – Warnhinweis
+# Requirements you need to meet – Warning
 {: .no_toc }
 
 Contents
@@ -14,7 +14,7 @@ Contents
 * TOC
 {:toc}
 
-## Warnhinweis
+## Warning
 
 > {{ site.warning }}
 
