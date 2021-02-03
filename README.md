@@ -9,7 +9,8 @@ Mehr zum Projekt findet ihr auf der [Rancilio PID Website](http://rancilio-pid.d
 
 ## About
 
-This way in order to get to the english manual: [Link](./en/index.md) (Important Disclaimer: So far no english version is available :( - but contribution is welcome ;))
+This way in order to get to the english manual: [Link](https://manual.rancilio-pid.de/en/) 
+(Important Disclaimer: So far no english version is under contribution is welcome ;))
 
 ## Contributing
 
