@@ -1,7 +1,7 @@
 ---
 title: Schaltpläne
 parent: Hardware
-grand_parent: DE - Handbuch
+grand_parent: EN - Manual
 has_children: false
 nav_order: 2
 ---

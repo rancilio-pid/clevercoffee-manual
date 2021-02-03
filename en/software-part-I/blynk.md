@@ -102,6 +102,4 @@ The AUth code is shown in the lower part of the screen, it is basically the key 
 
 ## Step 3: integrate Auth token into program code
 
-The Authkey will be written into userConfig.h in the variable AUTH, SSID and PASS will be the name and password for your Wifi network. More on that in Part 2 
-
-
+The Authkey will be written into userConfig.h in the variable AUTH, SSID and PASS will be the name and password for your Wifi network. More on that in Part 2
