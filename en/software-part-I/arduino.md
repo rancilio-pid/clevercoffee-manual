@@ -1,6 +1,6 @@
 ---
 title: Arduino IDE setup
-parent: Software part I
+parent: Software Part I
 grand_parent: EN - Manual
 has_children: false
 nav_order: 1
@@ -32,7 +32,7 @@ Needed to transfer the program code onto the controller.
 
 ## The program code
 
-You can download the program code from the current release. 
+You can download the program code from the current release.
 
 [Link to Github Repository](https://github.com/rancilio-pid/ranciliopid/releases)
 
@@ -126,4 +126,3 @@ After all libraries have been installed, it should look like this:
 ![](../../img/31.png)
 
 Everything is now prepared for setting up Blynk and flashing of the actual code on the NodeMCU.
-

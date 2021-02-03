@@ -26,7 +26,7 @@ In the current release there are (among others) two files:
 
 rancilio-pid.ino contains the actual program while userConfig.h holds all user specific configuration options.
 
-When you open the .ino file, the other files which belond to the project are automatically opend in separate tabs within Arduino IDE and can be edited and saved directly from here. 
+When you open the .ino file, the other files which belond to the project are automatically opend in separate tabs within Arduino IDE and can be edited and saved directly from here.
 
 
 ### Preferences
@@ -154,11 +154,11 @@ Here you can define your initial PID values or just start with the "factory defa
 
 ### OTA
 
-Here, **O**ver **T**he **A**ir update is set up. This is important once your NodeMCU is buried deep in your machine and you want to update to a new software version. 
+Here, **O**ver **T**he **A**ir update is set up. This is important once your NodeMCU is buried deep in your machine and you want to update to a new software version.
 
 ## Flashing the code
 
-Make sure the Auth token as well as the Wifi data you have entered is correct. 
+Make sure the Auth token as well as the Wifi data you have entered is correct.
 
 ![](../img/image-2.png)
 
@@ -172,7 +172,7 @@ Next, click on the arrow symbol to start the upload to the Microcontroller
 
 ## Testing
 
-If everything has worked fine, you can see the communication between your NodeMCU and Blynk in the Serial Monitor 
+If everything has worked fine, you can see the communication between your NodeMCU and Blynk in the Serial Monitor
 
 ![](../img/36.png)
 
@@ -181,6 +181,3 @@ If that has worked and if you already have a temperature sensor connected, you c
 ### perform OTA update (optional)
 
 In order to do an OTA update, the machine has to be turned on and has to be in the same network as your PC running Arduino IDE. You will now see your NodeMCU under Tools > Port > Network > "Hostname <IP-Address>". Choose this entry and start flashing the software just as before.
-
-
-
