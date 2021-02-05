@@ -1,4 +1,4 @@
-Tipps zum Drucken: 
+Tipps zum Drucken:
 
 1. Gehäuse auf dem Kopf liegend drucken (um 180° in X oder Y drehen)
 2. Ein halbwegs Temperaturstabiles Filament verwenden (normales PLA ist etwas knapp)
@@ -7,5 +7,4 @@ Tipps zum Drucken:
 
 Die Magneten mit 6mm Durchmesser (2x 1mm und 1x 2mm dick) mit einem guten Kleber einkleben - Sekundenkleber hat sich als ungeeignet herausgestellt. 
 
-Nach der [Einbauanleitung.pdf](https://github.com/rancilio-pid/ranciliopid-handbook/Dateien/Einbauanleitung.pdf) zusammenbauen und montieren. 
-
+Nach der [Einbauanleitung.pdf](./Einbauanleitung.pdf) zusammenbauen und montieren.
