@@ -46,7 +46,7 @@ Sonst nutzt Ihr den „normalen Blynk“-Server.
 **WICHTIG**:
 
 Legt den Schalter auf „Custom“ um.
-Als Server tragt Ihr: blynk.remoteapp.de
+Als Server tragt Ihr: blynk.clevercoffee.de
 Port: 9443
 Bestätigt die Eingabe mit „OK“
 
