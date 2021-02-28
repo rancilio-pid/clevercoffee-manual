@@ -22,7 +22,8 @@ Wie in dem vorherigen Kapitel erwähnt, soll der **brew heater detection limit**
 
 Eine Bezugserkennnung wird unterschiedlich beim Only PID oder Vollausbau realisiert. Dieser kann in folgender Zeile in der Userconfig konfiguriert werden: 
 ```
-#define BREWDETECTION 1            // 0 = off, 1 = Software (Onlypid 0), 2 = Hardware (Onlypid 0), 3 = Sensor/Hardware for Only PID 
+#define BREWDETECTION 1            
+// 0 = off, 1 = Software (Onlypid 0), 2 = Hardware (Onlypid 0), 3 = Sensor/Hardware for Only PID 
 ```
 Bei Only PID kann Auswahl 1 und 3 (nur mit zusätzlichen Equipment, dazu später mehr) und bei der Hardwarelösung (Vollausbau) Auswahl 2 genommen werden. Beim Vollausbau wird direkt der Brühschalter an den Controller angeschlossen, daher kann dieser direkt abgefragt werden.
 Bei PID Only ist dem Controller nicht direkt bekannt, ob der Schalter gedrückt ist, daher wird per Software der Brühvorgang ermittelt. Diese ist im nachfolgenden Kapitel erläutert.
