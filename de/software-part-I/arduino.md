@@ -121,6 +121,7 @@ Alternativ müssen folgende Libraries per Hand installiert werden:
 * OneWire
 * DallasTemperature
 * PID_v1.h
+* Adafruit VL53L0X
 
 Die Installation der einzelnen Bibliotheken erfolgt wieder über die Verwaltung in Arduino IDE:
 
