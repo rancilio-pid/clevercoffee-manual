@@ -37,10 +37,11 @@ Als erstes muss die Maschine zerlegt werden. Hier findet ihr einen [Link zur Dem
 ### Thermostat gegen Temperatursensor tauschen
 
 Kabel (0,14mm2) am Temperatursensor anlöten und mit Schrumpfschlauch versehen. **!!!Unbedingt Pinbelegung beachten!!!** Es empfiehlt sich folgende Belegung zu verwenden:
+
 > Rot = +  
 > Schwarz = -  
 > Grüne = Signal
-> 
+
 Freies Kabelende beschriften
 
 Stecker mit rotem Kabel und Stecker mit grauem Kabel abziehen.
