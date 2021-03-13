@@ -86,6 +86,8 @@ folgt
 
 ## Vollausbau
 
+**Wichtig!: Der aktuelle Schaltplan beinhaltet ein potentiellen Fehler in der Verkabelung, siehe [[Link]](https://chat.rancilio-pid.de/ranciliopid/pl/7j88qqmfzbfc8f7f5d1jcxsceh)**
+
 folgt
 
 ## Spannende Addons die gleich mit erledigt werden können
