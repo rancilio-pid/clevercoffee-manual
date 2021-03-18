@@ -62,13 +62,9 @@ Erstellt euer erstes Projekt mit dem Klick auf „New Project“
 
 Hier könnt ihr auch direkt auf das Scan-Symbol oben rechts klicken und folgenden Code einscannen:
 
-QR-Code für Android:
+QR-Code für Android / IOS:
 
-![](../../img/qr-android.png)
-
-QR-Code für IOS:
-
-![](../../img/qr-ios.jpg)
+![](../../img/qrV280.jpg)
 
 (Dargestellte PID Werte entsprechen nicht mehr den neusten Stand)
 
