@@ -62,9 +62,13 @@ Erstellt euer erstes Projekt mit dem Klick auf „New Project“
 
 Hier könnt ihr auch direkt auf das Scan-Symbol oben rechts klicken und folgenden Code einscannen:
 
-QR-Code für Android / IOS:
+QR-Code für IOS:
 
 ![](../../img/qrV280.jpg)
+
+QR-Code für Android:
+
+![ranciliopid_Blynk_Setup](https://user-images.githubusercontent.com/60852037/112219020-c19dfd00-8c24-11eb-9109-7df68fd12e02.png)
 
 (Dargestellte PID Werte entsprechen nicht mehr den neusten Stand)
 
