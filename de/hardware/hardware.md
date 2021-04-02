@@ -60,6 +60,10 @@ Besondere Sorgfalt müsst ihr bitte beim Anschließen des Temperatursensors TSIC
 
 ### Temperatursensor anschließen
 
+ACHTUNG!! Aktuell kann es sein, dass der TSIC mit einem falnschen Datenblatt ausgeliefert wird. Hier wird die Polung falsch angegeben.
+Lest hierzu bitte folgenden Thread im Chat durch:
+https://chat.rancilio-pid.de/ranciliopid/pl/dcf38jzk3pnoig5hi64nuodeqc
+
 Wie ihr zu der Beschreibung zum Board sehen könnt, muss an Pin 2 der Temperatursensor angeschlossen werden. Die oberen Ports (14, 2, 12, 13, 15) sind einheitlich jeweils von links nach rechts mit Minus(-), Signal, 5V(+) belegt.
 
 ![](http://rancilio-pid.de/wp-content/uploads/2020/05/20200503_223844-scaled.jpg)
