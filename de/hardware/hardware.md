@@ -53,6 +53,9 @@ PIN 13 | Relais Ansteuerung Pumpe
 
 ### Temperatursensor anschließen
 
+**ACHTUNG!!** Aktuell kann es sein, dass der TSIC mit einem falnschen Datenblatt ausgeliefert wird. Hier wird die Polung falsch angegeben.
+Lest hierzu bitte folgenden Thread im Chat durch: [Link](https://chat.rancilio-pid.de/ranciliopid/pl/dcf38jzk3pnoig5hi64nuodeqc).
+
 Besondere Sorgfalt müsst ihr bitte beim Anschließen des Temperatursensors TSIC306 walten lassen: sobald dieser einmal falsch angeschlossen Spannung bekommen hat, ist er entweder sofort zerstört oder zumindest vorgeschädigt und liefert dadurch fehlerhafte Messwerte. Daher ist es immer ratsam einen Ersatz-Sensor parat zu haben.
 
 * Sensor V+ : Board PIN 2 5V
