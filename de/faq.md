@@ -17,4 +17,4 @@ Frage: Warum schaltet der Heizungs-SSR nicht?
 
 Frage: Meine PID-Werte passen nicht, meine Maschine schwingt über o.ä.
 
-> Schaut bitte zu erst in unsere PID-Wert Liste [PID-Werte](https://manual.rancilio-pid.de/de/customization/pid-werte.html), hier sind für viele PID-Werte dokumentiert für den Kaltstart, den normalen Betrieb und für die Brüherkennung. Bei Fragen im Chat bitte genau sagen, was genau nicht passt und schickt am besten Werte aus eurem Blynk dazu. Am besten im jeweiligen Chat zu den Maschinen.
+> Schaut bitte zu erst in unsere PID-Wert Liste [PID-Werte](./customization/pid-werte.md), hier sind für viele PID-Werte dokumentiert für den Kaltstart, den normalen Betrieb und für die Brüherkennung. Bei Fragen im Chat bitte genau sagen, was genau nicht passt und schickt am besten Werte aus eurem Blynk dazu. Am besten im jeweiligen Chat zu den Maschinen.
