@@ -3,7 +3,7 @@ title: Waageneinbau
 parent: Hardware
 grand_parent: DE - Handbuch
 has_children: false
-nav_order: 1
+nav_order: 4
 ---
 
 # Aufbau und Einbau der Waage
