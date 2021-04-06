@@ -89,6 +89,7 @@ Beispiele für mögliche Parametersätze findet ihr in der nachfolgenden Tabelle
 Kaltstart PI Werte Maschine |	P |	I
 -|-|-
 Rancilio Silvia (nicht isoliert) | 45 |	130
+Rancilio Silvia E (isoliert) | 35 |	130
 Gaggia (Modell 9403, Baujahr 2015) |	23 | 175
 E 61 |	70 |	96
 
