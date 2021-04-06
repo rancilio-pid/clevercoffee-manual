@@ -27,7 +27,8 @@ Die Bezugserkennnung wird beim Only PID oder Vollausbau unterschiedlich realisie
 ```
 Bei Only PID kann Auswahl 1 oder 3 (nur mit zusätzlichen Equipment, dazu später mehr) und bei der Hardwarelösung (Vollausbau) Auswahl 2 genommen werden. Beim Vollausbau wird der Brühschalter direkt an den Controller angeschlossen, daher kann der Zustand des Schalters direkt abgefragt werden.
 Bei PID Only ist dem Controller dagegen nicht bekannt ob der Schalter gedrückt ist oder nicht, daher wird der Brühvorgang per Software ermittelt. Diese ist im nachfolgenden Kapitel erläutert.
-Als Ergänzung wurde eine Lösung zwischen Only PID und Vollausbau entwickelt (Only PID Plus, Auswahl 3). Hierbei wird der Brühschalter mit seiner regulären 230 Volt Verschaltung mit einem zusätzlichen Sensor überwacht, welcher dem Controller mitteilt ob dieser betätigt wurde oder nicht. Da es unterschiedliche Sensoren gibt muss konfiguriert werden wie das Signal dem Controller übermittelt wird:
+### Sensor zur Brüherkennung bei Only PID
+Als Ergänzung wurde eine Lösung zwischen Only PID und Vollausbau entwickelt (Only PID Plus, Auswahl 3). Hierbei wird der Brühschalter mit seiner regulären 230 Volt Verschaltung mit einem zusätzlichen Sensor überwacht, welcher dem Controller mitteilt, ob dieser betätigt wurde oder nicht. Da es unterschiedliche Sensoren gibt muss konfiguriert werden wie das Signal dem Controller übermittelt wird:
 ```
 
 // BREWDETECTION 3 configuration
