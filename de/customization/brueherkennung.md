@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Brüherkennung
 parent: Konfiguration & Anpassung
 grand_parent: DE - Handbuch

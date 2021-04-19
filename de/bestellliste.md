@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Bestellliste
 parent: DE - Handbuch
 has_children: false

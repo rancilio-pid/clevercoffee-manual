@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Software Teil I
 parent: DE - Handbuch
 has_children: true

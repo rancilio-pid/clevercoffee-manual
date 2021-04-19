@@ -1,4 +1,5 @@
 ---
+layout: default
 title: PID-Werte
 parent: Konfiguration & Anpassung
 grand_parent: DE - Handbuch

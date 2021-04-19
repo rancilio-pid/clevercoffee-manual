@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Arduino IDE einrichten
 parent: Software Teil I
 grand_parent: DE - Handbuch

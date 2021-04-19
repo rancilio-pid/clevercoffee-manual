@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Aufbau
 parent: Hardware
 grand_parent: EN - Manual

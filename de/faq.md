@@ -1,4 +1,5 @@
 ---
+layout: default
 title: FAQ
 parent: DE - Handbuch
 has_children: false

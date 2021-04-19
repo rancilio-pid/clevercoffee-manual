@@ -1,12 +1,13 @@
 ---
-title: Requirements you need to meet
+layout: default
+title: Requirements
 parent: Introduction
 grand_parent: EN - Manual
 has_children: false
 nav_order: 1
 ---
 
-# Requirements you need to meet – Warning
+# Requirements – Warning
 {: .no_toc }
 
 Contents

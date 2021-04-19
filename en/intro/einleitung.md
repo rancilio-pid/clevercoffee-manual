@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Introduction PID System
 parent: Introduction
 grand_parent: EN - Manual
@@ -6,7 +7,7 @@ has_children: false
 nav_order: 2
 ---
 
-# Einleitung PID System
+# Introduction PID System
 {: .no_toc }
 
 Contents
