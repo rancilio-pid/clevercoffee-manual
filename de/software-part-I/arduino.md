@@ -4,7 +4,7 @@ title: Arduino IDE einrichten
 parent: Software Teil I
 grand_parent: DE - Handbuch
 has_children: false
-nav_order: 1
+nav_order: 2
 ---
 
 # Arduino IDE einrichten
@@ -28,14 +28,6 @@ Wird benötigt, um den Code auf den Controller zu spielen.
 [Link zu Arduino](https://www.arduino.cc/en/Main/Software)
 
 ![Screenshot der Arduino Homepage](../../img/1.png)
-
-## Der Programmcode
-
-Download des aktuellen Programmcode findest du im aktuellen Release.
-
-[Link zum Github Repository](https://github.com/rancilio-pid/ranciliopid/releases)
-
-![Screenshot der Github Homepage](../../img/2.png)
 
 ## Installation der Arduino IDE
 
