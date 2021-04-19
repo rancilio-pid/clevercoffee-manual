@@ -20,7 +20,7 @@ nav_order: 1
 
 # Einführung
 
-[Visual Studio Code](https://code.visualstudio.com/) ist ein plattformübergreifend verfügbarer Code-Editor, das sich über zahlreiche Plugins erweitern lässt. Eines für die Entwicklung eingebetteter Systeme hilfreichsten Plugins ist [PlatformIO](https://platformio.org/)
+[Visual Studio Code](https://code.visualstudio.com/) ist ein plattformübergreifend verfügbarer Code-Editor, der sich über zahlreiche Plugins erweitern lässt. Eines der für die Entwicklung eingebetteter Systeme hilfreichsten Plugins ist [PlatformIO](https://platformio.org/). PlatformIO ermöglicht das einfache Kompilieren und Debuggen von Code für zahlreiche Mikrocontroller und ist in seiner Handhabung und Installation deutlich weniger komplex ArduinoIDE. Gleichzeitig hat PlatformIO in Verbindung mit Visual Studio Code allerdings einen deutlich größeren Funktionsumfang, wie zum Beispiel die automatische Installation aller Abhängigkeiten (Compiler, Bibliotheken, etc.) und die gleichzeitige Unterstützung mehrerer Mikrocontroller.
 
 ## Installationsvideo
 
