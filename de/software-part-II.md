@@ -22,7 +22,7 @@ In diesem Kapitel wird beschrieben wie der Code auf den Mikrocontroller (NodeMCU
 
 Im aktuellen Release befinden sich zwei Datein:
 * rancilio-pid.ino
-* userConfig.h
+* userConfig.h ( userConfig_sample.h muss in userConfig.h umbenannt werden) 
 
 Die rancilio-pid.ino ist das eigentliche Programmcode und die userConfig.h eine ausgelagerte Konfigurationsdatei. Diese einhaltet folgende Punkte.
 
