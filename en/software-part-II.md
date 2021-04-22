@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Software Part II
 parent: EN - Manual
 has_children: false

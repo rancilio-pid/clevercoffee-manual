@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Hardware
 parent: DE - Handbuch
 has_children: true

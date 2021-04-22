@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Einbau
 parent: Hardware
 grand_parent: DE - Handbuch

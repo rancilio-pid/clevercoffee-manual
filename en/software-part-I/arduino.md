@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Arduino IDE setup
 parent: Software Part I
 grand_parent: EN - Manual

@@ -1,4 +1,6 @@
 title: "Rancilio-PID Manual"
+# theme: just-the-docs
+# source: de
 remote_theme: pmarsceill/just-the-docs
 color_scheme: "light"
 search_enabled: true

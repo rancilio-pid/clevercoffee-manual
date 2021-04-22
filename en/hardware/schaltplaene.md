@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Schaltpläne
 parent: Hardware
 grand_parent: EN - Manual

@@ -1,5 +1,6 @@
 ---
-title: MQTT
+tilayout: default
+le: MQTT
 parent: Konfiguration & Anpassung
 grand_parent: DE - Handbuch
 has_children: false

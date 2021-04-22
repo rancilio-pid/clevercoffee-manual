@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Software Teil II
 parent: DE - Handbuch
 has_children: false

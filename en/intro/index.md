@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Introduction
 parent: EN - Manual
 has_children: true

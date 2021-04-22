@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Einführung
 parent: DE - Handbuch
 has_children: true

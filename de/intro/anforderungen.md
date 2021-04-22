@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Anforderungen an dich
 parent: Einführung
 grand_parent: DE - Handbuch

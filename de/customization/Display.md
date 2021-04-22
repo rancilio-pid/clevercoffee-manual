@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Display
 parent: Konfiguration & Anpassung
 grand_parent: DE - Handbuch

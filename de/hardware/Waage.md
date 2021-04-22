@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Waageneinbau
 parent: Hardware
 grand_parent: DE - Handbuch
