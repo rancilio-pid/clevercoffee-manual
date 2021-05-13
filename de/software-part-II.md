@@ -112,29 +112,57 @@ TRIGGERTYPE HIGH es gibt LOW UND HIGH Trigger für das Ventil/Pumpe. Dies wird h
 VOLTAGESENSORTYPE und PINMODEVOLTAGESENSOR ist für die Konfiguration vom Voltagesensor hier dazu mehr: [Brüherkennung bei Only PID](
 https://manual.rancilio-pid.de/de/customization/brueherkennung.html#sensor-zur-brüherkennung-bei-only-pid
 
+## TOF sensor for water level
+
 ```
-// TOF sensor for water level
 #define TOF 0                      // 0 = no TOF sensor connected; 1 = water level by TOF sensor
 #define TOF_I2C 0x29               // I2C address of TOF sensor; 0x29 by default
 #define CALIBRATION_MODE 0         // 1 = enable to obtain water level calibration values; 0 = disable for normal PID operation; can also be done in Blynk
 #define WATER_FULL 102             // value for full water tank (=100%) obtained in calibration procedure (in mm); can also be set in Blynk
 #define WATER_EMPTY 205            // value for empty water tank (=0%) obtained in calibration procedure (in mm); can also be set in Blynk
+```
+Habt ihr keinen TOF Sensor, könnt ihr diesen Teil ignorieren und TOF (0) einstellen.  
 
-// E-Trigger
+
+## E-Trigger
+```
 #define ETRIGGER 0                 // 0 = no trigger (for Rancilio except Rancilio E), 1 = trigger for CPU of Rancilio E
 #define ETRIGGERTIME 60            // seconds, time between trigger signal
 #define TRIGGERRELAYTYPE HIGH      // LOW = low trigger, HIGH = high trigger relay for E-Trigger
+```
+Die Silvia E hat ein Energiesparmodul, dieses kann überbrückt werden mit einem Relais. Dieses kann hier definiert werden, wenn ETRIGGER (1) gewählt wird.
+Der zugehörige PIN wird später definiert, im Abschnitt PIN Layout.
 
-//Weight SCALE
+ETRIGGERTIME ist die Zeitdauer zwischen den Signalen.
+
+TRIGGERRELAYTYPE ist der Relaistyp (High oder LOW).
+
+## Weight SCALE
+```
 #define WEIGHTSETPOINT 30          // Gramm 
+```
+Hier wird mit WEIGHTSETPOINT das Sollgewicht für die Waage definiert.
 
-/// Wifi 
+
+
+##  Wifi 
+```
 #define HOSTNAME "rancilio"
 #define D_SSID "myssid"
 #define PASS "mypass"
 #define MAXWIFIRECONNECTS 5        // maximum number of reconnection attempts, use -1 to deactivate
 #define WIFICINNECTIONDELAY 10000  // delay between reconnects in ms
+```
+HOSTNAME ist der Hostname der Maschine,
+D_SSID und PASS sind die Wlan Einstellungen. 
 
+MAXWIFIRECONNECTS definiert wie viele Reconnect gemacht werden, bis der Fallback aktiviert wird (bei Start der Maschine) oder bis der Offline Modus aktiviert wird (nach dem erfolgreichen Start)
+
+WIFICINNECTIONDELAY ist die Zeitspanne bis der nächste Reconnect probiert wird. 
+
+
+
+```
 // OTA
 #define OTA true                   // true = OTA activated, false = OTA deactivated
 #define OTAHOST "rancilio"         // Name to be shown in ARUDINO IDE Port
@@ -204,23 +232,6 @@ https://manual.rancilio-pid.de/de/customization/brueherkennung.html#sensor-zur-b
 
 #endif // _userConfig_H
 ```
-
-
-### Wifi
-
-Unter Wifi müsst ihr euren Auth Token aus Blynk eintragen und eure Wlan SSID und das zugehörige Passwort. Bei der WLAN SSID bitte drauf achten, dass keine Leerzeichen darin enthalten sind! Auch Sonderzeichen machen gerne Schwierigkeiten im Betrieb.
-
-```
-#define AUTH "blynkauthcode"
-
-#define D_SSID "wlanname"
-
-#define PASS "wlanpass"
-```
-
-### PID
-
-Hier definiert ihr eure initialen PID Werte.
 
 
 ## Code hochladen
