@@ -54,7 +54,7 @@ siehe ./customization/Displey.md
 #define LANGUAGE 1                 // LANGUAGE = 0 (DE), LANGUAGE = 1 (EN), LANGUAGE = 2 (ES)
 ```
 
-
+```
 // Wlan and Connection
 #define OFFLINEMODUS 0       // 0 = Blynk and WIFI are used; 1 = offline mode (only preconfigured values in code are used!)
 #define FALLBACK 1           // 1 = fallback to values stored in eeprom, if blynk is not working; 0 = deactivated
@@ -135,8 +135,8 @@ siehe ./customization/Displey.md
 // Historic, no settings
 #define PONE 1               // 1 = P_ON_E (default), 0 = P_ON_M (special PID mode, other PID-parameter are needed)
 #define TEMPSENSOR 2         // 2 = TSIC306
-
 ```
+
 
 ### Wifi
 
