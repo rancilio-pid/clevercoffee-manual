@@ -91,11 +91,12 @@ Hier sind die wichtigsten Parameter für die PID/Hardware definiert,
 #define BREWMODE 1                 // 1 = NORMAL preinfusion ; 2 = Scale with weight
 #define BREWDETECTION 1            // 0 = off, 1 = Software (Onlypid 1), 2 = Hardware (Onlypid 0), 3 = Sensor/Hardware for Only PID 
 #define COLDSTART_PID 1            // 1 = default coldstart values, 2 = custom values via blynk (expert mode activated) 
-#define TRIGGERTYPE HIGH           // LOW = low trigger, HIGH = high trigger relay // BREWDETECTION 3 configuration
+#define TRIGGERTYPE HIGH           // LOW = low trigger, HIGH = high trigger relay
+// BREWDETECTION 3 configuration
 #define VOLTAGESENSORTYPE HIGH 
 #define PINMODEVOLTAGESENSOR INPUT // Mode INPUT_PULLUP, INPUT or INPUT_PULLDOWN_16 (Only Pin 16)
 ```
-ONLYPID definiert, ob ihr OnlyPID (1) oder den "Vollausbau" mit den Relais nutzt (0)
+ONLYPID definiert, ob ihr "OnlyPID" (1) oder den "Vollausbau" mit den Relais nutzt (0).
 
 ONLYPIDSCALE erlaubt es beim OnlyPID (1) auch die Waage zu nutzen. 
 
@@ -104,7 +105,13 @@ BREWMODE definiert, ob ihr nur das Ventil und die Pumpe steuert (1) oder auch ei
 BREWDETECTION Diese ist hier [Brüherkennung](https://manual.rancilio-pid.de/de/customization/brueherkennung.html) genauer erläutert. Knapp zusammengefasst,
 definiert ihr hier, ob diese per Software (1) , Brühschalter beim Vollausbau (2) oder per Sensor bei OnlyPid (3) erkannt werden soll. 
 
-COLDSTART_PID gibt an, ob ihr Standard Kaltstart Parameter nehmen wollt. Diese sind durchschnittliche Werte, welche für eine Rancilio und Gaggia funktonieren sollen. Wenn ihr euch selber daran probieren wollt wählt ihr (2). Dazu hier mehr zum Kaltstart (https://manual.rancilio-pid.de/de/customization/pid-werte.html#kaltstart)
+COLDSTART_PID gibt an, ob ihr Standard Kaltstart Parameter nehmen wollt. Diese sind durchschnittliche Werte, welche für eine Rancilio und Gaggia funktonieren sollen. Wenn ihr euch selber daran probieren wollt wählt ihr (2). Dazu hier mehr zum [Kaltstart](https://manual.rancilio-pid.de/de/customization/pid-werte.html#kaltstart)
+
+TRIGGERTYPE HIGH es gibt LOW UND HIGH Trigger für das Ventil/Pumpe. Dies wird hier definiert.
+
+VOLTAGESENSORTYPE und PINMODEVOLTAGESENSOR ist für die Konfiguration vom Voltagesensor hier dazu mehr: [Brüherkennung bei Only PID](
+https://manual.rancilio-pid.de/de/customization/brueherkennung.html#sensor-zur-brüherkennung-bei-only-pid
+
 ```
 // TOF sensor for water level
 #define TOF 0                      // 0 = no TOF sensor connected; 1 = water level by TOF sensor
