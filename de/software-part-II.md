@@ -160,14 +160,15 @@ MAXWIFIRECONNECTS definiert wie viele Reconnect gemacht werden, bis der Fallback
 
 WIFICINNECTIONDELAY ist die Zeitspanne bis der nächste Reconnect probiert wird. 
 
-
-
+##  OTA
 ```
-// OTA
 #define OTA true                   // true = OTA activated, false = OTA deactivated
 #define OTAHOST "rancilio"         // Name to be shown in ARUDINO IDE Port
 #define OTAPASS "otapass"          // Password for OTA updtates
+```
 
+
+```
 // MQTT
 #define MQTT 0                     // 1 = MQTT enabled, 0 = MQTT disabled
 #define MQTT_USERNAME "mymqttuser"
