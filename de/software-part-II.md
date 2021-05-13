@@ -40,7 +40,7 @@ MACHINE machine = RancilioSilvia;      //	RancilioSilvia, RancilioSilviaE, Gaggi
 Hier müsst ihr eure Maschine eintragen, dieser Parameter steuert die Logodarstellung auf dem Display (wenn angeschlossen) und bei der Quickmill die Erkennung des Brühvorgangs und den Dampfmodus bei BREWDETECTION 3 
 
 ### DISPLAY
-
+Hier werden alle Display relevanten Einstellungen vorgenommen. 
 ```
 #define DISPLAY 2                  // 0 = deactivated, 1 = SH1106 (e.g. 1.3 "128x64), 2 = SSD1306 (e.g. 0.96" 128x64)
 #define OLED_I2C 0x3C		           // I2C address for OLED, 0x3C by default
@@ -70,15 +70,19 @@ BREWSWITCHDELAY ermöglicht euch einzustellen, wie lange die letzte Dauer beim B
 
 LANGUAGE sollte selbsterklärend sein. 
 
-```
-// Wlan and Connection
 
-// Offline mode
+### Offline mode
+Hier wird definiert, wie die PID sich im Offline Betrieb verhalten soll. 
+```
 #define OFFLINEMODUS 0             // 0 = Blynk and Wifi are used, 1 = offline mode (only preconfigured values in code are used!)
 #define FALLBACK 1                 // 1 = fallback to values stored in eeprom, 0 = deactivated
 #define GRAFANA 1                  // 1 = grafana visualisation (access required), 0 = off (default)
+```
+OFFLINEMODUS: Mit (0) wird euere PID mit Blynk und WlAN arbeiten. Bei (1) bleibt der PID offline. Daher werden alle vordefinierten PID werte aus der userconfig genommen. 
+FALLBACK gibt euch die Möglichkeit, dass die PID die letzten im EEPROM gespeicherten Werte nimmt, falls kein WLAN vorhanden ist. Das kann euch helfen, wenn die Maschine im Büro oder im Bereich ohne WLAN steht. Dann kann die Maschine auf den Hotspot des Handy eingestellt sein und bei Bedarf stellt man die Werte per Hotspot und Blynk ein und wenn kein WLAN vorhanden ist, nimmt die Maschine die letzten Werte. Diese werden bei jeder erfolgreichen Verbindung mit Blynk beim Start der Maschine gespeichert. 
 
-// PID & Hardware
+## PID & Hardware
+```
 #define ONLYPID 1                  // 1 = Only PID, 0 = PID and preinfusion
 #define ONLYPIDSCALE 0             // 0 = off , 1= OnlyPID with Scale
 #define BREWMODE 1                 // 1 = NORMAL preinfusion ; 2 = Scale with weight
@@ -87,7 +91,7 @@ LANGUAGE sollte selbsterklärend sein.
 #define TRIGGERTYPE HIGH           // LOW = low trigger, HIGH = high trigger relay // BREWDETECTION 3 configuration
 #define VOLTAGESENSORTYPE HIGH 
 #define PINMODEVOLTAGESENSOR INPUT // Mode INPUT_PULLUP, INPUT or INPUT_PULLDOWN_16 (Only Pin 16)
-
+```
 // TOF sensor for water level
 #define TOF 0                      // 0 = no TOF sensor connected; 1 = water level by TOF sensor
 #define TOF_I2C 0x29               // I2C address of TOF sensor; 0x29 by default
