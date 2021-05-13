@@ -40,7 +40,9 @@ MACHINE machine = RancilioSilvia;      //	RancilioSilvia, RancilioSilviaE, Gaggi
 Hier müsst ihr eure Maschine eintragen, dieser Parameter steuert die Logodarstellung auf dem Display (wenn angeschlossen) und bei der Quickmill die Erkennung des Brühvorgangs und den Dampfmodus bei BREWDETECTION 3 
 
 ### MACHINETYPE, use the exakt name of the machine 
+
 siehe ./customization/Displey.md
+```
 #define DISPLAY 2                  // 0 = deactivated, 1 = SH1106 (e.g. 1.3 "128x64), 2 = SSD1306 (e.g. 0.96" 128x64)
 #define OLED_I2C 0x3C		           // I2C address for OLED, 0x3C by default
 #define DISPLAYTEMPLATE 3          // 1 = Standard Display Template, 2 = Minimal Template, 3 = only Temperatur, 4 = Scale Template, 20 = vertical Display see git Handbook for further information
@@ -50,7 +52,7 @@ siehe ./customization/Displey.md
 #define OFFLINEGLOGO 1             // 0 = deactivated, 1 = activated
 #define BREWSWITCHDELAY 3000       // time in ms
 #define LANGUAGE 1                 // LANGUAGE = 0 (DE), LANGUAGE = 1 (EN), LANGUAGE = 2 (ES)
-
+```
 
 
 // Wlan and Connection
