@@ -79,9 +79,12 @@ Hier wird definiert, wie die PID sich im Offline Betrieb verhalten soll.
 #define GRAFANA 1                  // 1 = grafana visualisation (access required), 0 = off (default)
 ```
 OFFLINEMODUS: Mit (0) wird euere PID mit Blynk und WlAN arbeiten. Bei (1) bleibt der PID offline. Daher werden alle vordefinierten PID werte aus der userconfig genommen. 
+
 FALLBACK gibt euch die Möglichkeit, dass die PID die letzten im EEPROM gespeicherten Werte nimmt, falls kein WLAN vorhanden ist. Das kann euch helfen, wenn die Maschine im Büro oder im Bereich ohne WLAN steht. Dann kann die Maschine auf den Hotspot des Handy eingestellt sein und bei Bedarf stellt man die Werte per Hotspot und Blynk ein und wenn kein WLAN vorhanden ist, nimmt die Maschine die letzten Werte. Diese werden bei jeder erfolgreichen Verbindung mit Blynk beim Start der Maschine gespeichert. 
 
+GRAFANA aktiviert die Visualisierung mittels Grafana, diese muss in Blynk noch weiter definiert werden. 
 ## PID & Hardware
+Hier sind die wichtigsten Parameter für die PID/Hardware definiert,
 ```
 #define ONLYPID 1                  // 1 = Only PID, 0 = PID and preinfusion
 #define ONLYPIDSCALE 0             // 0 = off , 1= OnlyPID with Scale
@@ -91,6 +94,17 @@ FALLBACK gibt euch die Möglichkeit, dass die PID die letzten im EEPROM gespeich
 #define TRIGGERTYPE HIGH           // LOW = low trigger, HIGH = high trigger relay // BREWDETECTION 3 configuration
 #define VOLTAGESENSORTYPE HIGH 
 #define PINMODEVOLTAGESENSOR INPUT // Mode INPUT_PULLUP, INPUT or INPUT_PULLDOWN_16 (Only Pin 16)
+```
+ONLYPID definiert, ob ihr OnlyPID (1) oder den "Vollausbau" mit den Relais nutzt (0)
+
+ONLYPIDSCALE erlaubt es beim OnlyPID (1) auch die Waage zu nutzen. 
+
+BREWMODE definiert, ob ihr nur das Ventil und die Pumpe steuert (1) oder auch eine Waage verbaut habt (2). Dazu wird in der Zukunft im Handbuch noch mehr stehen.
+
+BREWDETECTION Diese ist hier [Brüherkennung](https://manual.rancilio-pid.de/de/customization/brueherkennung.html) genauer erläutert. Knapp zusammengefasst,
+definiert ihr hier, ob diese per Software (1) , Brühschalter beim Vollausbau (2) oder per Sensor bei OnlyPid (3) erkannt werden soll. 
+
+COLDSTART_PID gibt an, ob ihr Standard Kaltstart Parameter nehmen wollt. Diese sind durchschnittliche Werte, welche für eine Rancilio und Gaggia funktonieren sollen. Wenn ihr euch selber daran probieren wollt wählt ihr (2). Dazu hier mehr zum Kaltstart (https://manual.rancilio-pid.de/de/customization/pid-werte.html#kaltstart)
 ```
 // TOF sensor for water level
 #define TOF 0                      // 0 = no TOF sensor connected; 1 = water level by TOF sensor
