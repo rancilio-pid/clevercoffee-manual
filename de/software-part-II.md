@@ -16,27 +16,42 @@ Inhaltsverzeichnis
 
 ## Einleitung
 
-In diesem Kapitel wird beschrieben wie der Code auf den Mikrocontroller (NodeMCU) geladen wird. Damit könnt ihr loslegen, sobald ihr den Mikrocontroller zur Hand habt (weitere Teile werden nicht hierfür nicht benötigt). Für das Testing sollte dann zumindest der Temperatursensor angeschlossen werden.
+In diesem Kapitel wird beschrieben wie der Code auf den Mikrocontroller (NodeMCU) geladen wird. Damit könnt ihr loslegen, sobald ihr den Mikrocontroller zur Hand habt (weitere Teile werden nicht hierfür nicht benötigt). Für einen Test sollte dann zumindest der Temperatursensor angeschlossen werden.
 
-## Code auf den Controller laden
+## userConfig.h
+In dem rancilio-pid/rancilio-pid Ordner befindet sich eine für euch wichtige Datei: 
+* userConfig_sample.h
 
-Im aktuellen Release befinden sich zwei Datein:
-* rancilio-pid.ino
-* userConfig.h ( userConfig_sample.h muss in userConfig.h umbenannt werden) 
+Die userConfig_sample.h muss in userConfig.h umbenannt werden und mit euren Werten anpasste werden. 
+Alle wichtigen Einstellungen werden für eure PID in dieser Datei vorgenommen, diese werden nun gleich genauer erläutert.
+Bei einem Update auf eine neuere Version bitte unbedingt die neuste userConfig_sample.h nehmen und mit eueren Werten anpassen.
+Wenn Ihr das nicht tut, kann dies zu unspezifischen, nicht erwünschten Verhalten an der Maschine kommen: Display hängt, PID geht nicht und weitere
 
-Die rancilio-pid.ino ist das eigentliche Programmcode und die userConfig.h eine ausgelagerte Konfigurationsdatei. Diese einhaltet folgende Punkte.
 
-### Vorab Konfig
+## Die Parameter in der userConfig.h
 
-Die wichtigsten Funktionen müssen hier parametriert werden. Denkt daran, den richtigen PID Mode, Temperatursensor und das ggf. passende Display auszuwählen.
+Die userConfig.h ist in mehrere Abschnitte unterteilt. Die wir nun nach und nach euch vorstellen werden. 
 
+
+### MACHINETYPE, use the exakt name of the machine 
 ```
-// Display -> siehe ./customization/Displey.md
-#define DISPLAY 2            // 2 = Defaulf AZDelivery Display
-#define DISPLAYTEMPLATE 1    // 1: Standard Display Template, 2: Minimal Template
-#define MACHINELOGO 1        // 1 = Rancilio, 2 = Gaggia
-#define DISPALYROTATE U8G2_R0   // rotate display clockwise: U8G2_R0 = no rotation; U8G2_R1 = 90°; U8G2_R2 = 180°; U8G2_R3 = 270°
-#define SHOTTIMER  1 // 0: no SHOTTIMER, 1: SHOTTIMER
+MACHINE machine = RancilioSilvia;      //	RancilioSilvia, RancilioSilviaE, Gaggia, QuickMill
+```
+Hier müsst ihr eure Maschine eintragen, dieser Parameter steuert die Logodarstellung auf dem Display (wenn angeschlossen) und bei der Quickmill die Erkennung des Brühvorgangs und den Dampfmodus bei BREWDETECTION 3 
+
+### MACHINETYPE, use the exakt name of the machine 
+siehe ./customization/Displey.md
+#define DISPLAY 2                  // 0 = deactivated, 1 = SH1106 (e.g. 1.3 "128x64), 2 = SSD1306 (e.g. 0.96" 128x64)
+#define OLED_I2C 0x3C		           // I2C address for OLED, 0x3C by default
+#define DISPLAYTEMPLATE 3          // 1 = Standard Display Template, 2 = Minimal Template, 3 = only Temperatur, 4 = Scale Template, 20 = vertical Display see git Handbook for further information
+#define DISPLAYROTATE U8G2_R0      // rotate display clockwise: U8G2_R0 = no rotation; U8G2_R1 = 90°; U8G2_R2 = 180°; U8G2_R3 = 270°
+#define SHOTTIMER 1                // 0 = deactivated, 1 = activated 2 = with scale
+#define HEATINGLOGO 0              // 0 = deactivated, 1 = Rancilio, 2 = Gaggia 
+#define OFFLINEGLOGO 1             // 0 = deactivated, 1 = activated
+#define BREWSWITCHDELAY 3000       // time in ms
+#define LANGUAGE 1                 // LANGUAGE = 0 (DE), LANGUAGE = 1 (EN), LANGUAGE = 2 (ES)
+
+
 
 // Wlan and Connection
 #define OFFLINEMODUS 0       // 0 = Blynk and WIFI are used; 1 = offline mode (only preconfigured values in code are used!)
