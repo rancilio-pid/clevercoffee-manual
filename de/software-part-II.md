@@ -39,7 +39,7 @@ MACHINE machine = RancilioSilvia;      //	RancilioSilvia, RancilioSilviaE, Gaggi
 ```
 Hier müsst ihr eure Maschine eintragen, dieser Parameter steuert die Logodarstellung auf dem Display (wenn angeschlossen) und bei der Quickmill die Erkennung des Brühvorgangs und den Dampfmodus bei BREWDETECTION 3 
 
-### MACHINETYPE, use the exakt name of the machine 
+### DISPLAY
 
 ```
 #define DISPLAY 2                  // 0 = deactivated, 1 = SH1106 (e.g. 1.3 "128x64), 2 = SSD1306 (e.g. 0.96" 128x64)
@@ -53,14 +53,23 @@ Hier müsst ihr eure Maschine eintragen, dieser Parameter steuert die Logodarste
 #define LANGUAGE 1                 // LANGUAGE = 0 (DE), LANGUAGE = 1 (EN), LANGUAGE = 2 (ES)
 ```
 DISPLAY definiert den Displaytyp. 
+
 OLED_I2C gibt die I2C Adresse an, hier muss in der Regel nichts angepasst werden.  
+
 DISPLAYTEMPLATE definiert das Template was ihr verwenden möchtet, siehe [Displayausgabe](https://manual.rancilio-pid.de/de/customization/Display.html).
+
 DISPLAYROTATE lässt das Display rotieren. Beim Hochformat kann ein entsprechendes vertikale Displaytemplate verwendet werden.
+
 SHOTTIMER lässt euch den Shottimer aktivieren (1), bei der Verwendung einer Waage kann (2) ausgewählt werden, um auch das Gewicht zu sehen.
-HEATINGLOGO zeigt euch bis kurz vor Erreichen der Solltemperatur ein entsprechendes Logo anzeigen.
-OFFLINEGLOGO zeigt euch beim deaktivieren der PID via Blynk ein Logo an.
+
+HEATINGLOGO zeigt euch bis kurz vor Erreichen der Solltemperatur ein entsprechendes Logo anzeigen, siehe [Displayausgabe](https://manual.rancilio-pid.de/de/customization/Display.html).
+
+OFFLINEGLOGO zeigt euch beim deaktivieren der PID via Blynk ein Logo an, siehe [Displayausgabe](https://manual.rancilio-pid.de/de/customization/Display.html).
+
 BREWSWITCHDELAY ermöglicht euch einzustellen, wie lange die letzte Dauer beim Bezug im Display angezeigt werden soll.
+
 LANGUAGE sollte selbsterklärend sein. 
+
 ```
 // Wlan and Connection
 
