@@ -160,7 +160,7 @@ MAXWIFIRECONNECTS definiert wie viele Reconnect gemacht werden, bis der Fallback
 
 WIFICINNECTIONDELAY ist die Zeitspanne bis der nächste Reconnect probiert wird. 
 
-##  OTA
+## OTA
 ```
 #define OTA true                   // true = OTA activated, false = OTA deactivated
 #define OTAHOST "rancilio"         // Name to be shown in ARUDINO IDE Port
@@ -168,21 +168,25 @@ WIFICINNECTIONDELAY ist die Zeitspanne bis der nächste Reconnect probiert wird.
 ```
 
 
+## MQTT
 ```
-// MQTT
 #define MQTT 0                     // 1 = MQTT enabled, 0 = MQTT disabled
 #define MQTT_USERNAME "mymqttuser"
 #define MQTT_PASSWORD "mymqttpass"
 #define MQTT_TOPIC_PREFIX "custom/Küche."  // topic will be "<MQTT_TOPIC_PREFIX><HOSTNAME>/<READING>"
 #define MQTT_SERVER_IP "XXX.XXX.XXX.XXX"  // IP-Address of locally installed mqtt server
 #define MQTT_SERVER_PORT 1883    
+```
 
-// BLynk
+## Blynk
+```
 #define AUTH "myauth"
 #define BLYNKADDRESS "blynk.clevercoffee.de"  // blynk-server IP-Address
 #define BLYNKPORT 8080             // blynk-server portver 
+```
 
-// PID - offline values
+## PID - offline values
+```
 #define SETPOINT 95                // Temperatur setpoint
 #define STEAMSETPOINT 120          // Temperatur setpoint
 #define AGGKP 69                   // Kp normal
@@ -197,13 +201,16 @@ WIFICINNECTIONDELAY ist die Zeitspanne bis der nächste Reconnect probiert wird.
 #define AGGBKP 50                  // Kp
 #define AGGBTN 0                   // Tn 
 #define AGGBTV 20                  // Tv
+```
 
-// Backflush values
+## Backflush values
+```
 #define FILLTIME 3000              // time in ms the pump is running
 #define FLUSHTIME 6000             // time in ms the 3-way valve is open -> backflush
 #define MAXFLUSHCYCLES 5           // number of cycles the backflush should run, 0 = disabled
-
-// Pin Layout
+```
+## Pin Layout
+```
 #define ONE_WIRE_BUS 2             // Temp sensor pin
 #define PINBREWSWITCH 0           // 0: A0 Analog PIN ; >0 : DIGITAL PIN, ESP8266: ONLY USE PIN15 AND PIN16! 
 #define pinRelayVentil 12          // Output pin for 3-way-valve
@@ -219,16 +226,21 @@ WIFICINNECTIONDELAY ist die Zeitspanne bis der nächste Reconnect probiert wird.
 #define HXCLKPIN 99                // weight scale PIN  
 #define SCREEN_WIDTH 128           // OLED display width, in pixels
 #define SCREEN_HEIGHT 64           // OLED display height, in pixels  
+```
 
-// Historic (no settings)
+## Historic (no settings)
+```
 #define PONE 1                     // 1 = P_ON_E (default), 0 = P_ON_M (special PID mode, other PID-parameter are needed)
 #define TEMPSENSOR 2               // 2 = TSIC306 1=DS18B20
+```
 
 
-// Check BrewSwitch
+## Historic (no settings)
+```
 #if (defined(ESP8266) && ((PINBREWSWITCH != 15 && PINBREWSWITCH != 0 && PINBREWSWITCH != 16 )))
   #error("WRONG Brewswitch PIN for ESP8266, Only PIN 15 and PIN 16");  
 #endif
+```
 
 
 #endif // _userConfig_H
