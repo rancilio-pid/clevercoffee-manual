@@ -58,9 +58,9 @@ OLED_I2C gibt die I2C Adresse an, hier muss in der Regel nichts angepasst werden
 
 DISPLAYTEMPLATE definiert das Template was ihr verwenden möchtet, siehe [Displayausgabe](https://manual.rancilio-pid.de/de/customization/Display.html).
 
-DISPLAYROTATE lässt das Display rotieren. Beim Hochformat kann ein entsprechendes vertikale Displaytemplate verwendet werden.
+DISPLAYROTATE lässt das Display rotieren. Beim Hochformat muss ein entsprechendes vertikale Displaytemplate (20) verwendet werden.
 
-SHOTTIMER lässt euch den Shottimer aktivieren (1), bei der Verwendung einer Waage kann (2) ausgewählt werden, um auch das Gewicht zu sehen.
+SHOTTIMER (1) lässt euch den Shottimer aktivieren, bei der Verwendung einer Waage kann (2) ausgewählt werden, um auch das Gewicht zu sehen.
 
 HEATINGLOGO zeigt euch bis kurz vor Erreichen der Solltemperatur ein entsprechendes Logo anzeigen, siehe [Displayausgabe](https://manual.rancilio-pid.de/de/customization/Display.html).
 
@@ -68,7 +68,7 @@ OFFLINEGLOGO zeigt euch beim deaktivieren der PID via Blynk ein Logo an, siehe [
 
 BREWSWITCHDELAY ermöglicht euch einzustellen, wie lange die letzte Dauer beim Bezug im Display angezeigt werden soll.
 
-LANGUAGE sollte selbsterklärend sein. 
+LANGUAGE erlaubt es die Spracheausgabe am Display auszuwählen.  
 
 
 ### Offline mode
@@ -98,7 +98,7 @@ Hier sind die wichtigsten Parameter für die PID/Hardware definiert,
 ```
 ONLYPID definiert, ob ihr "OnlyPID" (1) oder den "Vollausbau" mit den Relais nutzt (0).
 
-ONLYPIDSCALE erlaubt es beim OnlyPID (1) auch die Waage zu nutzen. 
+ONLYPIDSCALE (1) erlaubt es beim OnlyPID (1) auch die Waage zu nutzen. 
 
 BREWMODE definiert, ob ihr nur das Ventil und die Pumpe steuert (1) oder auch eine Waage verbaut habt (2). Dazu wird in der Zukunft im Handbuch noch mehr stehen.
 
