@@ -48,6 +48,5 @@ Dabei werden Pumpe und das 3-Wege-Ventil vom Controller gesteuert.
 
 ![Vollausbau Schaltplan](../../schaltplan/VollausbauRancilio.png)
 
-## Schematische Darstellung der Ausgänge der Platine ESPresso Rev 1
 
-![Platine Schaltplan](../../img/Rancilio-Cable-Page-4.jpg)
+
