@@ -81,7 +81,8 @@ Es gibt zwei verschiedene Ausbaustufen unseres Systems: PID Only und den erweite
 
 ## Ausbaustufen
 Es gibt 2 Ausbaustufen: "PID Only" und den "Vollausbau".
-Mit der Zeit haben sich dazu Ergänzungen ergeben, die in der nachfolgenden Grafik dargestellt sind: 
+Mit der Zeit haben sich dazu Ergänzungen ergeben, die in der nachfolgenden Grafik dargestellt sind.
+Die Grenzen sind fließend, da auch beim "PID Only" auch nun die Waage genutzt werden kann zur Anzeige des Bezugsgewicht.
 
 ![Trockenaufbau](../../img/Ausbaustufen-Clevercoffeepid.jpg)
 
@@ -90,6 +91,10 @@ Mit der Zeit haben sich dazu Ergänzungen ergeben, die in der nachfolgenden Graf
 Die Grundversion ist ein klassischer PID-Regler: der Temperatursensor nimmt die aktuelle Temperatur des Kessels auf (Input) und gibt den Wert an die PID-Software auf den Mikrocontroller ( auch NodeMCU genannt) weiter. Diese gibt dann das Regler-Signal (Output) an das SSR aus, welches die Heizung eurer Maschine aktiviert bzw. deaktiviert.
 
 Damit habt ihr eine exakte Regelung der Brühtemperatur auf euren Wunschwert durch die PID-Software, die restliche Bedienung eurer Maschine bleibt unangetastet. MQTT, Displayausgabe und Handy Steuerung geht auch bei Only PID
+
+## Erweiterung der Grundversion (PID Only Plus)
+
+Um bei einem Bezug die Temperatur besser zu regeln, kann ein zusätzlicher Sensor verbaut werden, um den Brühschalter abzufragen.
 
 ## Vollausbau
 
@@ -104,3 +109,7 @@ Beim Vollausbau gehen wir einen Schritt weiter und überlassen die Ansteuerung d
 Beim Vollausbau ändert sich die Bedienung eurer Maschine auch etwas: der Brühschalter, mit dem ihr bislang den Bezug gestartet und auch wieder gestoppt habt, dient nun nur noch als Taster, der den automatisierten Bezug startet. Gestoppt wird der Bezug durch die Software, auch wenn der Schalter noch auf ON steht.
 
 Unsere Empfehlung, basierend auf unseren eigenen Erfahrungen und denen der bislang mehr als 250 User des PIDs, lautet ganz klar, zuerst die Grundversion PID-Only umzusetzen. Damit ist die größte geschmackliche Verbesserung im Vergleich zum vorherigen Serienzustand eurer Maschine zu erwarten. Der Vollausbau ist darauf aufbauend eine Erweiterung der Möglichkeiten, aber gleichzeitig auch ein komplexerer Umbau.  
+
+## Vollausbau Plus
+Bei diesem Ausbau bleibt kein Wunsch mehr offen, da das Bezugsgewicht nun die Bezugsdauer steuert. 
+Auch ist eine Drucküberwachung mittel Drucksensor möglich. 
