@@ -82,6 +82,7 @@ Es gibt zwei verschiedene Ausbaustufen unseres Systems: PID Only und den erweite
 ## Ausbaustufen
 Es gibt 2 Ausbaustufen: "PID Only" und den "Vollausbau".
 Mit der Zeit haben sich dazu Ergänzungen ergeben, die in der nachfolgenden Grafik dargestellt sind: 
+
 ![Trockenaufbau](../../img/Ausbaustufen-Clevercoffeepid.jpg)
 
 ## Grundversion (PID Only)
