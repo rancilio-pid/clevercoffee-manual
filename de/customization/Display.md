@@ -37,8 +37,7 @@ Der Brewtimer (oder Shottimer) wird ebenfalls in der Userconfig ausgewählt:
 > #define SHOTTIMER 1                // 0 = deactivated, 1 = activated
 
 Je nach Setup (PID Only vs. Vollausbau) wird der Brewtimer angezeigt, sobald ein Bezug festgestellt wird (hard- bzw. softwareseitig).
-
-**Wichtig:** Standardmäßig läuft der Bezug 100 Sekunden. Wem das zu lange ist, der kann das in Blynk im Menü "Brüherkennung" einstellen.
+Bei OnlyPID sind standardmaüßig 35 Sekunden hinterlegt. 
 
 
 ## Standard Design - DISPLAYTEMPLATE 1
