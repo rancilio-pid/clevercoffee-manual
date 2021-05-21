@@ -77,6 +77,13 @@ ID | Erklärung
 
 Es gibt zwei verschiedene Ausbaustufen unseres Systems: PID Only und den erweiterten Vollausbau.
 
+
+
+## Ausbaustufen
+Es gibt 2 Ausbaustufen: "PID Only" und den "Vollausbau".
+Mit der Zeit haben sich dazu Ergänzungen ergeben, die in der nachfolgenden Grafik dargestellt sind: 
+![Trockenaufbau](../../img/Ausbaustufen-Clevercoffeepid.jpg)
+
 ## Grundversion (PID Only)
 
 Die Grundversion ist ein klassischer PID-Regler: der Temperatursensor nimmt die aktuelle Temperatur des Kessels auf (Input) und gibt den Wert an die PID-Software auf den Mikrocontroller ( auch NodeMCU genannt) weiter. Diese gibt dann das Regler-Signal (Output) an das SSR aus, welches die Heizung eurer Maschine aktiviert bzw. deaktiviert.
