@@ -26,7 +26,7 @@ nav_order: 3
 
 In diesem kurzen Video erklären wir die Installation der Arduino IDE und zeigen wie unsere OpenSource Software Rancilio-PID auf dem NodeMCU installiert wird. Viel Spaß!
 
-[![Installationsvideo](https://img.youtube.com/vi/w7vBGSVWPrw/hqdefault.jpg)](https://www.youtube.com/watch?v=w7vBGSVWPrw)
+[![Installationsvideo](../../img/vscode.mp4)
 
 ## Download und Installation
 
