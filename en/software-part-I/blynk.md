@@ -67,7 +67,7 @@ Here, you can also direcly press the "scan" symbol an scan the following QR code
 
 QR-Code for Android:
 
-![](../../img/qr-android.png)
+![](../../img/qr_android_v292.png)
 
 QR-Code for IOS:
 
