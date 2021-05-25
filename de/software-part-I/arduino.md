@@ -65,7 +65,10 @@ Diese erreicht ihr unter: Datei > Voreinstellungen
 
 ### Boardtreiber installieren
 
-Als nächstes müssen die ESP8266 Boardtreiber installiert werden.
+Als nächstes müssen die ESP8266 Boardtreiber in Version **2.6.3** installiert werden.
+
+**In der neuesten version der Boardtreiber (ab Version 3.0) gibt es breaking changes, also achtet auf die richtige Versionsnummer!!!**
+
 
 Dies erreicht ihr unter: Werkzeuge > Board: "[\<Version\>]" > Boardverwalter...
 
