@@ -76,7 +76,9 @@ You can find it under: File > Preferences
 
 ### installing board drivers
 
-Drivers for ESP8266 have to be installed next.
+Drivers for ESP8266 **version 2.6.3** have to be installed next.
+
+**The ESP8266 board driver has breaking changes in version 3.0, you have to use version 2.6.3!!!**
 
 You can find those under Tools > Board: "[\<Version\>]" > Boards Manager...
 
