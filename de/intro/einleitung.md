@@ -51,7 +51,7 @@ Folgende Eckdaten zeichnen unseren DIY PID aus:
 
 ## Universell – Umgebaute Maschinentypen
 
-Entwickelt wurde unser System ursprünglich an einer Rancilio Silvia, es ist aber universell einsatzbar. Bislang haben unsere User die folgenden Maschinen erfolgreich umgebaut:
+Entwickelt wurde unser System ursprünglich an einer Rancilio Silvia, es ist aber universell einsetzbar. Bislang haben unsere User die folgenden Maschinen erfolgreich umgebaut:
 
  * Rancilio Silvia V1 – V4
  * Rancilio Silvia E(co) V5 & V6
@@ -60,6 +60,7 @@ Entwickelt wurde unser System ursprünglich an einer Rancilio Silvia, es ist abe
  * La Pavoni EPL / Saeco Aroma / Gaggia New Classic (9403)
  * E61 Einkreiser (Bazzar A1 Livello, Fiorenzato Colombina)
  * E61 Zweikreiser (Profitec Pro500)
+ * Quick Mill Retro (0835) & Orione (3000) 
 
 ## Aufbau / Unterschiede PID Only vs. Vollausbau
 
@@ -90,7 +91,7 @@ Die Grenzen sind fließend, da auch beim "PID Only" auch nun die Waage genutzt w
 
 Die Grundversion ist ein klassischer PID-Regler: der Temperatursensor nimmt die aktuelle Temperatur des Kessels auf (Input) und gibt den Wert an die PID-Software auf den Mikrocontroller ( auch NodeMCU genannt) weiter. Diese gibt dann das Regler-Signal (Output) an das SSR aus, welches die Heizung eurer Maschine aktiviert bzw. deaktiviert.
 
-Damit habt ihr eine exakte Regelung der Brühtemperatur auf euren Wunschwert durch die PID-Software, die restliche Bedienung eurer Maschine bleibt unangetastet. MQTT, Displayausgabe und Handy Steuerung geht auch bei Only PID
+Damit habt ihr eine exakte Regelung der Brühtemperatur auf euren Wunschwert durch die PID-Software, die restliche Bedienung eurer Maschine bleibt unangetastet. MQTT, Displayausgabe und Handy Steuerung geht auch bei PID Only
 
 ## Erweiterung der Grundversion (PID Only Plus)
 
@@ -108,7 +109,7 @@ Beim Vollausbau gehen wir einen Schritt weiter und überlassen die Ansteuerung d
 
 Beim Vollausbau ändert sich die Bedienung eurer Maschine auch etwas: der Brühschalter, mit dem ihr bislang den Bezug gestartet und auch wieder gestoppt habt, dient nun nur noch als Taster, der den automatisierten Bezug startet. Gestoppt wird der Bezug durch die Software, auch wenn der Schalter noch auf ON steht.
 
-Unsere Empfehlung, basierend auf unseren eigenen Erfahrungen und denen der bislang mehr als 250 User des PIDs, lautet ganz klar, zuerst die Grundversion PID-Only umzusetzen. Damit ist die größte geschmackliche Verbesserung im Vergleich zum vorherigen Serienzustand eurer Maschine zu erwarten. Der Vollausbau ist darauf aufbauend eine Erweiterung der Möglichkeiten, aber gleichzeitig auch ein komplexerer Umbau.  
+Unsere Empfehlung, basierend auf unseren eigenen Erfahrungen und denen der bislang mehr als 250 User des PIDs, lautet ganz klar, zuerst die Grundversion PID Only umzusetzen. Damit ist die größte geschmackliche Verbesserung im Vergleich zum vorherigen Serienzustand eurer Maschine zu erwarten. Der Vollausbau ist darauf aufbauend eine Erweiterung der Möglichkeiten, aber gleichzeitig auch ein komplexerer Umbau.  
 
 ## Vollausbau Plus
 Bei diesem Ausbau bleibt kein Wunsch mehr offen, da das Bezugsgewicht nun die Bezugsdauer steuert. 
