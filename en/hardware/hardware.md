@@ -29,7 +29,7 @@ Das PCB für den Mikrocontroller sieht wie folgt aus:
 ![PCB](../../img/image-3.png)
 
 
-###  Grundversion PID-Only
+###  Grundversion PID Only
 
 Die einzelnen Komponenten werden wie folgt angeschlossen:
 

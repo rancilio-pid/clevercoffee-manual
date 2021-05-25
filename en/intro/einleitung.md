@@ -54,6 +54,7 @@ Our system was originally developed for use in the Rancilio Silvia but can be us
  * La Pavoni EPL / Saeco Aroma / Gaggia New Classic (9403)
  * E61 single boiler (Bazzar A1 Livello, Fiorenzato Colombina)
  * E61 single boiler, dual use (Profitec Pro500)
+ * Quick Mill Retro (0835) & Orione (3000)
 
 ## Differences PID Only vs. full expansion
 
