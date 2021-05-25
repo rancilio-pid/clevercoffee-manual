@@ -69,7 +69,7 @@ QR-Code für IOS:
 
 QR-Code für Android:
 
-![ranciliopid_Blynk_Setup](https://user-images.githubusercontent.com/60852037/112219020-c19dfd00-8c24-11eb-9109-7df68fd12e02.png)
+![](../../img/qr_android_v292.png)
 
 (Dargestellte PID Werte entsprechen nicht mehr den neusten Stand)
 
