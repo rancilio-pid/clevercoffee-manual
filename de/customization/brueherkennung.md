@@ -21,7 +21,7 @@ Wie in dem vorherigen Kapitel erwähnt, soll der **brew heater detection limit**
 
 ## Konfiguration der Erkennung
 
-Die Bezugserkennnung wird beim Only PID oder Vollausbau unterschiedlich realisiert. In folgender Zeile in der Userconfig kann diese konfiguriert werden: 
+Die Bezugserkennung wird beim Only PID oder Vollausbau unterschiedlich realisiert. In folgender Zeile in der User Config kann diese konfiguriert werden: 
 ```
 #define BREWDETECTION 1            
 // 0 = off, 1 = Software, 2 = Hardware, 3 = Sensor/Hardware for Only PID 
@@ -35,7 +35,7 @@ Als Ergänzung wurde eine Lösung zwischen Only PID und Vollausbau entwickelt (O
 // BREWDETECTION 3 configuration
 #define VOLTAGESENSORTYPE HIGH 
 #define PINMODEVOLTAGESENSOR INPUT // Mode INPUT_PULLUP, INPUT or INPUT_PULLDOWN_16 (Only Pin 16)
-#define PINVOLTAGESENSOR  15    //Input pin for volatage sensor
+#define PINVOLTAGESENSOR  15    //Input pin for voltage sensor
 ```
 PINVOLTAGESENSOR gibt den gewählten PIN am NodeMCU an. "VOLTAGESENSORTYPE HIGH" bedeutet, dass der Sensor ein HIGH Signal (3,3 Volt) ausgibt, wenn der Schalter gedrückt ist. "VOLTAGESENSORTYPE LOW" muss gewählt werden, wenn bei gedrücktem Schalter am Sensor ein LOW Signal (GND) ausgegeben wird. Je nach gewählten PIN und Aufbau muss ggf. ein INPUT Pullup oder Pulldown (nur Pin 16) erfolgen (PINMODEVOLTAGESENSOR INPUT oder INPUT_PULLUP oder INPUT_PULLDOWN_16). Hintergrund ist, dass durch ein Pullup oder Pulldown der PIN am NodeMCU definiert in LOW oder HIGH gehalten wird, um dann genau das gegensätzliche Signal vom Sensor zu messen. 
 
@@ -49,7 +49,7 @@ Der Sensor erhält 3,3 Volt und die andere Seite wird mit PIN 15 verbunden
 // BREWDETECTION 3 configuration
 #define VOLTAGESENSORTYPE HIGH 
 #define PINMODEVOLTAGESENSOR INPUT // Mode INPUT_PULLUP, INPUT or INPUT_PULLDOWN_16 (Only Pin 16)
-#define PINVOLTAGESENSOR  15    //Input pin for volatage sensor
+#define PINVOLTAGESENSOR  15    //Input pin for voltage sensor
 ```
 
 2. 220V Sensor (Optokoppler - TTL AC 220V Isolation Modul SCM Test Board)
@@ -78,7 +78,7 @@ Vereinfacht kann festgehalten werden, dass die „brew heater detection limit“
 Wenn die Erkennung ausgelöst wird, dann gelten für den definierten Zeitraum - welcher in „brew timer Software Seconds“ (im oberen Screenshot, 120 Sekunden) definiert ist - andere PID Werte. Somit kann der Regler nun aggressiver auf den Brühvorgang reagieren und schneller hochheizen. Wichtig ist hierbei dass jede Unterschreitung des Grenzwertes zu einer Auslösung der Erkennung führt. Der Verlauf nach dem Auslösen wird nicht weiter ausgewertet, sondern die geänderten PID Werte gelten fix für die definierte Zeit nach der Erkennung des Bezuges.
 
 ## PID Werte
-Die geänderten PID Werte gelten immer, wenn ein Brühvorgang erkannt wird, sei es per Sofware oder im Vollausbau durch die Abfrage am Brühschalter. Die Zeitdauer wird mit "brew timer Software Seconds" in der Blynksteuerung festgelegt. 
+Die geänderten PID Werte gelten immer, wenn ein Brühvorgang erkannt wird, sei es per Software oder im Vollausbau durch die Abfrage am Brühschalter. Die Zeitdauer wird mit "brew timer Software Seconds" in der Blynksteuerung festgelegt. 
 Für den kurzen Zeitraum muss der PID schnell wieder auf Temperatur kommen, ohne überzuschwingen. Hierzu muss vor allem der I-Anteil erhöht werden, damit sich der Regler nicht die erfolgte Abweichung vom Soll-Wert für die Zukunft „merkt“. Der D-Anteil kann auch erhöht werden, um den Regler beim Abfallen der Temperatur zu „beschleunigen“ und „abzubremsen“, wenn die Temperatur wieder Richtung Soll-Wert geht. Als Größenordnung können die Werte aus dem oberen Screenshot genommen werden.
 In der nachfolgenden Tabelle sind bewährte PID für die Brüherkennung zu finden.
 
@@ -87,6 +87,8 @@ Maschine |	P |	I |	D | Timer |  Limit
 Rancilio Silvia (nicht isoliert) | 50 | 0 | 20 | 120 | 45 
 Rancilio Silvia E (isoliert) | 70 | 0 | 20 | 240 | 65 
 Gaggia | 75 | 0 | 15 | 180 | 90 
+Quick Mill (Modell 0835 & 3000) | 80 | 0 | 80 | 100 | tbd.
+
 
 ## Vergleich bei einem Bezug
 

@@ -27,7 +27,7 @@ Wenn der Test erfolgreich war, kannst du beginnen deinen Einbau zu planen. Je na
 
 Der erste Schaltplan zeigt den original Zustand der Silvia vor dem Umbau.
 
-![Org Schaltplan](../../img/Rancilio-Cable-Original-1.jpg)
+![Org Schaltplan](../../schaltplan/OrginalSchaltplanRancilio.png)
 
 ## "Only PID"
 
@@ -35,7 +35,7 @@ Der zweite Schaltplan zeigt die PID Anpassung.
 Diese Version ist nur für die Temperatursteuerung verantwortlich.
 Die Pumpe und das 3-Wege-Ventil werden nicht durch den Controller gesteuert.
 
-![PID Schaltplan](../../img/Screenshot-at-Dez.-11-11-16-33-1536x1168.png)
+![PID Schaltplan](../../schaltplan/OnlyPIDRancilio.png)
 
 ## "Vollausbau"
 
@@ -44,12 +44,9 @@ Enthalten ist die PID für die Kesseltemperatursteuerung
 Zusätzlich kann auch die Brühzeit oder eine „Preinfussion“ gesteuert werden. (Vorlauf-Brühzeit, Pause, Brühzeit).
 Dabei werden Pumpe und das 3-Wege-Ventil vom Controller gesteuert.
 
-**Wichtig!: Der aktuelle Schaltplan beinhaltet ein potentiellen Fehler in der Verkabelung, siehe [[Link]](https://chat.rancilio-pid.de/ranciliopid/pl/7j88qqmfzbfc8f7f5d1jcxsceh)**
-
 **WICHTIGER HINWEIS: Dieser Umbau darf nur am Brüh-Schalter vorgenommen werden, wenn ein Schalter ohne Lampe genommen oder die Lampe ausgebaut oder eine neue Verkabelung gewählt wird, dass mit eingebauter Lampe KEINE 3,3 Volt und 230 Volt am Schalter anliegen! Sonst liegt KEINE galavanische Trennung zwischen 3,3 Volt und 230 Volt mehr vor! Das kann unter ungünstigen Umständen gefährlich für dich oder den Microcontroller sein!**
 
-![Vollausbau Schaltplan](../../img/Screenshot-at-Dez.-11-11-12-33-1536x1147.png)
+![Vollausbau Schaltplan](../../schaltplan/VollausbauRancilio.png)
 
-## Schematische Darstellung der Ausgänge der Platine ESPresso Rev 1
 
-![Platine Schaltplan](../../img/Rancilio-Cable-Page-4.jpg)
+
