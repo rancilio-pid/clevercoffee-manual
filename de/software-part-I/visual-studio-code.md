@@ -24,7 +24,7 @@ nav_order: 3
 
 ## Installationsvideo
 
-In diesem kurzen Video erklären wir die Installation von Visual Studio Code und PlatformIO und zeigen, wie Rancilio-PID eingerichtet und auf dem NodeMCU installiert wird.
+In diesem kurzen Video erklären wir die Installation von Visual Studio Code und PlatformIO und zeigen, wie Rancilio-PID eingerichtet und auf dem NodeMCU installiert wird. Die Installation erfolgt hier beispielhaft in Lubuntu, funktioniert aber analog natürlich auf jedem von Visual Studio Code unterstützten Betriebssystem.
 
 [![Installationsvideo](http://i3.ytimg.com/vi/OpYECpZG_FE/hqdefault.jpg)](https://www.youtube.com/watch?v=OpYECpZG_FE)
 
@@ -59,3 +59,7 @@ Download des aktuellen Programmcode findest du im aktuellen Release.
 Im Gegensatz zur ArduinoIDE ist es bei der Arbeit mit Visual Studio Code und PlatformIO nicht notwendig, manuell Bibliotheken zu kopieren oder den Mikrocontroller (das Board) zu installieren, für das der Code kompiliert werden soll. Die notwendigen Informationen sind bereits in der Datei `platformio.ini` voreingestellt, welche Teil des Releases `rancilio-pid` ist.
 
 Nach dem Herunterladen des Programmcodes muss man diesen in PlatformIO in Visual Studio Code über "Open Project" unter "PIO Home" -> "Open" auswählen. Beim ersten Öffnen installiert PlatformIO an dieser Stelle alle notwendigen Abhängigkeiten und Tools, wie die benötigten Compiler und Bibliotheken für die Boards. Das Projekt öffnet sich nun in der Projektansicht von PlatformIO. 
+
+Bevor man den Programmcode nun kompilieren und auf das Board laden kann, muss erst noch die Datei `userConfig.h` erstellt werden, in der alle für Dich spezifischen Einstellungen, wie zum Beispiel die WLAN-Zugangsdaten, eingetragen werden. Für Linux-Nutzer haben wir in `rancilio-pid/scripts/create_user_config.sh` ein Skript abgelegt, das Dich nach den von Dir gewünschten Grundeinstellungen fragt und die `userConfig.h` erstellt. Alle weiteren Einstellungsmöglichkeiten auf Basis dieser Datei sind in [Software Teil II](de/software-part-II.md) erklärt. 
+
+
