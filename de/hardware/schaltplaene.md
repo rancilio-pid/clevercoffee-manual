@@ -23,13 +23,15 @@ Inhaltsverzeichnis
 
 Wenn der Test erfolgreich war, kannst du beginnen deinen Einbau zu planen. Je nach Ausbaustufe musst du nur das Netzteil und Controller mit Strom versorgen, den Temperatursensor einbauen am Kessel. Wir zeigen dir hier am Beispiel der Rancilio Siliva wie der Umbau gelingt. Weiter Maschinen, wie z.B. die Gaggia wurde auch schon erfolgreich umgebaut.
 
-## Originaler Schaltplan
+## Rancilio
+
+### Originaler Schaltplan 
 
 Der erste Schaltplan zeigt den original Zustand der Silvia vor dem Umbau.
 
 ![Org Schaltplan](../../schaltplan/OrginalSchaltplanRancilio.png)
 
-## "Only PID"
+### "Only PID"
 
 Der zweite Schaltplan zeigt die PID Anpassung.
 Diese Version ist nur für die Temperatursteuerung verantwortlich.
@@ -37,7 +39,7 @@ Die Pumpe und das 3-Wege-Ventil werden nicht durch den Controller gesteuert.
 
 ![PID Schaltplan](../../schaltplan/OnlyPIDRancilio.png)
 
-## "Vollausbau"
+### "Vollausbau"
 
 Der dritte Schaltplan ist der aktuelle „Vollausbau“.
 Enthalten ist die PID für die Kesseltemperatursteuerung
