@@ -29,7 +29,7 @@ Der erste Schaltplan zeigt den original Zustand der Silvia vor dem Umbau.
 
 ![Org Schaltplan](../../img/Rancilio-Cable-Original-1.jpg)
 
-## "Only PID"
+## "PID Only"
 
 Der zweite Schaltplan zeigt die PID Anpassung.
 Diese Version ist nur für die Temperatursteuerung verantwortlich.
