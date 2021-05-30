@@ -31,7 +31,7 @@ Zeitaufwand:
 
 ## Zerlegen
 
-Als erstes muss die Maschine zerlegt werden. Hier findet ihr einen [Link zur Demontage](http://rancilio-pid.de/bauberichte/baubericht-demontage/).
+Als erstes muss die Maschine zerlegt werden. Hier findet ihr einen [Link zur Demontage](https://clevercoffee.de/rancilio-silvia-demontage/).
 
 ## PID only
 
