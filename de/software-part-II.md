@@ -24,7 +24,7 @@ In dem rancilio-pid/rancilio-pid Ordner befindet sich eine für euch wichtige Da
 
 Die userConfig_sample.h muss in userConfig.h umbenannt werden und mit euren Werten anpasste werden. 
 Alle wichtigen Einstellungen werden für eure PID in dieser Datei vorgenommen, diese werden nun gleich genauer erläutert.
-Bei einem Update auf eine neuere Version bitte unbedingt die neuste userConfig_sample.h nehmen und mit eueren Werten anpassen.
+Bei einem Update auf eine neuere Version bitte unbedingt die neuste userConfig_sample.h nehmen und mit euren Werten anpassen.
 Wenn Ihr das nicht tut, kann dies zu unspezifischen, nicht erwünschten Verhalten an der Maschine kommen: Display hängt, PID geht nicht und weitere
 
 
@@ -32,12 +32,23 @@ Wenn Ihr das nicht tut, kann dies zu unspezifischen, nicht erwünschten Verhalte
 
 Die userConfig.h ist in mehrere Abschnitte unterteilt. Die wir nun nach und nach euch vorstellen werden. 
 
+### List of supported machines
 
-### MACHINETYPE, use the exakt name of the machine 
+Die Aufzählung MACHINE enthält alle bislang unterstützen Maschinen.
 ```
-MACHINE machine = RancilioSilvia;      //	RancilioSilvia, RancilioSilviaE, Gaggia, QuickMill
+enum MACHINE {
+  RancilioSilvia,   // MACHINEID 0
+  RancilioSilviaE,  // MACHINEID 1
+  Gaggia,           // MACHINEID 2
+  QuickMill         // MACHINEID 3
+};
 ```
-Hier müsst ihr eure Maschine eintragen, dieser Parameter steuert die Logodarstellung auf dem Display (wenn angeschlossen) und bei der Quickmill die Erkennung des Brühvorgangs und den Dampfmodus bei BREWDETECTION 3 
+
+### MACHINEID
+```
+#define MACHINEID 0                //  see above list of supported machines
+```
+Hier müsst ihr die ID eurer Maschine eintragen. Dieser Parameter steuert die Logodarstellung auf dem Display (wenn angeschlossen) und bei der Quick Mill die Erkennung des Brühvorgangs und den Dampfmodus bei BREWDETECTION 3.
 
 ### DISPLAY
 Hier werden alle Display relevanten Einstellungen vorgenommen. 
@@ -68,7 +79,7 @@ OFFLINEGLOGO zeigt euch beim deaktivieren der PID via Blynk ein Logo an, siehe [
 
 BREWSWITCHDELAY ermöglicht euch einzustellen, wie lange die letzte Dauer beim Bezug im Display angezeigt werden soll.
 
-LANGUAGE erlaubt es die Spracheausgabe am Display auszuwählen.  
+LANGUAGE erlaubt es die Sprache für Displayausgaben auszuwählen.  
 
 
 ### Offline mode
@@ -78,7 +89,7 @@ Hier wird definiert, wie die PID sich im Offline Betrieb verhalten soll.
 #define FALLBACK 1                 // 1 = fallback to values stored in eeprom, 0 = deactivated
 #define GRAFANA 1                  // 1 = grafana visualisation (access required), 0 = off (default)
 ```
-OFFLINEMODUS: Mit (0) wird euere PID mit Blynk und WlAN arbeiten. Bei (1) bleibt der PID offline. Daher werden alle vordefinierten PID werte aus der userconfig genommen. 
+OFFLINEMODUS: Mit (0) wird eure PID mit Blynk und WlAN arbeiten. Bei (1) bleibt die PID offline. Daher werden alle vordefinierten PID Werte aus der userConfig.h genommen. 
 
 FALLBACK gibt euch die Möglichkeit, dass die PID die letzten im EEPROM gespeicherten Werte nimmt, falls kein WLAN vorhanden ist. Das kann euch helfen, wenn die Maschine im Büro oder im Bereich ohne WLAN steht. Dann kann die Maschine auf den Hotspot des Handy eingestellt sein und bei Bedarf stellt man die Werte per Hotspot und Blynk ein und wenn kein WLAN vorhanden ist, nimmt die Maschine die letzten Werte. Diese werden bei jeder erfolgreichen Verbindung mit Blynk beim Start der Maschine gespeichert. 
 
@@ -105,7 +116,7 @@ BREWMODE definiert, ob ihr nur das Ventil und die Pumpe steuert (1) oder auch ei
 BREWDETECTION Diese ist hier [Brüherkennung](https://manual.rancilio-pid.de/de/customization/brueherkennung.html) genauer erläutert. Knapp zusammengefasst,
 definiert ihr hier, ob diese per Software (1) , Brühschalter beim Vollausbau (2) oder per Sensor bei OnlyPid (3) erkannt werden soll. 
 
-COLDSTART_PID gibt an, ob ihr Standard Kaltstart Parameter nehmen wollt. Diese sind durchschnittliche Werte, welche für eine Rancilio und Gaggia funktonieren sollen. Wenn ihr euch selber daran probieren wollt wählt ihr (2). Dazu hier mehr zum [Kaltstart](https://manual.rancilio-pid.de/de/customization/pid-werte.html#kaltstart)
+COLDSTART_PID gibt an, ob ihr Standard Kaltstart Parameter nehmen wollt. Diese sind durchschnittliche Werte, welche für eine Rancilio und Gaggia funktionieren sollen. Wenn ihr euch selber daran probieren wollt wählt ihr (2). Dazu hier mehr zum [Kaltstart](https://manual.rancilio-pid.de/de/customization/pid-werte.html#kaltstart)
 
 TRIGGERTYPE HIGH es gibt LOW UND HIGH Trigger für das Ventil/Pumpe. Dies wird hier definiert.
 
