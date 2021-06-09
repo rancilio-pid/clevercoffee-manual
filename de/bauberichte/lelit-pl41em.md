@@ -26,7 +26,7 @@ nav_order: 1
 ## Trockenaufbau
 Auf dem Bild unten seht ihr den von mir vorbereiteten Trockenaufbau, den ich vor dem Einbau getestet habe. Wie hier im Handbuch ausgiebig erklärt, habe ich die Terminals an die Platine des NodeMCU gelötet, die Software aufgespielt, hitzebeständige Litzen an den Temperatursensor gelötet und mit Schrumpfschlauch versehen, das Display (vorläufig) angeschlossen, das Netzteil vorbereitet und das Relais angeschlossen und getestet. Wichtig war für mich vor dem Einbau, dass die Softwareupdates over-the-air funktionieren, sodass ich bei zukünftigen Updates die Maschine öffnen muss. Als das alles zufriedenstellend funktionierte, habe ich mich an den Einbau in die Maschine gemacht. 
 
-[<img src="/img/bauanleitungen/lelit-pl41em/IMG_1454.jpeg" width="85%">](/img/bauanleitungen/lelit-pl41em/IMG_1454.jpeg){:target="_blank"}
+[<img src="../../img/bauanleitungen/lelit-pl41em/IMG_1454.jpeg" width="85%">](/../../img/bauanleitungen/lelit-pl41em/IMG_1454.jpeg){:target="_blank"}
 
 ## Einbauschritte
 
