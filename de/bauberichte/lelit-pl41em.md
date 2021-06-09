@@ -50,7 +50,7 @@ Ist die Tassenablage entfernt, habt ihr das Innere der Maschine mit Pumpe, Kesse
 
 ### Netzteil
 
-Um das System mit Strom zu versorgen, müssen wir Außen-, Neutral- und Schutzleiter der Maschine anzapfen. Zur besseren Übersicht habe ich mir analog zu den Standardfarben hitzebeständige 1,5mm²-Litzen in braun, blau und grün-gelb gekauft und damit das Netzteil in der Maschine versorgt. 
+Um das System mit Strom zu versorgen, müssen Außen-, Neutral- und Schutzleiter der Maschine angezapft werden. Zur besseren Übersicht habe ich mir analog zu den Standardfarben hitzebeständige 1,5mm²-Litzen in braun, blau und grün-gelb gekauft und damit das Netzteil in der Maschine versorgt. 
 
 [<img src="../../img/bauanleitungen/lelit-pl41em/IMG_1457.jpeg" width="48%">](/../../img/bauanleitungen/lelit-pl41em/IMG_1457.jpeg){:target="_blank"}
 [<img src="../../img/bauanleitungen/lelit-pl41em/IMG_1456.jpeg" width="48%">](/../../img/bauanleitungen/lelit-pl41em/IMG_1456.jpeg){:target="_blank"}
@@ -73,7 +73,7 @@ Diesen Kabelschuh habe ich dann auf die Schraube geschoben und sie wieder am Kes
 
 Ich habe mich entschieden, die Stromversorgung für das PID-System hinter dem Hauptschalter der Maschine abzugreifen, sodass das System mit der Maschine an- und wieder ausgeschaltet wird. Die Ausgänge des Schalters sind die beiden *unteren* Anschlüsse. Um sie anzuschließen habe ich im ersten Schritt Kabelschuhe an eine blaue und eine braune 1,5mm²-Litze gecrimpt. 
 
-Da die Ausgänge des Schalters als Flachstecker ausgeführt sind, habe ich sie jeweils mit Flachsteckerverteilern versehen, die zum Netzteil führenden Litzen sowie die Stecker, die ursprünglich angeschlossen waren und den Rest der Maschine mit Strom versorgen, aufgesteckt.
+Da die Ausgänge des Schalters als Flachstecker ausgeführt sind, habe ich sie jeweils mit Flachsteckerverteilern versehen und die zum Netzteil führenden Litzen sowie die Stecker, die ursprünglich angeschlossen waren und den Rest der Maschine mit Strom versorgen, aufgesteckt.
 
 [<img src="../../img/bauanleitungen/lelit-pl41em/IMG_1463.jpeg" width="48%">](/../../img/bauanleitungen/lelit-pl41em/IMG_1463.jpeg){:target="_blank"}
 [<img src="../../img/bauanleitungen/lelit-pl41em/IMG_1465.jpeg" width="48%">](/../../img/bauanleitungen/lelit-pl41em/IMG_1465.jpeg){:target="_blank"}
@@ -99,7 +99,7 @@ Um den Anschluss des Netzteils zu testen, habe ich die Kaffeemaschine wieder ang
 
 ### Display
 
-Um das Display anzuschließen, habe ich mir von einer Rolle Flachbandkabel die passende Länge (ca. 30-40cm) abgetrennt, vier Litzen abgelöst und jeweils an einem Ende mit Dupont-Buchsen versehen und diese vier Buchsen in das passende Gehäuse geschoben. Hierbei sollte man natürlich auf die korrekte Reihenfolge achten, sodass man sich nicht mit Kabeldrehern an der Platine behelfen muss. 
+Um das Display anzuschließen, habe ich mir von einer Rolle Flachbandkabel die passende Länge (ca. 30--40cm) abgetrennt, vier zusammenhängende Litzen abgelöst, jeweils an einem Ende mit Dupont-Buchsen versehen und diese vier Buchsen in das passende Vierergehäuse geschoben. Hierbei sollte man natürlich auf die korrekte Reihenfolge achten, sodass man sich nicht mit Kabeldrehern an der Platine behelfen muss. 
 
 [<img src="../../img/bauanleitungen/lelit-pl41em/IMG_1482.jpeg" width="48%">](/../../img/bauanleitungen/lelit-pl41em/IMG_1482.jpeg){:target="_blank"}
 [<img src="../../img/bauanleitungen/lelit-pl41em/IMG_1483.jpeg" width="48%">](/../../img/bauanleitungen/lelit-pl41em/IMG_1483.jpeg){:target="_blank"}
@@ -132,12 +132,11 @@ Ist man sich sicher, dass alles funktioniert, können die Komponenten jetzt in s
 
 ### Thermostat und Temperatursensor
 
-Um den Temperatursensor am Kessel zu fixieren, habe ich zuerst die am 94°-Thermostat angeschlossenen Kabel gelöst und es mit einem passenden Schlüssel ausgeschraubt. Darunter kommt ein hilfreiches M4-Gewinde zum Vorschein.
+Um den Temperatursensor am Kessel zu fixieren, habe ich zuerst die am 94°-Thermostat angeschlossenen Kabel gelöst und es mit einem 17er-Schlüssel ausgeschraubt. Darunter kommt ein M4-Gewinde zum Vorschein.
 
 [<img src="../../img/bauanleitungen/lelit-pl41em/IMG_1495.jpeg" width="48%">](/../../img/bauanleitungen/lelit-pl41em/IMG_1495.jpeg){:target="_blank"}
 [<img src="../../img/bauanleitungen/lelit-pl41em/IMG_1494.jpeg" width="48%">](/../../img/bauanleitungen/lelit-pl41em/IMG_1494.jpeg){:target="_blank"}
 [<img src="../../img/bauanleitungen/lelit-pl41em/IMG_1496.jpeg" width="75%">](/../../img/bauanleitungen/lelit-pl41em/IMG_1496.jpeg){:target="_blank"}
-
 
 In dieses Gewinde habe ich erst einmal locker eine M4-Schraube mit einer Unterlegscheibe geschraubt. Um den Temperatursensor selbst vorzubereiten, habe ich großzügig wärmeleitenden Kleber auf eine Unterseite gegeben, ihn unter die Unterlegscheibe geschoben und vorsichtig solange die Schraube angezogen, bis der Sensor nicht mehr verrutschte. Dafür bietet es sich an, sich noch ein, zwei helfende Hände zu suchen, um gleichzeitig Sensor, Unterlegscheibe und Schraubendreher unter Kontrolle zu halten. Es ist natürlich sehr wichtig, die Schraube nicht zu fest anzuziehen, um den Sensor nicht zu beschädigen. 
 
@@ -146,7 +145,7 @@ In dieses Gewinde habe ich erst einmal locker eine M4-Schraube mit einer Unterle
 
 ### Anschluss Relais
 
-Der Anschluss des Relais besteht nun einfach daraus, die beiden vom Thermostat abgesteckten Buchsen (eine ist eine einfache Buchse, die andere ist ein Verteiler) auf die Flachstecker der Ausgangslitzen des Relais zu stecken. 
+Der Anschluss des Relais besteht nun einfach daraus, die beiden vom Thermostat abgesteckten Buchsen (eine ist eine einfache Buchse, die andere ist ein Verteiler) auf die Flachstecker der Ausgangslitzen des Relais zu stecken. Welchen Ausgang des Relais man mit welchem Stecker verbindet, ist an dieser Stelle egal, da das Relais auf Anweisung unabhängig von irgendwelcher Polung einfach eine Verbindung zwischen seinen beiden Ausgängen herstellt.
 
 [<img src="../../img/bauanleitungen/lelit-pl41em/IMG_1500.jpeg" width="75%">](/../../img/bauanleitungen/lelit-pl41em/IMG_1500.jpeg){:target="_blank"}
 
