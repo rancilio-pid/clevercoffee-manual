@@ -33,7 +33,7 @@ Auf dem Bild unten seht ihr den von mir vorbereiteten Trockenaufbau, den ich vor
 ### Vorbereitung der Maschine
 Zuerst muss die Maschine natürlich vom Strom getrennt und der Wassertank entfernt werden.
 
-[<img src="/../../img/bauanleitungen/lelit-pl41em/IMG_1451.jpeg" width="60%">](/../../img/bauanleitungen/lelit-pl41em/IMG_1451.jpeg){:target="_blank"}
+[<img src="../../img/bauanleitungen/lelit-pl41em/IMG_1451.jpeg" width="60%">](/../../img/bauanleitungen/lelit-pl41em/IMG_1451.jpeg){:target="_blank"}
 
 Da die Maschine insgesamt recht kompakt und im Inneren dementsprechend wenig Platz für alle PID-Komponenten ist, habe ich mich entschieden, den leeren Raum zwischen Wassertank und Front der Maschine zu verwenden und alle Komponenten dort mit doppelseitigem wärmeleitenden Klebeband zu befestigen. Der Vorteil dieser Anbringung ist, dass die Komponenten weit genug entfernt vom warmen Kessel liegen und ihre Abwärme über die metallische Front der Maschine abgeben können. Der Nachteil allerdings ist, dass eine spätere Fehlersuche nur sehr schwierig ist, da man die Komponenten kaum erreicht und man schlimmstenfalls Platine, Relais und Netzteil komplett ausbauen muss, um eventuell auftretende Fehler zu finden. 
 
