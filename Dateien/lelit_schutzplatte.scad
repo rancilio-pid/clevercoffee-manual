@@ -1,4 +1,4 @@
-use </Users/marcus/Downloads/MCAD/triangles.scad>;
+use <MCAD/triangles.scad>;
 
 inner_wall_height = 190;
 
