@@ -87,7 +87,7 @@ folgt
 
 ## Vollausbau
 
-**Wichtig!: Der aktuelle Schaltplan beinhaltet ein potentiellen Fehler in der Verkabelung, siehe [[Link]](https://chat.rancilio-pid.de/ranciliopid/pl/7j88qqmfzbfc8f7f5d1jcxsceh)**
+**Wichtig!: Beim anschließen des Brühschalter bitte unbedingt den Hinweis im Schaltplan zur Trennung von 230V und 3.3/5V am Schalter beachten.**
 
 folgt
 
@@ -95,6 +95,7 @@ folgt
 
 * Senkschraube am Sieb
 * Reinigung der Wasserschläuche (sofern die Maschine nicht neu ist)
+* LED Umbau der Schalter
 
 ## Ausblick
 Projekte die unterstützt werden können:
