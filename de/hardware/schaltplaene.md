@@ -46,7 +46,7 @@ Enthalten ist die PID für die Kesseltemperatursteuerung
 Zusätzlich kann auch die Brühzeit oder eine „Preinfussion“ gesteuert werden. (Vorlauf-Brühzeit, Pause, Brühzeit).
 Dabei werden Pumpe und das 3-Wege-Ventil vom Controller gesteuert.
 
-**WICHTIGER HINWEIS: Dieser Umbau darf nur am Brüh-Schalter vorgenommen werden, wenn ein Schalter ohne Lampe genommen oder die Lampe ausgebaut oder eine neue Verkabelung gewählt wird, dass mit eingebauter Lampe KEINE 3,3 Volt und 230 Volt am Schalter anliegen! Sonst liegt KEINE galavanische Trennung zwischen 3,3 Volt und 230 Volt mehr vor! Das kann unter ungünstigen Umständen gefährlich für dich oder den Microcontroller sein!**
+**WICHTIGER HINWEIS: Dieser Umbau darf nur am Brüh-Schalter vorgenommen werden, wenn ein Schalter ohne Lampe genommen oder die Lampe ausgebaut oder eine neue Verkabelung bzw. der LED-Umbau gewählt wird, dass mit eingebauter Lampe KEINE 3,3 Volt und 230 Volt am Schalter anliegen! Sonst liegt KEINE galavanische Trennung zwischen 3,3 Volt und 230 Volt mehr vor! Das kann unter ungünstigen Umständen gefährlich für dich oder den Microcontroller sein!**
 
 ![Vollausbau Schaltplan](../../schaltplan/VollausbauRancilio.png)
 
