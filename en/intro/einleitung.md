@@ -17,19 +17,19 @@ Contents
 
 ## What is PID control good for?
 
-A PID controller gives considerably better control of the water temperature in your espresso machine than what the standard bimetal thermostat can do.
+A PID controller gives considerably better control of the water temperature in your espresso machine than the standard bimetal thermostat.
 
-Mechanical thermostats will keep the water in your machine in a range of about 10° Celsius. This means that the boiler in the machine will heat up to the thermostat's cut out point. The thermostat shuts off the heating and switches on the 'ready' light on the machine.
+A mechanical thermostat will control the water temperature in your machine in a range of about 10° Celsius. The heater in the machine's boiler machine will heat up to the thermostat's cut out point. The thermostat shuts off the heating and switches on the 'ready' light on the machine.
 
-Now the boiler cools down to the thermostat's cut in point. The 'ready' light goes off and the heater reheats up to cut off again. 
+Then the boiler cools down to the thermostat's cut in point. The 'ready' light goes off and the heater reheats up to cut off again. 
 
-Between these two points, the machine is always signalling 'ready', although the water can be close to the cut out temperature, or just barely above cut in. Or somewhere in between.
+Between these two points, the machine is always signalling 'ready', although the water can be close to the cut out temperature, or just barely above cut in. Or pretty much anywhere in between.
 
-In a tasteful shot of Espresso, water temperature is one of the critical parameters. Being off by just a degree C or two can make the difference between a sour shot (too cold), a burnt one (too hot) or a well tasting shot. Not all coffee beans like the same temperature.
+In an espresso shot, water temperature is one of the critical parameters. Being off by just a degree C or two can make the difference between a sour shot (too cold), a burnt one (too hot) or a 'just right', well tasting shot. Not all coffee beans come out best at the exact temperature, either.
 
-One way to a reproducible temperature is called temperature surfing. It entails flushing the machine and watching to ready lamp to understand when the heating cuts out in order to know better at what temperature the boiler is when pulling the shot. Many people get annoyed by this - so were we.
+One way to a reproducible temperature is called temperature surfing. It entails flushing the machine to provoke the heater coming on, and then watching the ready lamp come back on when the thermostat cuts out. That way the machine is at a defined temperature and you can prepare the shot. Many people get annoyed by this - so were we.
 
-The solution for small home use single boiler machines is to replace the thermostat with a PID controller that is able to hit the requested temperature within less than 1 °C. Our setup is quite capable to reach an accuracy of up to 0.1 °C. No need to hit the right time to pull a shot anymore - the right time is whenever the machine has warmed up.
+The solution for small home use single boiler machines is to replace the thermostat with a PID controller that is able to hit the requested temperature within less than 1 °C. Our setup is quite capable to reach an accuracy of up to 0.1 °C. No need to hit the right time to pull a shot anymore - the right time is whenever the machine has initially warmed up.
 
 
 ## What can it do?
@@ -43,13 +43,13 @@ Our DIY PID has the following features:
 * OTA (over the air) software updates
 * PID software is open source: always free and customizable to your own needs
 * compact build, fits into most small espresso machines
-* the machine's stock cabling of the machine is not modified. The machine can always be restored to its original configuration
+* the machine's stock cabling is not modified. The machine can always be restored to its original configuration
 * Active community with fast support, always welcoming feedback and feature suggestions
  
 
-## List of modified machines
+## List of modified espresso machines
 
-Our system was originally developed for use in the Rancilio Silvia but can be used in other machines as well. So far, users have successfully modified the following machines:
+Our system was originally developed for the Rancilio Silvia, but works just as well in other machines. We know of successful upgrades to the following machines:
 
 
  * Rancilio Silvia V1 – V4
@@ -61,7 +61,7 @@ Our system was originally developed for use in the Rancilio Silvia but can be us
  * E61 single boiler, dual use (Profitec Pro500)
  * Quick Mill Retro (0835) & Orione (3000)
 
-## Differences PID Only vs. full expansion
+## Differences PID Only vs. 'full expansion'
 
 In principle, our PID consists of the following components:
 ID | Explanation
