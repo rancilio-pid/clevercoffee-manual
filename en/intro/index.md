@@ -8,4 +8,4 @@ nav_order: 1
 
 # Introduction
 
-In this section the basics, functions and possibilities of the PID are described. It serves as a good start into the topic and also contains important prerequisites as well as warnings. In addition, it provides information about machines which have already been modified successfully and how the general setup looks like.
+This section covers the basics, functionality as well as options of the PID. It will get you grounded in the topic and covers prerequisites as well as warnings. It provides information about models of espresso machines that have already been modified and how the general setup looks like.
