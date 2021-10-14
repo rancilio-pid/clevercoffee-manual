@@ -15,31 +15,36 @@ Contents
 * TOC
 {:toc}
 
-## Why PID control?
+## What is PID control good for?
 
-With PID control, the water temperature during the brewing can be controlled much more exact and stable than possible with a standard bimetal thermostat. With usual thermostats, the temperature oscillates by about 10 °C, also known as hysteresis. That means that the machine heats until the thermostat reaches its predefined temperature and cuts power to the heating. Now the boiler starts to cool down  more or less quick through dissipation of heat energy into the environment until a certain point is reached where the thermostat kicks in and switches the heating on again.
+A PID controller gives considerably better control of the water temperature in your espresso machine than what the standard bimetal thermostat can do.
 
-For making good Espresso, the temperature in the boiler is one of THE crucial parameters. Even a variation of as little as 1 °C can make the difference between too sour (too cold), bitter (too hot) or delicious (just right).  
+Mechanical thermostats will keep the water in your machine in a range of about 10° Celsius. This means that the boiler in the machine will heat up to the thermostat's cut out point. The thermostat shuts off the heating and switches on the 'ready' light on the machine.
 
-One method to reach a more defined and reproducible temperature is the so called temperature surfing, a relatively complicated manual procedure with exactly timed heating and flushing steps for which you have to be at the machine the whole time. Many users get annoyed by that, we were too.
+Now the boiler cools down to the thermostat's cut in point. The 'ready' light goes off and the heater reheats up to cut off again. 
 
-The solution for smaller single boiler machines is, to replace the thermostat by a PID controller which will regulate the temperature with a variation significantly below 1 °C, with our system capable to reach an accuracy of up to 0.1 °C.
+Between these two points, the machine is always signalling 'ready', although the water can be close to the cut out temperature, or just barely above cut in. Or somewhere in between.
+
+In a tasteful shot of Espresso, water temperature is one of the critical parameters. Being off by just a degree C or two can make the difference between a sour shot (too cold), a burnt one (too hot) or a well tasting shot. Not all coffee beans like the same temperature.
+
+One way to a reproducible temperature is called temperature surfing. It entails flushing the machine and watching to ready lamp to understand when the heating cuts out in order to know better at what temperature the boiler is when pulling the shot. Many people get annoyed by this - so were we.
+
+The solution for small home use single boiler machines is to replace the thermostat with a PID controller that is able to hit the requested temperature within less than 1 °C. Our setup is quite capable to reach an accuracy of up to 0.1 °C. No need to hit the right time to pull a shot anymore - the right time is whenever the machine has warmed up.
 
 
+## What can it do?
 
-## What our system can do?
+Our DIY PID has the following features:
 
-Our DIY PID has the following key figures:
-
-* regulation of the water temperature with an accuracy of +/- 0.1 °C
-* brewing time control incl. pre-infusion possible with "full expansion" stage
+* control the water temperature to within +/- 0.1 °C
+* control brewing time as well as pre infusion in the "full expansion" build
 * easy control via app for Android & iOS
-* Data monitoring via Grafana (web based) and MQTT (IoT) possible
-* OTA software updates
-* PID software is OpenSource: always free and customizable for your own needs
-* little space needed, fits in most small Espresso machines
-* the stock cabling of the machine stays intact. Machine can be build back into its original state without any problem
-* Active community with fast support, suggestions for further extensions are welcome
+* data monitoring via Grafana (web based) and MQTT (IoT) possible
+* OTA (over the air) software updates
+* PID software is open source: always free and customizable to your own needs
+* compact build, fits into most small espresso machines
+* the machine's stock cabling of the machine is not modified. The machine can always be restored to its original configuration
+* Active community with fast support, always welcoming feedback and feature suggestions
  
 
 ## List of modified machines
