@@ -70,7 +70,8 @@ ID | Explanation
 2 | Temperature sensor TSIC 306                 
 3 | Solid State Relais (SSR)                       
 4 | Powersupply               
-5 | Display (recommended, but optional)      
+5 | Display (recommended, but optional) 
+Heizung | Heating 
 
 ![Trockenaufbau](../../img/trockenaufbau.png)
 
@@ -99,5 +100,5 @@ Here, we go one step further and transfer control over the pump and the solenoid
 
 One more thing which slightly changes in full expansion mode is the use of the brewing switch, which so far has been used to start and stop the brewing. This switch turns into a button now which only starts the automatic brewing sequence. The brewing is stopped by the software only, even if the switch is still in the "on" position.
 
-We recommend to start with the basic version first, which usually leads to the biggest improvement in terms of taste of the Espresso. The full expansion is a further addon with more possibilities but also goes along with a more complex modification of your machine.
+We suggest to start with the basic version first. This leads to the biggest improvement in terms of taste of the Espresso. The full expansion is a further addon. It offers more flexibility, but goes along with a more complex modification of your machine.
 
