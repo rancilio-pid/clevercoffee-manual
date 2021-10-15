@@ -63,7 +63,7 @@ Our system was originally developed for the Rancilio Silvia, but works just as w
 
 ## Differences PID Only vs. 'full expansion'
 
-In principle, our PID consists of the following components:
+The minimal setup of our PID consists of the following components:
 ID | Explanation
 -|-
 1 | Micro controller NodeMCU V2                 
@@ -76,7 +76,7 @@ Heizung | Heating
 ![Trockenaufbau](../../img/trockenaufbau.png)
 
 
-There are two different levels of our system: PID only and full expansion
+There are two different levels of our system: PID only and full expansion. Over time there's been a few additional options, so the distinction is sometimes a bit less clear cut.
 
 
 ## Basic version (PID Only)
@@ -86,19 +86,26 @@ The basic version resembles a classic PID controller: the temperature sensor mea
 By that, the PID software achieves an exact regulation of the brewing temperature while the remainder of your machine stays untouched. MQTT, Display output and control via app are also possible in the basic version. 
 
 
+## Extension to the basic version (PID Only Plus)
+
+To give better temperature control during the brewing, you can add a sensor on to the machine's brew switch.
+
+
 ## Full expansion
 
-Here, we go one step further and transfer control over the pump and the solenoid valve to the software too. This enables additional possibilities with three time intervals to define in the app:
+Here, we go one step further and transfer control over the pump and the solenoid valve to the software too. This allows for additional flexibility by controlling three time intervals via the app:
+
+* Pre-Infusion: the pump builds pressure and the three way valve applies water onto the portafilter
+
+* Pause: the pump pauses, but the three way valve stays open. The pressure stays and allows for the coffee in the portafilter to soak. This can help reduce channeling in the coffee puck.
+
+* Brew time: This is the normal extraction, brewing for the amount of time predefined in the app. A longer or shorter brewing time can improve the taste of the espresso, depending on the beans used and your personal preference.
+
+There's a distinct change to the usage of the machine: the brewing switch that was previously controlling the extraction now starts the automated process. The extraction is stopped by the controller after the predefined time, even if the switch is still engaged.
+
+We suggest to start with the basic version first. This gets you the biggest improvement to your coffee's taste. The full expansion allows for more flexibility, but requires a more complex modification of your machine.
 
 
-* Pre-Infusion: the pump generates pressure and the solenoid valve applies water onto the portafilter
+## Full expansion Plus
 
-* Pause: the pump pauses, but since the solenoid is still activated, the build up pressure remains in the portafilter. The coffe puck gets evenly wet, which can help to reduce channeling.
-
-* Brew time: now, the normal brewing starts with the predefined time, e.g. 25 seconds. Depending on the coffee and your personal preference, a longer or shorter brewing time can improve the taste of the Espresso
-
-
-One more thing which slightly changes in full expansion mode is the use of the brewing switch, which so far has been used to start and stop the brewing. This switch turns into a button now which only starts the automatic brewing sequence. The brewing is stopped by the software only, even if the switch is still in the "on" position.
-
-We suggest to start with the basic version first. This leads to the biggest improvement in terms of taste of the Espresso. The full expansion is a further addon. It offers more flexibility, but goes along with a more complex modification of your machine.
-
+This is where no compromises are required. You can add a scale to control the extraction time, as well as monitoring the brewing pressure using a pressure sensor.
