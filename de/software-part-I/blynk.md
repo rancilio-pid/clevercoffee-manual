@@ -7,13 +7,15 @@ has_children: false
 nav_order: 4
 ---
 
-# Einrichtung von Blynk
+# Einrichtung von Blynk 
 {: .no_toc }
 
 Inhaltsverzeichnis
 
 * TOC
 {:toc}
+## Hinweis
+Blynk ist nicht mehr zwingend notwendig mit der Alpha 3.0.0, da Blynk als lokaler Server abgekündigt wurde. Es kann aber weiterhin genutzt werden über die offizielle Cloud Variante von Blynk. Wir empfehlen die neue per ESP gehostet Webseite für das Einstellen der Werte zu nutzen. 
 
 ## Einleitung
 
