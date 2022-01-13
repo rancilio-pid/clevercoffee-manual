@@ -15,7 +15,7 @@ Inhaltsverzeichnis
 * TOC
 {:toc}
 ## Hinweis
-Blynk ist nicht mehr zwingend notwendig ab Alpha 3.0.0, da Blynk als lokaler Server abgekündigt wurde. Es kann aber weiterhin genutzt werden über die offizielle Cloud Variante von Blynk. Wir empfehlen die neue per ESP gehostet Webseite für das Einstellen der Werte zu nutzen. 
+Blynk ist nicht mehr zwingend notwendig ab Version 3.0.0, da Blynk als lokaler Server abgekündigt wurde. Es kann aber weiterhin genutzt werden über die offizielle Cloud Variante von Blynk. Wir empfehlen die neue per ESP gehostet Webseite für das Einstellen der Werte zu nutzen. 
 
 ## Einleitung
 
