@@ -79,7 +79,7 @@ E 61 | 70 | 150 | 0
 Quick Mill (Modell 0835 & 3000) | 80 | 75 | 0
 
 ## Kaltstart
-
+Wichtiger Hinweis vorweg: Das Verhalten von P & I im Kaltstart ist anders als bei einem normalen PI(D), bitte schaut euch dazu die unteren Grafiken an. 
 Folgendes Video erklärt den Kaltstart sehr anschaulich:
 
 [![Kaltstart](https://img.youtube.com/vi/DNfaZFtPRSA/hqdefault.jpg)](https://www.youtube.com/watch?v=DNfaZFtPRSA)
@@ -96,7 +96,7 @@ Gaggia (Modell 9403, Baujahr 2015) |	23 | 175
 E 61 |	70 |	96
 Quick Mill (Modell 0835 & 3000) | 250 | 35
 
-Folgende Grafik soll euch bei der Einstellungen vom Kaltstart helfen, wenn ihr diesen selber einstellen wollt. Das Grundprinzip des Reglern beim Kaltstart ist hier beschrieben (auf Englisch): [Link](http://brettbeauregard.com/blog/2017/06/introducing-proportional-on-measurement/).
+Folgende Grafik soll euch bei der Einstellungen vom Kaltstart helfen, wenn ihr diesen selber einstellen wollt. Das Grundprinzip des Reglern beim Kaltstart ist hier beschrieben (auf Englisch): [Link](http://brettbeauregard.com/blog/2017/06/introducing-proportional-on-measurement/). 
 
 ![PID-Kurven](../../img/image.png)
 
