@@ -84,7 +84,7 @@ Folgendes Video erklärt den Kaltstart sehr anschaulich:
 
 [![Kaltstart](https://img.youtube.com/vi/DNfaZFtPRSA/hqdefault.jpg)](https://www.youtube.com/watch?v=DNfaZFtPRSA)
 
-Wir haben die User Config (userConfig.h) so vorkonfiguriert, dass diese ohne euer Zutun mit Standardwerten funktioniert. **Diesen könnt ihr aber auch selber Konfigurieren, wenn in der Userconfig Coldstart = 2 gesetzt ist.**
+Wir haben die User Config (userConfig.h) so vorkonfiguriert, dass diese ohne euer Zutun mit Standardwerten funktioniert. **Diesen könnt ihr aber auch selber Konfigurieren, wenn in der Userconfig Coldstart = 2 gesetzt ist, ihr könnt nicht die PI Werte vom normalen PI nehmen.**
 
 Beispiele für mögliche Parametersätze findet ihr in der nachfolgenden Tabelle:
 
