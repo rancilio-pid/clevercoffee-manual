@@ -14,6 +14,10 @@ Inhaltsverzeichnis
 
 * TOC
 {:toc}
+
+
+## Einführung
+[![Installationsvideo](https://img.youtube.com/vi/KZPjisOEcQ4/default.jpg)](https://www.youtube.com/watch?v=KZPjisOEcQ4)
 ## Einführung
 Mit der Version 3.0.0 ändern sich wesentliche Konzepte der PID. Das Handbuch konnte noch nicht vollständig aktualisiert werden.
 Mit dem Release der Version 3.0.0 werden wir das Handbuch auch schrittweise aktualisieren. Diese Übersicht gibt euch die wichtigsten Änderungen im Überblick.  
