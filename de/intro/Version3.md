@@ -14,15 +14,21 @@ Inhaltsverzeichnis
 
 * TOC
 {:toc}
+## Einführung
+Mit der Version 3.0.0 ändern sich wesentliche Konzepte der PID. Das Handbuch konnte noch nicht vollständig aktualisiert werden.
+Mit dem Release der Version 3.0.0 werden wir das Handbuch auch schrittweise aktualisieren. 
 
 ## Einrichtung
+Der Ardunio IDE wird nicht mehr aktiv von uns unterstüzt. Wir setzen ab der 3.0.0 nun vollständig auf Platform IO und VS Code.
 
 
 ## Funktionen
 
 ### Setup Modus
 
-### Webseite
+### Webseite & Blynk 
+Blynk wird noch unterstüzt, ist aber nicht mehr das zentrale Bedienelement von der PID. Wir haben nun eine eigene auf dem NodeMCU gehostet Webseite.
+
 
 
 ## Helft uns!
