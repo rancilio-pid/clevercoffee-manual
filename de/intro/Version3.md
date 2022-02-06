@@ -15,4 +15,15 @@ Inhaltsverzeichnis
 * TOC
 {:toc}
 
-## Zentrale Fragen
+## Einrichtung
+
+
+## Funktionen
+
+### Setup Modus
+
+### Webseite
+
+
+## Helft uns!
+
