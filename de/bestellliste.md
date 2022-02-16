@@ -136,7 +136,7 @@ Regulärer Lauf | Auszug Monitoring
 :---:|:---:
 ![Blinken](../img/blink.gif)|![Blink Monitoring](../img/blink_monitoring3.png)
 
-Wer es einfach mag, kann das Display entweder neben die Maschine legen, oder an einem der Bleche fixieren. Wie ihr den Projekten entnehmen könnt ([Link](http://rancilio-pid.de/bauberichte/silvia-e-v5-gastbeitrag-von-konstantin/)), kann das Display natürlich auch sauber integriert werden.
+Wer es einfach mag, kann das Display entweder neben die Maschine legen, oder an einem der Bleche fixieren. Wie ihr den Projekten entnehmen könnt ([Link](https://clevercoffee.de/rancilio-silvia-e-konstantin/)), kann das Display natürlich auch sauber integriert werden.
 
 Für einen einfachen Betrieb des Displays empfehlen sich zudem die gelisteten Jumperkabel - so muss nicht zwangsläufig gelötet werden. Jumper sind somit gut für den Trockenaufbau geeignet.
 Alternativ könnt ihr euch ein Dupont Stecker Kit zulegen. Dieses hat den Vorteil, dass ihr die Länge der Verbindung frei zuschneiden könnt. Hat aber den Nachteil, dass es nur mit Crimpzange genutzt werden kann. Dupont Stecker sind somit gut für den finalen Einbau geeignet.

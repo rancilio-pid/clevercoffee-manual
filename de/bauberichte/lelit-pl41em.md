@@ -23,6 +23,8 @@ nav_order: 1
 
 *todo* -->
 
+<!-- markdown-link-check-disable -->
+
 ## Trockenaufbau
 Auf dem Bild unten seht ihr den von mir vorbereiteten Trockenaufbau, den ich vor dem Einbau getestet habe. Wie hier im Handbuch ausgiebig erklärt, habe ich die Terminals an die Platine des NodeMCU gelötet, die Software aufgespielt, hitzebeständige Litzen an den Temperatursensor gelötet und mit Schrumpfschlauch versehen, das Display (vorläufig) angeschlossen, das Netzteil vorbereitet und das Relais angeschlossen und getestet. Wichtig war für mich vor dem Einbau, dass die Softwareupdates over-the-air funktionieren, sodass ich bei zukünftigen Updates die Maschine öffnen muss. Als das alles zufriedenstellend funktionierte, habe ich mich an den Einbau in die Maschine gemacht. 
 
@@ -172,3 +174,5 @@ Um das Display bis zur Umsetzung einer dauerhaften Lösung zu schützen, habe ic
 Mit den von mir gewählten PID-Werten bin ich noch nicht komplett zufrieden, da es z.B. nach einem kurzen Bezug noch zu recht starken Überschwingern kommt. Für den Kaltstart habe ich die Werte *50/125/0* gewählt, für den anschließenden Betrieb *20/600/0*. 
 
 [^1]: Zur Verwendung des [OpenSCAD](https://openscad.org/)-Designs ist noch dieses [Library](https://github.com/openscad/MCAD) notwendig. 
+
+<!-- markdown-link-check-enable-->
