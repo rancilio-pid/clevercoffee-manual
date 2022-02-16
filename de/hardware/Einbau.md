@@ -98,7 +98,7 @@ Es gibt unzählig viele Möglichkeiten das Display zu positionieren. Folgend kö
 
 Displayhalterung | Powered by Dremel
 :---:|:---:
-|![Display](../../img/Display.jpg)|![](https://clevercoffee.de/wp-content/uploads/2021/04/IMG_20210404_151123.jpg)|
+![Display](../../img/Display.jpg)|![](https://clevercoffee.de/wp-content/uploads/2021/04/IMG_20210404_151123.jpg)
 
 Wer einen Dremel besitzt, etwas Geschick mitbringt und kein Problem damit hat, dass Änderungen irreversibel sind, kann damit eine sehr saubere und solide Lösung ausarbeiten.
 
@@ -106,7 +106,6 @@ Wer hintgegen eine reversible Lösung sucht muss sich um eine Displayhalterung (
 * [Rancilio STL](https://github.com/rancilio-pid/ranciliopid-handbook/blob/main/3d-designs/Case%20Rancilio.stl){:target="_blank"}
 * [Gaggia STL](https://github.com/rancilio-pid/ranciliopid-handbook/blob/main/3d-designs/Case%20Gaggia.stl){:target="_blank"}
 * [Universal-Halter](https://www.thingiverse.com/thing:4897546){:target="_blank"}
-
 
 
 ## Spannende Addons die gleich mit erledigt werden können
