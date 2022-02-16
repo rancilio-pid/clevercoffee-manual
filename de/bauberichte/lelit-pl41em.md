@@ -28,7 +28,7 @@ nav_order: 1
 ## Trockenaufbau
 Auf dem Bild unten seht ihr den von mir vorbereiteten Trockenaufbau, den ich vor dem Einbau getestet habe. Wie hier im Handbuch ausgiebig erklärt, habe ich die Terminals an die Platine des NodeMCU gelötet, die Software aufgespielt, hitzebeständige Litzen an den Temperatursensor gelötet und mit Schrumpfschlauch versehen, das Display (vorläufig) angeschlossen, das Netzteil vorbereitet und das Relais angeschlossen und getestet. Wichtig war für mich vor dem Einbau, dass die Softwareupdates over-the-air funktionieren, sodass ich bei zukünftigen Updates die Maschine öffnen muss. Als das alles zufriedenstellend funktionierte, habe ich mich an den Einbau in die Maschine gemacht. 
 
-[<img src="../../img/bauanleitungen/lelit-pl41em/IMG_1454.jpeg" width="85%">](/../../img/bauanleitungen/lelit-pl41em/IMG_1454.jpeg){:target="_blank"}
+[<img src="../../img/bauanleitungen/lelit-pl41em/IMG_1454.jpeg" width="85%">](../../img/bauanleitungen/lelit-pl41em/IMG_1454.jpeg){:target="_blank"}
 
 ## Einbauschritte
 
@@ -158,7 +158,7 @@ Wenn alles angeschlossen und man sich vom korrekten Funktionieren des ganzen Sys
 
 [<img src="../../img/bauanleitungen/lelit-pl41em/IMG_1504.jpeg" width="75%">](/../../img/bauanleitungen/lelit-pl41em/IMG_1504.jpeg){:target="_blank"}
 
-Um die nun im inneren der Maschine frei liegende Elektronik zu schützen, habe ich eine [Abdeckplatte](/../../Dateien/lelit_schutzplatte.scad)[^1] entworfen und gedruckt. Sie lässt sich mittels der Schrauben der Tassenablage fixieren, verdeckt die Elektronik und schützt sie vor eventuellen Wasserspritzern beim Befüllen oder vor Stößen beim Einsetzen des Wassertanks. Leider hat mein 3D-Drucker beim ersten Druck der Platte kein schönes Ergebnis erzeugt, sodass ich die Platte mit ein wenig Gaffer-Tape stabilisieren musste. Gedruckt habe ich die Platte aus PET-G, sodass sie gegenüber einem Druck mit PLA noch ein wenig temperaturunempfindlicher ist. 
+Um die nun im inneren der Maschine frei liegende Elektronik zu schützen, habe ich eine [Abdeckplatte](/../../3d-designs/lelit_schutzplatte.scad)[^1] entworfen und gedruckt. Sie lässt sich mittels der Schrauben der Tassenablage fixieren, verdeckt die Elektronik und schützt sie vor eventuellen Wasserspritzern beim Befüllen oder vor Stößen beim Einsetzen des Wassertanks. Leider hat mein 3D-Drucker beim ersten Druck der Platte kein schönes Ergebnis erzeugt, sodass ich die Platte mit ein wenig Gaffer-Tape stabilisieren musste. Gedruckt habe ich die Platte aus PET-G, sodass sie gegenüber einem Druck mit PLA noch ein wenig temperaturunempfindlicher ist. 
 
 [<img src="../../img/bauanleitungen/lelit-pl41em/IMG_1505.jpeg" width="75%">](/../../img/bauanleitungen/lelit-pl41em/IMG_1505.jpeg){:target="_blank"}
 

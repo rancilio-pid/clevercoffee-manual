@@ -92,6 +92,23 @@ folgt
 
 folgt
 
+## Display
+
+Es gibt unzählig viele Möglichkeiten das Display zu positionieren. Folgend könnt ihr zwei Beispiele sehen:
+
+Displayhalterung | Powered by Dremel
+:---:|:---:
+|![Display](../../img/Display.jpg)|![](https://clevercoffee.de/wp-content/uploads/2021/04/IMG_20210404_151123.jpg)|
+
+Wer einen Dremel besitzt, etwas Geschick mitbringt und kein Problem damit hat, dass Änderungen irreversibel sind, kann damit eine sehr saubere und solide Lösung ausarbeiten.
+
+Wer hintgegen eine reversible Lösung sucht muss sich um eine Displayhalterung (aka 3D Case) bemühen. Eine "Standardlösung" ist aktuell nicht bekannt, aber für alle 3D-Drucker Besitzer, liegen entsprechende Vorlagen auf dem Github (inkl. Anleitung):
+* [Rancilio STL](../../3d-designs/Case Rancilio.stl)
+* [Gaggia STL](../../3d-designs/Case Gaggia.stl)
+* [Universal-Halter](https://www.thingiverse.com/thing:4897546)
+
+
+
 ## Spannende Addons die gleich mit erledigt werden können
 
 * Senkschraube am Sieb
