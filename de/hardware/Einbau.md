@@ -102,10 +102,10 @@ Displayhalterung | Powered by Dremel
 
 Wer einen Dremel besitzt, etwas Geschick mitbringt und kein Problem damit hat, dass Änderungen irreversibel sind, kann damit eine sehr saubere und solide Lösung ausarbeiten.
 
-Wer hintgegen eine reversible Lösung sucht muss sich um eine Displayhalterung (aka 3D Case) bemühen. Eine "Standardlösung" ist aktuell nicht bekannt, aber für alle 3D-Drucker Besitzer, liegen entsprechende Vorlagen auf dem Github (inkl. Anleitung):
-* [Rancilio STL](../../3d-designs/Case Rancilio.stl)
-* [Gaggia STL](../../3d-designs/Case Gaggia.stl)
-* [Universal-Halter](https://www.thingiverse.com/thing:4897546)
+Wer hintgegen eine reversible Lösung sucht muss sich um eine Displayhalterung (aka 3D Case) bemühen. Eine "Standardlösung" ist aktuell nicht bekannt, aber für alle 3D-Drucker Besitzer, liegen entsprechende Vorlagen auf dem Github (inkl. [Anleitung](https://github.com/rancilio-pid/ranciliopid-handbook/tree/main/3d-designs)):
+* [Rancilio STL](https://github.com/rancilio-pid/ranciliopid-handbook/blob/main/3d-designs/Case%20Rancilio.stl){:target="_blank"}
+* [Gaggia STL](https://github.com/rancilio-pid/ranciliopid-handbook/blob/main/3d-designs/Case%20Gaggia.stl){:target="_blank"}
+* [Universal-Halter](https://www.thingiverse.com/thing:4897546){:target="_blank"}
 
 
 
