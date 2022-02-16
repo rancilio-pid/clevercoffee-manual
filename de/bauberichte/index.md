@@ -3,7 +3,7 @@ layout: default
 title: Bauberichte
 parent: DE - Handbuch
 has_children: true
-nav_order: 3
+nav_order: 5
 ---
 
 # Bauberichte

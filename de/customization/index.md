@@ -3,7 +3,7 @@ layout: default
 title: Konfiguration & Anpassung
 parent: DE - Handbuch
 has_children: true
-nav_order: 6
+nav_order: 7
 ---
 
 # Konfiguration & Anpassung
