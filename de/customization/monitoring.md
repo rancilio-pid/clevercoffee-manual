@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Monitoring
 parent: Konfiguration & Anpassung
 grand_parent: DE - Handbuch
@@ -18,7 +19,7 @@ Inhaltsverzeichnis
 
 Die Blynk-App kann so eingerichtet werden, dass via eines sog. Webhooks ein Monitoring genutzt werden kann. Dafür wird [Grafana](https://grafana.com/) genutzt. Damit sind auch die vorhandenen PID-Charts erstellt entstanden:
 
-![PID-Einführung](http://rancilio-pid.de/wp-content/uploads/2020/11/Bildschirmfoto-2020-11-04-um-20.51.31-1536x733.png)
+![PID-Einführung](../../img/Bildschirmfoto-2020-11-04-um-20.51.31-1536x733.png)
 
 ## Übersicht
 
@@ -47,7 +48,7 @@ In eurer `userConfig.h` muss Grafana aktiviert sein (sprich auf `1` gesetzt):
 1. Wählt unter `Other` den `Webhook` aus
 1. Öffnet das neu erschienene Widget `Webhook`
 1. Wählt den virtuellen Pin `V60` aus
-1. Fügt die URL `http://blynk.remoteapp.de:8086/write?db=ranciliopid`
+1. Fügt die URL `http://monitoring.rancilio-pid.de:8086/write?db=ranciliopid`
 1. Methode = `POST`
 1. Type = `Text/Plain`
 1. Body:
@@ -70,5 +71,5 @@ temp,user=florian73,maschine=silvia-e-buero value=/pin[0]/
 
 > Hinweis: Dass der Test nicht erfolgreich durchläuft, soll euch nicht weiter stören.
 
-Als letztes müsst ihr im Rancilio-Chat den verwendeten `user-name` bekannt geben. Geht am besten direkt auf **@markus** zu.
+Als letztes müsst ihr im Rancilio-Chat den verwendeten `user-name` bekannt geben. Geht am besten direkt auf **@markus** oder **@andreas** zu.
 <!-- markdown-link-check-enable-->

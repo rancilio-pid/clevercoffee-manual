@@ -1,5 +1,6 @@
 ---
-title: Aufbau und Einbau
+layout: default
+title: Aufbau
 parent: Hardware
 grand_parent: DE - Handbuch
 has_children: false
@@ -20,14 +21,15 @@ Wenn ihr die einzelnen Komponenten beisammenhabt, startet ihr am besten mit eine
 
 Die Heizung eurer Maschine könnt ihr z. B. mit einer Glühbirne simulieren, jeder andere 230V Verbraucher tut es aber genauso gut.
 
-![Trockenaufbau](http://rancilio-pid.de/wp-content/uploads/2020/10/image-2.png)
+![Trockenaufbau](../../img/trockenaufbau.png)
+*(1=Mikrocontroller, 2=Temperatursensor, 3=SSR Relais für Heizung, 4=Schaltnetzteil, 5=Display)*
 
-Das PCB für den Controller sieht wie folgt aus:
+Das PCB für den Mikrocontroller sieht wie folgt aus:
 
-![PCB](http://rancilio-pid.de/wp-content/uploads/2020/10/image-3.png)
+![PCB](../../img/image-3.png)
 
 
-###  Grundversion PID-Only
+###  Grundversion PID Only
 
 Die einzelnen Komponenten werden wie folgt angeschlossen:
 
@@ -50,19 +52,20 @@ PIN 13 | Relais Ansteuerung Pumpe
 
 ## Einbau
 
+### Temperatursensor anschließen
+
+**ACHTUNG!!** Aktuell kann es sein, dass der TSIC mit einem falnschen Datenblatt ausgeliefert wird. Hier wird die Polung falsch angegeben.
+Lest hierzu bitte folgenden Thread im Chat durch: [Link](https://chat.rancilio-pid.de/ranciliopid/pl/dcf38jzk3pnoig5hi64nuodeqc).
+
 Besondere Sorgfalt müsst ihr bitte beim Anschließen des Temperatursensors TSIC306 walten lassen: sobald dieser einmal falsch angeschlossen Spannung bekommen hat, ist er entweder sofort zerstört oder zumindest vorgeschädigt und liefert dadurch fehlerhafte Messwerte. Daher ist es immer ratsam einen Ersatz-Sensor parat zu haben.
 
 * Sensor V+ : Board PIN 2 5V
 * Sensor Signal: Board PIN 2 Signal
 * Sensor GND:  Board PIN 2 GND
 
-![TSIC Sensor](http://rancilio-pid.de/wp-content/uploads/2020/11/z4fdgmmn8jyz8rrqojj157yxjh-20200503_223844-1152x1536.jpg)
-
-### Temperatursensor anschließen
-
 Wie ihr zu der Beschreibung zum Board sehen könnt, muss an Pin 2 der Temperatursensor angeschlossen werden. Die oberen Ports (14, 2, 12, 13, 15) sind einheitlich jeweils von links nach rechts mit Minus(-), Signal, 5V(+) belegt.
 
-![](http://rancilio-pid.de/wp-content/uploads/2020/05/20200503_223844-scaled.jpg)
+![TSIC Sensor](../../img/20200503_223844-scaled.jpg)
 
 Da wir öfters hören, dass die Bildbeschreibung zum TSIC nicht gut ist, haben wir hier nochmals die Pins vom Sensor dargestellt. Die flache Seite liegt unten. Ein falsch gepolter TSIC sollte entsorgt werden! Er misst vermeintlich richtig, aber definitiv nicht mehr genau.
 
@@ -88,9 +91,9 @@ Pin 4| SDA
 Pin 5| SCL
 Pin 16| frei
 
-![](http://rancilio-pid.de/wp-content/uploads/2019/03/Screenshot-at-M%C3%A4rz-10-20-53-04.png)
+![](../../img/Screenshot-at-M%C3%A4rz-10-20-53-04.png)
 
-## Tipps & Tricks
+## Tipps und Tricks
 
 Hier einige gesammelte Hinweise zum Einbau in die Maschine:
 
@@ -100,4 +103,4 @@ Hier einige gesammelte Hinweise zum Einbau in die Maschine:
 
 *  Den Temperatursensor solltet ihr wenn möglich nicht nur an den Kessel ankleben, sondern fest verschrauben. Bei der Rancilio Silvia kann man dazu die Halteklammer des nun überflüssigen Brühthermostaten nutzen, bei der Gaggia Classic kann der Sensor am vorhandenen M4-Gewinde der Thermostataufnahme verschraubt werden.
 
-* Zum Anschluss des Temperatursensors TSIC keine Steckverbinder nehmen, sondern Litze an die Beine des TSIC löten. Das ist etwas fummelig, aber dafür habt ihr weniger Neigung zu Wackelkontakten im verbauten Zustand.
+* Zum Anschluss des Temperatursensors TSIC keine Steckverbinder (Jumperkabel) nehmen, sondern Litze an die Beine des TSIC löten. Das ist etwas fummelig, aber dafür habt ihr weniger Neigung zu Wackelkontakten im verbauten Zustand.

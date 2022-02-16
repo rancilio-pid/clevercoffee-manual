@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Schaltpläne
 parent: Hardware
 grand_parent: DE - Handbuch
@@ -22,29 +23,32 @@ Inhaltsverzeichnis
 
 Wenn der Test erfolgreich war, kannst du beginnen deinen Einbau zu planen. Je nach Ausbaustufe musst du nur das Netzteil und Controller mit Strom versorgen, den Temperatursensor einbauen am Kessel. Wir zeigen dir hier am Beispiel der Rancilio Siliva wie der Umbau gelingt. Weiter Maschinen, wie z.B. die Gaggia wurde auch schon erfolgreich umgebaut.
 
-## Originaler Schaltplan
+## Rancilio
+
+### Originaler Schaltplan 
 
 Der erste Schaltplan zeigt den original Zustand der Silvia vor dem Umbau.
 
-![Org Schaltplan](http://rancilio-pid.de/wp-content/uploads/2018/10/Rancilio-Cable-Original-1.jpg)
+![Org Schaltplan](../../schaltplan/OrginalSchaltplanRancilio.png)
 
-## "Only PID"
+### "Only PID"
 
 Der zweite Schaltplan zeigt die PID Anpassung.
 Diese Version ist nur für die Temperatursteuerung verantwortlich.
 Die Pumpe und das 3-Wege-Ventil werden nicht durch den Controller gesteuert.
 
-![PID Schaltplan](http://rancilio-pid.de/wp-content/uploads/2019/12/Screenshot-at-Dez.-11-11-16-33-1536x1168.png)
+![PID Schaltplan](../../schaltplan/OnlyPIDRancilio.png)
 
-## "Vollausbau"
+### "Vollausbau"
 
 Der dritte Schaltplan ist der aktuelle „Vollausbau“.
 Enthalten ist die PID für die Kesseltemperatursteuerung
 Zusätzlich kann auch die Brühzeit oder eine „Preinfussion“ gesteuert werden. (Vorlauf-Brühzeit, Pause, Brühzeit).
 Dabei werden Pumpe und das 3-Wege-Ventil vom Controller gesteuert.
 
-![Vollausbau Schaltplan](http://rancilio-pid.de/wp-content/uploads/2019/12/Screenshot-at-Dez.-11-11-12-33-1536x1147.png)
+**WICHTIGER HINWEIS: Dieser Umbau darf nur am Brüh-Schalter vorgenommen werden, wenn ein Schalter ohne Lampe genommen oder die Lampe ausgebaut oder eine neue Verkabelung bzw. der LED-Umbau gewählt wird, dass mit eingebauter Lampe KEINE 3,3 Volt und 230 Volt am Schalter anliegen! Sonst liegt KEINE galavanische Trennung zwischen 3,3 Volt und 230 Volt mehr vor! Das kann unter ungünstigen Umständen gefährlich für dich oder den Microcontroller sein!**
 
-## Schematische Darstellung der Ausgänge der Platine ESPresso Rev 1
+![Vollausbau Schaltplan](../../schaltplan/VollausbauRancilio.png)
 
-![Platine Schaltplan](http://rancilio-pid.de/wp-content/uploads/2018/10/Rancilio-Cable-Page-4.jpg)
+
+
