@@ -25,16 +25,15 @@ Du benötigst folgende Dinge:
 
 ### Basics
 
+Die Basics werden auf jeden Fall benötigt und liegen (in der Regel) nicht irgendwo in der Werkstatt rum. In Klammern steht die Mindestanzahl.
+
 Beschreibung | ID | Anzahl PID Only | Anzahl Vollausbau | Link
 -|-|-|-|-
-Temperatur Sensor|TSIC 306 TO92|2 (1)|2 (1)|[Link](https://www.reichelt.de/tsic-digitale-halbleiter-temperatursensoren-tsic-306-to92-p82327.html?r=1), [Alternativer Shop](https://shop.bb-sensors.com/Messtechnik-je-Branche/Gebaeudetechnik/Digitaler-TSic-306-Temperatursensor-TO92.html), [Alternativer Sensor](https://www.reichelt.de/de/de/tsic-digitale-halbleiter-temperatursensoren-tsic-206-to92-p82326.html?trstct=pos_1&nbc=1&&r=1)
-Schaltnetzteil|SNT RS 15 5|1|1|[Link](https://www.reichelt.de/schaltnetzteil-geschlossen-15-w-5-v-3-a-snt-rs-15-5-p137080.html?&trstct=pos_0) oder [Amazon-Link](https://www.amazon.de/original-RS-15-5-meanwell-Single-Switching/dp/B06XDL7ZPT)
-SSR Relais – Heizung|RA 2425-D06|1|1|[Link](https://www.reichelt.de/solid-state-relais-ust-2-32vdc-ulast-24-280v-ra-2425-d06-p22691.html?&trstct=pos_0) oder [Amazon-Link](https://www.amazon.de/heschen-Single-ssr-40da-3-32-VDC-50-60-Hz/dp/B071HP9NJD)
-Mikrocontroller|NodeMCU esp8266 V2|1|1|[Link](https://www.amazon.de/AZDelivery-NodeMCU-ESP8266-ESP-12E-Development/dp/B06Y1LZLLY/ref=sr_1_1_sspa?ie=UTF8&qid=1538918768&sr=8-1-spons&keywords=nodemcu+esp8266&psc=1), oder [Ebay-Link](https://www.ebay.de/itm/NodeMCU-v3-2-ESP8266-Dev-Kit-WIFI-Lolin-Amica-CP2102-v2-Arduino-IOT/252712258856?hash=item3ad6d30d28:g:TtsAAOSwlkpb3ZkV), da bei Amazon aktuell nicht lieferbar, oder [unverlötet](https://www.amazon.de/-/en/AZDelivery-NodeMCU-Amica-Unsoldered-Parent/dp/B07GYW4T5F/ref=sr_1_3?dchild=1&keywords=nodemcu+v2&qid=1617445906&sr=8-3)
-Display (optional aber empfehlenswert)|128 x 64 Pixel OLED|1|1|[Link](https://www.amazon.de/AZDelivery-Display-Arduino-Raspberry-gratis/dp/B01L9GC470/ref=sr_1_3?ie=UTF8&qid=1544291613&sr=8-3&keywords=oled+128x64)
-Jumper Kabel (optional)| AZDelivery Jumper Wire Kabel 3 x 40 STK | 1 | 1 | [Link](https://www.amazon.de/Jumper-Wire-Set-M2M-Parent/dp/B07ZP4JLMM)
-alternativ | siehe unten
-Dupont Stecker (optional) | BESTOMZ 620 Stück Dupont Stecker | 1 | 1 | [Link](https://www.amazon.de/BESTOMZ-Stecker-m%C3%A4nnlich-weiblich-Anschluss/dp/B073SSV9TL/)
+Temperatur Sensor|TSIC 306 TO92|2 (1)|2 (1)|[Reichelt-Link](https://www.reichelt.de/tsic-digitale-halbleiter-temperatursensoren-tsic-306-to92-p82327.html?r=1), [Alternativer Shop](https://shop.bb-sensors.com/Messtechnik-je-Branche/Gebaeudetechnik/Digitaler-TSic-306-Temperatursensor-TO92.html), [Alternativer Sensor](https://www.reichelt.de/de/de/tsic-digitale-halbleiter-temperatursensoren-tsic-206-to92-p82326.html?trstct=pos_1&nbc=1&&r=1)
+Schaltnetzteil|SNT RS 15 5|1|1|[Reichelt-Link](https://www.reichelt.de/schaltnetzteil-geschlossen-15-w-5-v-3-a-snt-rs-15-5-p137080.html?&trstct=pos_0) oder [Amazon-Link](https://www.amazon.de/original-RS-15-5-meanwell-Single-Switching/dp/B06XDL7ZPT)
+SSR Relais – Heizung|RA 2425-D06|1|1|[Reichelt-Link](https://www.reichelt.de/solid-state-relais-ust-2-32vdc-ulast-24-280v-ra-2425-d06-p22691.html?&trstct=pos_0) oder [Alternatives SSR (Amazon)](https://www.amazon.de/heschen-Single-ssr-40da-3-32-VDC-50-60-Hz/dp/B071HP9NJD)
+Mikrocontroller|NodeMCU esp8266 V2|1|1|[Amazon-Link](https://www.amazon.de/AZDelivery-NodeMCU-ESP8266-ESP-12E-Development/dp/B06Y1LZLLY/ref=sr_1_1_sspa?ie=UTF8&qid=1538918768&sr=8-1-spons&keywords=nodemcu+esp8266&psc=1) oder [Ebay-Link](https://www.ebay.de/itm/NodeMCU-v3-2-ESP8266-Dev-Kit-WIFI-Lolin-Amica-CP2102-v2-Arduino-IOT/252712258856?hash=item3ad6d30d28:g:TtsAAOSwlkpb3ZkV) oder [unverlötet (Amazon)](https://www.amazon.de/-/en/AZDelivery-NodeMCU-Amica-Unsoldered-Parent/dp/B07GYW4T5F/ref=sr_1_3?dchild=1&keywords=nodemcu+v2&qid=1617445906&sr=8-3)
+Display (optional aber empfehlenswert)|128 x 64 Pixel OLED|1|1|[Amazon-Link](https://www.amazon.de/AZDelivery-Display-Arduino-Raspberry-gratis/dp/B01L9GC470/ref=sr_1_3?ie=UTF8&qid=1544291613&sr=8-3&keywords=oled+128x64)
 unsere erstellte Platine|PCB|1|1|siehe unten
 
 ### Kabel
@@ -65,16 +64,18 @@ Kupferlitze isoliert, 10M, 1×0,14mm², blau|LITZE BL|1|1|[Link](https://www.rei
 Kupferlitze isoliert, 10M, 1×0,14mm², rot|LITZE RT|1|1|[Link](https://www.reichelt.de/kupferlitze-isoliert-10-m-1-x-0-14-mm-rot-litze-rt-p10297.html?)
 Kupferlitze isoliert, 10M, 1×0,14mm², grün|LITZE GN|1|1|[Link](https://www.reichelt.de/kupferlitze-isoliert-10-m-1-x-0-14-mm-gruen-litze-gn-p10296.html?)
 
-### Weiteres
+### Zubehör
+
+Das Zubehör wird auf jeden Fall empfohlen. In einer gut sortierten Werkstatt findet man ggf. das ein oder andere bereits.
 
 Beschreibung | ID | Anzahl PID Only | Anzahl Vollausbau | Link
 -|-|-|-|-
-Flachsteckhülsen mit Schrumpfschlauch – 1,5 … 2,5 mm², blau|WE F602638HS|10|20|[Link](https://www.reichelt.de/flachsteckhuelsen-mit-schrumpfschlauch-1-5-2-5-mm-blau-we-f602638hs-p189402.html?&trstct=pos_0&nbc=1)
-Flachsteckhülsen mit Abzweig – 1,5 … 2,5 mm², transp., vollisoli|WE F606638.1N|5|5|[Link](https://www.reichelt.de/flachsteckhuelsen-mit-abzweig-1-5-2-5-mm-transp-vollisoli-we-f606638-1n-p189372.html?search=WE+F606638.1N)
-Flachstecker mit Schrumpfschlauch – 1,5 … 2,5 mm², blau|WE F616638HS|10|20|[Link](https://www.reichelt.de/flachstecker-mit-schrumpfschlauch-1-5-2-5-mm-blau-we-f616638hs-p189408.html?&trstct=pos_0&nbc=1)
-Ring-Kerbschuhe, für M3, rot|RK-R-3|10|10|[Link](https://www.reichelt.de/ring-kerbschuhe-fuer-m3-rot-rk-r-3-p15259.html?&nbc=1)
-Ring-Kerbschuhe, für M5, rot|RK-R-5|10|10|[Link](https://www.reichelt.de/ring-kerbschuhe-fuer-m5-rot-rk-r-5-p142770.html?&nbc=1)
-Relais für **Vollausbau** (siehe unten)|DEBO RELAY 4WAY||1|[Link](https://www.reichelt.de/entwicklerboards-4-wege-solid-relais-5v-240v-2a-debo-relay-4way-p280064.html?)
+Flachsteckhülsen mit Schrumpfschlauch – 1,5 … 2,5 mm², blau|WE F602638HS|10|20|[Reichelt-Link](https://www.reichelt.de/flachsteckhuelsen-mit-schrumpfschlauch-1-5-2-5-mm-blau-we-f602638hs-p189402.html?&trstct=pos_0&nbc=1)
+Flachsteckhülsen mit Abzweig – 1,5 … 2,5 mm², transp., vollisoli|WE F606638.1N|5|5|[Reichelt-Link](https://www.reichelt.de/flachsteckhuelsen-mit-abzweig-1-5-2-5-mm-transp-vollisoli-we-f606638-1n-p189372.html?search=WE+F606638.1N)
+Flachstecker mit Schrumpfschlauch – 1,5 … 2,5 mm², blau|WE F616638HS|10|20|[Reichelt-Link](https://www.reichelt.de/flachstecker-mit-schrumpfschlauch-1-5-2-5-mm-blau-we-f616638hs-p189408.html?&trstct=pos_0&nbc=1)
+Ring-Kerbschuhe, für M3, rot|RK-R-3|10|10|[Reichelt-Link](https://www.reichelt.de/ring-kerbschuhe-fuer-m3-rot-rk-r-3-p15259.html?&nbc=1)
+Ring-Kerbschuhe, für M5, rot|RK-R-5|10|10|[Reichelt-Link](https://www.reichelt.de/ring-kerbschuhe-fuer-m5-rot-rk-r-5-p142770.html?&nbc=1)
+Relais für **Vollausbau** (siehe unten)|DEBO RELAY 4WAY|0|1|[Reichelt-Link](https://www.reichelt.de/entwicklerboards-4-wege-solid-relais-5v-240v-2a-debo-relay-4way-p280064.html?)
 Schrumpfschlauch|DELOCK 86271|1|1|[Link](https://www.reichelt.de/schrumpfschlauch-sortiment-schwarz-100-teilig-delock-86271-p152924.html?&trstct=pol_0&nbc=1)
 Schraube M4x16||1|1|
 Mutter M4||2|2|
@@ -82,8 +83,11 @@ Beilagscheibe M4||2|2|
 Wärmeleitkleber (nichtleitend) für den Sensor|Silverbead Wärmeleitkleber|||[Link](https://www.amazon.de/Silverbead-W%C3%A4rmeleitkleber-10-Gramm-SG100X/dp/B019MNSABG/ref=sr_1_1?ie=UTF8&qid=1538938085&sr=8-1&keywords=w%C3%A4rmeleitkleber)
 alternativ||||
 Wärmeleitpaste für den Sensor|ARCTIC MX-4-2|||[Link](https://www.reichelt.de/arctic-mx-4-waermeleitpaste-2g-arctic-mx-4-2-p261247.html?&trstct=pos_14&nbc=1)
-**Nicht vergessen** Crimpzange|KN 97 22 240|||[Link](https://www.reichelt.de/crimpzange-240-mm-isolierte-kabelschuhe-kabelverbinder-kn-97-22-240-p122639.html?&trstct=pos_0&nbc=1)
-**Nicht vergessen** Lötkolben||||
+Jumper Kabel (optional)| AZDelivery Jumper Wire Kabel 3 x 40 STK | 1 | 1 | [Amazon-Link](https://www.amazon.de/Jumper-Wire-Set-M2M-Parent/dp/B07ZP4JLMM)
+alternativ | siehe unten
+Dupont Stecker (optional) | Dupont Stecker | 1 | 1 | [Reichelt-Link](https://www.reichelt.de/de/de/entwicklerboards-dupont-crimp-set-610-teilig-debo-set-dupont-p279901.html?trstct=pos_0&nbc=1&&r=1) oder [Amazon-Link](https://www.amazon.de/BESTOMZ-Stecker-m%C3%A4nnlich-weiblich-Anschluss/dp/B073SSV9TL/)
+Crimpzange|KN 97 22 240|||[Link](https://www.reichelt.de/crimpzange-240-mm-isolierte-kabelschuhe-kabelverbinder-kn-97-22-240-p122639.html?&trstct=pos_0&nbc=1)
+Lötkolben|ERSATZKOLBEN EP5|||[Reichelt-Link](https://www.reichelt.de/loetkolben-ep-5-ersatzkolben-ep5-p58217.html?&trstct=pos_0&nbc=1)
 
 ## Anmerkungen zur Bestelliste
 
