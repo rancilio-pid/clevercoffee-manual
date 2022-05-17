@@ -63,33 +63,45 @@ int pvs = digitalRead(PINVOLTAGESENSOR);
 ```
 und entschieden werden, ob die Pumpe bestromt (unter Spannung) ist oder nicht. 
 
-Um zu entscheiden, welcher der beiden Schalter, S3 oder S2, geschaltet sind, wechselt die Software in einen Monitoring-Modus, sobald Pumpenaktivität angezeigt wird
+Um festzustellen, welcher der beiden Schalter, S3 oder S2, geschaltet ist, wechselt die Software in einen Monitoring-Modus, sobald die Pumpe bestromt ist.
 ```
 if (pvs == VoltageSensorON && ...)
   brewSteamDetectedQM = 1;
 ```
-Dieser Modus bleibt solange aktiv, bis die Pumpe abschaltet. Erfolgt das Abschalten innerhalb von weniger als maxBrewDurationForSteamModeQM_ON Millisekunden, muss es sich um einen Stromimpuls gehandelt haben und es kann gefolgert werden, dass der Dampfschalter betätigt wurde
+Dieser Monitoring-Modus bleibt zunächst für die in `minBrewDurationForSteamModeQM_ON` eingetragene Mindestlaufzeit (in Millisekunden) aktiv,
 ```
-if (pvs == VoltageSensorOFF)
+const unsigned long minBrewDurationForSteamModeQM_ON = 50;
+```
+um ein Prellen des Schalters abzufangen. Ist die Mindestestlaufzeit überschritten
+```
+if (brewSteamDetectedQM == 1 && 
+    millis()-timePVStoON > minBrewDurationForSteamModeQM_ON)
 {
-  if (millis() - timePVStoON < maxBrewDurationForSteamModeQM_ON)
+```
+bleibt der Monitoring-Modus solange aktiv, bis eines der folgenden zwei Ereignisse eintritt:
+**(1) Pumpe schaltet ab:** Erfolgt das Abschalten innerhalb von weniger als `maxBrewDurationForSteamModeQM_ON` (in Millisekunden), muss es sich um einen Stromimpuls gehandelt haben und es kann gefolgert werden, dass der Dampfschalter betätigt wurde.
+```
+  if (pvs == VoltageSensorOFF)
   {
-    // Dampfmodus
+    if (millis() - timePVStoON < maxBrewDurationForSteamModeQM_ON)
+    {
+      // Dampfmodus
+      ...
+     }
+  } 
+```
+**(2) Pumpenlaufzeit überschreitet `maxBrewDurationForSteamModeQM_ON`:** Läuft  die Pumpe kontinuierlich länger als `maxBrewDurationForSteamModeQM_ON` (in Millisekunden), kann gefolgert werden, dass es sich nicht um einen Stromimpuls handelt, also der Bezugsschalter betätigt wurde.
+```
+  else if (millis() - timePVStoON >   maxBrewDurationForSteamModeQM_ON)
+  {
+    if (Input < BrewSetPoint + 2) 
+    {
+      // Bezugsmodus
     ...
-  }
-} 
-```
-Andernfalls wird geprüft, ob die Pumpe lang genug (länger als maxBrewDurationForSteamModeQM_ON) kontinuierlich läuft, so dass gefolgert werden kann, dass der Bezugsschalter betätigt wurde
-```
-else if (millis() - timePVStoON > maxBrewDurationForSteamModeQM_ON)
-{
-  if (Input < BrewSetPoint + 2) 
-  {
-    // Bezugsmodus
-	...
-  } else {
-    // Cooling Flush
-	...
+    } else {
+      // Cooling Flush
+    ...
+    }
   }
 }
 ```
