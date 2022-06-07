@@ -28,8 +28,8 @@ Der Ardunio IDE wird nicht mehr aktiv von uns unterstüzt. Wir setzen ab der 3.0
 
 ## Funktionen
 
-### Setup Modus
-Beim ersten Start könnt ihr im Setup Modus vom Node gelangen. Bei einem Display werdet ihr eine Angabe von der IP Adresse sehen. Ihr könnt euch dann mit dem NodeMCU verbinden und direkt per OTA und Platform IO diesen bespielen. Dieser Modus wird immer aktiviert, wenn ihr die Maschine innerhalb von 30 Sekunden aus und wieder an schaltet.
+### Wifi Manager
+Für die Ersteinrichtung wird der Wifi-Manager benutzt. Beim ersten Start vom Nodemcu wird ein Access Point von diesem geöffnet mit dem Namen "silvia" und Passwort "CleverCoffee". Dies kann in der Userconfig auch konfiguriert werden. Verbindet euch mit Access Point, wählt euer WLAN aus und gibt euer Passwort ein, dann wird dies automatisch gespeichert beim nächsten Start.      
 
 ### Webseite & Blynk 
 Blynk wird noch unterstützt, ist aber nicht mehr das zentrale Bedienelement von der PID. Wir haben nun eine eigene auf dem NodeMCU gehostet Webseite.
