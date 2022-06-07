@@ -5,7 +5,7 @@ Dies ist das Handbuch für die Umsetzung des Rancilio PID Projektes. Dieses Hand
 
 Hier geht es zum deutschen Handbuch: [Link](https://manual.rancilio-pid.de/de/).
 
-Mehr zum Projekt findet ihr auf der [Rancilio PID Website](http://rancilio-pid.de/).
+Mehr zum Projekt findet ihr auf der [Clever Coffee Website](http://clevercoffee.de/).
 
 ## About
 
@@ -13,7 +13,7 @@ This is the manual for the implementation of the Rancilio PID project. This manu
 
 Click here for the English manual: [Link](https://manual.rancilio-pid.de/en/)
 
-You can find more about the project on the [Rancilio PID Website](http://rancilio-pid.de/).
+You can find more about the project on the [Clever Coffee Website](http://clevercoffee.de/).
 
 ## Contributing
 
