@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Software Teil II
-parent: DE - Handbuch
+parent: DE - Handbuch1
 has_children: false
 nav_order: 6
 ---
