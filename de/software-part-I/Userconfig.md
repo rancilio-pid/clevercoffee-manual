@@ -1,13 +1,14 @@
 ---
 layout: default
-title: Software Teil II
-parent: DE - Handbuch
-has_children: true
-nav_order: 7
+title: Userconfig Beschreibung
+parent: Software
+grand_parent: DE - Handbuch
+has_children: false
+nav_order: 2
 ---
 
 
-# Software Teil II
+# Userconfig Beschreibung
 {: .no_toc }
 
 Inhaltsverzeichnis
@@ -15,9 +16,6 @@ Inhaltsverzeichnis
 * TOC
 {:toc}
 
-## Einleitung
-
-In diesem Kapitel wird beschrieben wie der Code auf den Mikrocontroller (NodeMCU) geladen wird. Damit könnt ihr loslegen, sobald ihr den Mikrocontroller zur Hand habt (weitere Teile werden nicht hierfür nicht benötigt). Für einen Test sollte dann zumindest der Temperatursensor angeschlossen werden.
 
 ## userConfig.h
 In dem rancilio-pid/rancilio-pid Ordner befindet sich eine für euch wichtige Datei: 
@@ -257,33 +255,3 @@ WIFICINNECTIONDELAY ist die Zeitspanne bis der nächste Reconnect probiert wird.
 
 #endif // _userConfig_H
 ```
-
-
-## Code hochladen
-
-Wenn ihr die .ino Datei öffnet, öffnet sich automatisch im zweiten Tab die userConfig.h mit den wichtigen Einstellungen. Danach auf den Pfeil klicken für den Upload auf den Microkontroller. Achtet darauf, dass Ihr den Auth-Code der Blynk-App und die WLAN-Zugangsdaten im Code der userConfig.h hinterlegt habt.
-
-![](../img/image-2.png)
-
-Bitte achtet vorher drauf, dass Ihr in den Board Einstellungen den richtigen COM Port ausgewählt habt.
-
-Diesen könnt ihr auch auch im Gerätemanager prüfen (falls ihr ihn nicht wisst):
-
-![](../img/34.png)
-
-![](../img/35.png)
-
-## Testen
-
-Wenn alles geklappt habt könnt ihr auf dem Serial Monitor erkennen, wie sich der Microkontroller mit Blynk verbindet.
-
-![](../img/36.png)
-
-Klappt das und ist der Temperatursensor korrekt angeschlossen seht ihr am Handy in der Blynk App die Raumtemperatur.
-Jetzt könnt iht nach und nach die anderen Bauteile verbinden (Relais) und weiter testen.
-
-### OTA
-
-Hier wird der Update **O**ver **T**he **A**ir eingestellt.
-
-Dafür muss die Maschine eingeschalten sein und sich euer Rechner (mit Arduino) im selben WLAN Netz befinden. Dann erscheint unter Werkzeuge > Port <aktuelle Auswahl> > Netzwerkschnittstellen "Rancilio <IP-Addresse>". Wählt diesen Port aus und lädt den Code entsprechend hoch.

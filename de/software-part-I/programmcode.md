@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Programmcode herunterladen
-parent: Software Teil I
+parent: Software
 grand_parent: DE - Handbuch
 has_children: false
 nav_order: 1
