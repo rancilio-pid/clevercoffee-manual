@@ -38,3 +38,14 @@ Die IP-Adresse müsst ihr euch merken, um später die Webseite für die Ersteinr
 Wenn ihr noch per Handy/PC nach einem Wlan sucht werdet ihr das Netzwerk "Silvia" sehen
 
 ![](../../img/wlan-setup1.PNG)
+
+Wenn ihr euch mit dem Netzwerk verbunden habt, geht eine Portalseite auf oder ihr gibt per Browser die IP 192.168.4.1 ein.
+
+![](../../img/wlan-setup2.PNG)
+
+Mit dem Klick auf "Configure Wifi" könnt ihr eurer Wlan auf dem Nodemcu einrichten.
+
+![](../../img/wlan-setup3.PNG)
+
+Wählt das Netzwerk oben aus der Liste ein oder gibt eure SSID manuell ein, zusätzlich eurer Passwort vom Wlan.
+Nach dem "Save" sollte der Nodemcu neustarten und ist für eurer Wlan eingerichtet.
