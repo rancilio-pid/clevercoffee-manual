@@ -35,7 +35,7 @@ Wenn ihr den Code hochlädt, wird die Konsole folgende Meldungen ausgeben:
 *wm:[2] Config Portal Running, blocking, waiting for clients... 
 ```
 Die IP-Adresse müsst ihr euch merken, um später die Webseite für die Ersteinrichtung aufzurufen.
-Wenn ihr noch per Handy/PC nach einem Wlan sucht werdet ihr das Netzwerk "Silvia" sehen
+Wenn ihr nun per Handy/PC/Tablet nach einem Wlan sucht werdet ihr das Netzwerk "Silvia" sehen
 
 ![](../../img/wlan-setup1.PNG)
 
