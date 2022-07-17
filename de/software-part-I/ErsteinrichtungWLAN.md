@@ -36,4 +36,5 @@ Wenn ihr den Code hochlädt, wird die Konsole folgende Meldungen ausgeben:
 ```
 Die IP-Adresse müsst ihr euch merken, um später die Webseite für die Ersteinrichtung aufzurufen.
 Wenn ihr noch per Handy/PC nach einem Wlan sucht werdet ihr das Netzwerk "Silvia" sehen
-![](../../img/wlan-setup1.png)
+
+![](../../img/wlan-setup1.PNG)
