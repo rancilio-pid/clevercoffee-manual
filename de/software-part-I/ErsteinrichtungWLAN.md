@@ -17,8 +17,9 @@ Inhaltsverzeichnis
 {:toc}
 
 
-## Kurzzusammenfassung
+## Kurzfassung
 Für die Ersteinrichtung wird der Wifi-Manager benutzt. Beim ersten Start vom Nodemcu wird ein Access Point von diesem geöffnet mit dem in der userconfig eingestellten ```HOSTNAME``` (default: "silvia") und Passwort ```PASS``` (default: "CleverCoffee"). Verbindet euch mit dem Access Point, wählt euer WLAN aus und gibt euer Passwort vom Router ein, dann wird dies automatisch gespeichert beim nächsten Start des Nodemcu.
+Der Nodemcu wird immer für 20 Sekunden versuchen, dass eingerichtet WLAN zu erreichen, dannach wird für 60 Sekunden das Portal geöffnet. Falls kein Zugriff auf das Portal passiert, startet die Maschine im Offline Modus. 
 ## Schritt für Schritt
 Wenn ihr den Code hochlädt, wird die Konsole folgende Meldungen ausgeben:
 ```
