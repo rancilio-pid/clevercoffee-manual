@@ -65,6 +65,10 @@ Bevor man den Programmcode nun kompilieren und auf das Board laden kann, muss er
 
 Sind alle Einstellungen getroffen, wählt man in der Projektansicht von PlatformIO unter  `nodemcuv2_usb` den Befehl `Build` und kompiliert so den Programmcode. Wenn dies ohne Fehler abschließt, was man anhand der `SUCCESS`-Nachricht im Terminal unten rechts ablesen kann, kann man den Code auf das per USB angeschlossene Board laden. Dazu wählt man den Befehl `Upload`, welcher auch mit `SUCCESS` erfolgreich durchlaufen sollte. 
 
+Das Projekt nutzt eine kleine Partition um Dateien im Flash abzulegen.
+Mit dem Befehl Build Filesystem Image und Uplade Filesystem Image werden die Daten auf das Board geladen.
+![image](https://user-images.githubusercontent.com/1299533/193662573-d48e296d-cdbb-42e5-8515-e7330ded729e.png)
+
 Wenn alle diese Schritte erfolgreich durchgelaufen sind, sollte sich euer Board schon in eurem WLAN anmelden und kann, wenn gewünscht, ab jetzt auch per Over-the-Air-Update mit neuer Software versorgt werden, also über das WLAN und ohne USB-Verbindung mit dem Computer. Dafür muss lediglich die Datei `platformio.ini` angepasst und dort der zu eurem Board und euren Einstellungen passende Hostname unter `upload_port` eingetragen werden[^1]. Ist dies geschehen, wählt ihr im PlatformIO-Menü unter `nodemcuv2_ota` den Befehl `Upload`, und die Software des Boards wird über das WLAN aktualisiert. 
 <!-- Dieser Prozess ist für die ArduinoIDE kurz [hier](../software-part-II.md#ota-1) erklärt.  -->
 
