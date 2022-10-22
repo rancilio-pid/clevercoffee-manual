@@ -4,7 +4,7 @@ le: MQTT
 parent: Konfiguration & Anpassung
 grand_parent: DE - Handbuch
 has_children: false
-nav_order: 5
+nav_order: 6
 ---
 
 # MQTT
