@@ -38,12 +38,12 @@ Die IP von dem NodeMCU könnt ihr in eurem Router herausfinden oder per Monitor 
 ## Wie upgrade ich von einer ältern Version (2.X.X oder jünger)? 
 Es müssen wichtige Schritte vor dem Upgraden durchgeführt werden, sonst wird euer PID nicht richtig funktionieren.
 In Platform IO (VS Code) müssen folgende Schritte erfolgen, eine USB Verbindung zum NodeMCU ist zwingend notwendig:
-1) Erease FLASH
-   "nodemcuv2_usb -> Platform -> Erase Flash
-3) Build Filesystem
-   "nodemcuv2_usb -> Platform -> Buid Fileystem Image
-3) Upload FileSystem Image
-   "nodemcuv2_usb -> Platform -> Upload Fileystem Image
+Schritt | Erklärung
+:--|:--
+1 Erease FLASH | nodemcuv2_usb -> Platform -> Erase Flash
+2 Build Filesystem | nodemcuv2_usb -> Platform -> Buid Fileystem Image
+3 Upload FileSystem Image | Upload Fileystem Image
+
  
 ![Update](../../img/platformio_upgrade.png)
  
