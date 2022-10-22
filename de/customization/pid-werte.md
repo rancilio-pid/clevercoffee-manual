@@ -1,6 +1,6 @@
 ---
 layout: default
-title: PID-Werte
+title: PID-Werte bis Version 2.X.X
 parent: Konfiguration & Anpassung
 grand_parent: DE - Handbuch
 has_children: false
