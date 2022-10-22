@@ -54,10 +54,10 @@ PIN 13 | Relais Ansteuerung Pumpe
 
 ### Temperatursensor anschließen
 
-**ACHTUNG!!** Aktuell kann es sein, dass der TSIC mit einem falnschen Datenblatt ausgeliefert wird. Hier wird die Polung falsch angegeben.
+**ACHTUNG!!** Aktuell kann es sein, dass der TSIC mit einem falschen Datenblatt ausgeliefert wird. Hier wird die Polung falsch angegeben.
 Lest hierzu bitte folgenden Thread im Chat durch: [Link](https://chat.rancilio-pid.de/ranciliopid/pl/dcf38jzk3pnoig5hi64nuodeqc).
 
-Besondere Sorgfalt müsst ihr bitte beim Anschließen des Temperatursensors TSIC306 walten lassen: sobald dieser einmal falsch angeschlossen Spannung bekommen hat, ist er entweder sofort zerstört oder zumindest vorgeschädigt und liefert dadurch fehlerhafte Messwerte. Daher ist es immer ratsam einen Ersatz-Sensor parat zu haben.
+Besondere Sorgfalt müsst ihr bitte beim Anschließen des Temperatursensors TSIC 306 walten lassen: sobald dieser einmal falsch angeschlossen Spannung bekommen hat, ist er entweder sofort zerstört oder zumindest vorgeschädigt und liefert dadurch fehlerhafte Messwerte. Daher ist es immer ratsam einen Ersatz-Sensor parat zu haben.
 
 * Sensor V+ : Board PIN 2 5V
 * Sensor Signal: Board PIN 2 Signal
@@ -67,7 +67,7 @@ Wie ihr zu der Beschreibung zum Board sehen könnt, muss an Pin 2 der Temperatur
 
 ![TSIC Sensor](../../img/20200503_223844-scaled.jpg)
 
-Da wir öfters hören, dass die Bildbeschreibung zum TSIC nicht gut ist, haben wir hier nochmals die Pins vom Sensor dargestellt. Die flache Seite liegt unten. Ein falsch gepolter TSIC sollte entsorgt werden! Er misst vermeintlich richtig, aber definitiv nicht mehr genau.
+Da wir öfters hören, dass die mitgelieferte Bildbeschreibung des TSIC nicht gut ist, haben wir hier nochmals die Pins vom Sensor dargestellt. Die flache Seite liegt unten. Ein falsch gepolter TSIC sollte entsorgt werden! Er misst vermeintlich richtig, aber definitiv nicht mehr genau.
 
 Beim Anschließen des SSR zur Ansteuerung der Heizung ist es wichtig, dass die Polarität der SSR-Ports 3 und 4 beachtet werden:
 
