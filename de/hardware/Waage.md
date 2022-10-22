@@ -19,7 +19,7 @@ Inhaltsverzeichnis
 
 Für den Vollausbau besteht die Möglichkeit der Ergänzung einer Waage für den Bezug nach Gewicht (Stopp bei Zielgewicht).
 Der Grundaufbau entspricht dabei bekannter Waagen mit einer Wägezelle. Diese wird mittels eines HX711 an den Arduino angeschlossen.
-Einen ausführlichen Einblick bekommt ihr auch im Chat im Kanal Waage:[Link](https://chat.rancilio-pid.de/ranciliopid/channels/projekt-waage)
+Einen ausführlichen Einblick bekommt ihr auch im Chat im Kanal Waage: [Link](https://chat.rancilio-pid.de/ranciliopid/channels/projekt-waage)
 
 ## Der Hardware-Aufbau
 
@@ -33,6 +33,7 @@ Anschließend verbindet ihr die Zellen mit dem HX711 und diesen mit den geeignet
 
 Bild vom Einbau:
 
+![Waage](../../img/IMG_20210404_133048.jpg)
 
 ## Software
 
