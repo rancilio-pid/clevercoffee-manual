@@ -62,7 +62,7 @@ PID BD Sensitivity | 60
 ## Hinweise zur Optimierung
 Bei einer Optimierung sollte zunächst der normale Betriebszustand angepasst werden,
 hierbei sind vor allem PID Kp und PID Tn relevant für die Einstellungen.
-Beim Kaltstart muss vor allem PID Tv, PID Integrator Max angepasst werden. 
+Beim Kaltstart muss vor allem PID Kp, PID Tv und PID Integrator Max angepasst werden. 
 Beim Bezug spielen vor allem PID Tn und PID Tv eine Rolle.
 
 ### Brühvorgang
