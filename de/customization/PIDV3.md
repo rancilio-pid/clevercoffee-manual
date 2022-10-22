@@ -18,6 +18,7 @@ Inhaltsverzeichnis
 ## Einleitung
 
 Ab Release 3.0.1 wurde die PID nochmals deutlich vereinfacht und verbessert. Die frühere Brüherkennung (wer sie noch kennen sollte) ist faktisch nur noch in seltenen Fälle notwendig.
+Die PID muss später folgende 3 Betriebszustände korrekt regeln, hierfür sind unterschiedliche Parametereinstellungen notwendig.
 
 ![PID-Einführung](../../img/Bildschirmfoto-2020-11-04-um-20.51.31-1536x733.png) 
 
@@ -46,8 +47,6 @@ Enable Brew PID | Eigene PID-Werte für Brüherkennung, wird nicht mehr benötig
 PID BD Time (s)| Bei "Only-PID" Bezugszeit im Display
 PID BD Sensitivity | Empfindlichkeit vom PID BD (0 = aus, kleinere Werte: hohe Empfindlichkeit, höhere Werte: geringe Empfindlichkeit der Erkennung
 
-
-
 ## Standardwerte für diverse Maschinentypen
 
 ### Rancilio Siliva
@@ -59,3 +58,9 @@ PID Tv (=Kd/Kp) | 20
 PID Integrator Max | 75
 Steam Kp | 150
 PID BD Sensitivity | 60
+
+## Hinweise zur Optimierung
+Bei einer Optimierung sollte zunächst der normale Betriebszustand angepasst werden,
+hierbei sind vor allem PID Kp und PID Tn relevant für die Einstellungen.
+Beim Kaltstart muss vor allem PID Tv, PID Integrator Max angepasst werden. 
+
