@@ -31,6 +31,20 @@ Die zugehörigen Werte lassen sich am NodeMCU direkt einstellen unter "Parameter
 
 ![PID-Parametersmenu](../../img/PIDparametersmenu.png) 
 
+Parameter | Erklärung
+:--|:--
+Enable PID Controller | muss beim erstmaligen Betrieb aktiviert werden, Schaltet die PID an/aus
+Enable PonM | für den alten Kaltstart relevant, Standardmäßig "aus"
+PID Kp | P-Anteil vom PID
+PID Tn (=Kp/Ki)| I-Anteil vom PID
+PID Tv (=Kd/Kp) | D-Anteil vom PID
+PID Integrator Max | Begrenzt den I Anteil, wichtig für den Kaltstart.
+Steam Kp | P-Anteil für den Dampfmodus
+Set point (°C) | Soll-Temperatur von der PID
+Offset (°C) | Offset zur Temperatur, Standard: 0
+Enable Brew PID | Eigene PID-Werte für Brüherkennung, wird nicht mehr benötigt regulär bei der Silvia, Gaggia
+PID BD Time (s)| Bei "Only-PID" Bezugszeit im Display
+PID BD Sensitivity | Empfindlichkeit vom PID BD (0 = aus, kleinere Werte: hohe Empfindlichkeit, höhere Werte: geringe Empfindlichkeit der Erkennung
 
 
 
