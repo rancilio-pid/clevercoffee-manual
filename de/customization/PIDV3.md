@@ -48,5 +48,14 @@ PID BD Sensitivity | Empfindlichkeit vom PID BD (0 = aus, kleinere Werte: hohe E
 
 
 
-## Startwerte für diverse Maschinentypen
+## Standardwerte für diverse Maschinentypen
 
+### Rancilio Siliva
+Parameter | Erklärung
+:--|:--
+PID Kp | 50
+PID Tn (=Kp/Ki)| 200
+PID Tv (=Kd/Kp) | 20
+PID Integrator Max | 75
+Steam Kp | 150
+PID BD Sensitivity | 60
