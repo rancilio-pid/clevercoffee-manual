@@ -51,7 +51,7 @@ PID BD Sensitivity | Empfindlichkeit vom PID BD (0 = aus, kleinere Werte: hohe E
 ## Standardwerte für diverse Maschinentypen
 
 ### Rancilio Siliva
-Parameter | Erklärung
+Parameter | Rancilio Siliva Standardwerte 1
 :--|:--
 PID Kp | 50
 PID Tn (=Kp/Ki)| 200
