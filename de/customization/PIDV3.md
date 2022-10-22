@@ -72,8 +72,6 @@ Bei "Only-PID" ist die "PID BD Time (s)" und "PID BD Sensitivity" nur noch notwe
 
 Parameter | Erklärung
 :--|:--
-Enable PID Controller | muss beim erstmaligen Betrieb aktiviert werden, Schaltet die PID an/aus
-Enable PonM | für den alten Kaltstart relevant, Standardmäßig "aus"
 BD Kp | P-Anteil vom PID bei Bezug
 BD Tn (=Kp/Ki)| I-Anteil bei Bezug
 BD Tv (=Kd/Kp) | D-Anteil bei Bezug
