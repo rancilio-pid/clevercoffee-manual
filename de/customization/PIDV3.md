@@ -64,3 +64,5 @@ Bei einer Optimierung sollte zunächst der normale Betriebszustand angepasst wer
 hierbei sind vor allem PID Kp und PID Tn relevant für die Einstellungen.
 Beim Kaltstart muss vor allem PID Tv, PID Integrator Max angepasst werden. 
 
+### Brühvorgang
+Bei "Only-PID" ist die "PID BD Time (s)" und "PID BD Sensitivity" nur noch notwendig, um die Zeitanzeige im Display korrekt anzuzeigen. Diese Werte haben keinen Einfluss mehr auf den PID, solange "Enable Brew PID" deaktiviert ist. Mit Aktivierung von "Enable Brew PID", können nochmals eigene PID-Werte für den Brühvorgang gesetzt werden. Diese sind für die Dauer von "PID BD Time (s)" aktiv.
