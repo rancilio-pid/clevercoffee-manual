@@ -35,16 +35,18 @@ Für die Ersteinrichtung wird der Wifi-Manager benutzt. Beim ersten Start vom No
 Blynk wird noch unterstützt, ist aber nicht mehr das zentrale Bedienelement von der PID. Wir haben nun eine eigene auf dem NodeMCU gehostet Webseite.
 Die IP von dem NodeMCU könnt ihr in eurem Router herausfinden oder per Monitor vom NodeMCU. Es bietet sich an dem NodeMCU eine feste IP über den Router zu vergeben.
 
-### Wie upgrade ich von einer ältern Version (2.X.X oder jünger)? 
+## Wie upgrade ich von einer ältern Version (2.X.X oder jünger)? 
 Es müssen wichtige Schritte vor dem Upgraden durchgeführt werden, sonst wird euer PID nicht richtig funktionieren.
-In Platform IO müssen folgende Schritte erfolgen, eine USB Verbindung zum NodeMCU ist zwingend notwendig:
+In Platform IO (VS Code) müssen folgende Schritte erfolgen, eine USB Verbindung zum NodeMCU ist zwingend notwendig:
 1) Erease FLASH
    "nodemcuv2_usb -> Platform -> Erase Flash
 3) Build Filesystem
    "nodemcuv2_usb -> Platform -> Buid Fileystem Image
 3) Upload FileSystem Image
    "nodemcuv2_usb -> Platform -> Upload Fileystem Image
-   
+ 
+![Update](../../img/platformio_upgrade.png)
+ 
 
 ## Helft uns!
 Habt ihr Bugs oder ähnliches gefunden, lasst es uns bitte wissen. 
