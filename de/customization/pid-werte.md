@@ -4,7 +4,7 @@ title: PID-Werte bis Version 2.X.X
 parent: Konfiguration & Anpassung
 grand_parent: DE - Handbuch
 has_children: false
-nav_order: 1
+nav_order: 2
 ---
 
 # PID-Werte
