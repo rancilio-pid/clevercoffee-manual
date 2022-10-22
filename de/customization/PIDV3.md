@@ -73,5 +73,5 @@ Bei "Only-PID" ist die "PID BD Time (s)" und "PID BD Sensitivity" nur noch notwe
 Parameter | Erklärung
 :--|:--
 BD Kp | P-Anteil vom PID bei Bezug
-BD Tn (=Kp/Ki)| I-Anteil bei Bezug
+BD Tn (=Kp/Ki) | I-Anteil bei Bezug
 BD Tv (=Kd/Kp) | D-Anteil bei Bezug
