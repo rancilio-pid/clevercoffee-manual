@@ -17,4 +17,13 @@ Inhaltsverzeichnis
 
 ## Einleitung
 
-Hier möchten wir dir die wesentlichen Bedienelemente der PID in Blynk erläutern und dich bei den ersten Schritten hin zu einem besseren Espresso mit deinem eigenen PID unterstützen.
+Ab Release 3.0.1 wurde die PID nochmals deutlich vereinfacht und verbessert. Die frühere Brüherkennung ist faktisch nur noch in seltenen Fälle notwendig.
+Der PID muss vom Kaltstart bis zum Bezug korrekt eingestellt sein: 
+
+![PID-Einführung](../../img/Bildschirmfoto-2020-11-04-um-20.51.31-1536x733.png) 
+
+Bereich | Erklärung
+:--|:--
+1 | Kaltstart
+2 | Regulärer Betrieb
+3 | Brüherkennung (BD)
