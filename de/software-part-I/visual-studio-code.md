@@ -71,7 +71,7 @@ Das Projekt nutzt eine kleine Partition um Dateien auf dem Flash abzulegen. Mit 
 
 ![image](https://user-images.githubusercontent.com/1299533/193664274-e8e294b8-0a34-405f-929e-6899b6080966.png)
 
-Wenn alle diese Schritte erfolgreich durchgelaufen sind, sollte sich euer Board bereits als WLAN-Access Point gestartet haben. Der Standard-Name ist "silvia" mit dem Passwort "CleverCoffee". Verbindet euch mit diesem um die Einstellungen für euer WLAN-Netz vorzunehmen - danach verbindet sich die Maschine beim start automatisch und ihr könnt jederzeit auf das Webinterface gelangen.
+Wenn alle diese Schritte erfolgreich durchgelaufen sind, sollte sich euer Board bereits als WLAN-Access Point gestartet haben. Der Standard-Name ist "silvia" mit dem Passwort "CleverCoffee". Verbindet euch mit diesem um die Einstellungen für euer WLAN-Netz vorzunehmen - danach verbindet sich die Maschine beim start automatisch und ihr könnt jederzeit auf das Webinterface gelangen. Detailiertere Schritte zu Konfiguration des WLANs findet ihr [hier](ErsteinrichtungWLAN.md).
 
 Danach kann, wenn gewünscht, auch per Over-the-Air-Update eine neue Softwareversion aufgespielt werden, also über das WLAN und ohne USB-Verbindung mit dem Computer. Dafür muss lediglich die Datei `platformio.ini` angepasst und dort der zu eurem Board und euren Einstellungen passende Hostname (oder die IP-Adresse) unter `upload_port` eingetragen werden. Ist dies geschehen, wählt ihr im PlatformIO-Menü unter `nodemcuv2_ota` den Befehl `Upload`, und die Software des Boards wird über das WLAN aktualisiert. 
 <!-- Dieser Prozess ist für die ArduinoIDE kurz [hier](../software-part-II.md#ota-1) erklärt.  -->
