@@ -102,7 +102,8 @@ Displayhalterung | Powered by Dremel
 
 Wer einen Dremel besitzt, etwas Geschick mitbringt und kein Problem damit hat, dass Änderungen irreversibel sind, kann damit eine sehr saubere und solide Lösung ausarbeiten.
 
-Wer hintgegen eine reversible Lösung sucht muss sich um eine Displayhalterung (aka 3D Case) bemühen. Eine "Standardlösung" ist aktuell nicht bekannt, aber für alle 3D-Drucker Besitzer, liegen entsprechende Vorlagen auf dem Github (inkl. [Anleitung](https://github.com/rancilio-pid/ranciliopid-handbook/tree/main/3d-designs)):
+Wer hintgegen eine reversible Lösung sucht muss sich um eine Displayhalterung (aka 3D Case) bemühen. Eine "Standardlösung" ist aktuell nicht bekannt, aber für alle 3D-Drucker Besitzer, liegen entsprechende Vorlagen auf [Github](https://github.com/rancilio-pid/ranciliopid-handbook/tree/main/3d-designs) (inkl. [Anleitung](https://github.com/rancilio-pid/ranciliopid-handbook/blob/main/3d-designs/Einbauanleitung.pdf) für den Einbau und die Magnete):
+
 * [Rancilio STL](https://github.com/rancilio-pid/ranciliopid-handbook/blob/main/3d-designs/Case%20Rancilio.stl){:target="_blank"}
 * [Gaggia STL](https://github.com/rancilio-pid/ranciliopid-handbook/blob/main/3d-designs/Case%20Gaggia.stl){:target="_blank"}
 * [Universal-Halter](https://www.thingiverse.com/thing:4897546){:target="_blank"}
@@ -112,11 +113,13 @@ Wer hintgegen eine reversible Lösung sucht muss sich um eine Displayhalterung (
 
 * Senkschraube am Sieb
 * Reinigung der Wasserschläuche (sofern die Maschine nicht neu ist)
-* LED Umbau der Schalter
+* [LED-Umbau der Schalter](LED_Umbau.md)
 
 ## Ausblick
-Projekte die unterstützt werden können:
+
+Features die ebenfalls eingebaut werden können:
+
 * digitales Manometer
-* integrierte Waage
+* [integrierte Waage](Waage.md)
 * Silvia E Zeit für automatisches Ausschalten verändern
-* Automatische Funktion zum wechsel von Dampf auf Brühen
+* Automatische Funktion zum Wechsel von Dampf auf Brühen

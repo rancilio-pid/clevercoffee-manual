@@ -7,7 +7,7 @@ has_children: false
 nav_order: 4
 ---
 
-# Was ist anders bei Version 3.0.0 ? 
+# Was ist anders ab Version 3.0.0 ? 
 {: .no_toc }
 
 Inhaltsverzeichnis
@@ -20,8 +20,7 @@ Inhaltsverzeichnis
 [![Installationsvideo](https://img.youtube.com/vi/KZPjisOEcQ4/hqdefault.jpg)](https://www.youtube.com/watch?v=KZPjisOEcQ4)
 
 
-Mit der Version 3.0.0 ändern sich wesentliche Konzepte der PID. Das Handbuch konnte noch nicht vollständig aktualisiert werden.
-Mit dem Release der Version 3.0.0 werden wir das Handbuch auch schrittweise aktualisieren. Diese Übersicht gibt euch die wichtigsten Änderungen im Überblick.  
+Mit der Version 3.0.0 ändern sich einige Bestandteile des Projektes grundlegend. Das Handbuch konnte noch nicht vollständig aktualisiert werden, wird aber schrittweise angepasst. Diese Übersicht fasst aber bereits die wichtigsten Änderungen zusammen.  
 
 ## Einrichtung
 Der Ardunio IDE wird nicht mehr aktiv von uns unterstüzt. Wir setzen ab der 3.0.0 nun vollständig auf Platform IO und VS Code.
@@ -29,21 +28,21 @@ Der Ardunio IDE wird nicht mehr aktiv von uns unterstüzt. Wir setzen ab der 3.0
 ## Funktionen
 
 ### Wifi Manager
-Für die Ersteinrichtung wird der Wifi-Manager benutzt. Beim ersten Start vom Nodemcu wird ein Access Point von diesem geöffnet mit dem Namen "silvia" und Passwort "CleverCoffee". Dies kann in der Userconfig auch konfiguriert werden. Verbindet euch mit Access Point, wählt euer WLAN aus und gibt euer Passwort ein, dann wird dies automatisch gespeichert beim nächsten Start.      
+Für die Ersteinrichtung wird ein Wifi-Manager benutzt. Beim ersten Start des ESP wird ein Access Point von diesem geöffnet mit dem Namen "silvia" und Passwort "CleverCoffee". Dies kann in der userConfig.h auch angepasst werden. Verbindet ihr euch mit dem Access Point, sollte sich bei den meisten Systemen automatisch eine Seite öffnen in mittels derer ihr ein WLAN auswählen und ein Passwort eingeben könnt, welches dann gespeichert und  automatisch beim nächsten Start für die Verbindung verwendet wird.
 
 ### Webseite & Blynk 
-Blynk wird noch unterstützt, ist aber nicht mehr das zentrale Bedienelement von der PID. Wir haben nun eine eigene auf dem NodeMCU gehostet Webseite.
-Die IP von dem NodeMCU könnt ihr in eurem Router herausfinden oder per Monitor vom NodeMCU. Es bietet sich an dem NodeMCU eine feste IP über den Router zu vergeben.
+Blynk wird noch unterstützt, ist aber nicht mehr das zentrale Bedienelement von der PID. Wir haben nun eine eigene auf dem ESP gehostet Webseite.
+Die IP vom EPS könnt ihr in eurem Router herausfinden oder per Monitor-Befehl in PlatformIO. Es bietet sich an, dem ESP eine feste IP über den Router zu vergeben und einen festen Namen über den ihr dann die Konfigurationsseite im Browser erreichen könnt.
 
-## Wie upgrade ich von einer ältern Version (2.X.X oder jünger)? 
+## Wie upgrade ich von einer älteren Version (2.X.X oder jünger)? 
 Es müssen wichtige Schritte vor dem Upgraden durchgeführt werden, sonst wird euer PID nicht richtig funktionieren.
-In Platform IO (VS Code) müssen folgende Schritte erfolgen, eine USB Verbindung zum NodeMCU ist zwingend notwendig:
+In PlatformIO (VS Code) müssen folgende Schritte erfolgen, eine USB Verbindung zum ESP ist zwingend erforderlich:
 
 Schritt | Erklärung
 :--|:--
-1 Erease FLASH | nodemcuv2_usb -> Platform -> Erase Flash
-2 Build Filesystem | nodemcuv2_usb -> Platform -> Buid Fileystem Image
-3 Upload FileSystem Image | Upload Fileystem Image
+1 Flash-Speicher löschen | nodemcuv2_usb -> Platform -> Erase Flash
+2 Dateisystem bauen und übertragen | nodemcuv2_usb -> Platform -> Upload Fileystem Image
+3 Firmware bauen und übertragen | nodemcuv2_usb -> General -> Upload
 
 Alle 3 Schritte müssen nach einander erfolgen.
  

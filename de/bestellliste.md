@@ -32,8 +32,8 @@ Beschreibung | ID | Anzahl PID Only | Anzahl Vollausbau | Link
 Temperatur Sensor|TSIC 306 TO92|2 (1)|2 (1)|[Reichelt-Link](https://www.reichelt.de/tsic-digitale-halbleiter-temperatursensoren-tsic-306-to92-p82327.html?r=1), [Alternativer Shop](https://shop.bb-sensors.com/Messtechnik-je-Branche/Gebaeudetechnik/Digitaler-TSic-306-Temperatursensor-TO92.html), [Alternativer Sensor](https://www.reichelt.de/de/de/tsic-digitale-halbleiter-temperatursensoren-tsic-206-to92-p82326.html?trstct=pos_1&nbc=1&&r=1)
 Schaltnetzteil|SNT RS 15 5|1|1|[Reichelt-Link](https://www.reichelt.de/schaltnetzteil-geschlossen-15-w-5-v-3-a-snt-rs-15-5-p137080.html?&trstct=pos_0) oder [Amazon-Link](https://www.amazon.de/original-RS-15-5-meanwell-Single-Switching/dp/B06XDL7ZPT)
 SSR Relais – Heizung|RA 2425-D06|1|1|[Reichelt-Link](https://www.reichelt.de/solid-state-relais-ust-2-32vdc-ulast-24-280v-ra-2425-d06-p22691.html?&trstct=pos_0) oder [Alternatives SSR (Amazon)](https://www.amazon.de/heschen-Single-ssr-40da-3-32-VDC-50-60-Hz/dp/B071HP9NJD)
-Mikrocontroller|NodeMCU esp8266 V2|1|1|[Amazon-Link](https://www.amazon.de/AZDelivery-NodeMCU-ESP8266-ESP-12E-Development/dp/B06Y1LZLLY/ref=sr_1_1_sspa?ie=UTF8&qid=1538918768&sr=8-1-spons&keywords=nodemcu+esp8266&psc=1) oder [Ebay-Link](https://www.ebay.de/itm/NodeMCU-v3-2-ESP8266-Dev-Kit-WIFI-Lolin-Amica-CP2102-v2-Arduino-IOT/252712258856?hash=item3ad6d30d28:g:TtsAAOSwlkpb3ZkV) oder [unverlötet (Amazon)](https://www.amazon.de/-/en/AZDelivery-NodeMCU-Amica-Unsoldered-Parent/dp/B07GYW4T5F/ref=sr_1_3?dchild=1&keywords=nodemcu+v2&qid=1617445906&sr=8-3)
-Display (optional aber empfehlenswert)|128 x 64 Pixel OLED|1|1|[Amazon-Link](https://www.amazon.de/AZDelivery-Display-Arduino-Raspberry-gratis/dp/B01L9GC470/ref=sr_1_3?ie=UTF8&qid=1544291613&sr=8-3&keywords=oled+128x64)
+Mikrocontroller|NodeMCU V2 ESP8266|1|1|[Amazon-Link](https://www.amazon.de/AZDelivery-NodeMCU-ESP8266-ESP-12E-Development/dp/B06Y1LZLLY/ref=sr_1_1_sspa?ie=UTF8&qid=1538918768&sr=8-1-spons&keywords=nodemcu+esp8266&psc=1) oder [Ebay-Link](https://www.ebay.de/itm/NodeMCU-v3-2-ESP8266-Dev-Kit-WIFI-Lolin-Amica-CP2102-v2-Arduino-IOT/252712258856?hash=item3ad6d30d28:g:TtsAAOSwlkpb3ZkV) oder [unverlötet (Amazon)](https://www.amazon.de/-/en/AZDelivery-NodeMCU-Amica-Unsoldered-Parent/dp/B07GYW4T5F/ref=sr_1_3?dchild=1&keywords=nodemcu+v2&qid=1617445906&sr=8-3)
+Display (optional aber empfehlenswert)|128 x 64 Pixel OLED SSD1306 |1|1|[Amazon-Link](https://www.amazon.de/AZDelivery-Display-Arduino-Raspberry-gratis/dp/B01L9GC470/ref=sr_1_3?ie=UTF8&qid=1544291613&sr=8-3&keywords=oled+128x64)
 unsere erstellte Platine|PCB|1|1|siehe unten
 
 ### Kabel
@@ -79,13 +79,13 @@ Relais für **Vollausbau** (siehe unten)|DEBO RELAY 4WAY|0|1|[Reichelt-Link](htt
 Schrumpfschlauch|DELOCK 86271|1|1|[Link](https://www.reichelt.de/schrumpfschlauch-sortiment-schwarz-100-teilig-delock-86271-p152924.html?&trstct=pol_0&nbc=1)
 Schraube M4x16||1|1|
 Mutter M4||2|2|
-Beilagscheibe M4||2|2|
+Unterlegscheibe M4||2|2|
 Wärmeleitkleber (nichtleitend) für den Sensor|Silverbead Wärmeleitkleber|||[Link](https://www.amazon.de/Silverbead-W%C3%A4rmeleitkleber-10-Gramm-SG100X/dp/B019MNSABG/ref=sr_1_1?ie=UTF8&qid=1538938085&sr=8-1&keywords=w%C3%A4rmeleitkleber)
 alternativ||||
 Wärmeleitpaste für den Sensor|ARCTIC MX-4-2|||[Link](https://www.reichelt.de/arctic-mx-4-waermeleitpaste-2g-arctic-mx-4-2-p261247.html?&trstct=pos_14&nbc=1)
-Jumper Kabel (optional)| AZDelivery Jumper Wire Kabel 3 x 40 STK | 1 | 1 | [Amazon-Link](https://www.amazon.de/Jumper-Wire-Set-M2M-Parent/dp/B07ZP4JLMM)
+Jumperkabel (optional)| AZDelivery Jumper Wire Kabel 3 x 40 STK | 1 | 1 | [Amazon-Link](https://www.amazon.de/Jumper-Wire-Set-M2M-Parent/dp/B07ZP4JLMM)
 alternativ | siehe unten
-Dupont Stecker (optional) | Dupont Stecker | 1 | 1 | [Reichelt-Link](https://www.reichelt.de/de/de/entwicklerboards-dupont-crimp-set-610-teilig-debo-set-dupont-p279901.html?trstct=pos_0&nbc=1&&r=1) oder [Amazon-Link](https://www.amazon.de/BESTOMZ-Stecker-m%C3%A4nnlich-weiblich-Anschluss/dp/B073SSV9TL/)
+Dupont-Stecker (optional) | Dupont Stecker | 1 | 1 | [Reichelt-Link](https://www.reichelt.de/de/de/entwicklerboards-dupont-crimp-set-610-teilig-debo-set-dupont-p279901.html?trstct=pos_0&nbc=1&&r=1) oder [Amazon-Link](https://www.amazon.de/BESTOMZ-Stecker-m%C3%A4nnlich-weiblich-Anschluss/dp/B073SSV9TL/)
 Crimpzange|KN 97 22 240|||[Link](https://www.reichelt.de/crimpzange-240-mm-isolierte-kabelschuhe-kabelverbinder-kn-97-22-240-p122639.html?&trstct=pos_0&nbc=1)
 Lötkolben|ERSATZKOLBEN EP5|||[Reichelt-Link](https://www.reichelt.de/loetkolben-ep-5-ersatzkolben-ep5-p58217.html?&trstct=pos_0&nbc=1)
 
@@ -99,12 +99,12 @@ Lötkolben|ERSATZKOLBEN EP5|||[Reichelt-Link](https://www.reichelt.de/loetkolben
 
 Inklusive sind:
  * Das PCB
- * Die Schraubterminals
+ * Die Schraubklemmenblöcke
  * Die Stiftleisten
  * Klebepads
 
 ### Infos zum Wärmeleitkleber
-Wärmeleitkleber ist umstritten (siehe [Link](https://www.igorslab.de/mythos-waermeleitpaste-edelpaste-zum-apothekenpreis-gegen-guenstiges-massenprodukt-wir-rechnen-gnadenlos-nach/) und Block unten zur Herleitung). Nichtsdestotrotz befestigen die meisten Anwender den TSIC damit direkt am Kessel. Zusammenfassend kann man sagen: Trägt möglichst wenig davon auf und versucht den Sensor möglichst mit der vorhandenen Halterung (und zusätzlicher Schraube und Mutter) zu befestigen. Damit sollte sich ein akzeptables Maß aus Temperaturdifferenz und sicherer Befestigung erreichen lassen.
+Wärmeleitkleber/-paste ist umstritten (siehe [Link](https://www.igorslab.de/mythos-waermeleitpaste-edelpaste-zum-apothekenpreis-gegen-guenstiges-massenprodukt-wir-rechnen-gnadenlos-nach/) und Block unten zur Herleitung). Nichtsdestotrotz befestigen einige Anwender den TSIC mit dem Kleber direkt am Kessel. Zusammenfassend kann man sagen: Tragt möglichst wenig davon auf. Alternativ zum Kleben befestigt ihr den Sensor besser mit der nun leeren Halterung des Thermostats (und einer zusätzlichen Schraube und Mutter). Damit sollte sich ein akzeptables Maß aus Temperaturdifferenz und sicherer Befestigung erreichen lassen.
 
 <details markdown="block">
   <summary> Diskussion zum Wärmeleitkleber </summary>
@@ -120,37 +120,36 @@ Wärmeleitkleber ist umstritten (siehe [Link](https://www.igorslab.de/mythos-wae
 </details>
 
 ### Infos zum Temperatursensor
-Wir geben hier den Tipp gleich mindestens 2 TSIC Sensoren zu kaufen. Wir haben es nun häufiger erleben müssen, dass die Sensoren falsch verdrahtet werden. Daher denkt einfach gleich an eine Reserve bei der Bestellung bei Reichelt. Bitte einen falsch verpolten Sensor nicht mehr verwenden, dieser geht kurzfristig kaputt oder zeigt unrealistische Werte an (für Details siehe [Temperatursensor anschließen](./hardware/hardware.md#temperatursensor-anschließen)).
+Wir geben hier den Tipp gleich mindestens 2 TSIC Sensoren zu kaufen. Wir haben es nun häufiger erleben müssen, dass die Sensoren falsch verdrahtet werden oder diese anderweitig beschädigt sind. Daher denkt einfach gleich an eine Reserve bei der Bestellung bei Reichelt. Bitte einen falsch verpolten Sensor nicht mehr verwenden, dieser geht kurzfristig kaputt oder zeigt unrealistische Werte an (für Details siehe [Temperatursensor anschließen](./hardware/hardware.md#temperatursensor-anschließen)).
 
 ### Infos zum Microcontroller
-Man kann beim NodeMCU **nicht** die V1 oder V3 nehmen. Nur die V2 passt auf das PCB.
+Man kann beim NodeMCU **nicht** die V1 oder V3 nehmen. Nur die V2 passt auf das PCB. In Kürze werden neuere Versionen der Software nur noch mit ESP32 kompatibel sein, hier muss es das DevKitC V4 sein (mit ESP32, nicht ESP32S oder C etc.)
 
 ### Infos zu den Steckern
-Es sind jeweils mehr Stecker wie benötigt angegeben. Es ist empfehlenswert hier reichlich zu Bestellen, da gerne mal etwas schief läuft und man sonst ohne Kaffee auf die neue Bestellung warten muss.
+Es sind jeweils mehr Stecker als benötigt angegeben. Es ist empfehlenswert hier eher mehr zu Bestellen, da gerne mal etwas schief läuft und man sonst ohne Kaffee auf die neue Bestellung warten muss.
 
 ### Infos zum Netzteil
-Das Netzteil hat bei wenigen Personen zu Problemen geführt (Reboots). Eine Alternative kann ein einfaches USB Netzteil sein, welches eine stabilere Spannung liefern könnte.
-
-Insbesondere bei den neueren Rancilio Silvia E Varianten ist Platz ein Thema. Hier ist ggf. auch ein USB Netzteil zu bevorzugen.
+Das Netzteil hat bei wenigen Personen zu Problemen geführt (Reboots).
+Insbesondere bei den neueren Rancilio Silvia E Varianten oder kleineren Maschinen ist auch der Platz ein Thema. Eine Alternative kann in beiden Fällen ein einfaches USB Netzteil sein, für welches aber eine ordentliche Kontaktierung schwierig ist.
 
 ### Infos zum Display und Jumper (bzw. Dupont)
-Das Display wird für keine Ausbaustufe zwangsläufig benötigt. Ohne Display lässt es sich jedoch kaum vermeiden, dass man bei jedem Bezug am Smartphone die Temperatur prüfen muss. Im regulären Lauf sieht die Anzeige nämlich wie folgt aus:
+Das Display wird für keine Ausbaustufe zwangsläufig benötigt. Ohne Display lässt es sich jedoch kaum vermeiden, dass man bei jedem Bezug am Smartphone die Temperatur prüfen muss. Im regulären Lauf sieht die Anzeige nämlich wie folgt aus (es wird in kurzen Intervallen geheizt um die Temperatur zu halten):
 
-Regulärer Lauf | Auszug Monitoring
+Regulärer Lauf | Auszug Monitoring (Grafana)
 :---:|:---:
 ![Blinken](../img/blink.gif)|![Blink Monitoring](../img/blink_monitoring3.png)
 
-Wer es einfach mag, kann das Display entweder neben die Maschine legen, oder an einem der Bleche fixieren. Wie ihr den Projekten entnehmen könnt ([Link](https://clevercoffee.de/rancilio-silvia-e-konstantin/)), kann das Display natürlich auch sauber integriert werden.
+Wer es einfach mag, kann das Display entweder neben die Maschine legen, oder an einem der Bleche fixieren. Wie ihr einzelnen Bauberichten entnehmen könnt ([Link](https://clevercoffee.de/rancilio-silvia-e-konstantin/)), kann das Display natürlich auch sauber hinter einem der Bleche integriert oder mit einem 3D-gedruckten Gehäuse an der Maschine befestigt werden.
 
-Für einen einfachen Betrieb des Displays empfehlen sich zudem die gelisteten Jumperkabel - so muss nicht zwangsläufig gelötet werden. Jumper sind somit gut für den Trockenaufbau geeignet.
-Alternativ könnt ihr euch ein Dupont Stecker Kit zulegen. Dieses hat den Vorteil, dass ihr die Länge der Verbindung frei zuschneiden könnt. Hat aber den Nachteil, dass es nur mit Crimpzange genutzt werden kann. Dupont Stecker sind somit gut für den finalen Einbau geeignet.
-Beachtet jedoch den entsprechenden Hinweis zum Temperatursensor: [Link](./hardware/hardware.md/#tipps-und-tricks).
+Für einen ersten Betrieb des Displays empfehlen sich die gelisteten Jumperkabel - so muss nicht zwangsläufig gelötet werden. Jumper sind gut für den Trockenaufbau geeignet, haben aber keinen ausreichend stabilen Halt an den Pins für den dauerhaften Einbau.
+Alternativ könnt ihr euch ein Dupont-Set mit Crimpzange zulegen. Dieses hat den Vorteil, dass ihr die Länge der Verbindung frei zuschneiden könnt. Es kann aber nur mit einer Crimpzange genutzt werden kann. Dupont-Stecker sind gut für den finalen Einbau geeignet und man muss ebenfalls nicht am Display löten.
+Beachtet jedoch den entsprechenden Hinweis zum Temperatursensor (dieser sollte gelötet werden): [Link](./hardware/hardware.md/#tipps-und-tricks).
 
 ### Infos zum Vollausbau SSR
 Wir haben im Projekt viele diverse Relais für die Pumpe und das Ventil testen „dürfen“ – diese sind leider nicht so stabil wie die der SSR für die Heizung. Folgende Erkenntnisse haben wir dabei gesammelt:
 
 #### Beste Lösung: High Trigger SSR
-User im Chat haben zuverlässige Bezugsquellen für High Trigger gefunden: [Link](https://www.roboter-bausatz.de/1450/2-kanal-solid-state-relais-modul-5v/230vac-high-level-trigger). Daher ist dies momentan unsere Favorit. **Aktuell nicht lieferbar**
+User im Chat haben zuverlässige Bezugsquellen für High Trigger gefunden: [Link](https://www.roboter-bausatz.de/1450/2-kanal-solid-state-relais-modul-5v/230vac-high-level-trigger). Daher ist dies momentan unsere Favorit.
 
 Alternativ kann bei Reichelt auch folgender High Trigger mitbestellt werden: [Link](https://www.reichelt.de/entwicklerboards-4-wege-solid-relais-5v-240v-2a-debo-relay-4way-p280064.html?&trstct=pos_0&nbc=1).
 
@@ -159,8 +158,8 @@ Bei einigen SSR-Ralais, z.B. dem von Reichelt muss ggf. noch ein Widerstand para
 #### Schlechteste Lösung: Spulen Relais
 Ja, Spulen Relais kann man verwenden, dabei können durch die Bauweise der Relais Probleme entstehen, die sich nicht immer lösen oder reproduzieren lassen: [Link](https://www.amazon.de/AZDelivery-2-Relais-Optokoppler-Low-Level-Trigger-Arduino/dp/B078Q326KT/ref=sr_1_7_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=azdelivery%2Bspulen%2Brelais&qid=1603614378&sr=8-7-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExNDdFUE9JRkxXSkNEJmVuY3J5cHRlZElkPUEwNDU5MDU1OVlVSENDWEZNQTQzJmVuY3J5cHRlZEFkSWQ9QTAwNDA1MTEzUlBCUzUwVFdZSTI3JndpZGdldE5hbWU9c3BfbXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ&th=1). Lösungen mit einer galvanischen Trennung können manchmal helfen [Link](https://www.kollino.de/arduino/4-8-kanal-relais-anleitung/). Daher ist es die schlechteste Lösung bei den Relais.
 
-#### SSR Board von Amazon
-Manche gehen ins Spielcasino, wir bestellen bei Amazon – Manchmal hat man Pech und wo „High Trigger“ drauf steht, ist manchmal „Low Trigger“ drin. Einen Low Trigger erkennt ihr an einem „2TY“ auf dem einen Baustein des SSR Boards. „J3Y“ Steht hierbei für den besseren HIGH Trigger. SSR Boards sind besser als die Spulen Relais, aber Low Trigger können auch Probleme verursachen.
+#### SSR-Board von Amazon
+Manche gehen ins Spielcasino, wir bestellen bei Amazon – Manchmal hat man Pech und wo „High Trigger“ drauf steht, ist doch „Low Trigger“ drin. Einen Low Trigger erkennt ihr an einem „2TY“ auf dem einen Baustein des SSR-Boards. „J3Y“ ist hierbei der besser geeignete HIGH Trigger. SSR Boards sind besser als die Spulen-Relais, aber Low Trigger können auch Probleme verursachen.
 
-#### Alternative: 2x Heizungs SSR
+#### Alternative: 2x Heizungs-SSR
 Wenn der Platz vorhanden ist, könnte man auch 2x den Heizung SSR nutzen.

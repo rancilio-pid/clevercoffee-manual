@@ -8,7 +8,7 @@ nav_order: 2
 ---
 
 
-# Userconfig Beschreibung
+# Beschreibung der userConfig.h
 {: .no_toc }
 
 Inhaltsverzeichnis
@@ -22,18 +22,16 @@ In dem rancilio-pid/rancilio-pid Ordner befindet sich eine für euch wichtige Da
 * userConfig_sample.h
 
 Die userConfig_sample.h muss in userConfig.h umbenannt werden und mit euren Werten anpasste werden. 
-Alle wichtigen Einstellungen werden für eure PID in dieser Datei vorgenommen, diese werden nun gleich genauer erläutert.
+Grundlegende Einstellungen wie genutzte Pins werden in dieser Datei vorgenommen, diese werden nun gleich genauer erläutert.
 Bei einem Update auf eine neuere Version bitte unbedingt die neuste userConfig_sample.h nehmen und mit euren Werten anpassen.
-Wenn Ihr das nicht tut, kann dies zu unspezifischen, nicht erwünschten Verhalten an der Maschine kommen: Display hängt, PID geht nicht und weitere
-
 
 ## Die Parameter in der userConfig.h
 
-Die userConfig.h ist in mehrere Abschnitte unterteilt. Die wir nun nach und nach euch vorstellen werden. 
+Die userConfig.h ist in mehrere Abschnitte unterteilt.
 
 ### List of supported machines
 
-Die Aufzählung MACHINE enthält alle bislang unterstützen Maschinen.
+Die Aufzählung MACHINE enthält alle bislang unterstützen Maschinentypen.
 ```
 enum MACHINE {
   RancilioSilvia,   // MACHINEID 0
@@ -50,19 +48,21 @@ enum MACHINE {
 Hier müsst ihr die ID eurer Maschine eintragen. Dieser Parameter steuert die Logodarstellung auf dem Display (wenn angeschlossen) und bei der Quick Mill die Erkennung des Brühvorgangs und den Dampfmodus bei BREWDETECTION 3.
 
 ### DISPLAY
-Hier werden alle Display relevanten Einstellungen vorgenommen. 
+Hier werden alle für das Display relevanten Einstellungen vorgenommen. 
+
 ```
-#define DISPLAY 2                  // 0 = deactivated, 1 = SH1106 (e.g. 1.3 "128x64), 2 = SSD1306 (e.g. 0.96" 128x64)
-#define OLED_I2C 0x3C		           // I2C address for OLED, 0x3C by default
-#define DISPLAYTEMPLATE 3          // 1 = Standard Display Template, 2 = Minimal Template, 3 = only Temperatur, 4 = Scale Template, 20 = vertical Display see git Handbook for further information
-#define DISPLAYROTATE U8G2_R0      // rotate display clockwise: U8G2_R0 = no rotation; U8G2_R1 = 90°; U8G2_R2 = 180°; U8G2_R3 = 270°
+#define OLED_DISPLAY 2             // 0 = deactivated, 1 = SH1106 (e.g. 1.3 "128x64), 2 = SSD1306 (e.g. 0.96" 128x64)
+#define OLED_I2C 0x3C              // I2C address for OLED, 0x3C by default
+#define DISPLAYTEMPLATE 1          // 1 = Standard Display Template, 2 = Minimal Template, 3 = only Temperature, 4 = Scale Template, 20 = vertical Display see git Handbook for further information
+#define DISPLAYROTATE U8G2_R2      // rotate display clockwise: U8G2_R0 = no rotation; U8G2_R1 = 90°; U8G2_R2 = 180°; U8G2_R3 = 270°
 #define SHOTTIMER 1                // 0 = deactivated, 1 = activated 2 = with scale
-#define HEATINGLOGO 0              // 0 = deactivated, 1 = Rancilio, 2 = Gaggia 
+#define HEATINGLOGO 1              // 0 = deactivated, 1 = Rancilio, 2 = Gaggia
 #define OFFLINEGLOGO 1             // 0 = deactivated, 1 = activated
-#define BREWSWITCHDELAY 3000       // time in ms
-#define LANGUAGE 1                 // LANGUAGE = 0 (DE), LANGUAGE = 1 (EN), LANGUAGE = 2 (ES)
+#define BREWSWITCHDELAY 3000       // time in ms that the brew switch will be delayed (shot timer will show that much longer after switching off)
+#define LANGUAGE 0                 // LANGUAGE = 0 (DE), LANGUAGE = 1 (EN), LANGUAGE = 2 (ES)
+#define VERBOSE 0                  // 1 = Show verbose output (serial connection), 0 = show less
 ```
-DISPLAY definiert den Displaytyp. 
+OLED_DISPLAY definiert den Displaytyp. 
 
 OLED_I2C gibt die I2C Adresse an, hier muss in der Regel nichts angepasst werden.  
 
@@ -70,41 +70,32 @@ DISPLAYTEMPLATE definiert das Template was ihr verwenden möchtet, siehe [Displa
 
 DISPLAYROTATE lässt das Display rotieren. Beim Hochformat muss ein entsprechendes vertikale Displaytemplate (20) verwendet werden.
 
-SHOTTIMER (1) lässt euch den Shottimer aktivieren, bei der Verwendung einer Waage kann (2) ausgewählt werden, um auch das Gewicht zu sehen.
+SHOTTIMER (1) aktiviert den Shot Timer, bei der Verwendung einer Waage kann (2) ausgewählt werden, um auch das Gewicht zu sehen.
 
-HEATINGLOGO zeigt euch bis kurz vor Erreichen der Solltemperatur ein entsprechendes Logo anzeigen, siehe [Displayausgabe](https://manual.rancilio-pid.de/de/customization/Display.html).
+HEATINGLOGO zeigt euch bis kurz vor Erreichen der Solltemperatur ein entsprechendes Logo an, siehe [Displayausgabe](https://manual.rancilio-pid.de/de/customization/Display.html).
 
-OFFLINEGLOGO zeigt euch beim deaktivieren der PID via Blynk ein Logo an, siehe [Displayausgabe](https://manual.rancilio-pid.de/de/customization/Display.html).
+OFFLINEGLOGO zeigt euch beim deaktivieren des PIDs ein Logo an, siehe [Displayausgabe](https://manual.rancilio-pid.de/de/customization/Display.html).
 
-BREWSWITCHDELAY ermöglicht euch einzustellen, wie lange die letzte Dauer beim Bezug im Display angezeigt werden soll.
+BREWSWITCHDELAY ermöglicht euch einzustellen, wie lange die Dauer des Bezugs im Display noch angezeigt werden soll, nachdem der Brühvorgang bereits beendet ist.
 
 LANGUAGE erlaubt es die Sprache für Displayausgaben auszuwählen.  
 
+VERBOSE (...)
 
-### Offline mode
-Hier wird definiert, wie die PID sich im Offline Betrieb verhalten soll. 
-```
-#define OFFLINEMODUS 0             // 0 = Blynk and Wifi are used, 1 = offline mode (only preconfigured values in code are used!)
-#define FALLBACK 1                 // 1 = fallback to values stored in eeprom, 0 = deactivated
-#define GRAFANA 1                  // 1 = grafana visualisation (access required), 0 = off (default)
-```
-OFFLINEMODUS: Mit (0) wird eure PID mit Blynk und WlAN arbeiten. Bei (1) bleibt die PID offline. Daher werden alle vordefinierten PID Werte aus der userConfig.h genommen. 
-
-FALLBACK gibt euch die Möglichkeit, dass die PID die letzten im EEPROM gespeicherten Werte nimmt, falls kein WLAN vorhanden ist. Das kann euch helfen, wenn die Maschine im Büro oder im Bereich ohne WLAN steht. Dann kann die Maschine auf den Hotspot des Handy eingestellt sein und bei Bedarf stellt man die Werte per Hotspot und Blynk ein und wenn kein WLAN vorhanden ist, nimmt die Maschine die letzten Werte. Diese werden bei jeder erfolgreichen Verbindung mit Blynk beim Start der Maschine gespeichert. 
-
-GRAFANA aktiviert die Visualisierung mittels Grafana, diese muss in Blynk noch weiter definiert werden. 
 ## PID & Hardware
 Hier sind die wichtigsten Parameter für die PID/Hardware definiert,
+
 ```
 #define ONLYPID 1                  // 1 = Only PID, 0 = PID and preinfusion
-#define ONLYPIDSCALE 0             // 0 = off , 1= OnlyPID with Scale
-#define BREWMODE 1                 // 1 = NORMAL preinfusion ; 2 = Scale with weight
-#define BREWDETECTION 1            // 0 = off, 1 = Software (Onlypid 1), 2 = Hardware (Onlypid 0), 3 = Sensor/Hardware for Only PID 
-#define COLDSTART_PID 1            // 1 = default coldstart values, 2 = custom values via blynk (expert mode activated) 
+#define ONLYPIDSCALE 0             // 0 = off , 1 = OnlyPID with Scale
+#define BREWMODE 1                 // 1 = Brew by time (with preinfusion); 2 = Brew by weight (from scale)
+#define BREWDETECTION 0            // 0 = off, 1 = Software (Onlypid 1), 2 = Hardware (Onlypid 0), 3 = Sensor/Hardware for Only PID
+#define BREWSWITCHTYPE 1           // 1 = normal Switch, 2 = Trigger Switch
 #define TRIGGERTYPE HIGH           // LOW = low trigger, HIGH = high trigger relay
-// BREWDETECTION 3 configuration
-#define VOLTAGESENSORTYPE HIGH 
+#define VOLTAGESENSORTYPE HIGH     // BREWDETECTION 3 configuration
 #define PINMODEVOLTAGESENSOR INPUT // Mode INPUT_PULLUP, INPUT or INPUT_PULLDOWN_16 (Only Pin 16)
+#define PRESSURESENSOR 0           // 1 = pressure sensor connected to A0; PINBREWSWITCH must be set to the connected input!
+#define TEMPLED 0                  // set led pin high when brew or steam set point is within range
 ```
 ONLYPID definiert, ob ihr "OnlyPID" (1) oder den "Vollausbau" mit den Relais nutzt (0).
 
@@ -115,12 +106,14 @@ BREWMODE definiert, ob ihr nur das Ventil und die Pumpe steuert (1) oder auch ei
 BREWDETECTION Diese ist hier [Brüherkennung](https://manual.rancilio-pid.de/de/customization/brueherkennung.html) genauer erläutert. Knapp zusammengefasst,
 definiert ihr hier, ob diese per Software (1) , Brühschalter beim Vollausbau (2) oder per Sensor bei OnlyPid (3) erkannt werden soll. 
 
-COLDSTART_PID gibt an, ob ihr Standard Kaltstart Parameter nehmen wollt. Diese sind durchschnittliche Werte, welche für eine Rancilio und Gaggia funktionieren sollen. Wenn ihr euch selber daran probieren wollt wählt ihr (2). Dazu hier mehr zum [Kaltstart](https://manual.rancilio-pid.de/de/customization/pid-werte.html#kaltstart)
-
 TRIGGERTYPE HIGH es gibt LOW UND HIGH Trigger für das Ventil/Pumpe. Dies wird hier definiert.
 
 VOLTAGESENSORTYPE und PINMODEVOLTAGESENSOR ist für die Konfiguration vom Voltagesensor hier dazu mehr: [Brüherkennung bei Only PID](
 https://manual.rancilio-pid.de/de/customization/brueherkennung.html#sensor-zur-brüherkennung-bei-only-pid
+
+PRESSURESENSOR (...)
+
+TEMPLED (...)
 
 ## TOF sensor for water level
 
@@ -147,24 +140,19 @@ ETRIGGERTIME ist die Zeitdauer zwischen den Signalen.
 
 TRIGGERRELAYTYPE ist der Relaistyp (High oder LOW).
 
-## Weight SCALE
+## Weight Scale
 ```
 #define WEIGHTSETPOINT 30          // Gramm 
 ```
 Hier wird mit WEIGHTSETPOINT das Sollgewicht für die Waage definiert.
 
-
-
 ##  Wifi 
 ```
 #define HOSTNAME "rancilio"
-#define D_SSID "myssid"
-#define PASS "mypass"
 #define MAXWIFIRECONNECTS 5        // maximum number of reconnection attempts, use -1 to deactivate
 #define WIFICINNECTIONDELAY 10000  // delay between reconnects in ms
 ```
 HOSTNAME ist der Hostname der Maschine,
-D_SSID und PASS sind die Wlan Einstellungen. 
 
 MAXWIFIRECONNECTS definiert wie viele Reconnect gemacht werden, bis der Fallback aktiviert wird (bei Start der Maschine) oder bis der Offline Modus aktiviert wird (nach dem erfolgreichen Start)
 
@@ -177,8 +165,8 @@ WIFICINNECTIONDELAY ist die Zeitspanne bis der nächste Reconnect probiert wird.
 #define OTAPASS "otapass"          // Password for OTA updtates
 ```
 
-
 ## MQTT
+
 ```
 #define MQTT 0                     // 1 = MQTT enabled, 0 = MQTT disabled
 #define MQTT_USERNAME "mymqttuser"
@@ -188,70 +176,40 @@ WIFICINNECTIONDELAY ist die Zeitspanne bis der nächste Reconnect probiert wird.
 #define MQTT_SERVER_PORT 1883    
 ```
 
-## Blynk
+## Grafana
 ```
-#define AUTH "myauth"
-#define BLYNKADDRESS "blynk.clevercoffee.de"  // blynk-server IP-Address
-#define BLYNKPORT 8080             // blynk-server portver 
+#define GRAFANA 0                  // 2 = custom Grafana 1 = Grafana visualisation (access required), 0 = off (default)
 ```
 
-## PID - offline values
-```
-#define SETPOINT 95                // Temperatur setpoint
-#define STEAMSETPOINT 120          // Temperatur setpoint
-#define AGGKP 69                   // Kp normal
-#define AGGTN 399                  // Tn
-#define AGGTV 0                    // Tv
-
-// PID coldstart
-#define STARTKP 50                 // Start Kp during coldstart
-#define STARTTN 150                // Start Tn during cold start
-
-// PID - offline brewdetection values
-#define AGGBKP 50                  // Kp
-#define AGGBTN 0                   // Tn 
-#define AGGBTV 20                  // Tv
-```
+GRAFANA aktiviert die Visualisierung mittels Grafana, diese muss in Blynk noch weiter definiert werden.
 
 ## Backflush values
+
 ```
 #define FILLTIME 3000              // time in ms the pump is running
 #define FLUSHTIME 6000             // time in ms the 3-way valve is open -> backflush
 #define MAXFLUSHCYCLES 5           // number of cycles the backflush should run, 0 = disabled
 ```
+
 ## Pin Layout
-```
-#define ONE_WIRE_BUS 2             // Temp sensor pin
-#define PINBREWSWITCH 0           // 0: A0 Analog PIN ; >0 : DIGITAL PIN, ESP8266: ONLY USE PIN15 AND PIN16! 
-#define pinRelayVentil 12          // Output pin for 3-way-valve
-#define pinRelayPumpe 13           // Output pin for pump
-#define pinRelayHeater 14          // Output pin for heater
-#define PINVOLTAGESENSOR  15       //Input pin for volatage sensor
-//#define OLED_RESET 16            // Output pin for dispaly reset pin
-#define PINETRIGGER 16             // PIN for E-Trigger relay
-#define STEAMONPIN 17              // STEAM active
-#define OLED_SCL 5                 // Output pin for dispaly clock pin
-#define OLED_SDA 4                 // Output pin for dispaly data pin
-#define HXDATPIN 99                // weight scale PIN 
-#define HXCLKPIN 99                // weight scale PIN  
-#define SCREEN_WIDTH 128           // OLED display width, in pixels
-#define SCREEN_HEIGHT 64           // OLED display height, in pixels  
-```
 
-## Historic (no settings)
 ```
-#define PONE 1                     // 1 = P_ON_E (default), 0 = P_ON_M (special PID mode, other PID-parameter are needed)
 #define TEMPSENSOR 2               // 2 = TSIC306 1=DS18B20
+#define PINTEMPSENSOR 2            // Temp sensor pin
+#define PINPRESSURESENSOR 99       // Pressuresensor 0: A0 (ESP8266), >0 ONLY ESP32
+#define PINVALVE 12                // Output pin for 3-way-valve
+#define PINPUMP 13                 // Output pin for pump
+#define PINHEATER 14               // Output pin for heater
+#define PINVOLTAGESENSOR 15        // Input pin for voltage sensor (optocoupler to detect brew switch)
+#define PINETRIGGER 16             // PIN for E-Trigger relay
+#define PINBREWSWITCH 0            // 0: A0 (ESP8266) ; >0 : DIGITAL PIN, ESP32 OR ESP8266: ONLY USE PIN15 AND PIN16!
+#define PINSTEAMSWITCH 17          // STEAM active
+#define LEDPIN    18               // LED PIN ON near setpoint
+#define OLED_SCL 5                 // Output pin for display clock pin
+#define OLED_SDA 4                 // Output pin for display data pin
+#define HXDATPIN 99                // weight scale PIN
+#define HXCLKPIN 99                // weight scale PIN
+#define SCREEN_WIDTH 128           // OLED display width, in pixels
+#define SCREEN_HEIGHT 64           // OLED display height, in pixels
 ```
 
-
-## Historic (no settings)
-```
-#if (defined(ESP8266) && ((PINBREWSWITCH != 15 && PINBREWSWITCH != 0 && PINBREWSWITCH != 16 )))
-  #error("WRONG Brewswitch PIN for ESP8266, Only PIN 15 and PIN 16");  
-#endif
-```
-
-
-#endif // _userConfig_H
-```

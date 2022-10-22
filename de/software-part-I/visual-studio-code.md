@@ -20,17 +20,20 @@ nav_order: 3
 
 # Einführung
 
-[Visual Studio Code](https://code.visualstudio.com/) ist ein plattformübergreifend verfügbarer Code-Editor, der sich über zahlreiche Extensions erweitern lässt. Eines der für die Entwicklung eingebetteter Systeme hilfreichsten Extensions ist [PlatformIO](https://platformio.org/). PlatformIO ermöglicht das einfache Kompilieren und Debuggen von Code für zahlreiche Mikrocontroller und ist in seiner Handhabung und Installation deutlich weniger komplex ArduinoIDE. Gleichzeitig hat PlatformIO in Verbindung mit Visual Studio Code allerdings einen deutlich größeren Funktionsumfang, wie zum Beispiel die automatische Installation aller Abhängigkeiten (Compiler, Bibliotheken, etc.) und die gleichzeitige Unterstützung mehrerer Mikrocontroller.
+[Visual Studio Code](https://code.visualstudio.com/) ist ein plattformübergreifend verfügbarer Code-Editor, der sich über zahlreiche Extensions erweitern lässt. Eines der für die Entwicklung eingebetteter Systeme hilfreichsten Extensions ist [PlatformIO](https://platformio.org/). PlatformIO ermöglicht das einfache Kompilieren und Debuggen von Code für zahlreiche Mikrocontroller und ist in seiner Handhabung deutlich komfortabler und leistungsfäher als die Arduino IDE. Gleichzeitig hat PlatformIO in Verbindung mit Visual Studio Code allerdings einen deutlich größeren Funktionsumfang, wie zum Beispiel die automatische Installation aller Abhängigkeiten (Compiler, Bibliotheken, etc.) und die gleichzeitige Unterstützung mehrerer Mikrocontroller-Typen.
 
 ## Installationsvideo
 
-In diesem kurzen Video erklären wir die Installation von Visual Studio Code und PlatformIO und zeigen, wie Rancilio-PID eingerichtet und auf dem NodeMCU installiert wird. Die Installation erfolgt hier beispielhaft in Lubuntu, funktioniert aber analog natürlich auf jedem von Visual Studio Code unterstützten Betriebssystem.
+In diesem kurzen Video erklären wir die Installation von Visual Studio Code und PlatformIO und zeigen, wie CleverCoffee eingerichtet und auf dem ESP installiert wird. Die Installation erfolgt hier beispielhaft in Lubuntu, funktioniert aber analog natürlich auf jedem von Visual Studio Code unterstützten Betriebssystem.
+(Einige der beschriebenen Schritte zur Konfiguration sind nicht mehr ganz aktuell, die Grundlagen stimmen aber noch.)
 
 [![Installationsvideo](http://i3.ytimg.com/vi/OpYECpZG_FE/hqdefault.jpg)](https://www.youtube.com/watch?v=OpYECpZG_FE)
 
 ## Download und Installation
 
 [Visual Studio Code](https://code.visualstudio.com) ist für Windows, macOS und Linux verfügbar.
+
+Empfohlen wird die Installation mit einem der folgenden Paketmanager.
 
 ### Windows über [chocolatey](https://chocolatey.org/)
 
@@ -48,29 +51,27 @@ PlatformIO kann über das Extensions-Menü installiert werden. Eine allgemeine A
 
 ## Der Programmcode
 
-Download des aktuellen Programmcode findest du im aktuellen Release.
+Downloads des aktuellen Programmcodes findest du auf unserer Github-Projektseite bei Releases.
 
 [Link zum Github Repository](https://github.com/rancilio-pid/ranciliopid/releases)
 
-![Screenshot der Github Homepage](../../img/2.png)
 ## Einrichtung von Visual Studio Code und PlatformIO
 
 Im Gegensatz zur ArduinoIDE ist es bei der Arbeit mit Visual Studio Code und PlatformIO nicht notwendig, manuell Bibliotheken zu kopieren oder den Mikrocontroller (das Board) zu installieren, für das der Code kompiliert werden soll. Die notwendigen Informationen sind bereits in der Datei `platformio.ini` voreingestellt, welche Teil des Releases `rancilio-pid` ist.
 
-Nach dem Herunterladen des Programmcodes muss man diesen in PlatformIO in Visual Studio Code über "Open Project" unter "PIO Home" -> "Open" auswählen. Beim ersten Öffnen installiert PlatformIO an dieser Stelle alle notwendigen Abhängigkeiten und Tools, wie die benötigten Compiler und Bibliotheken für die Boards. Das Projekt öffnet sich nun in der Projektansicht von PlatformIO. 
+Nach dem Herunterladen des Programmcodes muss man diesen in PlatformIO in Visual Studio Code über "Open Project" unter "PIO Home" -> "Open" auswählen. Beim ersten Öffnen installiert PlatformIO an dieser Stelle alle notwendigen Abhängigkeiten und Tools, wie die benötigten Compiler und Bibliotheken für die Boards. Das Projekt öffnet sich nun in der Projektansicht von PlatformIO.
 
-Bevor man den Programmcode nun kompilieren und auf das Board laden kann, muss erst noch die Datei `userConfig.h` erstellt werden, in der alle für Dich spezifischen Einstellungen, wie zum Beispiel die WLAN-Zugangsdaten, eingetragen werden. Für Linux-Nutzer haben wir in `rancilio-pid/scripts/create_user_config.sh` ein Skript abgelegt, das Dich nach den von Dir gewünschten Grundeinstellungen fragt und die `userConfig.h` erstellt. Alle weiteren Einstellungsmöglichkeiten auf Basis dieser Datei sind in [Software Teil II](../software-part-II.md#userconfigh) erklärt. 
+Bevor man den Programmcode nun kompilieren und auf das Board laden kann, muss erst noch die Datei `userConfig.h` erstellt werden, in der alle für dich spezifischen Optionen eingetragen werden. Alle Einstellungsmöglichkeiten auf Basis dieser Datei sind in [Software Teil II](../software-part-II.md#userconfigh) erklärt bzw. als Kommentare innerhalb der Datei vorhanden.
 
 ## Kompilieren und Hochladen der Software
 
-Sind alle Einstellungen getroffen, wählt man in der Projektansicht von PlatformIO unter  `nodemcuv2_usb` den Befehl `Build` und kompiliert so den Programmcode. Wenn dies ohne Fehler abschließt, was man anhand der `SUCCESS`-Nachricht im Terminal unten rechts ablesen kann, kann man den Code auf das per USB angeschlossene Board laden. Dazu wählt man den Befehl `Upload`, welcher auch mit `SUCCESS` erfolgreich durchlaufen sollte. 
+Sind alle Einstellungen getroffen, wählt man in der Projektansicht von PlatformIO unter  `nodemcuv2_usb` den Befehl `Build` und kompiliert so den Programmcode. Wenn dies ohne Fehler abschließt, was man anhand der `SUCCESS`-Nachricht im Terminal unten rechts ablesen kann, kann man den Code auf das per USB angeschlossene Board laden. Dazu wählt man den Befehl `Upload`, welcher auch mit `SUCCESS` erfolgreich durchlaufen sollte.
 
-Das Projekt nutzt eine kleine Partition um Dateien im Flash abzulegen. Mit dem Befehl Build Filesystem Image und Uplade Filesystem Image werden die Daten auf das Board geladen.
+Das Projekt nutzt eine kleine Partition um Dateien auf dem Flash abzulegen. Mit dem Befehl Build Filesystem Image und Upload Filesystem Image werden die Daten auf das Board geladen. Zuvor sollte jedoch noch der Befehl Erase Flash gestartet werden um sicherzugehen, dass sich keine alten Werte von anderen Projekten oder vorherigen Versionen der Software mehr im Flash befinden, die zu Problemen führen können.
 
 ![image](https://user-images.githubusercontent.com/1299533/193664274-e8e294b8-0a34-405f-929e-6899b6080966.png)
 
+Wenn alle diese Schritte erfolgreich durchgelaufen sind, sollte sich euer Board bereits als WLAN-Access Point gestartet haben. Der Standard-Name ist "silvia" mit dem Passwort "CleverCoffee". Verbindet euch mit diesem um die Einstellungen für euer WLAN-Netz vorzunehmen - danach verbindet sich die Maschine beim start automatisch und ihr könnt jederzeit auf das Webinterface gelangen. Detailiertere Schritte zu Konfiguration des WLANs findet ihr [hier](ErsteinrichtungWLAN.md).
 
-Wenn alle diese Schritte erfolgreich durchgelaufen sind, sollte sich euer Board schon in eurem WLAN anmelden und kann, wenn gewünscht, ab jetzt auch per Over-the-Air-Update mit neuer Software versorgt werden, also über das WLAN und ohne USB-Verbindung mit dem Computer. Dafür muss lediglich die Datei `platformio.ini` angepasst und dort der zu eurem Board und euren Einstellungen passende Hostname unter `upload_port` eingetragen werden[^1]. Ist dies geschehen, wählt ihr im PlatformIO-Menü unter `nodemcuv2_ota` den Befehl `Upload`, und die Software des Boards wird über das WLAN aktualisiert. 
+Danach kann, wenn gewünscht, auch per Over-the-Air-Update eine neue Softwareversion aufgespielt werden, also über das WLAN und ohne USB-Verbindung mit dem Computer. Dafür muss lediglich die Datei `platformio.ini` angepasst und dort der zu eurem Board und euren Einstellungen passende Hostname (oder die IP-Adresse) unter `upload_port` eingetragen werden. Ist dies geschehen, wählt ihr im PlatformIO-Menü unter `nodemcuv2_ota` den Befehl `Upload`, und die Software des Boards wird über das WLAN aktualisiert. 
 <!-- Dieser Prozess ist für die ArduinoIDE kurz [hier](../software-part-II.md#ota-1) erklärt.  -->
-
-[^1]: Dieser Name kann auch mittels des Skripts `create_user_config.sh` gesetzt werden. 
