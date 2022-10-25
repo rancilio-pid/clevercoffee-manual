@@ -72,7 +72,7 @@ Im Detail sieht es wie folgt am Setpoint aus:
 
 ![PID-P-I-Veränderung](../../img/PV-TV-Ansicht-2.png) 
 
-Eine Erhöhnung von P führt zu deutlichen überschwingen, wobei hier eine Erhöhung von I gegensteuert. Wobei insgesamt alle 9 Wertepaare gute Ergebnisse liefern. Einen deutliche Veränderung hat hierbei der Wert PID Integrator Max. Dieser ermöglicht, dass sich der "Puffer" durch die stätige Regelabweichung stärker aufladen kann und über eine längere Zeit abbauen muss, auch wenn der Setpoint längst erreicht ist.
+Eine Erhöhnung von P führt zu deutlichen überschwingen, wobei hier eine Erhöhung von I gegensteuert. Wobei insgesamt alle 9 Wertepaare gute Ergebnisse liefern. Einen deutliche Veränderung hat hierbei der Wert PID Integrator Max. Dieser ermöglicht, dass sich der "Puffer" durch die stätige Regelabweichung beim Start stärker aufladen kann und über eine längere Zeit abbauen muss, auch wenn der Setpoint längst erreicht ist.
 
 ![PID-P-I-Veränderung](../../img/Imax-Ansicht.png) 
 
