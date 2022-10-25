@@ -61,7 +61,7 @@ PID BD Sensitivity | 120 | 60 | 120
 
 ## Hinweise zur Optimierung
 Bei einer Optimierung sollte zunächst der normale Betriebszustand (Temperatur halten) angepasst werden,
-hierbei sind vor allem PID Integrator Max und auch PID Kp relevant für die Einstellungen. Der durchschnittliche Heizwert der die Temperatur aufrecht erählt, sollte etwa PID Integrator Max sein.
+hierbei sind vor allem PID Integrator Max und auch PID Kp relevant für die Einstellungen. Der durchschnittliche Heizwert der die Temperatur aufrecht erhält, sollte etwa PID Integrator Max sein. Dieser darf aber auch nicht zu groß gewählt werden, wie sich gleich zeigen wird.
 Beim Kaltstart muss vor allem PID Kp, PID Tv angepasst werden, so dass ein Überschwingen vermieden wird, die Solltemperatur aber innerhalb einiger Minuten erreicht wird.
 Während und nach dem Bezug spielen vor allem PID Kp und PID Tv eine Rolle, da dort schnell wieder geheizt werden soll, ein Überschwingen aber mittels ausreichend großem Tv abgedämpft wird.
 
@@ -69,9 +69,11 @@ Folgende Messreihe zeigt euch, wie eine Veränderung von P und I (TV) das Startv
 ![PID-P-I-Veränderung](../../img/PV-TV-Ansicht-1.png) 
 
 Im Detail sieht es wie folgt am Setpoint aus:
+
 ![PID-P-I-Veränderung](../../img/PV-TV-Ansicht-2.png) 
 
-Eine Erhöhnung von P führt zu deutlichen überschwingen, wobei hier eine Erhöhung von I gegensteuert. Einen deutliche Veränderung hat hierbei der Wert PID Integrator Max. Dieser ermöglicht, dass sich der "Puffer" durch die stätige Regelabweichung stärker aufladen kann und über eine längere Zeit abbauen muss.
+Eine Erhöhnung von P führt zu deutlichen überschwingen, wobei hier eine Erhöhung von I gegensteuert. Wobei insgesamt alle 9 Wertepaare gute Ergebnisse liefern. Einen deutliche Veränderung hat hierbei der Wert PID Integrator Max. Dieser ermöglicht, dass sich der "Puffer" durch die stätige Regelabweichung stärker aufladen kann und über eine längere Zeit abbauen muss, auch wenn der Setpoint längst erreicht ist.
+
 ![PID-P-I-Veränderung](../../img/Imax-Ansicht.png) 
 
 
