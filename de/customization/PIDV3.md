@@ -65,6 +65,12 @@ hierbei sind vor allem PID Integrator Max und auch PID Kp relevant für die Eins
 Beim Kaltstart muss vor allem PID Kp, PID Tv angepasst werden, so dass ein Überschwingen vermieden wird, die Solltemperatur aber innerhalb einiger Minuten erreicht wird.
 Während und nach dem Bezug spielen vor allem PID Kp und PID Tv eine Rolle, da dort schnell wieder geheizt werden soll, ein Überschwingen aber mittels ausreichend großem Tv abgedämpft wird.
 
+Folgende Messreihe zeigt euch, wie eine Veränderung von P und I (TV) das Startverhalten verändert:
+![PID-P-I-Veränderung](../../img/PV-TV-Ansicht-1.png.png) 
+
+Im Detail sieht es wie folgt am Setpoint aus:
+![PID-P-I-Veränderung](../../img/PV-TV-Ansicht-2.png.png) 
+
 ### Brühvorgang
 Bei der Ausbaustufe "PID Only" (ohne Plus) ist die "PID BD Time (s)" und "PID BD Sensitivity" nur noch notwendig, um die Zeitanzeige im Display korrekt anzuzeigen. Diese Werte haben keinen Einfluss mehr auf den PID, solange "Enable Brew PID" deaktiviert ist. Mit Aktivierung von "Enable Brew PID", können nochmals eigene PID-Werte für den Brühvorgang gesetzt werden. Diese sind für die Dauer von "PID BD Time (s)" aktiv.
 Es ist in der Regel aber nicht ratsam, während des Brühens stärker nachzuheizen, da die Maschine selbst möglichst Temperaturstabilität durch aufgeheiztes Metall ermöglicht (Rancilio Silvia). Durch starkes nachheizen steigt dann u.U. die Temperatur im Sieb sogar an was nicht ideal ist. Bei kleineren/günstgeren Maschinen kann dies aber nicht so gut funktionieren und ein sofortiges Nachheizen sinnvoll sein.
