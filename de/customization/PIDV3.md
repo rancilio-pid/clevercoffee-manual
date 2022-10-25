@@ -60,6 +60,15 @@ Steam Kp | 150 | 150 | 150
 PID BD Sensitivity | 120 | 60 | 120
 
 ## Hinweise zur Optimierung
+Ohne eine vollständig Abhandlung über einen PID Regler zu liefern, kann kurz und knapp der Einfluss des Reglers wie folgt beschrieben werden:
+
+Der P Anteil – auch Kp genannt – verstellt die Heizleistung proportional zur Reglerabweichung. Bei 20 °C Abweichung und P = 20 ergibt sich 400, bei P = 10 ergeben sich 200. Ein Regler mit nur einem P Anteil neigt zum Schwingen.
+
+Der I Anteil – genauer gesagt Tn – ist dafür da, eine stetige Reglerabweichung zu korrigieren, indem sich dieser über eine Integralbildung die vergangene Abweichung „merkt“. Es ist quasi das Gedächtnis des Reglers. Je kleiner Tn (vereinfacht in der App als I bezeichnet), desto stärker greift der I Anteil im Regler ein. Der Parameter PID Integrator Max begrenzt hierbei den Speicher. 
+
+Der D Anteil ist dafür da auf plötzliche Reglerabweichungen zu reagieren. Hierbei wird die zeitliche Veränderung / Steigung analysiert. Der D Anteil ist für das „schnelle Eingreifen“ hilfreich.
+
+
 Bei einer Optimierung sollte zunächst der normale Betriebszustand (Temperatur halten) angepasst werden,
 hierbei sind vor allem PID Integrator Max und auch PID Kp relevant für die Einstellungen. Der durchschnittliche Heizwert der die Temperatur aufrecht erhält, sollte etwa PID Integrator Max sein. Dieser darf aber auch nicht zu groß gewählt werden, wie sich gleich zeigen wird.
 Beim Kaltstart muss vor allem PID Kp, PID Tv angepasst werden, so dass ein Überschwingen vermieden wird, die Solltemperatur aber innerhalb einiger Minuten erreicht wird.
