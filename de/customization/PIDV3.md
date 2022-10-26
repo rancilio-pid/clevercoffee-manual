@@ -52,6 +52,7 @@ PID BD Sensitivity | Empfindlichkeit der PID Brew Detection im Bezug auf Abfall 
 ## Standardwerte für diverse Maschinentypen
 
 ### Rancilio Siliva
+
 Parameter | Rancilio Siliva V1-2 | Rancilio Siliva V3-V6 | Rancilio Silvia seitlicher Sensor
 :--|:--|:--|:--
 PID Kp | 62 | 50 | 55
