@@ -101,7 +101,7 @@ Im Detail sieht es wie folgt am Setpoint aus:
 ![PID-P-I-Veränderung](../../img/PV-TV-Ansicht-2.png) 
 
 Eine Erhöhnung von kP führt zu deutlichem Überschwingen, eine Erhöhung von Tv kann aber gegensteuern. Insgesamt liefern aber alle 9 Wertepaare bereits relativ gute Ergebnisse. Eine deutliche Veränderung zeigt hierbei der Wert PID Integrator Max. Dieser ermöglicht, dass sich der "Puffer" durch die stetige Regelabweichung beim Start stärker aufladen kann und über eine längere Zeit abbauen muss, auch wenn der Sollwert längst erreicht ist.
-Wenn der Puffer zu klein gewählt wird, kann sich der der Integrator keine stetige Regelanbweichung aufbauen kann, somit vehält sich dann der PID Regler faktisch wie ein P bzw. PD Regler. 
+Wenn der Puffer zu klein gewählt wird, kann der Integrator keine stetige Regelanbweichung aufbauen, somit verhält sich dann der PID Regler faktisch wie ein P bzw. PD Regler. 
 
 ![PID-P-I-Veränderung](../../img/Imax-Ansicht.png) 
 
