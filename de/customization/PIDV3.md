@@ -55,7 +55,7 @@ PID BD Sensitivity | Empfindlichkeit der PID Brew Detection im Bezug auf Abfall 
 Parameter | Rancilio Siliva V1-2 | Rancilio Siliva V3-V6 | Rancilio Silvia seitlicher Sensor
 :--|:--|:--|:--
 PID Kp | 62 | 50 | 55
-PID Tn (=Kp/Ki)| 52 | 200 | 65
+PID Tn (=Kp/Ki) | 52 | 200 | 65
 PID Tv (=Kd/Kp) | 11.5 | 20 | 13
 PID Integrator Max | 75 | 75 | 75 
 Steam Kp | 150 | 150 | 150
