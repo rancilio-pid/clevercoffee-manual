@@ -1,6 +1,6 @@
 ---
 layout: default
-title: PID-Werte ab Vers. 3.0.0
+title: PID-Werte ab Vers. 3.1.0
 parent: Konfiguration & Anpassung
 grand_parent: DE - Handbuch
 has_children: false
@@ -27,7 +27,7 @@ Bereiche | Erklärung
 2 | Regulärer Betrieb (Temperatur halten)
 3 | Brüherkennung (BD)
 
-Ab Release 3.0.1 wurde der PID-Regler nochmals deutlich vereinfacht und verbessert. Die bisherige Brüherkennung (wer sie noch kennen sollte) ist nun faktisch nur noch in seltenen Fällen notwendig, auch separate Parameter für den Kaltstart der Maschine sind nicht mehr notwendig.
+Ab Release 3.1.0 wurde der PID-Regler nochmals deutlich vereinfacht und verbessert. Die bisherige Brüherkennung (wer sie noch kennen sollte) ist nun faktisch nur noch in seltenen Fällen notwendig, auch separate Parameter für den Kaltstart der Maschine sind nicht mehr notwendig.
 Beide Modi sind aber optional weiterhin aktivierbar.
 
 Die zugehörigen Werte lassen sich im Webinterface auf der Seite "Parameters" einstellen:
