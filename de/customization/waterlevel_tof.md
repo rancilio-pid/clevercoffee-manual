@@ -17,6 +17,8 @@ Inhaltsverzeichnis
 
 ## Einleitung
 
+**Disclaimer: dieses Feature wird demnächst überarbeitet, das das Prinzip nicht stabil genug funktioniert. Eine Umsetzung ist so wie hier beschrieben nicht empfohlen.**
+
 Falls bei dir auch öfter mal während des Bezugs plötzlich das Wasser in der Maschine leer ist, kann das Upgrade mit einem Wasserstandsensor eine sinnvolle Erweiterung sein. Hierbei wird der aktuelle Füllstand in % im Display ausgegeben und bei Unterschreitung eines gewissen Wertes (aktuell 10%) eine Warnung angezeigt. Die Erfassung des aktuellen Wasserstandes erfolgt hierbei mittels eines Time-of-Flight(ToF) Sensors 
 
 ## Funktionsweise ToF Sensor
@@ -27,7 +29,7 @@ Für dieses Projekt kommt ein ToF Sensor mit VL53L0X Chip von STM zum Einsatz, a
 
 ## Verbindung des Sensors mit dem PCB und I2C Addressierung
 
-Der ToF sensor wird vom NodeMCU über I2C angesprochen. Beim ESP8266 gibt es nur einen I2C Bus und an diesem ist auch bereits das OLED angeschlossen. Es ist jedoch kein Problem mehrere I2C Geräte an einem Bus zu betreiben, wir müssen lediglich sicherstellen das Display und den ToF Sensor korrekt zu addressieren. Es gibt dazu in der userconfig zwei neue Variablen, OLED_I2C und TOF_I2C, hier müssen die I2C addressen der beiden Geräte spezifiziert werden. Per default hat das Display die Addresse 0x78 und der ToF-Sensor 0x29. Dies kann jedoch je nach gewälter Hardware abweichen. Für eine reibungslose Kommunikation bitte die korrekten Geräteaddressen hier eintragen.
+Der ToF sensor wird vom ESP über I2C angesprochen. Beim ESP8266 gibt es nur einen I2C Bus und an diesem ist auch bereits das OLED angeschlossen. Es ist jedoch kein Problem mehrere I2C Geräte an einem Bus zu betreiben, wir müssen lediglich sicherstellen das Display und den ToF Sensor korrekt zu addressieren. Es gibt dazu in der userconfig zwei neue Variablen, OLED_I2C und TOF_I2C, hier müssen die I2C addressen der beiden Geräte spezifiziert werden. Per default hat das Display die Addresse 0x78 und der ToF-Sensor 0x29. Dies kann jedoch je nach gewälter Hardware abweichen. Für eine reibungslose Kommunikation bitte die korrekten Geräteaddressen hier eintragen.
 
 ## Einbau
 
@@ -39,7 +41,7 @@ Da ich keine Lust hatte Löcher zu bohren, habe ich einfach mit einer M3 Schraub
 
 Der Sensor sollte ab Werk kalibriert sein und die korrekte Entfernung in mm ausgeben. Für unsere Anwendung müssen wir die Ausgabe in mm aber in % Füllstand umrechnen. Da der PID in unterschiedlichen Maschinen zum Einsatz kommt und die Einbausituation auch nicht immer identisch sein wird, gibt es eine Kalibrierroutine um für die Software festzulegen, welche Entfernung einem leeren und welche einem vollen Wassertank entspricht. Um den Kalibriervorgang zu starten gibt es zwei Möglichkeiten:
 
-* Aktivierung in der userconfig durch die variable CALIBRATION_MODE = 1; Die Software muss danach neu kompiliert und auf den NodeMCU geladen werden. Nach Abschluss des Kalibriervorgangs muss die Variable wieder auf 0 gesetzt, die ermittelten Werte für water_full und water_empty eingetragen und die Software erneut kompiliert und geflashed werden.
+* Aktivierung in der userconfig durch die variable CALIBRATION_MODE = 1; Die Software muss danach neu kompiliert und auf den ESP geladen werden. Nach Abschluss des Kalibriervorgangs muss die Variable wieder auf 0 gesetzt, die ermittelten Werte für water_full und water_empty eingetragen und die Software erneut kompiliert und geflashed werden.
 
 * Aktivierung durch den Button "Calibration Mode" im Experten Modus Tab in Blynk, im gleichen tab können auch die ermittelten Werte aus dem kalibriervorgang eingetragen werden. Dies ist die wesentlich einfachere und zu bevorzugende Variante.
 

@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Einrichtung von Blynk
+title: Einrichtung von Blynk (nur 2.x)
 parent: Software
 grand_parent: DE - Handbuch
 has_children: false
 nav_order: 4
 ---
 
-# Einrichtung von Blynk nur für Version 2.X.X, nicht mehr für neuere Versionen relevant.
+# Einrichtung von Blynk nur für Version 2.x, nicht mehr für neuere Versionen relevant.
 {: .no_toc }
 
 Inhaltsverzeichnis

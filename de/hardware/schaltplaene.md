@@ -39,6 +39,10 @@ Die Pumpe und das 3-Wege-Ventil werden nicht durch den Controller gesteuert.
 
 ![PID Schaltplan](../../schaltplan/OnlyPIDRancilio.png)
 
+### "Only PID+"
+
+Ein Schaltplan für Only PID+, also mit Optokoppler zur Brüherkennung liegt bisher noch nicht vor. Zusätzlich zum obigen Schaltplan ist ein Optoppler parallel zum Bezugsschalter und dem 3/2-Wegeventil zu setzen.
+
 ### "Vollausbau"
 
 Der dritte Schaltplan ist der aktuelle „Vollausbau“.
