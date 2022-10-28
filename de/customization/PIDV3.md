@@ -100,11 +100,10 @@ Im Detail sieht es wie folgt am Setpoint aus:
 
 ![PID-P-I-Veränderung](../../img/PV-TV-Ansicht-2.png) 
 
-Eine Erhöhnung von kP führt zu deutlichem Überschwingen, eine Erhöhung von Tv kann aber gegensteuern. Insgesamt liefern aber alle 9 Wertepaare bereits relativ gute Ergebnisse. Eine deutliche Veränderung zeigt hierbei der Wert PID Integrator Max. Dieser ermöglicht, dass sich der "Puffer" durch die stetige Regelabweichung beim Start stärker aufladen kann und über eine längere Zeit abbauen muss, auch wenn der Sollwert längst erreicht ist.
-Wenn der Puffer zu klein gewählt wird, kann der Integrator keine stetige Regelanbweichung aufbauen, somit verhält sich dann der PID Regler faktisch wie ein P bzw. PD Regler. 
+Eine Erhöhnung von kP führt zu deutlichem Überschwingen, eine Erhöhung von Tv kann aber wiederum gegensteuern. Insgesamt liefern aber alle 9 Wertepaare bereits relativ gute Ergebnisse. Eine zusätzliche Veränderung entsteht durch der Parameter PID Integrator Max. Ist dieser größer, hat der aufgeladene "Puffer" (der Integrator) beim Start einen stärkeren Einfluss auf das Heizen und es dauert eine längere Zeit, diesen bei Überschreiten des Sollwertes wieder zu reduzieren.
+Wenn das Gegenteil der Fall ist und der PID Integrator Max zu klein gewählt wird, kann der Integrator die bleibende Regelabweichung nicht ausreichend überwinden und der Sollwert wird nicht erreicht.
 
 ![PID-P-I-Veränderung](../../img/Imax-Ansicht.png) 
-
 
 ### Brühvorgang
 
