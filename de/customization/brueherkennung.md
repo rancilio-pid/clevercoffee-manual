@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Brüherkennung bis Version 2.X.X
+title: Brüherkennung
 parent: Konfiguration & Anpassung
 grand_parent: DE - Handbuch
 has_children: false
@@ -35,7 +35,7 @@ Als Ergänzung wurde eine Lösung zwischen Only PID und Vollausbau entwickelt (O
 #define PINMODEVOLTAGESENSOR INPUT // Mode INPUT_PULLUP, INPUT or INPUT_PULLDOWN_16 (Only Pin 16)
 #define PINVOLTAGESENSOR  15    //Input pin for voltage sensor
 ```
-PINVOLTAGESENSOR gibt den gewählten PIN am NodeMCU an. "VOLTAGESENSORTYPE HIGH" bedeutet, dass der Sensor ein HIGH Signal (3,3 Volt) ausgibt, wenn der Schalter gedrückt ist. "VOLTAGESENSORTYPE LOW" muss gewählt werden, wenn bei gedrücktem Schalter am Sensor ein LOW Signal (GND) ausgegeben wird. Je nach gewählten PIN und Aufbau muss ggf. ein INPUT Pullup oder Pulldown (nur Pin 16) erfolgen (PINMODEVOLTAGESENSOR INPUT oder INPUT_PULLUP oder INPUT_PULLDOWN_16). Hintergrund ist, dass durch ein Pullup oder Pulldown der PIN am NodeMCU definiert in LOW oder HIGH gehalten wird, um dann genau das gegensätzliche Signal vom Sensor zu messen. 
+PINVOLTAGESENSOR gibt den gewählten PIN am ESP an. "VOLTAGESENSORTYPE HIGH" bedeutet, dass der Sensor ein HIGH Signal (3,3 Volt) ausgibt, wenn der Schalter gedrückt ist. "VOLTAGESENSORTYPE LOW" muss gewählt werden, wenn bei gedrücktem Schalter am Sensor ein LOW Signal (GND) ausgegeben wird. Je nach gewählten PIN und Aufbau muss ggf. ein INPUT Pullup oder Pulldown (nur Pin 16) erfolgen (PINMODEVOLTAGESENSOR INPUT oder INPUT_PULLUP oder INPUT_PULLDOWN_16). Hintergrund ist, dass durch ein Pullup oder Pulldown der PIN am ESP definiert in LOW oder HIGH gehalten wird, um dann genau das gegensätzliche Signal vom Sensor zu messen. 
 
 Folgende Beispielkonfiguration gelten für folgende Sensoren:
 1. [Wago 859-358](https://www.elektro4000.de/Steuerungen-Schaltgeraete/Relais/Schaltrelais/Schaltrelais/WAGO-GmbH-Co-KG-Relaisklemme-859-358::185163.html)

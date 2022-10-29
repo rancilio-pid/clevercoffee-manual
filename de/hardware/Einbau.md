@@ -21,7 +21,7 @@ nav_order: 3
 Grundsätzlich würde ich alle Kabel erstmal mit einer Kabellänge von ca. 60 cm abschneiden. Nach dem Einbau auf Seite 1 und dem Verlegen sollten diese beim Anschließen an Seite 2 gekürzt werden.
 
 Vorbereitung:
-* Node MCU bespielen (ggf. sicherstellen dass WLAN funktioniert)
+* ESP bespielen (ggf. sicherstellen, dass das WLAN funktioniert)
 * PCB zusammenlöten (Link zur Anleitung folgt)
 * ggf. Blynk einrichten und verbinden
 * ggf. Displayhalter drucken / bestellen
@@ -66,31 +66,31 @@ Kabel eins geht zum SSR der Heizung, Kabel zwei zum Netzteil. Welches Kabel dabe
 
 1,5mm2 Kabel schwarz mit Flachsteckhülse mit Abzweig versehen. Den unteren Stecke am Schutzschalter abziehen, auf den Abzweig stecken und beides direkt wieder anstecken.
 
-Kabel sinnvoll verlegen und einen Platz für das (USB)Netzteil definieren. Kabel vor dem anschließen entsprechend kürzen. (Ich habe das aus dem Gehäuse ausgebaute USB Netzteil rechts an der Rückwand mit doppelseitigem Klebeband angebracht)
+Kabel sinnvoll verlegen und einen Platz für das Netzteil festlegen. Kabel vor dem anschließen entsprechend kürzen.
 
-Am USB Netzteil ein blaues Kabel und ein schwarzen Kabel anschließen / anlöten. Wird das Schaltnetzteil verwendet, das schwarze Kabel an N anschließen und das blaue Kabel an L anschließen. Es empfiehlt sich hierfür die Ringösen zu verwenden. Zusätzlich muss hier noch ein Schutzleiter verlegt werden. Dieser lässt sich an der Erdung des Kessels oder des 3-Wege Ventils "klauen". Vor dem Einbau die Ausgangsspannung am Poti auf ca. 5.2V einstellen.
+Am Netzteil ein blaues Kabel und ein schwarzen Kabel anschließen / anlöten. Wird das Schaltnetzteil aus der Bestellliste verwendet, das schwarze Kabel an N anschließen und das blaue Kabel an L anschließen. Es empfiehlt sich hierfür die Ringösen zu verwenden. Zusätzlich muss hier noch ein Schutzleiter verlegt werden. Dieser lässt sich an der Erdung des Kessels oder des 3-Wege Ventils "klauen". Vor dem Einbau die Ausgangsspannung am Poti prüfen und ggf. auf ca. 5.2V verstellen.
 
-Am Ausgang ein Rotes und ein Schwarzes Kabel anbringen. Ich habe dafür 0,5mm2 Kabel verwendet, die 0,14mm2 sollten aber auch reichen. Die beiden Kabel richtung 3-Wege Ventil legen und beschriften.
+Am Ausgang ein Rotes und ein schwarzes Kabel anbringen. Ich habe dafür 0,5 mm2 Kabel verwendet, die 0,14 mm2 sollten aber auch reichen. Die beiden Kabel richtung 3-Wege Ventil legen und beschriften.
 
 ### SSR Relais Heizung
 
-Montagepunkt für das SSR festlegen. (Ich habe es über der "CPU" neben dem Wasserschlauch mit doppelseitigem Klebeband angebracht)
+Montagepunkt für das SSR festlegen. Es kann bei der Rancilio Silvia E z.B. über der "CPU" neben dem Wasserschlauch mit doppelseitigem Klebeband angebracht werden. Alternativ befindet sich eine Schraube an der Vorderseite der Maschine (hinter der Abdeckung), auf die das SSR mit einer Mutter festgeschraubt werden kann.
 
-An Kabel 2 (blau) des schrittes oben, eine Ringöße pressen (Kabel vor dem anschließen entsprechend kürzen) und an einen beliebigen Pol des SSR Ausgangs anschließen.
-Ein weiteres Kabel 1,5mm2 mit einer Ringöße versehen und an Pol zwei des SSR Ausgangs anschließen. Kabel zum Stecker mit dem grauen Kabel verlegen welches ursprünglich am Thermostat war und entsprechend kürzen. Einen Flachstecker aufpressen, anschleißen und mit eiem Schrumpfschlauch versehen.
+An Kabel 2 (blau) des Schrittes oben, eine Ringöse pressen (Kabel vor dem Anschließen entsprechend kürzen) und an einen beliebigen Pol des SSR-Ausgangs anschließen.
+Ein weiteres Kabel 1,5 mm2 mit einer Ringöse versehen und am zweiten Pol des SSR-Ausgangs befestigen. Kabel zum Stecker mit dem grauen Kabel verlegen, welches ursprünglich am Thermostat war und entsprechend kürzen. Einen Flachstecker aufpressen und anschließend mit einem Schrumpfschlauch versehen.
 
-Zwei Kabel (rot und schwarz) an der Eingangsseite des SSR anschließen. Ich habe dafür 0,5mm2 Kabel verwendet und ebenfals Ringößen aufgepresst. Es können aber auch die 0,14mm2 Kabel mit Aderendhülsen o.ä. verwendet werden.
-Freie Kabelenden beschriften und richtung 3 Wege Ventil legen.
+Zwei Kabel (rot und schwarz) an der Eingangsseite des SSR anschließen. Ich habe dafür 0,5 mm2 Kabel verwendet und ebenfals Ringösen aufgepresst. Es können aber auch die 0,14 mm2 Kabel mit Aderendhülsen o.ä. verwendet werden.
+Freie Kabelenden beschriften und richtung 3-Wegeventil legen.
 
-### Einbau NodeMCU
+### Einbau des Controllers
 
-folgt
+Der Microcontroller (ESP) sollte auf das von uns bereitsgestellte Adapterboard (PCB) gesteckt werden. Dieses kommt mit Klebefüßen, so dass es an einer beliebigen günstigen Position befestigt werden kann, an der die Kabel zusammenlaufen. Dies kann im hinteren oder vorderen Teil der Maschine sein, je nach Modell.
 
 ## Vollausbau
 
-**Wichtig!: Beim anschließen des Brühschalter bitte unbedingt den Hinweis im Schaltplan zur Trennung von 230V und 3.3/5V am Schalter beachten.**
+**Wichtig!: Beim anschließen des Brühschalters bitte unbedingt den Hinweis im Schaltplan zur Trennung von 230V und 3.3/5V am Schalter beachten.**
 
-folgt
+folgt (so lange können aber die Bauberichte studiert werden)
 
 ## Display
 

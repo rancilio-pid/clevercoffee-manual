@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Version 3.0.0 & Upgrade von 2.X.X
+title: Version 3.0.0 & Upgrade von 2.x
 parent: Einführung
 grand_parent: DE - Handbuch
 has_children: false
@@ -34,7 +34,7 @@ Für die Ersteinrichtung wird ein Wifi-Manager benutzt. Beim ersten Start des ES
 Blynk wird noch unterstützt, ist aber nicht mehr das zentrale Bedienelement von der PID. Wir haben nun eine eigene auf dem ESP gehostet Webseite.
 Die IP vom EPS könnt ihr in eurem Router herausfinden oder per Monitor-Befehl in PlatformIO. Es bietet sich an, dem ESP eine feste IP über den Router zu vergeben und einen festen Namen über den ihr dann die Konfigurationsseite im Browser erreichen könnt.
 
-## Wie upgrade ich von einer älteren Version (2.X.X oder jünger)? 
+## Wie upgrade ich von einer älteren Version (2.x oder jünger)? 
 Es müssen wichtige Schritte vor dem Upgraden durchgeführt werden, sonst wird euer PID nicht richtig funktionieren.
 In PlatformIO (VS Code) müssen folgende Schritte erfolgen, eine USB Verbindung zum ESP ist zwingend erforderlich:
 

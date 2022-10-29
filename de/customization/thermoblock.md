@@ -56,30 +56,39 @@ In dem folgenden Schaltplan sieht man die Verschaltung der beiden wesentlichen B
 
 ### 1.4 Softwaresteuerung bei PID Only Plus
 
-Bei der Pid Only Plus Steuerung erkennt die PID, ob der Bezugsschalter (S3) oder der Dampfschalter (S2) geschaltet ist. Dazu ist parallel zur Pumpe ein 230V Optokoppler geschaltet. Je nach Optokopplertyp [(siehe Kapitel Brüherkennung)](http://manual.rancilio-pid.de/de/customization/brueherkennung.html) kann dann an PIN15 oder PIN16 des NodeMCU das Signal des Optokopplers (hier: als voltage sensor bezeichnet) abgegriffen werden, 
+Bei der Pid Only Plus Steuerung erkennt die PID, ob der Bezugsschalter (S3) oder der Dampfschalter (S2) geschaltet ist. Dazu ist parallel zur Pumpe ein 230V Optokoppler geschaltet. Je nach Optokopplertyp [(siehe Kapitel Brüherkennung)](http://manual.rancilio-pid.de/de/customization/brueherkennung.html) kann dann an PIN15 oder PIN16 des ESP8266 (andere Pins beim ESP32) das Signal des Optokopplers (hier: als Voltage Sensor bezeichnet) abgegriffen werden,
+
 ```
 int pvs = digitalRead(PINVOLTAGESENSOR);
 
 ```
+
 und entschieden werden, ob die Pumpe bestromt (unter Spannung) ist oder nicht. 
 
 Um festzustellen, welcher der beiden Schalter, S3 oder S2, geschaltet ist, wechselt die Software in einen Monitoring-Modus, sobald die Pumpe bestromt ist.
+
 ```
 if (pvs == VoltageSensorON && ...)
   brewSteamDetectedQM = 1;
 ```
+
 Dieser Monitoring-Modus bleibt zunächst für die in `minBrewDurationForSteamModeQM_ON` eingetragene Mindestlaufzeit (in Millisekunden) aktiv,
+
 ```
 const unsigned long minBrewDurationForSteamModeQM_ON = 50;
 ```
+
 um ein Prellen des Schalters abzufangen. Ist die Mindestestlaufzeit überschritten
+
 ```
 if (brewSteamDetectedQM == 1 && 
     millis()-timePVStoON > minBrewDurationForSteamModeQM_ON)
 {
 ```
+
 bleibt der Monitoring-Modus solange aktiv, bis eines der folgenden zwei Ereignisse eintritt:
 **(1) Pumpe schaltet ab:** Erfolgt das Abschalten innerhalb von weniger als `maxBrewDurationForSteamModeQM_ON` (in Millisekunden), muss es sich um einen Stromimpuls gehandelt haben und es kann gefolgert werden, dass der Dampfschalter betätigt wurde.
+
 ```
   if (pvs == VoltageSensorOFF)
   {
@@ -90,7 +99,9 @@ bleibt der Monitoring-Modus solange aktiv, bis eines der folgenden zwei Ereignis
      }
   } 
 ```
+
 **(2) Pumpenlaufzeit überschreitet `maxBrewDurationForSteamModeQM_ON`:** Läuft  die Pumpe kontinuierlich länger als `maxBrewDurationForSteamModeQM_ON` (in Millisekunden), kann gefolgert werden, dass es sich nicht um einen Stromimpuls handelt, also der Bezugsschalter betätigt wurde.
+
 ```
   else if (millis() - timePVStoON >   maxBrewDurationForSteamModeQM_ON)
   {
@@ -105,4 +116,5 @@ bleibt der Monitoring-Modus solange aktiv, bis eines der folgenden zwei Ereignis
   }
 }
 ```
+
 Über die Fallunterscheidung wird abgefragt, ob es sich um einen echten Bezug (Tist < Tsoll + 2°C) oder um Abkühlspülen handelt. 
