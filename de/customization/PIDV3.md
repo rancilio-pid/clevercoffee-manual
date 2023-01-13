@@ -93,7 +93,7 @@ Insofern ein kleiner Maximalwert für den Integralteil festegelegt ist, hat Tn f
 
 ### Exemplarische Kurvenverläufe 
 
-Folgende Messreihe zeigt euch, wie eine Veränderung von P und Tv das Kaltstartverhalten verändert:
+Folgende Messreihe zeigt euch, wie eine Veränderung von P und Tv das Kaltstartverhalten verändert (Tn ist hier fix bei Tn = 200):
 ![PID-P-I-Veränderung](../../img/PV-TV-Ansicht-1.png) 
 
 Im Detail sieht es wie folgt am Setpoint aus:
