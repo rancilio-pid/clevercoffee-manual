@@ -16,11 +16,14 @@ Inhaltsverzeichnis
 * TOC
 {:toc}
 
+## WICHTIGER HINWEIS
+Am ESP8266 gibt es ein Problem bei der Ersteinrichtung. Der NodeMCU stürzt immer wieder ab, wenn der Access Point geöffnet wird. Als Lösung muss für die Ersteinrichtung das OLED_DISPLAY auf 0 gesetzt werden in der Konfig. Danach könnt ihr die Einrichtung vom WLAN machen und danach wieder auf 1 oder 2 setzen und erneut den Code auf den Controller laden. 
+Das Problem tritt nicht beim ESP32 auf.
 
 ## Kurzfassung
+
 Für die Ersteinrichtung wird der Wifi-Manager benutzt. Beim ersten Start vom Mikrocontroller wird ein Access Point von diesem geöffnet mit dem in der userConfig.h eingestellten ```HOSTNAME``` (default: "silvia") und Passwort ```PASS``` (default: "CleverCoffee"). Verbindet euch mit dem Access Point, wählt euer WLAN aus und gebt das Passwort des Netzwerks ein, dann wird dieses gespeichert und beim nächsten Start automatisch verwendet.
 Der ESP wird immer für 10 Sekunden versuchen, dass eingerichtete WLAN zu erreichen, falls dies nicht möglich ist, wird für 60 Sekunden das Konfigurationsportal wieder gestartet. Falls kein Zugriff auf das Portal passiert, startet die Maschine im Offline-Modus.
-
 ## Schritt für Schritt
 Wenn ihr den Code hochladet, ist im Log (Monitor-Befehl) etwa folgendes zu sehen:
 
