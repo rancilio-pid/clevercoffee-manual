@@ -107,7 +107,7 @@ Wer hintgegen eine reversible Lösung sucht muss sich um eine Displayhalterung (
 * [Rancilio STL](https://github.com/rancilio-pid/ranciliopid-handbook/blob/main/3d-designs/Case%20Rancilio.stl){:target="_blank"}
 * [Gaggia STL](https://github.com/rancilio-pid/ranciliopid-handbook/blob/main/3d-designs/Case%20Gaggia.stl){:target="_blank"}
 * [Universal-Halter](https://www.thingiverse.com/thing:4897546){:target="_blank"}
-* [Halterung zum reinklicken](https://www.thingiverse.com/thing:4897546){:target="_blank"}
+* [Halterung zum reinklicken](https://www.thingiverse.com/thing:5787650){:target="_blank"}
 
 ## Spannende Addons die gleich mit erledigt werden können
 
