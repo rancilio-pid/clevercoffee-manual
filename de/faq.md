@@ -22,3 +22,9 @@ Frage: Meine PID-Werte passen nicht, meine Maschine schwingt über o.ä.
 
 Frage: Kann ich mein Iphone oder Apple Watch nutzen um z.B. den Dampfmodus zu aktivieren.
 > Ja, kannst du. Der User [@saway](https://github.com/sway) hat hierzu ein Kurzbefehl gebaut, womit du via Apple Watch oder Iphone den Steam mode aktivieren kannst. Der Link zum Kurzbefehl (muss auf dem Iphone geöffnet werden): [Kurzbefehl](https://www.icloud.com/shortcuts/ee08f4989e834fecb03d96d7f3d08425) Ihr müsst nur die IP von eurer Maschine dort eintragen. (fixe IP vorrausgesetzt)
+
+Frage: Das Display zeigt an: "PID is disabled manually"
+> Wenn du das erste mal deinen PID in Betrieb nimmst, musst du die vom ESP gehostete Webseite öffnen und die PID auf der Parameter Seite aktivieren.
+
+Frage: Mein ESP8266 startet nicht korrekt den Access Point, um mein Wlan einzurichten. Was soll ich tun? 
+> Leider kollidiert der Wifi Manager und das Display bei der Ersteinrichtung. Beim ESP32 ist dieses Problem behoben. Wir empfehlen per userconfig das Display erst zu deaktivieren (Display 0), dann das Wlan einzurichten und am Ende den Code erneut zu bespielen und das Display zu aktivieren.
