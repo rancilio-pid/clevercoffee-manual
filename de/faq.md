@@ -21,4 +21,4 @@ Frage: Meine PID-Werte passen nicht, meine Maschine schwingt über o.ä.
 > Schaut bitte zu erst in unsere PID-Wert Liste [PID-Werte](./customization/pid-werte.md), hier sind für viele PID-Werte dokumentiert für den Kaltstart, den normalen Betrieb und für die Brüherkennung. Bei Fragen im Chat bitte genau sagen, was genau nicht passt und schickt am besten Werte aus eurem Blynk dazu. Am besten im jeweiligen Chat zu den Maschinen.
 
 Frage: Kann ich mein Iphone oder Apple Watch nutzen um z.B. den Dampfmodus zu aktivieren.
-> Ja, kannst du. Der User [@saway](https://github.com/sway) hat hierzu ein Kurzbefehl gebaut, womit du via Apple Watch oder Iphone den Steam mode aktivieren kannst. 
+> Ja, kannst du. Der User [@saway](https://github.com/sway) hat hierzu ein Kurzbefehl gebaut, womit du via Apple Watch oder Iphone den Steam mode aktivieren kannst. Der Link zum Kurzbefehl (muss auf dem Iphone geöffnet werden): [Kurzbefehl](https://www.icloud.com/shortcuts/ee08f4989e834fecb03d96d7f3d08425) Ihr müsst nur die IP von eurer Maschine dort eintragen. (fixe IP vorrausgesetzt)
