@@ -64,7 +64,8 @@ Nach dem Herunterladen des Programmcodes muss man diesen in PlatformIO in Visual
 Bevor man den Programmcode nun kompilieren und auf das Board laden kann, muss erst noch die Datei `userConfig.h` erstellt werden, in der alle für dich spezifischen Optionen eingetragen werden. Alle Einstellungsmöglichkeiten auf Basis dieser Datei sind in [Software Teil II](../software-part-II.md#userconfigh) erklärt bzw. als Kommentare innerhalb der Datei vorhanden.
 
 ## Kompilieren und Hochladen der Software
-> Wichtig: Es muss zwingend "Build Filesystem Image" und "Upload Filesystem Image" erfolgen, bei einem Node mit einer ältern Version ist am Anfang "erase flash" notwendig
+> Wichtig: Es muss zwingend "Build Filesystem Image" und "Upload Filesystem Image" erfolgen, bei einem Node mit einer ältern Version ist am Anfang "erase flash" notwendig. Sonst wird eure Webseite vom Node nicht gehen.
+
 Sind alle Einstellungen getroffen, wählt man in der Projektansicht von PlatformIO unter  `nodemcuv2_usb` den Befehl `Build` und kompiliert so den Programmcode. Wenn dies ohne Fehler abschließt, was man anhand der `SUCCESS`-Nachricht im Terminal unten rechts ablesen kann, kann man den Code auf das per USB angeschlossene Board laden. Dazu wählt man den Befehl `Upload`, welcher auch mit `SUCCESS` erfolgreich durchlaufen sollte.
 
 Das Projekt nutzt eine kleine Partition um Dateien auf dem Flash abzulegen. Mit dem Befehl Build Filesystem Image und Upload Filesystem Image werden die Daten auf das Board geladen. Zuvor sollte jedoch noch der Befehl Erase Flash gestartet werden um sicherzugehen, dass sich keine alten Werte von anderen Projekten oder vorherigen Versionen der Software mehr im Flash befinden, die zu Problemen führen können.
