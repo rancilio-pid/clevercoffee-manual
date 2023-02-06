@@ -4,7 +4,7 @@ title: Einrichtung von Blynk (nur 2.x)
 parent: Software
 grand_parent: DE - Handbuch
 has_children: false
-nav_order: 4
+nav_order: 5
 ---
 
 # Einrichtung von Blynk nur für Version 2.x, nicht mehr für neuere Versionen relevant.
