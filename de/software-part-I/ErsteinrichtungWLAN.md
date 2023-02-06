@@ -4,7 +4,7 @@ title: Ersteinrichtung WLAN
 parent: Software
 grand_parent: DE - Handbuch
 has_children: false
-nav_order: 5
+nav_order: 4
 ---
 
 
