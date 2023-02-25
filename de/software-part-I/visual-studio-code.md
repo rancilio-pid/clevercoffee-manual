@@ -65,7 +65,7 @@ Bevor man den Programmcode nun kompilieren und auf das Board laden kann, muss er
 
 Wichtiger Hinweis: 
 Wenn ihr das OTA Passwort in der `userconfig` ändert, muss es auch in der `platformio.ini` eingetragen werden unter: 
-upload_flags = --auth=otapass , `otapass` ist das Passwort
+`upload_flags = --auth=otapass` , `otapass` ist das Passwort
 
 ## Kompilieren und Hochladen der Software
 > Wichtig: Es muss zwingend "Build Filesystem Image" und "Upload Filesystem Image" erfolgen, bei einem Node mit einer älteren Version ist am Anfang "erase flash" notwendig. Sonst wird eure Webseite vom Node nicht gehen.
