@@ -63,6 +63,10 @@ Nach dem Herunterladen des Programmcodes muss man diesen in PlatformIO in Visual
 
 Bevor man den Programmcode nun kompilieren und auf das Board laden kann, muss erst noch die Datei `userConfig.h` erstellt werden, in der alle für dich spezifischen Optionen eingetragen werden. Alle Einstellungsmöglichkeiten auf Basis dieser Datei sind in [Software Teil II](../software-part-II.md#userconfigh) erklärt bzw. als Kommentare innerhalb der Datei vorhanden.
 
+Wichtiger Hinweis: 
+Wenn ihr das OTA Passwort in der `userconfig` ändert, muss es auch in der `platformio.ini` eingetragen werden unter: 
+upload_flags = --auth=otapass , `otapass` ist das Passwort
+
 ## Kompilieren und Hochladen der Software
 > Wichtig: Es muss zwingend "Build Filesystem Image" und "Upload Filesystem Image" erfolgen, bei einem Node mit einer älteren Version ist am Anfang "erase flash" notwendig. Sonst wird eure Webseite vom Node nicht gehen.
 
