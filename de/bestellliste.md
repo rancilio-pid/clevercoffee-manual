@@ -92,7 +92,40 @@ Lötkolben|ERSATZKOLBEN EP5|||[Reichelt-Link](https://www.reichelt.de/loetkolben
 
 ## Anmerkungen zur Bestelliste
 
-### Infos zum PCB
+### ESP32 Platine
+Es steht absofort die neue ESP32 Platine zur Verfügung. 
+[Bitte direkt über unseren Chat anfragen!](https://chat.rancilio-pid.de/) **Bitte direkt per PN an @loque wenden**
+
+Inklusive sind:
+ * Das PCB
+ * Die Schraubklemmenblöcke
+ * Die Stiftleisten
+ * Klebepads
+
+
+ZUSÄTZLIH werden folgende Dinge benötigt:
+Bauteil | Beschreibung | Link
+-|-|-
+C1 |220µF (Elko) | [Link](https://www.reichelt.de/elko-radial-220-uf-10-v-105-c-low-esr-fm-a-220u-10-p200036.html?&trstct=pol_0&nbc=1)
+C2 |100nF (Kramik) | [Link](https://www.reichelt.de/vielschicht-kerko-100-nf-50-v-rm-5-125-c-hita-sf1h104z-l5-p246835.html?&trstct=pos_9&nbc=1)
+R1 |4,7kΩ (Display) | [Link](https://www.reichelt.de/widerstand-metallschicht-4-7-kohm-0204-0-4-w-1--yag-4fte52-4k7-p236963.html?&trstct=pol_0&nbc=1)
+R2 |4,7kΩ (Display) |[Link](https://www.reichelt.de/widerstand-metallschicht-4-7-kohm-0204-0-4-w-1--yag-4fte52-4k7-p236963.html?&trstct=pol_0&nbc=1)
+R3 |47kΩ (Brew switch) | [Link](https://www.reichelt.de/widerstand-metallschicht-47-kohm-axial-0-4-w-1--vis-c4702fc100-p237115.html?&trstct=pol_0&nbc=1)
+R4 |47kΩ (Power switch) |[Link](https://www.reichelt.de/widerstand-metallschicht-47-kohm-axial-0-4-w-1--vis-c4702fc100-p237115.html?&trstct=pol_0&nbc=1)
+R5 |47kΩ (Steam switch) |[Link](https://www.reichelt.de/widerstand-metallschicht-47-kohm-axial-0-4-w-1--vis-c4702fc100-p237115.html?&trstct=pol_0&nbc=1)
+R6 | Nach Bedarf | Widerstand entsprechend der gewählten LED nehmen, bei Nutzung von zb. Neopixel braucht es keinen Widerstand, dafür Lötjumper JP1 schließen 
+
+
+Beim Elko beim Löten auf die Polarität achten!
+In der aktuellen Rev 1.2 haben sich bei Beschriftung kleinere Fehler eingeschlichen:
+Bugs Rev 1.2:
+Beschriftungen:
+S_LED: statt VCC muss hier 5V stehen
+E_TRIG: statt VCC muss hier 5V stehen
+W_SENS: statt IO36 muss hier IO23 stehen
+GPIO Header:  statt IO23 muss hier IO36 stehen 
+
+### ESP8266 Platine
 
 [Bitte direkt über unseren Chat anfragen!](https://chat.rancilio-pid.de/) **Bitte direkt per PN an @toppo78 wenden**
 
