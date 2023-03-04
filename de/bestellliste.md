@@ -103,7 +103,7 @@ Inklusive sind:
  * Klebepads
 
 
-ZUSÄTZLIH werden folgende Dinge benötigt:
+**ZUSÄTZLICH** werden folgende Dinge benötigt:
 Bauteil | Beschreibung | Link
 -|-|-
 C1 |220µF (Elko) | [Link](https://www.reichelt.de/elko-radial-220-uf-10-v-105-c-low-esr-fm-a-220u-10-p200036.html?&trstct=pol_0&nbc=1)
