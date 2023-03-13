@@ -26,6 +26,7 @@ Du benötigst folgende Dinge:
 ### Basics
 
 Die Basics werden auf jeden Fall benötigt und liegen (in der Regel) nicht irgendwo in der Werkstatt rum. In Klammern steht die Mindestanzahl.
+Der zu verwendende Controller (ESP8266 oder ESP32) richtet sich nach der von euch bestellen Platine.
 
 Beschreibung | ID | Anzahl PID Only | Anzahl Vollausbau | Link
 -|-|-|-|-
@@ -33,7 +34,7 @@ Temperatur Sensor|TSIC 306 TO92|2 (1)|2 (1)|[Reichelt-Link](https://www.reichelt
 Schaltnetzteil|SNT RS 15 5|1|1|[Reichelt-Link](https://www.reichelt.de/schaltnetzteil-geschlossen-15-w-5-v-3-a-snt-rs-15-5-p137080.html?&trstct=pos_0) oder [Amazon-Link](https://www.amazon.de/original-RS-15-5-meanwell-Single-Switching/dp/B06XDL7ZPT)
 Alternative: Schaltnetzteil|APV-8-5|1|1|[Reichelt-Link](https://www.reichelt.de/led-trafo-7-w-5-v-dc-1400-ma-mw-apv-8-5-p170873.html?&trstct=pos_0&nbc=1) oder [Amazon-Link](https://www.amazon.de/gp/product/B06Y29GSHH/)
 SSR Relais – Heizung|RA 2425-D06|1|1|[Reichelt-Link](https://www.reichelt.de/solid-state-relais-ust-2-32vdc-ulast-24-280v-ra-2425-d06-p22691.html?&trstct=pos_0) oder [Alternatives SSR (Amazon)](https://www.amazon.de/heschen-Single-ssr-40da-3-32-VDC-50-60-Hz/dp/B071HP9NJD)
-Mikrocontroller|NodeMCU V2 ESP8266|1|1|[Amazon-Link](https://www.amazon.de/AZDelivery-NodeMCU-ESP8266-ESP-12E-Development/dp/B06Y1LZLLY/ref=sr_1_1_sspa?ie=UTF8&qid=1538918768&sr=8-1-spons&keywords=nodemcu+esp8266&psc=1) oder [Ebay-Link](https://www.ebay.de/itm/NodeMCU-v3-2-ESP8266-Dev-Kit-WIFI-Lolin-Amica-CP2102-v2-Arduino-IOT/252712258856?hash=item3ad6d30d28:g:TtsAAOSwlkpb3ZkV) oder [unverlötet (Amazon)](https://www.amazon.de/-/en/AZDelivery-NodeMCU-Amica-Unsoldered-Parent/dp/B07GYW4T5F/ref=sr_1_3?dchild=1&keywords=nodemcu+v2&qid=1617445906&sr=8-3)
+Mikrocontroller|NodeMCU V2 ESP8266 ODER ESP32 (je nach Platine)|1|1|ESP8266: [Amazon-Link](https://www.amazon.de/AZDelivery-NodeMCU-ESP8266-ESP-12E-Development/dp/B06Y1LZLLY/ref=sr_1_1_sspa?ie=UTF8&qid=1538918768&sr=8-1-spons&keywords=nodemcu+esp8266&psc=1) oder [Ebay-Link](https://www.ebay.de/itm/NodeMCU-v3-2-ESP8266-Dev-Kit-WIFI-Lolin-Amica-CP2102-v2-Arduino-IOT/252712258856?hash=item3ad6d30d28:g:TtsAAOSwlkpb3ZkV) oder [unverlötet (Amazon)](https://www.amazon.de/-/en/AZDelivery-NodeMCU-Amica-Unsoldered-Parent/dp/B07GYW4T5F/ref=sr_1_3?dchild=1&keywords=nodemcu+v2&qid=1617445906&sr=8-3) ODER ESP 32 V4:[ESP32 Dev Kit C V4](https://www.amazon.de/-/en/AZDelivery-Development-Compatible-Including-Successor/dp/B07Z83MF5W/ref=sr_1_3?keywords=azdelivery%2Besp32%2Bdevkitc%2Bv4&qid=1676019808&sprefix=esp32%2Bazdelivery%2Caps%2C82&sr=8-3&th=1)
 Display (optional aber empfehlenswert)|128 x 64 Pixel OLED SSD1306 |1|1|[Amazon-Link](https://www.amazon.de/AZDelivery-Display-Arduino-Raspberry-gratis/dp/B01L9GC470/ref=sr_1_3?ie=UTF8&qid=1544291613&sr=8-3&keywords=oled+128x64)
 unsere erstellte Platine|PCB|1|1|siehe unten
 
@@ -93,7 +94,7 @@ Lötkolben|ERSATZKOLBEN EP5|||[Reichelt-Link](https://www.reichelt.de/loetkolben
 ## Anmerkungen zur Bestelliste
 
 ### ESP32 Platine
-Es steht absofort die neue ESP32 Platine zur Verfügung. 
+Es steht ab sofort die neue ESP32 Platine zur Verfügung. 
 [Bitte direkt über unseren Chat anfragen!](https://chat.rancilio-pid.de/) **Bitte direkt per PN an @loque wenden**
 
 Inklusive sind:
@@ -104,26 +105,28 @@ Inklusive sind:
 
 
 **ZUSÄTZLICH** werden folgende Dinge benötigt:
+
 Bauteil | Beschreibung | Link
 -|-|-
 C1 |220µF (Elko) | [Link](https://www.reichelt.de/elko-radial-220-uf-10-v-105-c-low-esr-fm-a-220u-10-p200036.html?&trstct=pol_0&nbc=1)
-C2 |100nF (Kramik) | [Link](https://www.reichelt.de/vielschicht-kerko-100-nf-50-v-rm-5-125-c-hita-sf1h104z-l5-p246835.html?&trstct=pos_9&nbc=1)
+C2 |100nF (Keramik) | [Link](https://www.reichelt.de/vielschicht-kerko-100-nf-50-v-rm-5-125-c-hita-sf1h104z-l5-p246835.html?&trstct=pos_9&nbc=1)
 R1 |4,7kΩ (Display) | [Link](https://www.reichelt.de/widerstand-metallschicht-4-7-kohm-0204-0-4-w-1--yag-4fte52-4k7-p236963.html?&trstct=pol_0&nbc=1)
 R2 |4,7kΩ (Display) |[Link](https://www.reichelt.de/widerstand-metallschicht-4-7-kohm-0204-0-4-w-1--yag-4fte52-4k7-p236963.html?&trstct=pol_0&nbc=1)
 R3 |47kΩ (Brew switch) | [Link](https://www.reichelt.de/widerstand-metallschicht-47-kohm-axial-0-4-w-1--vis-c4702fc100-p237115.html?&trstct=pol_0&nbc=1)
 R4 |47kΩ (Power switch) |[Link](https://www.reichelt.de/widerstand-metallschicht-47-kohm-axial-0-4-w-1--vis-c4702fc100-p237115.html?&trstct=pol_0&nbc=1)
 R5 |47kΩ (Steam switch) |[Link](https://www.reichelt.de/widerstand-metallschicht-47-kohm-axial-0-4-w-1--vis-c4702fc100-p237115.html?&trstct=pol_0&nbc=1)
-R6 | Nach Bedarf | Widerstand entsprechend der gewählten LED nehmen, bei Nutzung von zb. Neopixel braucht es keinen Widerstand, dafür Lötjumper JP1 schließen 
+R6 | Nach Bedarf | Widerstand entsprechend der gewählten LED nehmen, bei Nutzung von z.B. Neopixel braucht es keinen Widerstand, dafür Lötjumper JP1 schließen 
 
 
-Beim Elko beim Löten auf die Polarität achten!
-In der aktuellen Rev 1.2 haben sich bei Beschriftung kleinere Fehler eingeschlichen:
+Beim Löten des Elkos auf die Polarität achten!
+
+In der aktuellen Rev 1.2 haben sich bei der Beschriftung kleinere Fehler eingeschlichen:
 Bugs Rev 1.2:
 Beschriftungen:
-S_LED: statt VCC muss hier 5V stehen
-E_TRIG: statt VCC muss hier 5V stehen
-W_SENS: statt IO36 muss hier IO23 stehen
-GPIO Header:  statt IO23 muss hier IO36 stehen 
+* S_LED: statt VCC muss hier 5V stehen
+* E_TRIG: statt VCC muss hier 5V stehen
+* W_SENS: statt IO36 muss hier IO23 stehen
+* GPIO Header:  statt IO23 muss hier IO36 stehen 
 
 ### ESP8266 Platine
 
