@@ -22,6 +22,7 @@ Wenn ihr die einzelnen Komponenten beisammenhabt, startet ihr am besten mit eine
 Die Heizung eurer Maschine könnt ihr z. B. mit einer Glühbirne simulieren, jeder andere 230V Verbraucher tut es aber genauso gut.
 
 ![Trockenaufbau](../../img/trockenaufbau.png)
+
 *(1=Mikrocontroller, 2=Temperatursensor, 3=SSR Relais für Heizung, 4=Schaltnetzteil, 5=Display)*
 
 Das PCB für den (neuern) Mikrocontroller ESP32 sieht wie folgt aus:
@@ -36,13 +37,29 @@ Das PCB für den (älteren) Mikrocontroller ESP8266 sieht wie folgt aus:
 
 
 
+PIN Software | Bezeichnung auf dem PCB | Belegung
+-|-|-
+PIN 2 | HT_RL | SSR Heizung     
+PIN 16 | T_SENS | Temperatursensor
+PIN 21 | IC2 (SDA) | Display-PIN SDA
+PIN 22 | IC2 (SDL) | Display-PIN SCL
+GND/Vin | V_IN | Netzteil (5Volt)
+PIN 17 | PV_RL (Valve) | Relais Ansteuerung Magnetventil
+PIN 27 | PV_RL (Pump) | Relais Ansteuerung Pumpe
+PIN 34 | B_SW | Bezugsschalter oder Optokopler 
+PIN 35 | S_SW | Dampfschalter
+PIN 39 | P_SW | Powerschalter (aktuell nicht in Software enthalten)
+PIN 25 | E_TRIG | Anschluss Trigger Silvia E CPU
+PIN 26 | S_LED | Status oder Temp LED
+PIN 36 | W_SENS | Wasserstandssensor
+PIN 36 | SCALE (DAT) | Waage DAT
+PIN 36 | SCALE (CLK) | Waage CLK
 
 
 
 
 
-
-###  Grundversion PID Only PCB für ESP8266 
+##  PIN Belegung vom PCB ESP8266
 
 Die einzelnen Komponenten werden wie folgt angeschlossen:
 
