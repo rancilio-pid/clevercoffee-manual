@@ -24,12 +24,17 @@ Die Heizung eurer Maschine könnt ihr z. B. mit einer Glühbirne simulieren, jed
 ![Trockenaufbau](../../img/trockenaufbau.png)
 *(1=Mikrocontroller, 2=Temperatursensor, 3=SSR Relais für Heizung, 4=Schaltnetzteil, 5=Display)*
 
-Das PCB für den Mikrocontroller sieht wie folgt aus:
+Das PCB für den (neuern) Mikrocontroller ESP32 sieht wie folgt aus:
+![PCB](../../img/pcbesp32.png)
+
+
+Das PCB für den (älteren) Mikrocontroller ESP8266 sieht wie folgt aus:
 
 ![PCB](../../img/image-3.png)
 
 
-###  Grundversion PID Only
+
+###  Grundversion PID Only PCB für ESP8266 
 
 Die einzelnen Komponenten werden wie folgt angeschlossen:
 
