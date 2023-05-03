@@ -32,6 +32,14 @@ Das PCB für den (älteren) Mikrocontroller ESP8266 sieht wie folgt aus:
 
 ![PCB](../../img/image-3.png)
 
+##  PIN Belegung vom PCB ESP32
+
+
+
+
+
+
+
 
 
 ###  Grundversion PID Only PCB für ESP8266 
