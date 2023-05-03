@@ -52,8 +52,8 @@ PIN 39 | P_SW | Powerschalter (aktuell nicht in Software enthalten)
 PIN 25 | E_TRIG | Anschluss Trigger Silvia E CPU
 PIN 26 | S_LED | Status oder Temp LED
 PIN 36 | W_SENS | Wasserstandssensor
-PIN 36 | SCALE (DAT) | Waage DAT
-PIN 36 | SCALE (CLK) | Waage CLK
+PIN 32 | SCALE (DAT) | Waage DAT
+PIN 33 | SCALE (CLK) | Waage CLK
 
 
 
