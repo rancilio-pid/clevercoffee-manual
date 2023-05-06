@@ -18,19 +18,15 @@ Ab der Version 4 für den ESP32 werden folgende Softwaretools benötigt:
 
 ## Installtion Visual Studio Code & PlatformIO
 
-Geh auf die Webseite von [VS Code](https://code.visualstudio.com/download) und lade deine entsprechende Version herunter
-Öffne VS Code und suche bei Extensions (1) nach "platformio" (2)
-
+Geh auf die Webseite von [VS Code](https://code.visualstudio.com/download) und lade deine entsprechende Version herunter.
+Öffne VS Code.
 ![](../../img/softwareinstall/swinstall1.png)
+Suche bei Extensions (1) nach "platformio" (2). Klicke Install (3) und PlatformIO wird installiert.
 
-Klicke Install (3) und PlatformIO wird installiert.
-
+Hierbei kann unten rechts im Fenster eine Meldung zeigen, dass weitere Softwarepakete fehlen:
 ![](../../img/softwareinstall/swinstall2.png)
-
-Hierbei kann unten rechts im Fenster eine Meldung zeigen, dass weitere Softwarepakete fehlen.
 Z.B. Muss Python extern installiert werden. Durch den Klick auf "Install Phyton" (1) gelangt ihr in die Dokumentation
 von PlatformIO. Befolgt dort die weiteren Installtionsschritte. 
-
 Am Ende zeigt euch folgende Meldung, dass PlatformIO erfolgreich installiert wurde:
 ![](../../img/softwareinstall/swinstall3.png)
 
