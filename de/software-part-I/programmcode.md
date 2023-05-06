@@ -119,10 +119,3 @@ Bei jedem Teilschritt das "SUCESS" in der Konsole abwarten:
 ```
 Glückwunsch der ESP32 (oder ESP8266) ist nun mit der Software bespielt, weiter geht es mit der Einrichtung vom WLAN!
 
-
-
-Ab der Version 4 für den ESP32 werden folgende Softwaretools benötigt:
-* VS Code
-* PlatformIO (eine Extension in VS Code)
-* Github Desktop
-
