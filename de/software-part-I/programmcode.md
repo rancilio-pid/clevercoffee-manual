@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Programmcode herunterladen
+title: Software installieren
 parent: Software
 grand_parent: DE - Handbuch
 has_children: false
