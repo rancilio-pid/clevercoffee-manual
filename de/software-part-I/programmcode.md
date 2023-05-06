@@ -72,22 +72,29 @@ In dem oberen Fall wäre dies /Documents/Github/clevercoffee
 In VS Code drückt ihr im Fall von MAC Shift + CMD + P oder nutzt die Taskleiste von VS Code: View -> Command Palette
 Hier geht ihr ein (1): "git: checkout to" 
 ![](../../img/softwareinstall/swinstall9.png) 
-Drück Return oder klickt per Maus den Befehl an und es erscheint eine Auswahlliste aller Versionen
+
+Drück Return oder klickt per Maus den Befehl an und es erscheint eine Auswahlliste aller Versionen:
 ![](../../img/softwareinstall/swinstall10.png) 
-Für den ESP32 sind nur die Versionen ab 4.X.X relevant, es in der Version nicht mehr der ESP8266 unterstützt. Die "origin/master" ist die aktuelle Version der Entwicklung für den ESP32. 
+
+Für den ESP32 sind nur die Versionen ab 4.X.X relevant, in dieser Version wird nicht mehr der ESP8266 unterstützt. 
+Die "origin/master" ist die aktuelle Version der Entwicklung für den ESP32. 
+
 Die Master "origin/ESP9266-master" ist die alte Entwicklungsversion für den ESP8266. Hier gibt es nur noch Bugfixes. Die aktuelle Version vom ESP8266 ist jeweils die Version mit dem Zusatz "-esp8266" z.B: "v3.1.2-esp8266"
-Wählt die aktuellste Version für den ESP aus. Es dauert paar Sekunden und dann sollte der Code heruntergeladen sein.
+Wählt die aktuellste Version für den ESP32 aus. Es dauert paar Sekunden und dann sollte der Code heruntergeladen sein.
 
 ##  Compilieren vorbereiten
-Bevor ihr die Version kompilieren könnt müssen noch kleinere Vorbreitungen passieren. Geht in VS Code in den Verzeichnisbaum vom Code, öffnet den Ordner /src und benennt die "userconfig_sample.h" in "userconfig.h" um:
-![](../../img/softwareinstall/swinstall12.ng) 
-Ihr könnt nun in dieser Datei einige Dinge zu eurer Espresso Maschine einstellen. Diese sind auch ausführlicher später im Handbuch erläutert. Wichtig sind hier vor allem "ONLYPID" und die Konfiguration für den späteren Hostnamen oder die OTA Einstellungen. Die WLAN Einrichtung von euerem Netzwerk findet direkt auf dem ESP8266 per Access Point statt.
+Bevor ihr die Version kompilieren könnt müssen noch kleinere Vorbreitungen passieren. 
+Geht in VS Code in den Verzeichnisbaum vom Code, öffnet den Ordner /src und benennt die "userconfig_sample.h" in "userconfig.h" um:
+![](../../img/softwareinstall/swinstall12.png) 
+
+Ihr könnt nun in dieser Datei einige Dinge zu eurer Espresso Maschine einstellen. Diese sind auch ausführlicher später im Handbuch erläutert. Wichtig sind hier vor allem "ONLYPID" und die Konfiguration für den späteren Hostnamen oder die OTA Einstellungen. Die WLAN Einrichtung von euerem Netzwerk findet später direkt auf dem ESP8266 per Access Point statt.
 ##  Compilieren vorbereiten
 Nun kann der Code compiliert werden. Hierzu sind folgende Schritte notwendig:
 Drückt wieder das Symbol von PlatformIO (rechts in der Leiste). Ihr könnt später per OTA auch Daten auf den ESP32 übertragen, aber aktuell muss dieser per usb bespielt werden. Der ESP32 muss hierbei angeschlossen sein per USB Kabel.
 Bei jeden Upload Schritt oder Erase auf den ESP32 kann es passieren, dass dies nicht sofort durchläuft.
 WICHTIG: Haltet die Taste "Boot" auf dem ESP gedrückt (ohne PINS kurzzuschließen), dann kann ein Upload per USB durchgeführt werden (Bei OTA besteht später das Problem nicht).
-![](../../img/softwareinstall/swinstall13.ng) 
+![](../../img/softwareinstall/swinstall13.png) 
+
 Bei jedem Teilschritt das "SUCESS" in der Konsole abwarten:
 (1) Daher wählt "esp32_usb" aus.  
 (2) "Erase flash" (Boottaste am ESP32 drücken) klicken, warten bis "SUCESS"
