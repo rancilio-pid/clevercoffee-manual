@@ -25,9 +25,11 @@ Suche bei Extensions (1) nach "platformio" (2). Klicke Install (3) und PlatformI
 
 Hierbei kann unten rechts im Fenster eine Meldung zeigen, dass weitere Softwarepakete fehlen:
 ![](../../img/softwareinstall/swinstall2.png)
+
 Z.B. Muss Python extern installiert werden. Durch den Klick auf "Install Phyton" (1) gelangt ihr in die Dokumentation
 von PlatformIO. Befolgt dort die weiteren Installtionsschritte. 
 Am Ende zeigt euch folgende Meldung, dass PlatformIO erfolgreich installiert wurde:
+
 ![](../../img/softwareinstall/swinstall3.png)
 
 Ihr könnt aber zum aktuellen Stand ohne git oder Github Desktop nicht unseren Code komplieren. Falls ihr dies doch tut erhaltet ihr z.B. eine folgende Fehlermeldung:
