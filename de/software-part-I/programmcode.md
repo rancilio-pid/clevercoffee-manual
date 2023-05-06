@@ -88,7 +88,7 @@ Geht in VS Code in den Verzeichnisbaum vom Code, öffnet den Ordner /src und ben
 ![](../../img/softwareinstall/swinstall12.png) 
 
 Ihr könnt nun in dieser Datei einige Dinge zu eurer Espresso Maschine einstellen. Diese sind auch ausführlicher später im Handbuch erläutert. Wichtig sind hier vor allem "ONLYPID" und die Konfiguration für den späteren Hostnamen oder die OTA Einstellungen. Die WLAN Einrichtung von euerem Netzwerk findet später direkt auf dem ESP8266 per Access Point statt.
-##  Compilieren vorbereiten
+##  Compilieren
 Nun kann der Code compiliert werden. Hierzu sind folgende Schritte notwendig:
 Drückt wieder das Symbol von PlatformIO (rechts in der Leiste). Ihr könnt später per OTA auch Daten auf den ESP32 übertragen, aber aktuell muss dieser per usb bespielt werden. Der ESP32 muss hierbei angeschlossen sein per USB Kabel.
 Bei jeden Upload Schritt oder Erase auf den ESP32 kann es passieren, dass dies nicht sofort durchläuft.
