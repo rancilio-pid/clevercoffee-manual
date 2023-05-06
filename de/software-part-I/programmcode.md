@@ -50,11 +50,14 @@ Und euren Speicherort (3) auswählen. Clone klicken und ihr seid mit Github fert
 
 ## Treiber ESP32 
 Ihr benötigt ggf. einen Treiber für den ESP32. Ihr könnt prüfen in PlatformIO unter "Device", ob euer ESP32 erkannt wird:
-![](../../img/softwareinstall/swinstall7.png). 
+![](../../img/softwareinstall/swinstall7.png)
+
 Klickt in VSCode unter auf das PlatformIO Symbol ("Ameisenkopf") (1) und wählt "Devices" (2). Hier müsste bei angestecken ESP32 dieser zu sehen sein:
 ![](../../img/softwareinstall/swinstall8.png)
+
 Es müsste ein Gerät mit "CP2102" am usbserial-X auftauchen. Wenn dies nicht der Fall ist testet bitte nochmals einen zweites USB-Kabel (manche Kabel sind nur zum Laden geeignet).
 Wenn hier immer noch kein dein ESP32 auftaucht, müsst ihr den Treiber installieren:
+
 [Treiber ESP32](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)
 
 Der Treiber sollte auch für den ESP8266 gehen, solange der gleiche Controller verbaut ist (CP2102).
