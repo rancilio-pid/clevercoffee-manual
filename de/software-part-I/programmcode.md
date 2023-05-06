@@ -96,13 +96,13 @@ WICHTIG: Haltet die Taste "Boot" auf dem ESP gedrückt (ohne PINS kurzzuschließ
 ![](../../img/softwareinstall/swinstall13.png) 
 
 Bei jedem Teilschritt das "SUCESS" in der Konsole abwarten:
-(1) Daher wählt "esp32_usb" aus.  
-(2) "Erase flash" (Boottaste am ESP32 drücken) klicken, warten bis "SUCESS"
-(3) "Build Filesystem Image" klicken, warten bis "SUCESS"
-(4) "Upload FIlesystem Image", Boottaste am ESP32 drücken bis aufsteigende Prozent zu sehen sind, warten bis "SUCESS"
-(5) Unter dem Punkt " Genereal" "Build" klicken, warten bis "SUCESS"
-(6) Upload klicken, Boottaste am ESP32 drücken bis aufsteigende Prozent zu sehen sind, warten bis "SUCESS"
-(7) Monitor zum ESP32 öffnen, dann sollte folgendes zu sehen sein:
+1. (1) Daher wählt "esp32_usb" aus.  
+1. (2) "Erase flash" (Boottaste am ESP32 drücken) klicken, warten bis "SUCESS"
+1. (3) "Build Filesystem Image" klicken, warten bis "SUCESS"
+1. (4) "Upload FIlesystem Image", Boottaste am ESP32 drücken bis aufsteigende Prozent zu sehen sind, warten bis "SUCESS"
+1. (5) Unter dem Punkt " Genereal" "Build" klicken, warten bis "SUCESS"
+1. (6) Upload klicken, Boottaste am ESP32 drücken bis aufsteigende Prozent zu sehen sind, warten bis "SUCESS"
+1. (7) Monitor zum ESP32 öffnen, dann sollte folgendes zu sehen sein:
 
 ```
 [00:00:02] Connect to WiFi: "silvia" 
