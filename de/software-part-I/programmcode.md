@@ -26,7 +26,7 @@ Suche bei Extensions (1) nach "platformio" (2). Klicke Install (3) und PlatformI
 Hierbei kann unten rechts im Fenster eine Meldung zeigen, dass weitere Softwarepakete fehlen:
 ![](../../img/softwareinstall/swinstall2.png)
 
-Z.B. Muss Python extern installiert werden. Durch den Klick auf "Install Phyton" (1) gelangt ihr in die Dokumentation
+Z.B. muss Python extern installiert werden. Durch den Klick auf "Install Phyton" (1) gelangt ihr in die Dokumentation
 von PlatformIO. Befolgt dort die weiteren Installtionsschritte. Klickt dann in VS Code in der Meldung "Try again" 
 Am Ende zeigt euch folgende Meldung, dass PlatformIO erfolgreich installiert wurde:
 
@@ -37,16 +37,10 @@ Ihr könnt aber zum aktuellen Stand ohne git oder Github Desktop nicht unseren C
 
 Ihr könnt an dieser Stelle VS Code erst eimal schließen
 
-## Installtion Github Desktop
+## Installtion git
+Wir empfehlen euch git direkt zu installieren. Ihr könnt aber auch [Github Desktop](https://desktop.github.com) oder [sourcetree](https://www.sourcetreeapp.com/sourcetree) installieren, um später git innerhalb von VS Code nutzen zu können.
 
-Ladet euch Github Desktop herunter [Github Desktop](https://desktop.github.com),installiert es und startet es.
-Klickt (1) "Clone a Repository from the internet"
-![](../../img/softwareinstall/swinstall5.png)
-Es erscheint eine neue Eingabemaske:
-![](../../img/softwareinstall/swinstall6.png)
-In der Eingabemaske "URL" klicken (1), bei (2) die URL von unserem Repository eingeben:
-https://github.com/rancilio-pid/clevercoffee
-Und euren Speicherort (3) auswählen. Clone klicken und ihr seid mit Github fertig. 
+Auf [git scm](https://git-scm.com/downloads) sind alle Wege beschrieben, um git alleine (ohne GUI Client) für MAC OS, Windows oder Linux zu installieren. 
 
 ## Treiber ESP32 
 Ihr benötigt ggf. einen Treiber für den ESP32. Ihr könnt prüfen in PlatformIO unter "Device", ob euer ESP32 erkannt wird:
@@ -70,6 +64,19 @@ Nach dem Neustart vom Rechner, könnt ihr prüfen, ob ihr die Sofware compiliere
 In dem oberen Fall wäre dies /Documents/Github/clevercoffee
 
 In VS Code drückt ihr im Fall von MAC Shift + CMD + P oder nutzt die Taskleiste von VS Code: View -> Command Palette
+Hier geht ihr ein (1): "git: clone" 
+![](../../img/softwareinstall/swinstall18.png)
+
+Damit kopiert ihr nun das Repository des Projektes von github. Gebt nun in der oberen Eingabemaske folgende URL ein (1):
+https://github.com/rancilio-pid/clevercoffee
+![](../../img/softwareinstall/swinstall19.png)
+
+Die nachfolgende Meldung sucht ihr euch das Verzeichnis aus wohin das Repository kopiert werden soll, dann fügt mit "ADD to workspace" das kopierte Repository zu eurem workspace hinzu.
+Es kann eine Meldung kommen, ob ihr dem Author innerhalb des Verzeichnis vertraut, klickt hierbei auf "YES, i trust..."
+![](../../img/softwareinstall/swinstall20.png)
+
+
+In VS Code drückt ihr wieder im Fall von MAC Shift + CMD + P oder nutzt die Taskleiste von VS Code: View -> Command Palette
 Hier geht ihr ein (1): "git: checkout to" 
 ![](../../img/softwareinstall/swinstall9.png) 
 
