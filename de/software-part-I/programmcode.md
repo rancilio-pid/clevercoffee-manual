@@ -12,7 +12,7 @@ nav_order: 1
 Ab der Version 4 für den ESP32 werden folgende Softwaretools benötigt:
 * Visual Studio Code
 * PlatformIO (eine Extension in VS Code)
-* Github Desktop
+* Git
 * Treiber für den ESP32
 
 
@@ -38,9 +38,7 @@ Ihr könnt aber zum aktuellen Stand ohne git oder Github Desktop nicht unseren C
 Ihr könnt an dieser Stelle VS Code erst einmal schließen.
 
 ## Installtion git
-Wir empfehlen euch git direkt zu installieren. Ihr könnt aber auch [Github Desktop](https://desktop.github.com) oder [sourcetree](https://www.sourcetreeapp.com/sourcetree) installieren, um später git innerhalb von VS Code nutzen zu können.
-
-Auf [git scm](https://git-scm.com/downloads) sind alle Wege beschrieben, um git alleine (ohne GUI Client) für MAC OS, Windows oder Linux zu installieren. 
+Wir empfehlen euch git direkt zu installieren. (Auf [git scm](https://git-scm.com/downloads) sind alle Wege beschrieben, um git alleine (ohne GUI Client) für MAC OS, Windows oder Linux zu installieren. Hier geht der Weg via [homebrew](https://brew.sh) am schnellsten.
 
 ## Treiber ESP32 
 Ihr benötigt ggf. einen Treiber für den ESP32. Ihr könnt prüfen in PlatformIO unter "Device", ob euer ESP32 erkannt wird:
