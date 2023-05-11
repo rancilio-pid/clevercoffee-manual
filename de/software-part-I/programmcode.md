@@ -38,7 +38,7 @@ Ihr könnt aber zum aktuellen Stand ohne git oder Github Desktop nicht unseren C
 Ihr könnt an dieser Stelle VS Code erst einmal schließen.
 
 ## Installtion git
-Wir empfehlen euch git direkt zu installieren. (Auf [git scm](https://git-scm.com/downloads) sind alle Wege beschrieben, um git alleine (ohne GUI Client) für MAC OS, Windows oder Linux zu installieren. Hier geht der Weg via [homebrew](https://brew.sh) am schnellsten.
+Wir empfehlen euch git direkt zu installieren. Auf [git scm](https://git-scm.com/downloads) sind alle Wege beschrieben, um git alleine (ohne GUI Client) für MAC OS, Windows oder Linux zu installieren. Hier geht der Weg via [homebrew](https://brew.sh) am schnellsten.
 
 ## Treiber ESP32 
 Ihr benötigt ggf. einen Treiber für den ESP32. Ihr könnt prüfen in PlatformIO unter "Device", ob euer ESP32 erkannt wird:
