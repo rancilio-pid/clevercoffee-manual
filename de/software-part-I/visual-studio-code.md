@@ -1,4 +1,6 @@
----
+<!---
+your comment goes here
+and here
 --layout: default
 --title: Visual Studio Code mit PlatformIO einrichten
 --parent: Software
@@ -17,7 +19,7 @@
 1. TOC
 {:toc}
 </details>
-
+-->
 # Einführung
 
 [Visual Studio Code](https://code.visualstudio.com/) ist ein plattformübergreifend verfügbarer Code-Editor, der sich über zahlreiche Extensions erweitern lässt. Eines der für die Entwicklung eingebetteter Systeme hilfreichsten Extensions ist [PlatformIO](https://platformio.org/). PlatformIO ermöglicht das einfache Kompilieren und Debuggen von Code für zahlreiche Mikrocontroller und ist in seiner Handhabung deutlich komfortabler und leistungsfäher als die Arduino IDE. Gleichzeitig hat PlatformIO in Verbindung mit Visual Studio Code allerdings einen deutlich größeren Funktionsumfang, wie zum Beispiel die automatische Installation aller Abhängigkeiten (Compiler, Bibliotheken, etc.) und die gleichzeitige Unterstützung mehrerer Mikrocontroller-Typen.
