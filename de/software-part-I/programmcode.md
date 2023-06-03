@@ -9,11 +9,11 @@ nav_order: 1
 
 #   {{ page.title }}
 ## Übersicht
-Ab der Version 4 für den ESP32 werden folgende Softwaretools benötigt:
+Ab der Version 4 für den ESP32 bzw. für den ESP8266 (bis Version 3.1.3)  werden folgende Softwaretools benötigt:
 * Visual Studio Code
 * PlatformIO (eine Extension in VS Code)
 * Git
-* Treiber für den ESP32
+* Treiber für den ESP32 / ESP8266
 
 
 ## Installtion Visual Studio Code & PlatformIO
@@ -40,15 +40,15 @@ Ihr könnt an dieser Stelle VS Code erst einmal schließen.
 ## Installtion git
 Wir empfehlen euch git direkt zu installieren. Auf [git scm](https://git-scm.com/downloads) sind alle Wege beschrieben, um git alleine (ohne GUI Client) für MAC OS, Windows oder Linux zu installieren. Hier geht der Weg via [homebrew](https://brew.sh) am schnellsten.
 
-## Treiber ESP32 
-Ihr benötigt ggf. einen Treiber für den ESP32. Ihr könnt prüfen in PlatformIO unter "Device", ob euer ESP32 erkannt wird:
+## Treiber ESP32 / ESP 8266
+Ihr benötigt ggf. einen Treiber für den ESP32 bzw. ESP8266. Ihr könnt prüfen in PlatformIO unter "Device", ob euer ESP32 / ESP8266 erkannt wird:
 ![](../../img/softwareinstall/swinstall7.png)
 
 Klickt in VSCode unter auf das PlatformIO Symbol ("Ameisenkopf") (1) und wählt "Devices" (2). Hier müsste der per USB verbundene ESP32 dieser zu sehen sein:
 ![](../../img/softwareinstall/swinstall8.png)
 
 Es müsste ein Gerät mit "CP2102" am usbserial-X auftauchen. Wenn dies nicht der Fall ist testet bitte nochmals einen zweites USB-Kabel (manche Kabel sind nur zum Laden geeignet).
-Wenn hier immer noch kein dein ESP32 auftaucht, müsst ihr den Treiber installieren:
+Wenn hier immer noch kein dein ESP32 / ESP 8266 auftaucht, müsst ihr den Treiber installieren:
 
 [Treiber ESP32](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)
 
@@ -104,7 +104,7 @@ Bei jedem Teilschritt das "SUCESS" in der Konsole abwarten:
 1. (1) Daher wählt "esp32_usb" aus.  
 1. (2) "Erase flash" (Boottaste am ESP32 drücken) klicken, warten bis "SUCESS"
 1. (3) "Build Filesystem Image" klicken, warten bis "SUCESS"
-1. (4) "Upload FIlesystem Image", Boottaste am ESP32 drücken bis aufsteigende Prozent zu sehen sind, warten bis "SUCESS"
+1. (4) "Upload FIlesystem Image", Boottaste am ESP32 (beim ESP8266 nicht notwendig) drücken bis aufsteigende Prozent zu sehen sind, warten bis "SUCESS"
 1. (5) Unter dem Punkt " Genereal" "Build" klicken, warten bis "SUCESS"
 1. (6) Upload klicken, Boottaste am ESP32 drücken bis aufsteigende Prozent zu sehen sind, warten bis "SUCESS"
 1. (7) Monitor zum ESP32 öffnen, dann sollte folgendes zu sehen sein:
