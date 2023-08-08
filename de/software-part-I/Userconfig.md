@@ -193,23 +193,12 @@ GRAFANA aktiviert die Visualisierung mittels Grafana, diese muss in Blynk noch w
 
 ## Pin Layout
 
-```
-#define TEMPSENSOR 2               // 2 = TSIC306 1=DS18B20
-#define PINTEMPSENSOR 2            // Temp sensor pin
-#define PINPRESSURESENSOR 99       // Pressuresensor 0: A0 (ESP8266), >0 ONLY ESP32
-#define PINVALVE 12                // Output pin for 3-way-valve
-#define PINPUMP 13                 // Output pin for pump
-#define PINHEATER 14               // Output pin for heater
-#define PINVOLTAGESENSOR 15        // Input pin for voltage sensor (optocoupler to detect brew switch)
-#define PINETRIGGER 16             // PIN for E-Trigger relay
-#define PINBREWSWITCH 0            // 0: A0 (ESP8266) ; >0 : DIGITAL PIN, ESP32 OR ESP8266: ONLY USE PIN15 AND PIN16!
-#define PINSTEAMSWITCH 17          // STEAM active
-#define LEDPIN    18               // LED PIN ON near setpoint
-#define OLED_SCL 5                 // Output pin for display clock pin
-#define OLED_SDA 4                 // Output pin for display data pin
-#define HXDATPIN 99                // weight scale PIN
-#define HXCLKPIN 99                // weight scale PIN
-#define SCREEN_WIDTH 128           // OLED display width, in pixels
-#define SCREEN_HEIGHT 64           // OLED display height, in pixels
-```
+Das Pin Layout wird ab Version 3.1.3 automatisch aufgrund des verwendeten ESPs ausgewählt.
 
+Für den ESP32 wird automatisch das zu unserem PCB passende Mapping vorgenommen. Grundsätzlich müssen hier keine Änderungen vorgenommen werden.
+Wenn doch muss das in der "esp32devkitcv4.h" gemacht werden.
+
+Für den ESP8266 wird automatisch das zu unserem PCB passende Mapping vorgenommen.
+Da der ESP8266 aber grundsätzlich nicht genügend Anschlüsse hat für alle Funktionen, müsst ihr hier möglicherweise Hand an legen.
+Die Grundfunktionen sind schon fertig belegt, für die Waage, Powerswitch, Steamswitch und TempLED müsst ihr die Pins erst noch konfigurieren.
+Das ist in der "esp8266nodemcuv2.h" zu erledigen.
