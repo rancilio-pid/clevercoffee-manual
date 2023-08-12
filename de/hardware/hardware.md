@@ -51,7 +51,7 @@ PIN 35 | S_SW | Dampfschalter
 PIN 39 | P_SW | Powerschalter (aktuell nicht in Software enthalten)
 PIN 25 | E_TRIG | Anschluss Trigger Silvia E CPU
 PIN 26 | S_LED | Status oder Temp LED
-PIN 36 | W_SENS | Wasserstandssensor
+PIN 23 | W_SENS | Wasserstandssensor
 PIN 32 | SCALE (DAT) | Waage DAT
 PIN 33 | SCALE (CLK) | Waage CLK
 
@@ -112,14 +112,14 @@ Pin|Funktion
 -|-
 Pin 12| Relay für das Ventil
 Pin 13| Relay für die Pumpe
-Pin 15| frei
+Pin 15| Schalter Brühtaste
 Pin 14| Relay für die Heizung
 Pin 2| Temperatursensor
-A0| Schalter Brühtaste
+A0| Drucksensor
 |
 Pin 4| SDA
 Pin 5| SCL
-Pin 16| frei
+Pin 16| E-Trigger Standby Trigger Silvia E
 
 ![](../../img/Screenshot-at-M%C3%A4rz-10-20-53-04.png)
 
