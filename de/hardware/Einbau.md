@@ -68,9 +68,8 @@ Kabel eins geht zum SSR der Heizung, Kabel zwei zum Netzteil. Welches Kabel dabe
 
 Kabel sinnvoll verlegen und einen Platz für das Netzteil festlegen. Kabel vor dem anschließen entsprechend kürzen.
 
-Am Netzteil ein blaues Kabel und ein schwarzen Kabel anschließen / anlöten. Wird das Schaltnetzteil aus der Bestellliste verwendet, das schwarze Kabel an N anschließen und das blaue Kabel an L anschließen. Es empfiehlt sich hierfür die Ringösen zu verwenden. Zusätzlich muss hier noch ein Schutzleiter verlegt werden. Dieser lässt sich an der Erdung des Kessels oder des 3-Wege Ventils "klauen". Vor dem Einbau die Ausgangsspannung am Poti prüfen und ggf. auf ca. 5.2V verstellen.
-
-Am Ausgang ein Rotes und ein schwarzes Kabel anbringen. Ich habe dafür 0,5 mm2 Kabel verwendet, die 0,14 mm2 sollten aber auch reichen. Die beiden Kabel richtung 3-Wege Ventil legen und beschriften.
+Wenn man das Netzteil aus der Bestellliste nimmt, verbindet man Eingang N blau mit blau und Eingang L schwarz mit braun.
+Der Ausgang von Netzteil schwarz-rot kommt dann auf den V_IN 5V Eingang am PCB.
 
 ### SSR Relais Heizung
 
