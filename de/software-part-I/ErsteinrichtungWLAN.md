@@ -55,3 +55,15 @@ Mit dem Klick auf "Configure Wifi" könnt ihr eurer Wlan auf dem Nodemcu einrich
 
 Wählt das Netzwerk oben aus der Liste ein oder gebt eure SSID manuell ein, zusätzlich eurer Passwort vom Wlan.
 Nach dem "Save" sollte der ESP neu starten und ist für euer Wlan eingerichtet.
+
+# Remote Monitoring
+
+Zusätzlich zur Website, auf der ihr Einstellungen vornehmen oder die aktuelle Temperatur beobachten könnt, könnt ihr auch über PlatformIO/VSCode über WLAN auf den Serial Monitor zugreifen. 
+Das ist vor allem nützlich, um mögliche Probleme im laufenden Betrieb zu debuggen. Wir raten dringend davon ab, einen in der Maschine verkabelten Mikrokontroller über USB an einen Rechner anzuschließen! 
+Wählt stattdessen in PlatformIO esp32_ota --> Monitor aus.
+
+![](../../img/remote_monitor.png)
+
+Solltet ihr den Hostname oder das OTA-Passwort in der `userconfig.h` angepasst haben, müsst ihr für eine erfolgreiche Verbindung auch die `platformio.ini` in der Section `env:esp32_ota` anpassen. 
+
+Wichtig, falls ihr Remote Monitoring schon während der Ersteinrichtung testen wollt: Ihr könnt das Monitoring nicht gleichzeitig via Kabel und OTA starten.
