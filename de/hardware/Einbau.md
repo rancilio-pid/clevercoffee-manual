@@ -118,11 +118,11 @@ Da direkt beide Schalter umgebaut werden, bietet es sich an, je ein gemeinsames 
 #### Pumpe anschließen
 
 1. Ein zweites (kurzes) Kabel von Wago/Steckverbinder aus Schritt 1 des Ventil-Anschlusses zu "SW2" auf der 220V-Seite des Relais legen. 
-3. Am zweiten Anschluss von SW22 am Relais ein Kabel anschließen. Kabel so ablängen, dass es zur Pumpe führt und einen Steckverbinder mit Abzweig anbringen. Das weiße Kabel an der Pumpe abziehen, auf den Abzweig des neuen Kabels stecken, und gemeinsam wieder an der Pumpe anbringen. 
+3. Am zweiten Anschluss von SW2 am Relais ein Kabel anschließen. Kabel so ablängen, dass es zur Pumpe führt und einen Steckverbinder mit Abzweig anbringen. Das weiße Kabel an der Pumpe abziehen, auf den Abzweig des neuen Kabels stecken, und gemeinsam wieder an der Pumpe anbringen. 
 4. Wenn nicht beim Anschluss des Ventils schon erledigt, Kabel für das Steuersignal der Pumpe vom ESP zum Relais legen (wenn Pumpe wie hier beschrieben an SW2 angeschlossen, dann Signal für Pumpe an CH2). 
 5. Maschine an Strom anschließen, Bezug testen. 
 5.1. Wenn alles funktioniert: Glückwunsch, Vollausbau abgeschlossen! 
-5.2. Wenn die Pumpe nichts tut: Vermutlich schaltet dein Relais nur beim Nulldurchgang (mehr Info hier: [Bestellliste](../bestellliste.md)). Um das zu testen, einen 100k Ohm Widerstand (max. Leistung 1 Watt, bitte weitere Hinweise in der Bestellliste beachten) parallel zur Pumpe anschließen. Ich habe dazu beide Kabel an der Pumpe abgezogen und die Stecker abgeknippst. Dann neue Stecker anbringen und dabei zusätzlich zum Kabel jeweils ein Beinchen des Widerstands mit verpressen. Danach müssen die Kabel vorsichtig (und gemeinsam) angebracht bzw. abgenommen werden, da sie jetzt durch den Widerstand verbunden sind. Zum Abschluss noch einmal Bezug testen und den Vollausbau genießen! 
+5.2. Wenn die Pumpe nichts tut: Vermutlich schaltet dein Relais nur beim Nulldurchgang (mehr Info hier: [Bestellliste](../bestellliste.md)). Um das zu testen, einen 100k Ohm Widerstand (Leistung 1 Watt, bitte weitere Hinweise in der Bestellliste beachten) parallel zur Pumpe anschließen. Ich habe dazu beide Kabel an der Pumpe abgezogen und die Stecker abgeknippst. Dann neue Stecker anbringen und dabei zusätzlich zum Kabel jeweils ein Beinchen des Widerstands mit verpressen. Danach müssen die Kabel vorsichtig (und gemeinsam) angebracht bzw. abgenommen werden, da sie jetzt durch den Widerstand verbunden sind. Zum Abschluss noch einmal Bezug testen und den Vollausbau genießen! 
 
 ## Display
 
