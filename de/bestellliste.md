@@ -119,7 +119,7 @@ R6 | Nach Bedarf | Widerstand entsprechend der gewählten LED nehmen, bei Nutzun
 
 Beim Löten des Elkos auf die Polarität achten!
 
-Bugs Rev 1.2 ESP32_mininmal PCB:
+**Bugs ESP32_mininmal PCB Rev 1.2:**
 
 Fehler in der Beschriftung:
 
@@ -133,7 +133,7 @@ Fehler Optokoppler für Brüherkennung:
 * Nur mit High Level Trigger Optokoppler kompatibel
 * Workaround für Low Level Trigger: Pulldown Widerstand R3 nicht einlöten und "PINMODEVOLTAGESENSOR" auf "INPUT_PULLUP" setzen 
 
-In der aktuellen Rev 1.3 :
+**Bugs EPS32_minimal PCB Rev 1.3:**
 
 Fehler Optokoppler für Brüherkennung:
 
