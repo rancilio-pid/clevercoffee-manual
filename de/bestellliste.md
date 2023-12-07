@@ -94,7 +94,8 @@ Lötkolben|ERSATZKOLBEN EP5|||[Reichelt-Link](https://www.reichelt.de/loetkolben
 
 ### ESP32 Platine
 Es steht ab sofort die neue ESP32 Platine zur Verfügung. 
-[Bitte direkt über unseren Chat anfragen!](https://chat.rancilio-pid.de/) **Bitte direkt per PN an @loque wenden**
+[Bitte direkt über unseren Chat anfragen!](https://discord.com/invite/Kq5RFznuU4) **Bitte direkt per PN an @loque wenden**
+**Stand 7.12.23: Momentan sind keine ESP32 Platinen verfügbar. Vorraussichtlich ab Januar wieder bestellbar**
 
 Inklusive sind:
  * Das PCB
@@ -142,7 +143,7 @@ Fehler Optokoppler für Brüherkennung:
 
 ### ESP8266 Platine
 
-[Bitte direkt über unseren Chat anfragen!](https://chat.rancilio-pid.de/) **Bitte direkt per PN an @loque wenden**
+[Bitte direkt über unseren Chat anfragen!](https://discord.com/invite/Kq5RFznuU4) **Bitte direkt per PN an @loque wenden**
 
 ![PCB Lieferumfang](../img/PCB_Lieferumfang.jpeg)
 
